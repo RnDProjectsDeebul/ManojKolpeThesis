@@ -1,2 +1,2 @@
-# ManojKolpeThesis - Depth estimation using multi view stereo
+# ManojKolpeThesis - Depth estimation using multi view stereo 
 
