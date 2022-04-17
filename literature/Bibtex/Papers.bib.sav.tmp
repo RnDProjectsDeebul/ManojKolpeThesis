@@ -1,0 +1,429 @@
+@Article{01_furukawa2015multi,
+  author    = {Furukawa, Yasutaka and Hern{\'a}ndez, Carlos},
+  journal   = {Foundations and Trends{\textregistered} in Computer Graphics and Vision},
+  title     = {Multi-view stereo: A tutorial},
+  year      = {2015},
+  number    = {1-2},
+  pages     = {1--148},
+  volume    = {9},
+  abstract  = {This tutorial presents a hands-on view of the field of multi-view stereo
+with a focus on practical algorithms. Multi-view stereo algorithms are
+able to construct highly detailed 3D models from images alone. They
+take a possibly very large set of images and construct a 3D plausible
+geometry that explains the images under some reasonable assumptions, the most important being scene rigidity. The tutorial frames the multiview stereo problem as an image/geometry consistency optimization problem. It describes in detail its main two ingredients: robust implementations of photometric consistency measures, and efficient optimization algorithms. It then presents how these main ingredients are used by some of the most successful algorithms, applied into real applications, and deployed as products in the industry. Finally it describes more advanced approaches exploiting domain-specific knowledge such as structural priors, and gives an overview of the remaining challenges and future research directions.},
+  comment   = {Citation - 451},
+  publisher = {Now Publishers Inc. Hanover, MA, USA},
+  url       = {https://carlos-hernandez.org/papers/fnt_mvs_2015.pdf},
+}
+
+@Article{02_seitz2006comparison,
+  author =       "Seitz, Steven M and Curless, Brian and Diebel, James and Scharstein, Daniel and Szeliski, Richard",
+  title =        "A comparison and evaluation of multi-view stereo reconstruction algorithms",
+  journal =      "2006 IEEE computer society conference on computer vision and pattern recognition (CVPR'06)",
+  volume =       "1",
+  publisher =    "UFO",
+  pages =        "519--528",
+  year =         "2006",
+  coden =        "",
+  ISSN =         "0302-2345",
+  bibdate =      "",
+  organization = "IEEE",
+  howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
+}
+
+@article{03_jarvis1983perspective,
+  title={A perspective on range finding techniques for computer vision},
+  author={Jarvis, Ray A},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  number={2},
+  pages={122--139},
+  year={1983},
+  publisher={IEEE}
+}
+
+@Article{04_jarvis1983perspective,
+  author    = {Jarvis, Ray A},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title     = {A perspective on range finding techniques for computer vision},
+  year      = {1983},
+  number    = {2},
+  pages     = {122--139},
+  abstract  = {In recent times a great deal of interest has been shown, amongst the computer vision and robotics research community, in the acquisition of range data for supporting scene analysis leading to remote (noncontact) determination of configurations and space filling extents of three-dimensional object assemblages. This paper surveys a variety of approaches to generalized range finding and presents a perspective on their applicability and shortcomings in the context of computer vision studies.},
+  comment   = {Citations - 1283},
+  publisher = {IEEE},
+  url       = {https://ieeexplore.ieee.org/document/4767365},
+}
+
+@InProceedings{05_levoy2000digital,
+  author    = {Levoy, Marc and Pulli, Kari and Curless, Brian and Rusinkiewicz, Szymon and Koller, David and Pereira, Lucas and Ginzton, Matt and Anderson, Sean and Davis, James and Ginsberg, Jeremy and others},
+  booktitle = {Proceedings of the 27th annual conference on Computer graphics and interactive techniques},
+  title     = {The digital Michelangelo project: 3D scanning of large statues},
+  year      = {2000},
+  pages     = {131--144},
+  abstract  = {We describe a hardware and software system for digitizing the shape and color of large fragile objects under non-laboratory conditions. Our system employs laser triangulation rangefinders, laser time-of-flight rangefinders, digital still cameras, and a suite of software for acquiring, aligning, merging, and viewing scanned data. As a demonstration of this system, we digitized 10 statues by Michelangelo, including the well-known figure of David, two building interiors, and all 1,163 extant fragments of the Forma Urbis Romae, a giant marble map of ancient Rome. Our largest single dataset is of the David - 2 billion polygons and 7,000 color images. In this paper, we discuss the challenges we faced in building this system, the solutions we employed, and the lessons we learned. We focus in particular on the unusual design of our laser triangulation scanner and on the algorithms and software we developed for handling very large scanned models.},
+  comment   = {Citation - 2614},
+  url       = {https://dl.acm.org/doi/abs/10.1145/344779.344849},
+}
+
+@Article{06_scharstein2002taxonomy,
+  author    = {Scharstein, Daniel and Szeliski, Richard},
+  journal   = {International journal of computer vision},
+  title     = {A taxonomy and evaluation of dense two-frame stereo correspondence algorithms},
+  year      = {2002},
+  number    = {1},
+  pages     = {7--42},
+  volume    = {47},
+  abstract  = {Stereo matching is one of the most active research areas in computer vision. While a large number of algorithms for stereo correspondence have been developed, relatively little work has been done on characterizing their performance. In this paper, we present a taxonomy of dense, two-frame stereo methods. Our taxonomy is designed to assess the different components and design decisions made in individual stereo algorithms. Using this taxonomy, we compare existing stereo methods and present experiments evaluating the performance of many different variants. In order to establish a common software platform and a collection of data sets for easy evaluation, we have designed a stand-alone, flexible C++ implementation that enables the evaluation of individual components and that can easily be extended to include new algorithms. We have also produced several new multi-frame stereo data sets with ground truth and are making both the code and data sets available on the Web. Finally, we include a comparative evaluation of a large set of today’s best-performing stereo algorithms.},
+  comment   = {Comments - 9466},
+  publisher = {Springer},
+  url       = {https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/Scharstein-IJCV02.pdf},
+}
+
+@Article{07_manuel2018disparity,
+  author   = {Manuel, Mendoza Guzm{\'a}n V{\i}ctor and Manuel, Mej{\i}a Munoz Jos{\'e} and Edith, Moreno M{\'a}rquez Nayeli and Ivone, Rodr{\i}guez Azar Paula and Ramirez, SRE},
+  journal  = {Proceedings of the Regional Consortium for Foundations, Research and Spread of Emerging Technologies in Computing Sciences (RCCS+ SPIDTEC2)},
+  title    = {Disparity map estimation with deep learning in stereo vision},
+  year     = {2018},
+  pages    = {27--40},
+  abstract = {In this paper, we present a method for disparity map estimation from a rectified stereo image pair. We proposed, a new neural
+network architecture based on convolutional layers to predict the depth
+from the stereo vision images. The Middlebury datasets were used to
+train the network with a known disparity map in order to compare the
+error of the estimated map.},
+  comment  = {Citation - 1},
+  url      = {http://ceur-ws.org/Vol-2304/00030027.pdf},
+}
+
+@Article{kar2017learning,
+  author   = {Kar, Abhishek and H{\"a}ne, Christian and Malik, Jitendra},
+  journal  = {Advances in neural information processing systems},
+  title    = {Learning a multi-view stereo machine},
+  year     = {2017},
+  volume   = {30},
+  abstract = {We present a learnt system for multi-view stereopsis. In contrast to recent learning based methods for 3D reconstruction, we leverage the underlying 3D geometry of the problem through feature projection and unprojection along viewing rays. By formulating these operations in a differentiable manner, we are able to learn the system end-to-end for the task of metric 3D reconstruction. End-to-end learning allows us to jointly reason about shape priors while conforming to geometric
+constraints, enabling reconstruction from much fewer images (even a single image) than required by classical approaches as well as completion of unseen surfaces. We thoroughly evaluate our approach on the ShapeNet dataset and demonstrate the benefits over classical approaches and recent learning based methods.},
+  comment  = {Citation - 300},
+  url      = {https://proceedings.neurips.cc/paper/2017/file/9c838d2e45b2ad1094d42f4ef36764f6-Paper.pdf},
+}
+
+@Article{furukawa2009accurate,
+  author    = {Furukawa, Yasutaka and Ponce, Jean},
+  journal   = {IEEE transactions on pattern analysis and machine intelligence},
+  title     = {Accurate, dense, and robust multiview stereopsis},
+  year      = {2009},
+  number    = {8},
+  pages     = {1362--1376},
+  volume    = {32},
+  abstract  = {— This article proposes a novel algorithm for multiview stereopsis that outputs a dense set of small rectangular patches covering the surfaces visible in the images. Stereopsis is implemented as a match, expand, and filter procedure, starting from a sparse set of matched keypoints, and repeatedly expanding these before using visibility constraints to filter away false matches. The keys to the performance of the proposed algorithm are effective techniques for enforcing local photometric consistency and global visibility constraints. Simple but effective methods are also proposed to turn the resulting patch model into a mesh which can be further refined by an algorithm that enforces both photometric consistency and regularization constraints. The proposed approach automatically detects and discards outliers
+and obstacles, and does not require any initialization in the form
+of a visual hull, a bounding box, or valid depth ranges. We have tested our algorithm on various datasets including objects with fine surface details, deep concavities, and thin structures, outdoor scenes observed from a restricted set of viewpoints, and “crowded” scenes where moving obstacles appear in front of a static structure of interest. A quantitative evaluation on the Middlebury benchmark [1] shows that the proposed method outperforms all others submitted so far for four out of the six datasets.},
+  comment   = {Citation - 3649},
+  publisher = {IEEE},
+  url       = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.228.340&rep=rep1&type=pdf},
+}
+
+@InProceedings{yao2018mvsnet,
+  author    = {Yao, Yao and Luo, Zixin and Li, Shiwei and Fang, Tian and Quan, Long},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  title     = {Mvsnet: Depth inference for unstructured multi-view stereo},
+  year      = {2018},
+  pages     = {767--783},
+  abstract  = {We present an end-to-end deep learning architecture for depth
+map inference from multi-view images. In the network, we first extract
+deep visual image features, and then build the 3D cost volume upon
+the reference camera frustum via the differentiable homography warping. Next, we apply 3D convolutions to regularize and regress the initial depth map, which is then refined with the reference image to generate the final output. Our framework flexibly adapts arbitrary N-view inputs using a variance-based cost metric that maps multiple features into one cost feature. The proposed MVSNet is demonstrated on the large-scale indoor DTU dataset. With simple post-processing, our method not only significantly outperforms previous state-of-the-arts, but also is several times faster in runtime. We also evaluate MVSNet on the complex outdoor Tanks and Temples dataset, where our method ranks first before April 18, 2018 without any fine-tuning, showing the strong generalization ability of MVSNet.},
+  comment   = {Citation - 350},
+  url       = {https://openaccess.thecvf.com/content_ECCV_2018/papers/Yao_Yao_MVSNet_Depth_Inference_ECCV_2018_paper.pdf},
+}
+
+@InProceedings{wang2018mvdepthnet,
+  author       = {Wang, Kaixuan and Shen, Shaojie},
+  booktitle    = {2018 International conference on 3d vision (3DV)},
+  title        = {Mvdepthnet: Real-time multiview depth estimation neural network},
+  year         = {2018},
+  organization = {IEEE},
+  pages        = {248--257},
+  abstract     = {Although deep neural networks have been widely applied to computer vision problems, extending them into multiview depth estimation is non-trivial. In this paper, we present MVDepthNet, a convolutional network to solve the depth estimation problem given several image-pose pairs from a localized monocular camera in neighbor viewpoints. Multiview observations are encoded in a cost volume and then combined with the reference image to estimate the depth
+map using an encoder-decoder network. By encoding the information from multiview observations into the cost volume, our method achieves real-time performance and the flexibility of traditional methods that can be applied regardless of the camera intrinsic parameters and the number of images. Geometric data augmentation is used to train MVDepthNet. We further apply MVDepthNet in a monocular dense mapping system that continuously estimates depth
+maps using a single localized moving camera. Experiments show that our method can generate depth maps efficiently and precisely.},
+  comment      = {Citation - 67},
+  url          = {https://arxiv.org/pdf/1807.08563.pdf},
+}
+
+@Article{bianco2013comparative,
+  author    = {Bianco, Gianfranco and Gallo, Alessandro and Bruno, Fabio and Muzzupappa, Maurizio},
+  journal   = {Sensors},
+  title     = {A comparative analysis between active and passive techniques for underwater 3D reconstruction of close-range objects},
+  year      = {2013},
+  number    = {8},
+  pages     = {11007--11031},
+  volume    = {13},
+  abstract  = {In some application fields, such as underwater archaeology or marine biology, there is the need to collect three-dimensional, close-range data from objects that cannot be removed from their site. In particular, 3D imaging techniques are widely employed for close-range acquisitions in underwater environment. In this work we have compared in water two 3D imaging techniques based on active and passive approaches, respectively, and whole-field acquisition. The comparison is performed under poor visibility conditions, produced in the laboratory by suspending different quantities of clay in a water tank. For a fair comparison, a stereo configuration has been adopted for both the techniques, using the same setup, working distance, calibration, and objects. At the moment, the proposed setup is not suitable for real world applications, but it allowed us to conduct a preliminary
+analysis on the performances of the two techniques and to understand their capability to acquire 3D points in presence of turbidity. The performances have been evaluated in terms of accuracy and density of the acquired 3D points. Our results can be used as a reference for further comparisons in the analysis of other 3D techniques and algorithms.},
+  publisher = {Multidisciplinary Digital Publishing Institute},
+}
+
+@Article{zhu2021deep,
+  author   = {Zhu, Qingtian and Min, Chen and Wei, Zizhuang and Chen, Yisong and Wang, Guoping},
+  journal  = {arXiv preprint arXiv:2106.15328},
+  title    = {Deep Learning for Multi-View Stereo via Plane Sweep: A Survey},
+  year     = {2021},
+  abstract = {3D reconstruction has lately attracted increasing attention due to its wide application in many areas, such as autonomous driving, robotics and virtual reality. As a dominant technique in artificial intelligence, deep learning has been successfully adopted to solve various computer vision problems. However, deep learning for 3D reconstruction is still at its infancy due to its unique challenges and varying pipelines. To stimulate future research, this paper presents a review of recent progress in deep learning methods for Multi-view Stereo (MVS), which is considered as a crucial task of image-based 3D reconstruction. It also presents comparative results on several publicly available datasets, with insightful observations and inspiring future research directions.},
+}
+
+@InProceedings{gu2020cascade,
+  author    = {Gu, Xiaodong and Fan, Zhiwen and Zhu, Siyu and Dai, Zuozhuo and Tan, Feitong and Tan, Ping},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  title     = {Cascade cost volume for high-resolution multi-view stereo and stereo matching},
+  year      = {2020},
+  pages     = {2495--2504},
+  abstract  = {The deep multi-view stereo (MVS) and stereo matching approaches generally construct 3D cost volumes to regularize and regress the depth or disparity. These methods are limited with high-resolution outputs since the memory and time costs grow cubically as the volume resolution increases. In this paper, we propose a memory and time efficient cost volume formulation complementary to existing multi-view stereo and stereo matching approaches based on 3D cost volumes. First, the proposed cost volume is built upon a feature pyramid encoding geometry and context at gradually finer scales. Then, we can narrow the depth (or disparity) range of each stage by the prediction from the previous stage. With gradually higher cost volume resolution and adaptive adjustment of depth (or disparity) intervals, the output is recovered in a coarser to fine manner. We apply the cascade cost volume to the representative MVS-Net, and obtain a 35.6% improvement on DTU benchmark (1st place), with 50.6% and 59.3% reduction in GPU memory and run-time. It is also rank first on Tanks and Temples benchmark of all deep models. The statistics of accuracy, run-time and GPU memory on other representative stereo CNNs also validate the effectiveness of our proposed method. Our source code is available at https:
+//github.com/alibaba/cascade-stereo.},
+}
+
+@Article{laga2020survey,
+  author    = {Laga, Hamid and Jospin, Laurent Valentin and Boussaid, Farid and Bennamoun, Mohammed},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title     = {A survey on deep learning techniques for stereo-based depth estimation},
+  year      = {2020},
+  abstract  = {Estimating depth from RGB images is a long-standing ill-posed problem, which has been explored for decades by the computer vision, graphics, and machine learning communities. Among the existing techniques, stereo matching remains one of the most widely used in the literature due to its strong connection to the human binocular system. Traditionally, stereo-based depth estimation has been addressed through matching hand-crafted features across multiple images. Despite the extensive amount of research, these traditional techniques still suffer in the presence of highly textured areas, large uniform regions, and occlusions.
+Motivated by their growing success in solving various 2D and 3D vision problems, deep learning for stereo-based depth estimation has attracted a growing interest from the community, with more than 150 papers published in this area between 2014 and 2019. This new generation of methods has demonstrated a significant leap in performance, enabling applications such as autonomous driving and augmented reality. In this article, we provide a comprehensive survey of this new and continuously growing field of research, summarize the most commonly used pipelines, and discuss their benefits and limitations. In retrospect of what has been achieved so far, we also conjecture what the future may hold for deep learning-based stereo for depth estimation research.},
+  publisher = {IEEE},
+}
+
+@InProceedings{de1999poxels,
+  author       = {De Bonet, Jeremy S and Viola, Paul},
+  booktitle    = {Proceedings of International Conference on Computer Vision (ICCV)},
+  title        = {Poxels: Probabilistic voxelized volume reconstruction},
+  year         = {1999},
+  organization = {Citeseer},
+  pages        = {418--425},
+  abstract     = {This paper examines the problem of reconstructing a voxelized representation of 3D space from a series of images. An iterative algorithm is used to find the scene model which jointly explains all the observed images by determining which region of space is responsible for each of the observations. The current approach formulates the problem as one of optimization over estimates of these responsibilities. The process converges to a distribution of responsibility which accurately reflects the constraints provided by the observations, the positions and shape of both solid and transparent objects, and the uncertainty which remains. Reconstruction is robust, and gracefully represents regions of space in which there is little certainty about the exact structure due to limited, non-existent, or contradicting data. Rendered images of voxel spaces recovered from synthetic and real observation images are shown.},
+  comment      = {Citation - 57},
+  url          = {https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.588.3033&rep=rep1&type=pdf},
+}
+
+@InProceedings{kutulakos1999theory,
+  author       = {Kutulakos, Kiriakos N and Seitz, Steven M},
+  booktitle    = {Proceedings of the Seventh IEEE International Conference on Computer Vision},
+  title        = {A theory of shape by space carving},
+  year         = {1999},
+  organization = {IEEE},
+  pages        = {307--314},
+  volume       = {1},
+  abstract     = {In this paper we consider the problem of computing the 3D shape of an unknown, arbitrarily-shaped scene from multiple photographs taken at known but arbitrarily-distributed viewpoints. By studying the equivalence class of all 3D shapes that reproduce the input photographs, we prove the existence of a special member of this class, the photo hul l, that (1) can be computed directly from photographs of the scene, and (2) subsumes all other members of this class. We then give a provably-correct algorithm, called Space Carving, for computing this shape and present experimental results on complex real-world scenes. The approach is designed to (1) capture photorealistic shapes that accurately model scene appearance from a wide range of viewpoints, and (2) account for the complex interactions between occlusion, parallax, shading, and their view-dependent eects on scene-appearance.},
+  comment      = {Citation - 399},
+  url          = {http://www.cs.cmu.edu/afs/cs.cmu.edu/user/seitz/www/papers/kutu-ijcv00.pdf},
+}
+
+@InProceedings{chen2021mvsnerf,
+  author    = {Chen, Anpei and Xu, Zexiang and Zhao, Fuqiang and Zhang, Xiaoshuai and Xiang, Fanbo and Yu, Jingyi and Su, Hao},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  title     = {Mvsnerf: Fast generalizable radiance field reconstruction from multi-view stereo},
+  year      = {2021},
+  pages     = {14124--14133},
+  abstract  = {We present MVSNeRF, a novel neural rendering approach that can efficiently reconstruct neural radiance fields for view synthesis. Unlike prior works on neural radiance fields that consider per-scene optimization on densely
+captured images, we propose a generic deep neural network that can reconstruct radiance fields from only
+three nearby input views via fast network inference. Our approach leverages plane-swept cost volumes (widely
+used in multi-view stereo) for geometry-aware scene reasoning, and combines this with physically based volume
+rendering for neural radiance field reconstruction. We train our network on real objects in the DTU dataset,
+and test it on three different datasets to evaluate its effectiveness and generalizability. Our approach can
+generalize across scenes (even indoor scenes, completely different from our training scenes of objects) and generate realistic view synthesis results using only three input images, significantly outperforming concurrent works on generalizable radiance field reconstruction. Moreover, if dense images are captured, our estimated radiance field representation can be easily fine-tuned; this leads to fast per-scene reconstruction with higher rendering quality and substantially less optimization time than NeRF.},
+  comment   = {Citation - 42},
+  url       = {http://openaccess.thecvf.com/content/ICCV2021/papers/Chen_MVSNeRF_Fast_Generalizable_Radiance_Field_Reconstruction_From_Multi-View_Stereo_ICCV_2021_paper.pdf},
+}
+
+@InProceedings{kolmogorov2002multi,
+  author       = {Kolmogorov, Vladimir and Zabih, Ramin},
+  booktitle    = {European conference on computer vision},
+  title        = {Multi-camera scene reconstruction via graph cuts},
+  year         = {2002},
+  organization = {Springer},
+  pages        = {82--96},
+  abstract     = {We address the problem of computing the 3-dimensional shape of an arbitrary scene from a set of images taken at known viewpoints. Multi-camera scene reconstruction is a natural generalization of the stereo matching problem. However, it is much more difficult than stereo, primarily due to the difficulty of reasoning about visibility. In this paper, we take an approach that has yielded excellent results for stereo, namely energy minimization via graph cuts. We first give an energy minimization formulation of the multi-camera scene reconstruction problem. The energy that we minimize treats the input images symmetrically, handles visibility properly, and imposes spatial smoothness while preserving discontinuities. As the energy function is NP-hard to minimize exactly, we give a graph cut algorithm that computes a local minimum in a strong sense. We handle all camera configurations where voxel coloring can be used, which is a large and natural class. Experimental data demonstrates the effectiveness of our approach.},
+  comment      = {Citations - 1075},
+  url          = {https://link.springer.com/content/pdf/10.1007/3-540-47977-5_6.pdf},
+}
+
+@Article{esteban2004silhouette,
+  author    = {Esteban, Carlos Hern{\'a}ndez and Schmitt, Francis},
+  journal   = {Computer Vision and Image Understanding},
+  title     = {Silhouette and stereo fusion for 3D object modeling},
+  year      = {2004},
+  number    = {3},
+  pages     = {367--392},
+  volume    = {96},
+  abstract  = {In this paper, we present a new approach to high quality 3D object reconstruction. Starting from a calibrated sequence of color images, the algorithm is able to reconstruct both the 3D geometry and the texture. The core of the method is based on a deformable model, which defines the framework where texture and silhouette information can be fused. This is achieved by defining two external forces based on the images: a texture driven force and a silhouette driven force. The texture force is computed in two steps: a multi-stereo correlation voting approach and a gradient vector flow diffusion. Due to the high resolution of the voting approach, a multi-grid version of the gradient vector flow has been developed. Concerning the silhouette force, a new formulation of the silhouette constraint is derived. It provides a robust way to integrate the silhouettes in the evolution algorithm. As a consequence, we are able to recover the contour generators of the model at the end of the iteration process. Finally, a texture map is computed from the original images for the reconstructed 3D model.},
+  comment   = {Citation - 671},
+  publisher = {Elsevier},
+  url       = {https://carlos-hernandez.org/papers/hernandez_cviu04.pdf},
+}
+
+@InProceedings{yao2018mvsnet,
+  author    = {Yao, Yao and Luo, Zixin and Li, Shiwei and Fang, Tian and Quan, Long},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  title     = {Mvsnet: Depth inference for unstructured multi-view stereo},
+  year      = {2018},
+  pages     = {767--783},
+  abstract  = {We present an end-to-end deep learning architecture for depth map inference from multi-view images. In the network, we first extract deep visual image features, and then build the 3D cost volume upon the reference camera frustum via the differentiable homography warping. Next, we apply 3D convolutions to regularize and regress the initial depth map, which is then refined with the reference image to generate the final output. Our framework flexibly adapts arbitrary N-view inputs using a variance-based cost metric that maps multiple features into one cost feature. The proposed MVSNet is demonstrated on the large-scale indoor DTU dataset. With simple post-processing, our method not only significantly outperforms previous state-of-the-arts, but also is several
+times faster in runtime. We also evaluate MVSNet on the complex outdoor Tanks and Temples dataset, where our method ranks first before April 18, 2018 without any fine-tuning, showing the strong generalization ability of MVSNet.},
+  comment   = {Citations - 370},
+  url       = {https://openaccess.thecvf.com/content_ECCV_2018/papers/Yao_Yao_MVSNet_Depth_Inference_ECCV_2018_paper.pdf},
+}
+
+@Article{im2019dpsnet,
+  author   = {Im, Sunghoon and Jeon, Hae-Gon and Lin, Stephen and Kweon, In So},
+  journal  = {arXiv preprint arXiv:1905.00538},
+  title    = {Dpsnet: End-to-end deep plane sweep stereo},
+  year     = {2019},
+  abstract = {Multiview stereo aims to reconstruct scene depth from images acquired by a camera under arbitrary motion. Recent methods address this problem through deep learning, which can utilize semantic cues to deal with challenges such as textureless and reflective regions. In this paper, we present a convolutional neural network called DPSNet (Deep Plane Sweep Network) whose design is inspired by best practices of traditional geometry-based approaches for dense depth reconstruction. Rather than directly estimating depth and/or optical flow correspondence from image pairs as done in many previous deep learning methods, DPSNet takes a plane sweep approach that involves building a cost volume from deep features using the plane sweep algorithm, regularizing the cost volume via a contextaware cost aggregation, and regressing the dense depth map from the cost volume. The cost volume is constructed using a differentiable warping process that allows for end-to-end training of the network. Through the effective incorporation of conventional multiview stereo concepts within a deep learning framework, DPSNet achieves state-of-the-art reconstruction results on a variety of challenging
+datasets.},
+  comment  = {Citations - 119},
+  url      = {https://arxiv.org/pdf/1905.00538},
+}
+
+@Article{furukawa2009accurate,
+  author    = {Furukawa, Yasutaka and Ponce, Jean},
+  journal   = {IEEE transactions on pattern analysis and machine intelligence},
+  title     = {Accurate, dense, and robust multiview stereopsis},
+  year      = {2009},
+  number    = {8},
+  pages     = {1362--1376},
+  volume    = {32},
+  abstract  = {This article proposes a novel algorithm for multiview stereopsis that outputs a dense set of small rectangular
+patches covering the surfaces visible in the images. Stereopsis is implemented as a match, expand, and filter procedure, starting from a sparse set of matched keypoints, and repeatedly expanding these before using visibility constraints to filter away false matches. The keys to the performance of the proposed algorithm are effective techniques for enforcing local photometric consistency and global visibility constraints. Simple but effective methods are also proposed to turn the resulting patch model into a mesh which can be further refined by an algorithm that enforces both photometric consistency and regularization constraints. The proposed approach automatically detects and discards outliers and obstacles, and does not require any initialization in the form of a visual hull, a bounding box, or valid depth ranges. We have tested our algorithm on various datasets including objects with fine surface details, deep concavities, and thin structures, outdoor scenes observed from a restricted set of viewpoints, and “crowded” scenes where moving obstacles appear in front of a static structure of interest. A quantitative evaluation on the Middlebury benchmark [1] shows that the proposed method outperforms all others submitted so far for four out of the six datasets.},
+  comment   = {Citations - 3677},
+  publisher = {IEEE},
+  url       = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.228.340&rep=rep1&type=pdf},
+}
+
+@InProceedings{yao2019recurrent,
+  author    = {Yao, Yao and Luo, Zixin and Li, Shiwei and Shen, Tianwei and Fang, Tian and Quan, Long},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  title     = {Recurrent mvsnet for high-resolution multi-view stereo depth inference},
+  year      = {2019},
+  pages     = {5525--5534},
+  abstract  = {Deep learning has recently demonstrated its excellent performance for multi-view stereo (MVS). However, one
+major limitation of current learned MVS approaches is the scalability: the memory-consuming cost volume regularization makes the learned MVS hard to be applied to highresolution scenes. In this paper, we introduce a scalable multi-view stereo framework based on the recurrent neural network. Instead of regularizing the entire 3D cost volume in one go, the proposed Recurrent Multi-view Stereo Network (R-MVSNet) sequentially regularizes the 2D cost maps along the depth direction via the gated recurrent unit (GRU). This reduces dramatically the memory consumption and makes high-resolution reconstruction feasible. We first show the state-of-the-art performance achieved by the proposed R-MVSNet on the recent MVS benchmarks. Then, we further demonstrate the scalability of the proposed method on several large-scale scenarios, where previous learned approaches often fail due to the memory constraint. Code is available at https://github.com/YoYo000/MVSNet.},
+  comment   = {Citations - 189},
+  url       = {https://openaccess.thecvf.com/content_CVPR_2019/papers/Yao_Recurrent_MVSNet_for_High-Resolution_Multi-View_Stereo_Depth_Inference_CVPR_2019_paper.pdf},
+}
+
+@InProceedings{cheng2020deep,
+  author    = {Cheng, Shuo and Xu, Zexiang and Zhu, Shilin and Li, Zhuwen and Li, Li Erran and Ramamoorthi, Ravi and Su, Hao},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  title     = {Deep stereo using adaptive thin volume representation with uncertainty awareness},
+  year      = {2020},
+  pages     = {2524--2534},
+  abstract  = {We present Uncertainty-aware Cascaded Stereo Network (UCS-Net) for 3D reconstruction from multiple RGB images. Multi-view stereo (MVS) aims to reconstruct finegrained scene geometry from multi-view images. Previous learning-based MVS methods estimate per-view depth using plane sweep volumes (PSVs) with a fixed depth hypothesis at each plane; this requires densely sampled planes for high accuracy, which is impractical for high-resolution depth because of limited memory. In contrast, we propose adaptive thin volumes (ATVs); in an ATV, the depth hypothesis of each plane is spatially varying, which adapts to the uncertainties of previous per-pixel depth predictions. Our UCSNet has three stages: the first stage processes a small PSV to
+predict low-resolution depth; two ATVs are then used in the following stages to refine the depth with higher resolution and higher accuracy. Our ATV consists of only a small number of planes with low memory and computation costs; yet, it efficiently partitions local depth ranges within learned small uncertainty intervals. We propose to use variancebased uncertainty estimates to adaptively construct ATVs; this differentiable process leads to reasonable and finegrained spatial partitioning. Our multi-stage framework progressively sub-divides the vast scene space with increasing depth resolution and precision, which enables reconstruction with high completeness and accuracy in a coarseto-fine fashion. We demonstrate that our method achieves superior performance compared with other learning-based MVS methods on various challenging datasets.},
+  comment   = {Citations - 58},
+  url       = {http://openaccess.thecvf.com/content_CVPR_2020/papers/Cheng_Deep_Stereo_Using_Adaptive_Thin_Volume_Representation_With_Uncertainty_Awareness_CVPR_2020_paper.pdf},
+}
+
+@Article{scharstein2002taxonomy,
+  author    = {Scharstein, Daniel and Szeliski, Richard},
+  journal   = {International journal of computer vision},
+  title     = {A taxonomy and evaluation of dense two-frame stereo correspondence algorithms},
+  year      = {2002},
+  number    = {1},
+  pages     = {7--42},
+  volume    = {47},
+  abstract  = {Stereo matching is one of the most active research areas in computer vision. While a large number of algorithms for stereo correspondence have been developed, relatively little work has been done on characterizing their performance. In this paper, we present a taxonomy of dense, two-frame stereo methods. Our taxonomy is designed to assess the different components and design decisions made in individual stereo algorithms. Using
+this taxonomy, we compare existing stereo methods and present experiments evaluating the performance of many different variants. In order to establish a common software platform and a collection of data sets for easy evaluation, we have designed a stand-alone, flexible C++ implementation that enables the evaluation of individual components and that can easily be extended to include new algorithms. We have also produced several new multi-frame stereo data sets with ground truth and are making both the code and data sets available on the Web. Finally, we include a comparative evaluation of a large set of today’s best-performing stereo algorithms.},
+  comment   = {Citation - 9497},
+  publisher = {Springer},
+  url       = {https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/Scharstein-IJCV02.pdf},
+}
+
+@Article{zhao2020monocular,
+  author    = {Zhao, Chaoqiang and Sun, Qiyu and Zhang, Chongzhen and Tang, Yang and Qian, Feng},
+  journal   = {Science China Technological Sciences},
+  title     = {Monocular depth estimation based on deep learning: An overview},
+  year      = {2020},
+  number    = {9},
+  pages     = {1612--1627},
+  volume    = {63},
+  abstract  = {Depth information is important for autonomous systems to perceive environments and estimate their own state.
+Traditional depth estimation methods, like structure from motion and stereo vision matching, are built on feature correspondences of multiple viewpoints. Meanwhile, the predicted depth maps are sparse. Inferring depth information from a single image (monocular depth estimation) is an ill-posed problem. With the rapid development of deep neural networks, monocular depth estimation based on deep learning has been widely studied recently and achieved promising performance in accuracy. Meanwhile, dense depth maps are estimated from single images by deep neural networks in an end-to-end manner. In order to improve the accuracy of depth estimation, different kinds of network frameworks, loss functions and training strategies are proposed subsequently. Therefore, we survey the current monocular depth estimation methods based on deep learning in this review. Initially, we conclude several widely used datasets and evaluation indicators in deep learning-based depth estimation. Furthermore, we review some representative existing methods according to different training manners: supervised, unsupervised and semisupervised. Finally, we discuss the challenges and provide some ideas for future researches in monocular depth estimation.},
+  comment   = {Citations - 84},
+  publisher = {Springer},
+  url       = {https://arxiv.org/pdf/2003.06620},
+}
+
+@InProceedings{hartmann2017learned,
+  author    = {Hartmann, Wilfried and Galliani, Silvano and Havlena, Michal and Van Gool, Luc and Schindler, Konrad},
+  booktitle = {Proceedings of the IEEE international conference on computer vision},
+  title     = {Learned multi-patch similarity},
+  year      = {2017},
+  pages     = {1586--1594},
+  abstract  = {Estimating a depth map from multiple views of a scene is a fundamental task in computer vision. As soon as
+more than two viewpoints are available, one faces the very basic question how to measure similarity across >2 image patches. Surprisingly, no direct solution exists, instead it is common to fall back to more or less robust averaging of two-view similarities. Encouraged by the success of machine learning, and in particular convolutional
+neural networks, we propose to learn a matching function which directly maps multiple image patches to a scalar similarity score. Experiments on several multi-view datasets demonstrate that this approach has advantages over methods based on pairwise patch similarity.},
+  comment   = {Citation - 83},
+  url       = {https://openaccess.thecvf.com/content_ICCV_2017/papers/Hartmann_Learned_Multi-Patch_Similarity_ICCV_2017_paper.pdf},
+}
+
+@Article{kar2017learning,
+  author   = {Kar, Abhishek and H{\"a}ne, Christian and Malik, Jitendra},
+  journal  = {Advances in neural information processing systems},
+  title    = {Learning a multi-view stereo machine},
+  year     = {2017},
+  volume   = {30},
+  abstract = {We present a learnt system for multi-view stereopsis. In contrast to recent learning based methods for 3D reconstruction, we leverage the underlying 3D geometry of the problem through feature projection and unprojection along viewing rays. By formulating these operations in a differentiable manner, we are able to learn the system end-to-end for the task of metric 3D reconstruction. End-to-end learning allows us to jointly reason about shape priors while conforming to geometric constraints, enabling reconstruction from much fewer images (even a single image) than required by classical approaches as well as completion of unseen surfaces. We
+thoroughly evaluate our approach on the ShapeNet dataset and demonstrate the benefits over classical approaches and recent learning based methods.},
+  comment  = {Citations - 308},
+  url      = {https://proceedings.neurips.cc/paper/2017/file/9c838d2e45b2ad1094d42f4ef36764f6-Paper.pdf},
+}
+
+@InProceedings{huang2018deepmvs,
+  author    = {Huang, Po-Han and Matzen, Kevin and Kopf, Johannes and Ahuja, Narendra and Huang, Jia-Bin},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  title     = {Deepmvs: Learning multi-view stereopsis},
+  year      = {2018},
+  pages     = {2821--2830},
+  abstract  = {We present DeepMVS, a deep convolutional neural network (ConvNet) for multi-view stereo reconstruction. Taking an arbitrary number of posed images as input, we first produce a set of plane-sweep volumes and use the proposed DeepMVS network to predict high-quality disparity maps. The key contributions that enable these results are (1) supervised pretraining on a photorealistic synthetic dataset, (2) an effective method for aggregating information across a set of unordered images, and (3) integrating multi-layer feature activations from the pre-trained VGG-19 network. We validate the efficacy of DeepMVS using the ETH3D Benchmark. Our results show that DeepMVS compares favorably against state-of-the-art conventional MVS algorithms and other ConvNet based methods, particularly for neartextureless regions and thin structures.},
+  comment   = {Citations - 274},
+  url       = {https://openaccess.thecvf.com/content_cvpr_2018/papers/Huang_DeepMVS_Learning_Multi-View_CVPR_2018_paper.pdf},
+}
+
+@InProceedings{flynn2016deepstereo,
+  author    = {Flynn, John and Neulander, Ivan and Philbin, James and Snavely, Noah},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  title     = {Deepstereo: Learning to predict new views from the world's imagery},
+  year      = {2016},
+  pages     = {5515--5524},
+  abstract  = {Deep networks have recently enjoyed enormous success when applied to recognition and classification problems in computer vision, but their use in graphics problems has been limited ( are notable recent exceptions). In
+this work, we present a novel deep architecture that performs new view synthesis directly from pixels, trained from a large number of posed image sets. In contrast to traditional approaches, which consist of multiple complex stages of processing, each of which requires careful tuning and can fail in unexpected ways, our system is trained end-to-end. The pixels from neighboring views of a scene are presented to the network, which then directly produces the pixels of the unseen view. The benefits of our approach include generality (we only require posed image sets and can easily apply our method to different domains), and high quality results on traditionally difficult scenes. We believe this is due to the end-to-end nature of our system, which is able to plausibly generate pixels according to color, depth, and texture priors learnt automatically from the training data. We show view interpolation results on imagery from the KITTI dataset [12], from data from [1] as well as on Google Street View images. To our knowledge, our work is the first to apply deep learning to the problem of new view synthesis from sets of real-world, natural imagery.},
+  comment   = {Citations - 511},
+  url       = {https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Flynn_DeepStereo_Learning_to_CVPR_2016_paper.pdf},
+}
+
+@InProceedings{xue2019mvscrf,
+  author    = {Xue, Youze and Chen, Jiansheng and Wan, Weitao and Huang, Yiqing and Yu, Cheng and Li, Tianpeng and Bao, Jiayu},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  title     = {Mvscrf: Learning multi-view stereo with conditional random fields},
+  year      = {2019},
+  pages     = {4312--4321},
+  abstract  = {We present a deep-learning architecture for multi-view stereo with conditional random fields (MVSCRF). Given an
+arbitrary number of input images, we first use a U-shape neural network to extract deep features incorporating both global and local information, and then build a 3D cost volume for the reference camera. Unlike previous learningbased methods, we explicitly constraint the smoothness of depth maps by using conditional random fields (CRFs) after the stage of cost volume regularization. The CRFs module is implemented as recurrent neural networks so that the whole pipeline can be trained end-to-end. Our results show that the proposed pipeline outperforms previous state-of-the-arts on large-scale DT U dataset. We also achieve comparable results with state-of-the-art learningbased methods on outdoor T anks and T emples dataset without fine-tuning, which demonstrates our method’s generalization ability.},
+  comment   = {Citations - 40},
+  url       = {https://openaccess.thecvf.com/content_ICCV_2019/papers/Xue_MVSCRF_Learning_Multi-View_Stereo_With_Conditional_Random_Fields_ICCV_2019_paper.pdf},
+}
+
+@InProceedings{leroy2018shape,
+  author    = {Leroy, Vincent and Franco, Jean-S{\'e}bastien and Boyer, Edmond},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  title     = {Shape reconstruction using volume sweeping and learned photoconsistency},
+  year      = {2018},
+  pages     = {781--796},
+  abstract  = {The rise of virtual and augmented reality fuels an increased need for content suitable to these new technologies including 3D contents obtained from real scenes. We consider in this paper the problem of 3D shape reconstruction from multi-view RGB images. We investigate the ability of learning-based strategies to effectively benefit the reconstruction of arbitrary shapes with improved precision and robustness. We especially target real life performance capture, containing complex surface details that are difficult to recover with existing approaches. A key step in the multi-view reconstruction pipeline lies in the search for matching features between viewpoints in order to infer depth information. We propose to cast the matching on a 3D receptive field along viewing lines and to learn a multi-view photoconsistency measure for that purpose. The intuition is that deep networks have the ability to learn local photometric configurations in a broad way, even with respect to different orientations along various viewing lines of the same surface point. Our results demonstrate this ability, showing that a CNN, trained
+on a standard static dataset, can help recover surface details on dynamic scenes that are not perceived by traditional 2D feature based methods. Our evaluation also shows that our solution compares on par to state-ofthe-art-reconstruction pipelines on standard evaluation datasets, while yielding significantly better results and generalization with realistic performance capture data.},
+  comment   = {Citations - 37},
+  url       = {https://openaccess.thecvf.com/content_ECCV_2018/papers/Vincent_Leroy_Shape_Reconstruction_Using_ECCV_2018_paper.pdf},
+}
+
+@inproceedings{huang2018deepmvs,
+  title={Deepmvs: Learning multi-view stereopsis},
+  author={Huang, Po-Han and Matzen, Kevin and Kopf, Johannes and Ahuja, Narendra and Huang, Jia-Bin},
+  bo

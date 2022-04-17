@@ -1,6 +1,3 @@
-@Article{,
-}
-
 @Article{01_furukawa2015multi,
   author    = {Furukawa, Yasutaka and Hern{\'a}ndez, Carlos},
   journal   = {Foundations and Trends{\textregistered} in Computer Graphics and Vision},
@@ -478,6 +475,18 @@ results since (i) we use larger 3D patches in homogeneous image areas where smal
   abstract     = {In this paper we want to start the discussion on whether image based 3-D modelling techniques can possibly be used to replace LIDAR systems for outdoor 3D data acquisition. Two main issues have to be addressed in this context: (i) camera calibration (internal and external) and (ii) dense multi-view stereo. To investigate both, we have acquired test data from outdoor scenes both with LIDAR and cameras. Using the LIDAR data as reference we estimated the ground-truth for several scenes. Evaluation sets are prepared to evaluate different aspects of 3D model building. These are: (i) pose estimation and multi-view stereo with known internal camera parameters; (ii) camera calibration and multi-view stereo with the raw images as the only input and (iii) multi-view stereo},
   comment      = {Citations - 932},
   url          = {https://infoscience.epfl.ch/record/126393/files/strecha_cvpr_2008.pdf},
+}
+
+@Article{,
+}
+
+@Book{kuipers1999quaternions,
+  author    = {Kuipers, Jack B},
+  publisher = {Princeton university press},
+  title     = {Quaternions and rotation sequences: a primer with applications to orbits, aerospace, and virtual reality},
+  year      = {1999},
+  comment   = {Citations - 2413},
+  url       = {https://www.amazon.com/Quaternions-Rotation-Sequences-Applications-Aerospace/dp/0691102988/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=visahuntercom-20&linkId=c69f675e86de59a59656a60f83535e46&language=en_US},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
