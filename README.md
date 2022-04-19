@@ -20,3 +20,32 @@ Courtesy: [Link](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mdpi.com%
 
 Courtesy: [Link](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Fself-supervised-depth-estimation-breaking-down-the-ideas-f212e4f05ffa&psig=AOvVaw3va8tQsBacFhanuNSUk6Dk&ust=1643439567895000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCPC8ueql0_UCFQAAAAAdAAAAABA2)
 
+Model output on the generated test data
+
+Original 
+
+<p align="center">
+  <img  src="literature/seq-03_formated_manoj_original.gif">
+</p>
+
+Predicted
+<p align="center">
+  <img  src="literature/seq-03_formated_manoj_predicted.gif">
+</p>
+
+References
+
+Android
+
+[1] https://github.com/PyojinKim/ARCore-Data-Logger
+
+[2] https://ksimek.github.io/2012/08/22/extrinsic/
+
+[3] https://automaticaddison.com/how-to-convert-a-quaternion-to-a-rotation-matrix/
+
+[4] https://www.youtube.com/watch?v=zjMuIxRvygQ
+
+[5] https://www.youtube.com/watch?v=lVjFhNv2N8o&list=PLYm0s3jier_Se9_HKG1X6rQrKFxYo8x2-&index=22
+
+[6] https://eater.net/quaternions
+

@@ -1,0 +1,58 @@
+1. Name spaces
+Namespacing does for functions and classes what scope does for variables. It allows you to use the same function or class name in different parts of the same program without causing a name collision.
+In simple terms, think of a namespace as a person's surname. If there are two people named "John" you can use their surnames to tell them apart.
+Link: https://stackoverflow.com/questions/3384204/what-are-namespaces
+
+2. "package keyword" in java 
+package is a Java keyword. It declares a 'name space' for the Java class. It must be put at the top of the Java file, it should be the first Java statement line.
+
+To ensure that the package name will be unique across vendors, usually the company url is used starting in backword.
+
+Link: https://en.wikibooks.org/wiki/Java_Programming/Keywords/package#:~:text=package%20is%20a%20Java%20keyword,is%20used%20starting%20in%20backword.
+
+3. Classes and Objects in Java
+
+A class is a user defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order: 
+
+Modifiers: A class can be public or has default access (Refer this for details).
+class keyword: class keyword is used to create a class.
+Class name: The name should begin with an initial letter (capitalized by convention).
+Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+Body: The class body surrounded by braces, { }.
+
+Link : https://www.geeksforgeeks.org/classes-objects-java/
+
+4. private static final
+
+Making anything "private" means it is only available from within the class it was defined, "static" makes that variable available from ANYWHERE in that class, and "final" does not allow that variable to be changed, adding the modifier "final" changes your "variable" to a "constant" due to it's constant value instead of variable value.
+
+for example, when working with constants like the speed of light or conversions (12" = 1') you want to create "constants" as to prevent errors.
+
+private static final double SPEED_OF_LIGHT = 299792458.0 // meters/sec
+
+means that it is only available from within the class but static makes it available ANYWHERE within the class and final prevents unintended changes to the constant.
+That is my understanding, and I hope it helps.
+
+Link : https://coderanch.com/t/476812/java/private-static-final#:~:text=Making%20anything%20%22private%22%20means%20it,it's%20constant%20value%20instead%20of
+
+5. Difference between final static and static final
+
+no differences!!
+private final static
+private static final
+
+6. Array in java
+
+To declare an array, define the variable type with square brackets:
+String[] cars;
+
+Link : https://www.w3schools.com/java/java_arrays.asp
+
+7. "new" keyword java
+
+The Java new keyword is used to create an instance of the class. In other words, it instantiates a class by allocating memory for a new object and returning a reference to that memory. We can also use the new keyword to create the array object.
+
+Link : https://www.javatpoint.com/new-keyword-in-java#:~:text=The%20Java%20new%20keyword%20is,to%20create%20the%20array%20object.
+
+
