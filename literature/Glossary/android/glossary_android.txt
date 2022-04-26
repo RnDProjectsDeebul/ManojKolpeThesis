@@ -55,4 +55,37 @@ The Java new keyword is used to create an instance of the class. In other words,
 
 Link : https://www.javatpoint.com/new-keyword-in-java#:~:text=The%20Java%20new%20keyword%20is,to%20create%20the%20array%20object.
 
+8. @override
 
+Why we use @Override annotation
+Using @Override annotation while overriding a method is considered as a best practice for coding in java because of the following two advantages:
+
+1) If programmer makes any mistake such as wrong method name, wrong parameter types while overriding, you would get a compile time error. As by using this annotation you instruct compiler that you are overriding this method. If you don’t use the annotation then the sub class method would behave as a new method (not the overriding method) in sub class.
+
+9. protected keyword
+
+Protected keyword in Java refers to one of its access modifiers. 
+
+Link: https://www.geeksforgeeks.org/protected-keyword-in-java-with-examples/#:~:text=Protected%20keyword%20in%20Java%20refers,Subclasses%20of%20same%20packages.
+
+10. How can one java file call methods from another java file? [closed]
+
+Your question is not clear to me, as far as I understand you want to call a method of another Java file (I assume another Java class).
+
+So consider you have java files A.java and B.java. So you have definitely two classes A and B.
+
+Now if you want to call a method of B class from A class you need to:
+
+Make the method of B class public (or public static)
+Create a object of B class in A (or if method is static this step is not required)
+Using that object(in case of static user class name) call the method
+
+Link: https://stackoverflow.com/questions/43350522/how-can-one-java-file-call-methods-from-another-java-file
+
+11. getName()
+
+The getName() method of java Class class is used to get the name of the entity, and that entity can be class, interface, array, enum, method, etc. of the class object.
+
+Link: https://www.javatpoint.com/java-class-getname-method
+
+12. 

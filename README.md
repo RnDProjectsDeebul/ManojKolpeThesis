@@ -33,6 +33,18 @@ Predicted
   <img  src="literature/seq-03_formated_manoj_predicted.gif">
 </p>
 
+Plotting of translation and quaterions (rotation matrix) extracted from the android phone
+
+<p align="center">
+  <img  src="literature/images/image1.png">
+</p>
+<p align="center">
+  <img  src="literature/images/image2.png">
+</p>
+<p align="center">
+  <img  src="literature/images/image3.png">
+</p>
+
 References
 
 Android
