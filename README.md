@@ -45,6 +45,13 @@ Plotting of translation and quaterions (rotation matrix) extracted from the andr
   <img  src="literature/images/image3.png">
 </p>
 
+Deployment of model in the android device (Oneplus 7,GM1901,Snapdragon 855, 6GB RAM)  
+Source code - [Code](src/GPMVS_deployment_on_android/V2.0)
+
+<p align="center">
+  <img  src="literature/android_deployment.gif">
+</p>
+
 References
 
 Android
