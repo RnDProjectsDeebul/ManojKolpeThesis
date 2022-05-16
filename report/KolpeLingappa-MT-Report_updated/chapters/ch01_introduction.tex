@@ -1,0 +1,37 @@
+%!TEX root = ../report.tex
+
+\begin{document}
+    \chapter{Introduction}
+
+    Computer vision aims to understand the surrounding environment using various mathematical modelling techniques. First generation of depth estimation was based on pixel matching between multiple images taken from a calibrated cameras \cite{18_laga2020survey}. With the development of 3D reconstruction, depth sensors are becoming increasingly popular in areas such as self-driving cars. These sensors are used to obtain the information of the surrounding environment. However, the acquired depth maps from these sensors are sparse in nature due to low computational power resulting in information loss of the captured depth map. Another approach to reconstruct the 3D scene of an object is with the help of high quality images captured from the camera where the texture and lighting information are captured \cite{16_zhu2021deep}. Reconstruction of three dimensional view from images is a classic problem in the computer vision domain. Multi view stereo algorithms can reconstruct the disparity maps or three dimensional view of an object from the images \cite{13_chen2021mvsnerf}. It is the process of reproducing the 3D scenes from the multiple images given the camera poses and internal camera matrix. Number of areas take advantage of the reconstruction such as 3D mapping, 3D printing, video games, online shopping in the consumer domain, visual effect industry, digital mapping \cite{01_furukawa2015multi}, vehicle tracking, aircraft estimation and positioning \cite{07_manuel2018disparity}, depth estimation \cite{10_yao2018mvsnet}. Depth estimation is the process of extracting the depth of objects present in the images by capturing and processing multiple images of the object taken from different locations. Images can be obtained from a stereo camera or a monocular camera. This work is based on the monocular camera images. Estimation of depth from the unconstrained monocular camera images is a challenging task. Most of the state of the art depth estimation algorithms are based on deep learning and compute cost volume according to the hypothesized depths. 3D convolution is applied to this cost volume to regress and predict the depth map \cite{17_gu2020cascade}. This work aims to reproduce the result and deploy depth disparity estimation algorithms in a mobile device Finally end the research work with feasibility study of depth estimation architecture to segmentation.
+    \section{Motivation}
+    \subsection{...}
+
+    \lipsum[6-10]
+
+    \subsection{...}
+
+
+    \section{Challenges and Difficulties}
+    \subsection{...}
+
+    \lipsum[11-15]
+
+    \subsection{...}
+
+    \subsection{...}
+
+
+
+    \section{Problem Statement}
+    Multi view stereo is one of the field of computer vision that targets to construct the most likely 3D model of a object using images. Reconstruction of the true 3D geometry is a ill posed problem. Over the past years a large number of algorithms and architectures have been proposed to find the 3D geometry of the object. However, a lack of dataset taken at varying environmental conditions made it difficult to compare the performance of the algorithms \cite{02_seitz2006comparison}. It takes a lot of time to process large images and with the low textured images a bad reconstruction is observed\cite{37_jancosek2009segmentation}, \cite{02_seitz2006comparison}, \cite{38_strecha2008benchmarking}. Most of the state of the art depth estimation algorithm are computationally heavy and cannot be deployed on the edge device. A light weight architecture with reasonable performance needs to be developed to deploy in a low computational power devices. Conventional approaches uses two view stereo rigs for reconstruction. However, estimation of depth from unconstrained monocular camera images is a challenging task. There are advantage of using the moving camera. Firstly with larger baseline the accuracy of the distant object can be improved. Secondly with multiple varying point images are able to fuse all the information for robust and stable depth estimation \cite{12_hou2019multi}. This work concentrate on the depth estimation from unconstrained monocular camera images, deployment on the edge device, and extension of the disparity map estimation architecture to the segmentation.
+    
+    \subsection{...}
+
+    \lipsum[21-30]
+
+    \subsection{...}
+
+
+    \subsection{...}
+\end{document}

@@ -1,0 +1,48 @@
+%!TEX root = ../report.tex
+
+\begin{document}
+    \chapter{State of the Art}
+	
+	Multi view stereo tries to reconstruct the 3D geometry of a target area using set of captured images and poses from different viewpoints. Multi view stereo originated from solving the stereoscopic matching problem as a computation problem \cite{39_marr1979computational}. Two view stereo is a active research area till date and the research is evolved into multi view stereo problem. Instead of capturing the two images from two viewpoints, multi view stereo captures the images in between to increase the robustness of the reconstruction algorithm \cite{40_tsai1983multiframe}, \cite{41_okutomi1993multiple}.   
+	
+	\section{Multi view stereo}
+	
+	Multi view stereo used in the multiple domains such as visual perception in autonomous driving, virtual reality and augmented reality \cite{43_yildirim2019cybersickness}, \cite{44_chen2017multi}. Multi view stereo (MVS) works with same principle as the stereo matching but with a enhancement of dealing with very large number of images \cite{26_furukawa2009accurate}.   
+	
+	
+	\subsection{3D reconstruction methods}
+	\begin{itemize}
+		\item Active
+		Depth sensors 
+		\item Passive
+		Image based
+	\end{itemize}
+
+	\subsection{Output representation}
+	\begin{itemize}
+		\item Volumetric reconstruction
+		\item Point cloud reconstruction
+		\item Depth map based
+	\end{itemize}
+	
+    \section{Estimation of 3d geometry using traditional method}
+    \begin{itemize}
+    	\item COLMAP
+    \end{itemize}
+
+    \section{Estimation of 3d geometry using deep learning method}
+    \begin{itemize}
+    	\item Multi-View stereo by temporal nonparametric Fusion 
+    	\item MVSNet
+    	\item DeepMVS
+    	\item MVDepthNet
+    	\item DeepTAM
+    	\item DPSNet
+    \end{itemize}
+	
+	\section{Deployment on edge device}
+	Deployment of depth estimation algorithm on a android device.
+	
+    \section{Limitations of previous work}
+    
+\end{document}

@@ -1,0 +1,41 @@
+\BOOKMARK [0][-]{chapter*.4}{List of Figures}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{List of Tables}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{...}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{...}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Challenges and Difficulties}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{...}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{...}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.3}{...}{section.1.2}% 10
+\BOOKMARK [1][-]{section.1.3}{Problem Statement}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.3.1}{...}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{...}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.3}{...}{section.1.3}% 14
+\BOOKMARK [0][-]{chapter.2}{State of the Art}{}% 15
+\BOOKMARK [1][-]{section.2.1}{Multi view stereo}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.1.1}{3D reconstruction methods}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.2}{Output representation}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Estimation of 3d geometry using traditional method}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Estimation of 3d geometry using deep learning method}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.4}{Deployment on edge device}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.5}{Limitations of previous work}{chapter.2}% 22
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Setup}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Experimental Design}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{Solution}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Proposed algorithm}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{Implementation details}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 29
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Use case 1}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Use case 2}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.3}{Use case 3}{chapter.6}% 33
+\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 34
+\BOOKMARK [1][-]{section.7.1}{Contributions}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.2}{Lessons learned}{chapter.7}% 36
+\BOOKMARK [1][-]{section.7.3}{Future work}{chapter.7}% 37
+\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 38
+\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 39
+\BOOKMARK [0][-]{appendix.a.B}{References}{}% 40
+\BOOKMARK [0][-]{appendix*.6}{References}{}% 41

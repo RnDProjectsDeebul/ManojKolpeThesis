@@ -1,0 +1,41 @@
+\contentsline {chapter}{List of Figures}{xiii}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{xv}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}...}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}...}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Challenges and Difficulties}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}...}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}...}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}...}{4}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}...}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}...}{6}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}...}{6}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}State of the Art}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Multi view stereo}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}3D reconstruction methods}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Output representation}{7}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Estimation of 3d geometry using traditional method}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Estimation of 3d geometry using deep learning method}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Deployment on edge device}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Limitations of previous work}{8}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Methodology}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Setup}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Experimental Design}{9}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Solution}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Proposed algorithm}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementation details}{11}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Evaluation}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Results}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Use case 1}{15}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Use case 2}{15}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Use case 3}{15}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusions}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Contributions}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Lessons learned}{17}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future work}{17}{section.7.3}%
+\contentsline {chapter}{Appendix \numberline {A}Design Details}{19}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Parameters}{21}{appendix.a.B}%
+\contentsline {chapter}{References}{23}{appendix.a.B}%
+\contentsline {chapter}{References}{23}{appendix*.6}%

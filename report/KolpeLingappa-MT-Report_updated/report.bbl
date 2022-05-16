@@ -1,0 +1,115 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[42_()]{42_google_maps}
+Google maps.
+
+\bibitem[43_()]{43_bing_maps}
+Microsoft bing maps.
+
+\bibitem[44_()]{44_apple_maps}
+Apple maps.
+
+\bibitem[Chen et~al.(2021)Chen, Xu, Zhao, Zhang, Xiang, Yu, and
+  Su]{13_chen2021mvsnerf}
+Anpei Chen, Zexiang Xu, Fuqiang Zhao, Xiaoshuai Zhang, Fanbo Xiang, Jingyi Yu,
+  and Hao Su.
+\newblock Mvsnerf: Fast generalizable radiance field reconstruction from
+  multi-view stereo.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 14124--14133, 2021.
+
+\bibitem[Furukawa and Hern{\'a}ndez(2015)]{01_furukawa2015multi}
+Yasutaka Furukawa and Carlos Hern{\'a}ndez.
+\newblock Multi-view stereo: A tutorial.
+\newblock \emph{Foundations and Trends{\textregistered} in Computer Graphics
+  and Vision}, 9\penalty0 (1-2):\penalty0 1--148, 2015.
+
+\bibitem[Gu et~al.(2020)Gu, Fan, Zhu, Dai, Tan, and Tan]{17_gu2020cascade}
+Xiaodong Gu, Zhiwen Fan, Siyu Zhu, Zuozhuo Dai, Feitong Tan, and Ping Tan.
+\newblock Cascade cost volume for high-resolution multi-view stereo and stereo
+  matching.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pages 2495--2504, 2020.
+
+\bibitem[Hou et~al.(2019)Hou, Kannala, and Solin]{12_hou2019multi}
+Yuxin Hou, Juho Kannala, and Arno Solin.
+\newblock Multi-view stereo by temporal nonparametric fusion.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 2651--2660, 2019.
+
+\bibitem[Jancosek and Pajdla(2009)]{37_jancosek2009segmentation}
+Michal Jancosek and Tom{\'a}s Pajdla.
+\newblock \emph{Segmentation based multi-view stereo}.
+\newblock Citeseer, 2009.
+
+\bibitem[Laga et~al.(2020)Laga, Jospin, Boussaid, and
+  Bennamoun]{18_laga2020survey}
+Hamid Laga, Laurent~Valentin Jospin, Farid Boussaid, and Mohammed Bennamoun.
+\newblock A survey on deep learning techniques for stereo-based depth
+  estimation.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 2020.
+
+\bibitem[Manuel et~al.(2018)Manuel, Manuel, Edith, Ivone, and
+  Ramirez]{07_manuel2018disparity}
+Mendoza Guzm{\'a}n~V{\i}ctor Manuel, Mej{\i}a Munoz~Jos{\'e} Manuel, Moreno
+  M{\'a}rquez~Nayeli Edith, Rodr{\i}guez Azar~Paula Ivone, and SRE Ramirez.
+\newblock Disparity map estimation with deep learning in stereo vision.
+\newblock \emph{Proceedings of the Regional Consortium for Foundations,
+  Research and Spread of Emerging Technologies in Computing Sciences (RCCS+
+  SPIDTEC2)}, pages 27--40, 2018.
+
+\bibitem[Marr and Poggio(1979)]{39_marr1979computational}
+David Marr and Tomaso Poggio.
+\newblock A computational theory of human stereo vision.
+\newblock \emph{Proceedings of the Royal Society of London. Series B.
+  Biological Sciences}, 204\penalty0 (1156):\penalty0 301--328, 1979.
+
+\bibitem[Okutomi and Kanade(1993)]{41_okutomi1993multiple}
+Masatoshi Okutomi and Takeo Kanade.
+\newblock A multiple-baseline stereo.
+\newblock \emph{IEEE Transactions on pattern analysis and machine
+  intelligence}, 15\penalty0 (4):\penalty0 353--363, 1993.
+
+\bibitem[Seitz et~al.(2006)Seitz, Curless, Diebel, Scharstein, and
+  Szeliski]{02_seitz2006comparison}
+Steven~M Seitz, Brian Curless, James Diebel, Daniel Scharstein, and Richard
+  Szeliski.
+\newblock A comparison and evaluation of multi-view stereo reconstruction
+  algorithms.
+\newblock \emph{2006 IEEE computer society conference on computer vision and
+  pattern recognition (CVPR'06)}, 1:\penalty0 519--528, 2006.
+\newblock ISSN 0302-2345.
+
+\bibitem[Strecha et~al.(2008)Strecha, Von~Hansen, Van~Gool, Fua, and
+  Thoennessen]{38_strecha2008benchmarking}
+Christoph Strecha, Wolfgang Von~Hansen, Luc Van~Gool, Pascal Fua, and Ulrich
+  Thoennessen.
+\newblock On benchmarking camera calibration and multi-view stereo for high
+  resolution imagery.
+\newblock In \emph{2008 IEEE conference on computer vision and pattern
+  recognition}, pages 1--8. Ieee, 2008.
+
+\bibitem[Tsai(1983)]{40_tsai1983multiframe}
+Roger~Y Tsai.
+\newblock Multiframe image point matching and 3-d surface reconstruction.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, \penalty0 (2):\penalty0 159--174, 1983.
+
+\bibitem[Yao et~al.(2018)Yao, Luo, Li, Fang, and Quan]{10_yao2018mvsnet}
+Yao Yao, Zixin Luo, Shiwei Li, Tian Fang, and Long Quan.
+\newblock Mvsnet: Depth inference for unstructured multi-view stereo.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision
+  (ECCV)}, pages 767--783, 2018.
+
+\bibitem[Zhu et~al.(2021)Zhu, Min, Wei, Chen, and Wang]{16_zhu2021deep}
+Qingtian Zhu, Chen Min, Zizhuang Wei, Yisong Chen, and Guoping Wang.
+\newblock Deep learning for multi-view stereo via plane sweep: A survey.
+\newblock \emph{arXiv preprint arXiv:2106.15328}, 2021.
+
+\end{thebibliography}

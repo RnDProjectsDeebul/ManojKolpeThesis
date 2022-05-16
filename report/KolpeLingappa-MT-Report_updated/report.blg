@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: plainnat.bst
+Database file #1: bibliography.bib
+Warning--to sort, need author or key in 42_google_maps
+Warning--to sort, need author or key in 43_bing_maps
+Warning--to sort, need author or key in 44_apple_maps
+Warning--empty author in 42_google_maps
+Warning--empty journal in 42_google_maps
+Warning--empty year in 42_google_maps
+Warning--empty year in 42_google_maps
+Warning--empty author in 43_bing_maps
+Warning--empty journal in 43_bing_maps
+Warning--empty year in 43_bing_maps
+Warning--empty year in 43_bing_maps
+Warning--empty author in 44_apple_maps
+Warning--empty journal in 44_apple_maps
+Warning--empty year in 44_apple_maps
+Warning--empty year in 44_apple_maps
+Warning--there's a number but no volume in 40_tsai1983multiframe
+You've used 17 entries,
+            2773 wiz_defined-function locations,
+            686 strings with 8129 characters,
+and the built_in function-call counts, 8867 in all, are:
+= -- 788
+> -- 526
+< -- 11
++ -- 179
+- -- 162
+* -- 733
+:= -- 1271
+add.period$ -- 47
+call.type$ -- 17
+change.case$ -- 104
+chr.to.int$ -- 17
+cite$ -- 53
+duplicate$ -- 415
+empty$ -- 711
+format.name$ -- 184
+if$ -- 1896
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 18
+newline$ -- 88
+num.names$ -- 56
+pop$ -- 249
+preamble$ -- 1
+purify$ -- 88
+quote$ -- 0
+skip$ -- 336
+stack$ -- 0
+substring$ -- 356
+swap$ -- 75
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 182
+warning$ -- 16
+while$ -- 70
+width$ -- 0
+write$ -- 210
+(There were 16 warnings)
