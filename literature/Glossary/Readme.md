@@ -48,5 +48,6 @@
 22. Bottleneck - 
 23. Pose-kernel structure - 
 24. Latenet representation - 
-25. 
+25. Fronto-parallel plane - Fronto-parallel view of the plane (i.e. parallel to the image plane).
+![alt text](Pictures/fronto_parallel_plane.png)
 
