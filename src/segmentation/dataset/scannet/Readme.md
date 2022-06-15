@@ -1,6 +1,6 @@
 # This is a readme for scannet dataset preperation 
 
-Link to download the scannet dataset is given in the Re_ [ScanNet] Requesting for Scannet dataset.pdf file.
+Link to download the scannet dataset is given in the (Link)[https://github.com/RnDProjectsDeebul/ManojKolpeThesis/blob/main/src/segmentation/dataset/scannet/Re_%20%5BScanNet%5D%20Requesting%20for%20Scannet%20dataset.pdf] file.
 
 The main dataset folder is here [Link](https://github.com/ScanNet/ScanNet)
 
