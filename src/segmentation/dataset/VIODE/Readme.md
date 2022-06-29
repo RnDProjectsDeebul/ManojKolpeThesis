@@ -20,7 +20,7 @@ print(b.topic_table)
 ```
 output:
 
-![alt text](/image/img1.png)
+![alt text](image/img1.png)
 
 To extract the image data from the bag file follow method
 
