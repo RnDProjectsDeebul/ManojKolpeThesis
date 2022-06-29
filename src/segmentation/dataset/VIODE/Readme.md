@@ -75,3 +75,21 @@ cd ~/test
 jpeg2yuv -I p -f 15 -j frame%04d.jpg -b 1 > tmp.yuv
 ffmpeg2theora --optimize --videoquality 10 --videobitrate 16778 -o output.ogv tmp.yuv
 ```
+
+To read the imu and odometry data please follow the below snippet
+
+```
+from bagpy import bagreader
+
+data = b.message_by_topic('/imu0')
+print("File saved: {}".format(data))
+
+df_imu = pd.read_csv(data)
+df_imu
+
+data = b.message_by_topic('/odometry')
+print("File saved: {}".format(data))
+
+df_odo = pd.read_csv(data)
+df_odo
+```
