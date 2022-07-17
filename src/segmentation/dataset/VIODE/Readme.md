@@ -12,9 +12,9 @@ Install bagpy package
 - `!pip install bagpy`
 
 To check the topics in the bag file run the below snippet file
-
-from bagpy import bagreader
 ```
+from bagpy import bagreader
+
 b = bagreader('1_low.bag')
 print(b.topic_table)
 ```
