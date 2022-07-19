@@ -1,0 +1,109 @@
+%
+% LaTeX2e Style for MAS R&D and master thesis reports
+% Author: Argentina Ortega Sainz, Hochschule Bonn-Rhein-Sieg, Germany
+% Please feel free to send issues, suggestions or pull requests to:
+% https://github.com/mas-group/project-report
+% Based on the template created by Ronni Hartanto in 2003
+%
+
+\documentclass[thesis]{mas_report}
+\hypersetup{pdfborder=0 0 0}
+% \documentclass[rnd]{mas_report}
+
+% ****************************************************
+% THIS INFORMATION SHOULD BE UPDATED FOR YOUR REPORT
+% ****************************************************
+\author{Manoj Kolpe Lingappa}
+\title{Multi-View Temporal Fusion in Semantic Segmentation}
+
+% Please note that the \phdsupervisor command is optional, and is usually
+% used when your research is done in the context of a PhD project.
+% The command updates the report copyright to include your supervisor; if, on the other hand, the \phdsupervisor is not used or is empty, the copyright includes only the student.
+% If this is not the case, you can always manually include your supervisors' name.
+% If you have questions on whether this applies to your project, get in touch with your supervisor!
+% After filling \phdsupervisor, you can use \thephdsupervisor in the report, e.g. in the title or to specifiy joint work. Make sure you spell it correctly!
+% \phdsupervisor{PhD Student}
+% \phdproject{Title of PhD}
+
+\supervisors{%
+Prof. Dr. Nico Hochgeschwender\\
+Prof. Dr. Sebastian Houben\\
+M.Sc. Deebul Sivarajan Nair
+% \thephdsupervisor
+}
+\date{Month 20XX}
+
+% \thirdpartylogo{path/to/your/image}
+
+% Uncomment this to update the pdf metadata
+% \subject{LaTeX testing}
+% \keywords{key1; key2; key3}
+
+
+% If someone other than you has made direct, substantial contributions to your work, you must declare that here!
+% If you have questions about authorship criteria, please discuss this with your supervisor(s).
+% Uncomment this and edit as necessary:
+% \jointwork{%
+%   \begin{authorship}
+%     \caitem{\thephdsupervisor}{Conceptualization and supervision}
+%     \caitem{\theauthor, \thephdsupervisor}{Dataset collection with X Robot, Training of ML algorithm,}
+%     \caitem{\theauthor, Student2}{Data collection and postprocessing for experiment X}
+%   \end{authorship}
+% }
+
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\cleardoublepage
+\copyrightpage{2020}
+
+%----------------------------------------------------------------------------------------
+%	PREFACE
+%----------------------------------------------------------------------------------------
+\pagestyle{plain}
+\cleardoublepage
+\statementpage
+
+\subfile{chapters/abstract}
+\subfile{chapters/acknowledgment}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%-------------------------------------------------------------------------------
+%	CONTENT CHAPTERS
+%-------------------------------------------------------------------------------
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{mainmatter}
+
+\subfile{chapters/ch01_introduction}
+\subfile{chapters/ch02_stateoftheart}
+\subfile{chapters/ch03_methodology}
+%\subfile{chapters/ch04_solution}
+\subfile{chapters/ch05_evaluation_and_result}
+\subfile{chapters/ch06_android_deployment}
+\subfile{chapters/ch07_conclusion}
+
+%-------------------------------------------------------------------------------
+%	APPENDICES
+%-------------------------------------------------------------------------------
+\begin{appendices}
+    \subfile{chapters/appendix}
+\end{appendices}
+
+\backmatter
+
+%-------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography} % Use the bibliography.bib file as the source of references
+
+\end{document}
