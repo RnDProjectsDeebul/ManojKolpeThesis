@@ -1,0 +1,73 @@
+\contentsline {chapter}{List of Figures}{xv}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{xvii}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Temporal fusion}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Semantic segmentation}{2}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Challenges and Difficulties}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}...}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}...}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}...}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}...}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}...}{5}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}...}{5}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}State of the Art}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Deep Learning}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Temporal Fusion}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Segmentation}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Semantic Segmentation}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Classical Semantic Segmentation}{7}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Deep Learning based Semantic Segmentation}{7}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Temporal Fusion in Semantic Segmentation}{7}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Limitations of previous work}{7}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Methodology}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dataset}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}ScanNet}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Virtual KITTI 2}{9}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}VIODE}{9}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Data Collection and Preprocessing}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Experimental Design}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}U-Net Vanilla model}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}U-Net with Temporal Fusion}{9}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}W-Net Vanilla model}{9}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}W-Net with Temporal Fusion}{9}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Training and Evaluation Pipeline}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Training Procedure}{9}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Hardware Configuration}{9}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Evaluation Metric}{12}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{12}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Precision}{12}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Recall}{12}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}ROC and AUC}{12}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}IOU}{12}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Experiment1: Scannet Dataset}{12}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Experiment1.1: U-Net and W-Net model with single sequence data}{12}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Experiment1.2: U-Net and W-Net model with two sequence data}{12}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Experiment1.3: U-Net and W-Net model with three sequence data}{12}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Experiment1.4: U-Net and W-Net model with four sequence data}{12}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Experiment1.5: U-Net and W-Net model with all sequence data}{12}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Experiment2: Virtual KITTI 2}{12}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Experiment1.1: U-Net and W-Net model with single sequence data}{12}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Experiment1.2: U-Net and W-Net model with two sequence data}{12}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Experiment1.3: U-Net and W-Net model with three sequence data}{12}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Experiment1.4: U-Net and W-Net model with four sequence data}{12}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Experiment1.5: U-Net and W-Net model with all sequence data}{12}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Experiment3: VIODE}{12}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Experiment1.1: U-Net and W-Net model with single sequence data}{12}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Experiment1.2: U-Net and W-Net model with two sequence data}{12}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Experiment1.3: U-Net and W-Net model with three sequence data}{12}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Experiment1.4: U-Net and W-Net model with four sequence data}{12}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Experiment1.5: U-Net and W-Net model with all sequence data}{12}{subsection.4.4.5}%
+\contentsline {chapter}{\numberline {5}Android Deployment}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Framework}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Pipeline}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Deployment and Results}{13}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusions}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Contributions}{15}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Lessons learned}{15}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future work}{15}{section.6.3}%
+\contentsline {chapter}{Appendix \numberline {A}Design Details}{17}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Parameters}{19}{appendix.a.B}%
+\contentsline {chapter}{References}{21}{appendix*.7}%

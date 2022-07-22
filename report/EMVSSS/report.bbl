@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{01_mandic2005data}
+Danilo~P Mandic, Dragan Obradovic, Anthony Kuh, T{\"u}lay Adali, Udo
+  Trutschell, Martin Golz, Philippe~De Wilde, Javier Barria, Anthony
+  Constantinides, and Jonathon Chambers.
+\newblock Data fusion for modern engineering applications: An overview.
+\newblock In {\em International Conference on Artificial Neural Networks},
+  pages 715--721. Springer, 2005.
+
+\bibitem{02_lim2021temporal}
+Bryan Lim, Sercan~{\"O} Ar{\i}k, Nicolas Loeff, and Tomas Pfister.
+\newblock Temporal fusion transformers for interpretable multi-horizon time
+  series forecasting.
+\newblock {\em International Journal of Forecasting}, 37(4):1748--1764, 2021.
+
+\bibitem{03_duzceker2021deepvideomvs}
+Arda Duzceker, Silvano Galliani, Christoph Vogel, Pablo Speciale, Mihai
+  Dusmanu, and Marc Pollefeys.
+\newblock Deepvideomvs: Multi-view stereo on video with recurrent
+  spatio-temporal fusion.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 15324--15333, 2021.
+
+\bibitem{04_li2021spatial}
+Minghan Li, Shuai Li, Lida Li, and Lei Zhang.
+\newblock Spatial feature calibration and temporal fusion for effective
+  one-stage video instance segmentation.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 11215--11224, 2021.
+
+\end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  19 JUL 2022 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  21 JUL 2022 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,7 +679,7 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Logo-HBRS-cyan.png, id=293, 1965.3425pt x 353.32pt>
+<images/Logo-HBRS-cyan.png, id=297, 1965.3425pt x 353.32pt>
 File: images/Logo-HBRS-cyan.png Graphic file (type png)
 <use images/Logo-HBRS-cyan.png>
 Package pdftex.def Info: images/Logo-HBRS-cyan.png  used on input line 59.
@@ -725,7 +725,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<images/b-it.pdf, id=294, 1949.2825pt x 516.93124pt>
+<images/b-it.pdf, id=298, 1949.2825pt x 516.93124pt>
 File: images/b-it.pdf Graphic file (type pdf)
 <use images/b-it.pdf>
 Package pdftex.def Info: images/b-it.pdf  used on input line 59.
@@ -777,80 +777,92 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] (./chapters/ch01_introduction.tex
 Chapter 1.
+<images/df.png, id=464, 395.4775pt x 255.95625pt>
+File: images/df.png Graphic file (type png)
+<use images/df.png>
+Package pdftex.def Info: images/df.png  used on input line 10.
+(pdftex.def)             Requested size: 284.52756pt x 184.15166pt.
 [1
 
-] [2] [3]) (./chapters/ch02_stateoftheart.tex [4]
+ <./images/df.png>] [2] [3]
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+ [4])
+(./chapters/ch02_stateoftheart.tex [5] [6
+
+]
 Chapter 2.
 
-LaTeX Warning: Citation `art1' on page 5 undefined on input line 15.
+LaTeX Warning: Citation `art1' on page 7 undefined on input line 15.
 
-) (./chapters/ch03_methodology.tex [5
-
-] [6
+) (./chapters/ch03_methodology.tex [7] [8
 
 ]
 Chapter 3.
-) (./chapters/ch05_evaluation_and_result.tex [7] [8
+) (./chapters/ch05_evaluation_and_result.tex [9] [10
 
 ]
 Chapter 4.
 ) (./chapters/ch06_android_deployment.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [11]
 Overfull \vbox (218.46979pt too high) has occurred while \output is active []
 
 
-[10]
+[12]
 Chapter 5.
-) (./chapters/ch07_conclusion.tex [11
+) (./chapters/ch07_conclusion.tex [13
 
-] [12
+] [14
 
 ]
 Chapter 6.
-) (./chapters/appendix.tex [13] [14
+) (./chapters/appendix.tex [15] [16
 
 ]
 Appendix A.
-[15] [16
+[17] [18
 
 ]
 Appendix B.
-) [17] [18
+) [19] [20
 
 ] (./report.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+ [21
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 4598B77BF679D6C86EA84E597E6D1B9D;5377.
+(rerunfilecheck)             Checksum: F67B3007841507D6C0125BEA34F0DD25;5425.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 13257 strings out of 483183
- 208464 string characters out of 5966292
- 763109 words of memory out of 5000000
- 27813 multiletter control sequences out of 15000+600000
- 581048 words of font info for 79 fonts, out of 8000000 for 9000
+ 13306 strings out of 483183
+ 209177 string characters out of 5966292
+ 763329 words of memory out of 5000000
+ 27833 multiletter control sequences out of 15000+600000
+ 586233 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,54p,363b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,51p,918b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12
-.pfb>
-Output written on report.pdf (36 pages, 268447 bytes).
+/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
+Output written on report.pdf (39 pages, 298258 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 531 compressed objects within 6 object streams
- 112 named destinations out of 1000 (max. 500000)
- 12875 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 623 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 14936 words of extra memory for PDF output out of 17280 (max. 10000000)
 
