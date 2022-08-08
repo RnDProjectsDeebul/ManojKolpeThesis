@@ -1,4 +1,11 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{35_mldl}
+Michael Middleton.
+\newblock {Deep Learning vs. Machine Learning — What’s the Difference?},
+  year = 2021, url =
+  {https://flatironschool.com/blog/deep-learning-vs-machine-learning/}, urldate
+  = {2022-07-28}.
 
 \bibitem{01_mandic2005data}
 Danilo~P Mandic, Dragan Obradovic, Anthony Kuh, T{\"u}lay Adali, Udo
@@ -7,6 +14,11 @@ Danilo~P Mandic, Dragan Obradovic, Anthony Kuh, T{\"u}lay Adali, Udo
 \newblock Data fusion for modern engineering applications: An overview.
 \newblock In {\em International Conference on Artificial Neural Networks},
   pages 715--721. Springer, 2005.
+
+\bibitem{06_castanedo2013review}
+Federico Castanedo.
+\newblock A review of data fusion techniques.
+\newblock {\em The scientific world journal}, 2013, 2013.
 
 \bibitem{02_lim2021temporal}
 Bryan Lim, Sercan~{\"O} Ar{\i}k, Nicolas Loeff, and Tomas Pfister.
@@ -28,5 +40,202 @@ Minghan Li, Shuai Li, Lida Li, and Lei Zhang.
   one-stage video instance segmentation.
 \newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
   Pattern Recognition}, pages 11215--11224, 2021.
+
+\bibitem{005_hsiao2005temporal}
+Ko~Ming Hsiao, Geoff West, Svetha Venkatesh, and Mohan Kumar.
+\newblock Temporal data fusion in multisensor systems using dynamic time
+  warping.
+\newblock In {\em SENSORFUSION 2005: Workshop on Information Fusion and
+  Dissemination in Wireless Sensor Networks}, pages 1--9. IEEE, 2005.
+
+\bibitem{07_hsiao2005temporal}
+Ko~Ming Hsiao, Geoff West, Svetha Venkatesh, and Mohan Kumar.
+\newblock Temporal data fusion in multisensor systems using dynamic time
+  warping.
+\newblock In {\em SENSORFUSION 2005: Workshop on Information Fusion and
+  Dissemination in Wireless Sensor Networks}, pages 1--9. IEEE, 2005.
+
+\bibitem{08_krause2003unsupervised}
+Andreas Krause, Daniel~P Siewiorek, Asim Smailagic, and Jonny Farringdon.
+\newblock Unsupervised, dynamic identification of physiological and activity
+  context in wearable computing.
+\newblock In {\em ISWC}, volume~3, page~88, 2003.
+
+\bibitem{09_lee2003line}
+Jong-Min Lee, ChangKyoo Yoo, and In-Beum Lee.
+\newblock On-line batch process monitoring using a consecutively updated
+  multiway principal component analysis model.
+\newblock {\em Computers \& Chemical Engineering}, 27(12):1903--1912, 2003.
+
+\bibitem{10_han2016seq}
+Wei Han, Pooya Khorrami, Tom~Le Paine, Prajit Ramachandran, Mohammad
+  Babaeizadeh, Honghui Shi, Jianan Li, Shuicheng Yan, and Thomas~S Huang.
+\newblock Seq-nms for video object detection.
+\newblock {\em arXiv preprint arXiv:1602.08465}, 2016.
+
+\bibitem{11_kang2017t}
+Kai Kang, Hongsheng Li, Junjie Yan, Xingyu Zeng, Bin Yang, Tong Xiao, Cong
+  Zhang, Zhe Wang, Ruohui Wang, Xiaogang Wang, et~al.
+\newblock T-cnn: Tubelets with convolutional neural networks for object
+  detection from videos.
+\newblock {\em IEEE Transactions on Circuits and Systems for Video Technology},
+  28(10):2896--2907, 2017.
+
+\bibitem{12_ning2017spatially}
+Guanghan Ning, Zhi Zhang, Chen Huang, Xiaobo Ren, Haohong Wang, Canhui Cai, and
+  Zhihai He.
+\newblock Spatially supervised recurrent convolutional neural networks for
+  visual object tracking.
+\newblock In {\em 2017 IEEE international symposium on circuits and systems
+  (ISCAS)}, pages 1--4. IEEE, 2017.
+
+\bibitem{13_lu2020retinatrack}
+Zhichao Lu, Vivek Rathod, Ronny Votel, and Jonathan Huang.
+\newblock Retinatrack: Online single stage joint detection and tracking.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and
+  pattern recognition}, pages 14668--14678, 2020.
+
+\bibitem{14_kopuklu2019you}
+Okan K{\"o}p{\"u}kl{\"u}, Xiangyu Wei, and Gerhard Rigoll.
+\newblock You only watch once: A unified cnn architecture for real-time
+  spatiotemporal action localization.
+\newblock {\em arXiv preprint arXiv:1911.06644}, 2019.
+
+\bibitem{15_feichtenhofer2016convolutional}
+Christoph Feichtenhofer, Axel Pinz, and Andrew Zisserman.
+\newblock Convolutional two-stream network fusion for video action recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 1933--1941, 2016.
+
+\bibitem{16_wang2016temporal}
+Limin Wang, Yuanjun Xiong, Zhe Wang, Yu~Qiao, Dahua Lin, Xiaoou Tang, and
+  Luc~Van Gool.
+\newblock Temporal segment networks: Towards good practices for deep action
+  recognition.
+\newblock In {\em European conference on computer vision}, pages 20--36.
+  Springer, 2016.
+
+\bibitem{17_erccelik2021temp}
+Eme{\c{c}} Er{\c{c}}elik, Ekim Yurtsever, and Alois Knoll.
+\newblock Temp-frustum net: 3d object detection with temporal fusion.
+\newblock In {\em 2021 IEEE Intelligent Vehicles Symposium (IV)}, pages
+  1095--1101. IEEE, 2021.
+
+\bibitem{18_zhu2009spatial}
+Jiejie Zhu, Liang Wang, Jizhou Gao, and Ruigang Yang.
+\newblock Spatial-temporal fusion for high accuracy depth maps using dynamic
+  mrfs.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  32(5):899--909, 2009.
+
+\bibitem{19_wu2003multi}
+Gang Wu, Yi~Wu, Long Jiao, Yuan-Fang Wang, and Edward~Y Chang.
+\newblock Multi-camera spatio-temporal fusion and biased sequence-data learning
+  for security surveillance.
+\newblock In {\em Proceedings of the eleventh ACM international conference on
+  Multimedia}, pages 528--538, 2003.
+
+\bibitem{20_teutsch2012spatio}
+Michael Teutsch and Wolfgang Kr{\"u}ger.
+\newblock Spatio-temporal fusion of object segmentation approaches for moving
+  distant targets.
+\newblock In {\em 2012 15th International Conference on Information Fusion},
+  pages 1988--1995. IEEE, 2012.
+
+\bibitem{21_forsyth2011computer}
+David Forsyth and Jean Ponce.
+\newblock {\em Computer vision: A modern approach.}
+\newblock Prentice hall, 2011.
+
+\bibitem{22_dai2016instance}
+Jifeng Dai, Kaiming He, and Jian Sun.
+\newblock Instance-aware semantic segmentation via multi-task network cascades.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 3150--3158, 2016.
+
+\bibitem{23_fu1981survey}
+King-Sun Fu and JK~Mui.
+\newblock A survey on image segmentation.
+\newblock {\em Pattern recognition}, 13(1):3--16, 1981.
+
+\bibitem{24_ladys1994colour}
+W~Ladys~law Skarbek and Andreas Koschan.
+\newblock Colour image segmentation a survey.
+\newblock {\em IEEE Transactions on circuits and systems for Video
+  Technol-ogy}, 14(7):1--80, 1994.
+
+\bibitem{25_minaee2021image}
+Shervin Minaee, Yuri~Y Boykov, Fatih Porikli, Antonio~J Plaza, Nasser
+  Kehtarnavaz, and Demetri Terzopoulos.
+\newblock Image segmentation using deep learning: A survey.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  2021.
+
+\bibitem{26_ronneberger2015u}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In {\em International Conference on Medical image computing and
+  computer-assisted intervention}, pages 234--241. Springer, 2015.
+
+\bibitem{27_lin2017refinenet}
+Guosheng Lin, Anton Milan, Chunhua Shen, and Ian Reid.
+\newblock Refinenet: Multi-path refinement networks for high-resolution
+  semantic segmentation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 1925--1934, 2017.
+
+\bibitem{28_jegou2017one}
+Simon J{\'e}gou, Michal Drozdzal, David Vazquez, Adriana Romero, and Yoshua
+  Bengio.
+\newblock The one hundred layers tiramisu: Fully convolutional densenets for
+  semantic segmentation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition workshops}, pages 11--19, 2017.
+
+\bibitem{29_iandola2014densenet}
+Forrest Iandola, Matt Moskewicz, Sergey Karayev, Ross Girshick, Trevor Darrell,
+  and Kurt Keutzer.
+\newblock Densenet: Implementing efficient convnet descriptor pyramids.
+\newblock {\em arXiv preprint arXiv:1404.1869}, 2014.
+
+\bibitem{30_yang2018denseaspp}
+Maoke Yang, Kun Yu, Chi Zhang, Zhiwei Li, and Kuiyuan Yang.
+\newblock Denseaspp for semantic segmentation in street scenes.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 3684--3692, 2018.
+
+\bibitem{31_chen2014semantic}
+Liang-Chieh Chen, George Papandreou, Iasonas Kokkinos, Kevin Murphy, and Alan~L
+  Yuille.
+\newblock Semantic image segmentation with deep convolutional nets and fully
+  connected crfs.
+\newblock {\em arXiv preprint arXiv:1412.7062}, 2014.
+
+\bibitem{32_zhao2018icnet}
+Hengshuang Zhao, Xiaojuan Qi, Xiaoyong Shen, Jianping Shi, and Jiaya Jia.
+\newblock Icnet for real-time semantic segmentation on high-resolution images.
+\newblock In {\em Proceedings of the European conference on computer vision
+  (ECCV)}, pages 405--420, 2018.
+
+\bibitem{33_deng2020lightweight}
+Jizhong Deng, Zhaoji Zhong, Huasheng Huang, Yubin Lan, Yuxing Han, and Yali
+  Zhang.
+\newblock Lightweight semantic segmentation network for real-time weed mapping
+  using unmanned aerial vehicles.
+\newblock {\em Applied Sciences}, 10(20):7132, 2020.
+
+\bibitem{34_hsieh2010real}
+Chen-Chiung Hsieh, Dung-Hua Liou, and David Lee.
+\newblock A real time hand gesture recognition system using motion history
+  image.
+\newblock In {\em 2010 2nd international conference on signal processing
+  systems}, volume~2, pages V2--394. IEEE, 2010.
+
+\bibitem{05_hsiao2005temporal}
+Ko~Ming Hsiao, Geoff West, Svetha Venkatesh, and Mohan Kumar.
+\newblock Temporal data fusion in multisensor systems using dynamic time
+  warping.
+\newblock In {\em SENSORFUSION 2005: Workshop on Information Fusion and
+  Dissemination in Wireless Sensor Networks}, pages 1--9. IEEE, 2005.
 
 \end{thebibliography}
