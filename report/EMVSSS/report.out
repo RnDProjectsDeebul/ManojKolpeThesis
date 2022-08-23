@@ -20,57 +20,56 @@
 \BOOKMARK [0][-]{chapter.2}{State of the Art}{}% 20
 \BOOKMARK [1][-]{section.2.1}{Deep Learning}{chapter.2}% 21
 \BOOKMARK [1][-]{section.2.2}{Temporal Fusion}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.3}{Segmentation}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.4}{Semantic Segmentation}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.4.1}{Classical Semantic Segmentation}{section.2.4}% 25
-\BOOKMARK [2][-]{subsection.2.4.2}{Deep Learning based Semantic Segmentation}{section.2.4}% 26
-\BOOKMARK [1][-]{section.2.5}{Temporal Fusion in Semantic Segmentation}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.6}{Limitations of previous work}{chapter.2}% 28
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 29
-\BOOKMARK [1][-]{section.3.1}{Dataset}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.1.1}{ScanNet}{section.3.1}% 31
-\BOOKMARK [2][-]{subsection.3.1.2}{Virtual KITTI 2}{section.3.1}% 32
-\BOOKMARK [2][-]{subsection.3.1.3}{VIODE}{section.3.1}% 33
-\BOOKMARK [1][-]{section.3.2}{Data Collection and Preprocessing}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.3}{Experimental Design}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.1}{U-Net Vanilla model}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.2}{U-Net with Temporal Fusion}{section.3.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.3}{W-Net Vanilla model}{section.3.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.4}{W-Net with Temporal Fusion}{section.3.3}% 39
-\BOOKMARK [1][-]{section.3.4}{Training and Evaluation Pipeline}{chapter.3}% 40
-\BOOKMARK [1][-]{section.3.5}{Training Procedure}{chapter.3}% 41
-\BOOKMARK [1][-]{section.3.6}{Hardware Configuration}{chapter.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Evaluation and Experimental Result}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Evaluation Metric}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.1.1}{Pixel Accuracy}{section.4.1}% 45
-\BOOKMARK [2][-]{subsection.4.1.2}{Precision}{section.4.1}% 46
-\BOOKMARK [2][-]{subsection.4.1.3}{Recall}{section.4.1}% 47
-\BOOKMARK [2][-]{subsection.4.1.4}{ROC and AUC}{section.4.1}% 48
-\BOOKMARK [2][-]{subsection.4.1.5}{IOU}{section.4.1}% 49
-\BOOKMARK [1][-]{section.4.2}{RQ1: What are the works on state-of-the-art temporal fusion?}{chapter.4}% 50
-\BOOKMARK [2][-]{subsection.4.2.1}{Experiment1.1: U-Net and W-Net model with single sequence data}{section.4.2}% 51
-\BOOKMARK [2][-]{subsection.4.2.2}{Experiment1.2: U-Net and W-Net model with two sequence data}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.3}{Experiment1.3: U-Net and W-Net model with three sequence data}{section.4.2}% 53
-\BOOKMARK [2][-]{subsection.4.2.4}{Experiment1.4: U-Net and W-Net model with four sequence data}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.5}{Experiment1.5: U-Net and W-Net model with all sequence data}{section.4.2}% 55
-\BOOKMARK [1][-]{section.4.3}{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.3.1}{Experiment1.1: U-Net and W-Net model with single sequence data}{section.4.3}% 57
-\BOOKMARK [2][-]{subsection.4.3.2}{Experiment1.2: U-Net and W-Net model with two sequence data}{section.4.3}% 58
-\BOOKMARK [2][-]{subsection.4.3.3}{Experiment1.3: U-Net and W-Net model with three sequence data}{section.4.3}% 59
-\BOOKMARK [2][-]{subsection.4.3.4}{Experiment1.4: U-Net and W-Net model with four sequence data}{section.4.3}% 60
-\BOOKMARK [2][-]{subsection.4.3.5}{Experiment1.5: U-Net and W-Net model with all sequence data}{section.4.3}% 61
-\BOOKMARK [1][-]{section.4.4}{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.4.1}{Experiment1.1: U-Net vanilla model}{section.4.4}% 63
-\BOOKMARK [2][-]{subsection.4.4.2}{Experiment1.2: U-Net temporally fused gp model}{section.4.4}% 64
-\BOOKMARK [2][-]{subsection.4.4.3}{Experiment1.3: U-Net temporally fused lstm model}{section.4.4}% 65
-\BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 66
-\BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 67
-\BOOKMARK [1][-]{section.5.2}{Pipeline}{chapter.5}% 68
-\BOOKMARK [1][-]{section.5.3}{Deployment and Results}{chapter.5}% 69
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 70
-\BOOKMARK [1][-]{section.6.1}{Contributions}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.2}{Lessons learned}{chapter.6}% 72
-\BOOKMARK [1][-]{section.6.3}{Future work}{chapter.6}% 73
-\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 74
-\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 75
-\BOOKMARK [0][-]{appendix*.8}{References}{}% 76
+\BOOKMARK [1][-]{section.2.3}{Semantic Segmentation}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.3.1}{Classical Semantic Segmentation}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.2}{Deep Learning based Semantic Segmentation}{section.2.3}% 25
+\BOOKMARK [1][-]{section.2.4}{Temporal Fusion in Semantic Segmentation}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.5}{Limitations of previous work}{chapter.2}% 27
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Dataset}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.1.1}{ScanNet}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.2}{Virtual KITTI 2}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.3}{VIODE}{section.3.1}% 32
+\BOOKMARK [1][-]{section.3.2}{Data Collection and Preprocessing}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.3}{Experimental Design}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.1}{U-Net Vanilla model}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.2}{U-Net with Temporal Fusion}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.3}{W-Net Vanilla model}{section.3.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.4}{W-Net with Temporal Fusion}{section.3.3}% 38
+\BOOKMARK [1][-]{section.3.4}{Training and Evaluation Pipeline}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.5}{Training Procedure}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.6}{Hardware Configuration}{chapter.3}% 41
+\BOOKMARK [0][-]{chapter.4}{Evaluation and Experimental Result}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Evaluation Metric}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.1.1}{Pixel Accuracy}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.2}{Precision}{section.4.1}% 45
+\BOOKMARK [2][-]{subsection.4.1.3}{Recall}{section.4.1}% 46
+\BOOKMARK [2][-]{subsection.4.1.4}{ROC and AUC}{section.4.1}% 47
+\BOOKMARK [2][-]{subsection.4.1.5}{IOU}{section.4.1}% 48
+\BOOKMARK [1][-]{section.4.2}{RQ1: What are the works on state-of-the-art temporal fusion?}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.2.1}{Experiment1.1: U-Net and W-Net model with single sequence data}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.2}{Experiment1.2: U-Net and W-Net model with two sequence data}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.3}{Experiment1.3: U-Net and W-Net model with three sequence data}{section.4.2}% 52
+\BOOKMARK [2][-]{subsection.4.2.4}{Experiment1.4: U-Net and W-Net model with four sequence data}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.5}{Experiment1.5: U-Net and W-Net model with all sequence data}{section.4.2}% 54
+\BOOKMARK [1][-]{section.4.3}{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.3.1}{Experiment1.1: U-Net and W-Net model with single sequence data}{section.4.3}% 56
+\BOOKMARK [2][-]{subsection.4.3.2}{Experiment1.2: U-Net and W-Net model with two sequence data}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.3}{Experiment1.3: U-Net and W-Net model with three sequence data}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.4}{Experiment1.4: U-Net and W-Net model with four sequence data}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.5}{Experiment1.5: U-Net and W-Net model with all sequence data}{section.4.3}% 60
+\BOOKMARK [1][-]{section.4.4}{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.4.1}{Experiment1.1: U-Net vanilla model}{section.4.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.2}{Experiment1.2: U-Net temporally fused gp model}{section.4.4}% 63
+\BOOKMARK [2][-]{subsection.4.4.3}{Experiment1.3: U-Net temporally fused lstm model}{section.4.4}% 64
+\BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 65
+\BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.2}{Pipeline}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.3}{Deployment and Results}{chapter.5}% 68
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 69
+\BOOKMARK [1][-]{section.6.1}{Contributions}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.2}{Lessons learned}{chapter.6}% 71
+\BOOKMARK [1][-]{section.6.3}{Future work}{chapter.6}% 72
+\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 73
+\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 74
+\BOOKMARK [0][-]{appendix*.11}{References}{}% 75

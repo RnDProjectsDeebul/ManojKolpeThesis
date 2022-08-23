@@ -2,10 +2,27 @@
 
 \bibitem{35_mldl}
 Michael Middleton.
-\newblock {Deep Learning vs. Machine Learning — What’s the Difference?},
-  year = 2021, url =
-  {https://flatironschool.com/blog/deep-learning-vs-machine-learning/}, urldate
-  = {2022-07-28}.
+\newblock Deep learning vs. machine learning — what’s the difference?,
+  2021.
+
+\bibitem{55_WinNT}
+Your complete guide to image segmentation.
+\newblock
+  \url{https://www.telusinternational.com/articles/guide-to-image-segmentation#:~:text=Different%20types%20of%20image%20segmentation%20tasks,types%20of%20image%20segmentation%20tasks.}
+\newblock Accessed: 2022-08-22.
+
+\bibitem{60_minaee2021image}
+Shervin Minaee, Yuri~Y Boykov, Fatih Porikli, Antonio~J Plaza, Nasser
+  Kehtarnavaz, and Demetri Terzopoulos.
+\newblock Image segmentation using deep learning: A survey.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  2021.
+
+\bibitem{64_noh2015learning}
+Hyeonwoo Noh, Seunghoon Hong, and Bohyung Han.
+\newblock Learning deconvolution network for semantic segmentation.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 1520--1528, 2015.
 
 \bibitem{01_mandic2005data}
 Danilo~P Mandic, Dragan Obradovic, Anthony Kuh, T{\"u}lay Adali, Udo
@@ -230,6 +247,166 @@ Chen-Chiung Hsieh, Dung-Hua Liou, and David Lee.
   image.
 \newblock In {\em 2010 2nd international conference on signal processing
   systems}, volume~2, pages V2--394. IEEE, 2010.
+
+\bibitem{36_lecun2015deep}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+\newblock Deep learning.
+\newblock {\em nature}, 521(7553):436--444, 2015.
+
+\bibitem{37_farabet2012learning}
+Clement Farabet, Camille Couprie, Laurent Najman, and Yann LeCun.
+\newblock Learning hierarchical features for scene labeling.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  35(8):1915--1929, 2012.
+
+\bibitem{38_hinton2012deep}
+Geoffrey Hinton, Li~Deng, Dong Yu, George~E Dahl, Abdel-rahman Mohamed, Navdeep
+  Jaitly, Andrew Senior, Vincent Vanhoucke, Patrick Nguyen, Tara~N Sainath,
+  et~al.
+\newblock Deep neural networks for acoustic modeling in speech recognition: The
+  shared views of four research groups.
+\newblock {\em IEEE Signal processing magazine}, 29(6):82--97, 2012.
+
+\bibitem{39_patel2020machine}
+Lauv Patel, Tripti Shukla, Xiuzhen Huang, David~W Ussery, and Shanzhi Wang.
+\newblock Machine learning methods in drug discovery.
+\newblock {\em Molecules}, 25(22):5277, 2020.
+
+\bibitem{40_ciodaro2012online}
+T~Ciodaro, D~Deva, JM~De~Seixas, and D~Damazio.
+\newblock Online particle detection with neural networks based on topological
+  calorimetry information.
+\newblock In {\em Journal of physics: conference series}, volume 368, page
+  012030. IOP Publishing, 2012.
+
+\bibitem{41_zhang2021deep}
+Jinny~X Zhang, Boyan Yordanov, Alexander Gaunt, Michael~X Wang, Peng Dai,
+  Yuan-Jyue Chen, Kerou Zhang, John~Z Fang, Neil Dalchau, Jiaming Li, et~al.
+\newblock A deep learning model for predicting next-generation sequencing depth
+  from dna sequence.
+\newblock {\em Nature communications}, 12(1):1--10, 2021.
+
+\bibitem{42_hirschberg2015advances}
+Julia Hirschberg and Christopher~D Manning.
+\newblock Advances in natural language processing.
+\newblock {\em Science}, 349(6245):261--266, 2015.
+
+\bibitem{46_o2019deep}
+Niall O’Mahony, Sean Campbell, Anderson Carvalho, Suman Harapanahalli,
+  Gustavo~Velasco Hernandez, Lenka Krpalkova, Daniel Riordan, and Joseph Walsh.
+\newblock Deep learning vs. traditional computer vision.
+\newblock In {\em Science and information conference}, pages 128--144.
+  Springer, 2019.
+
+\bibitem{44_mohanty2016using}
+Sharada~P Mohanty, David~P Hughes, and Marcel Salath{\'e}.
+\newblock Using deep learning for image-based plant disease detection.
+\newblock {\em Frontiers in plant science}, 7:1419, 2016.
+
+\bibitem{45_han2021ecological}
+Zhongchun Han and Anfeng Xu.
+\newblock Ecological evolution path of smart education platform based on deep
+  learning and image detection.
+\newblock {\em Microprocessors and Microsystems}, 80:103343, 2021.
+
+\bibitem{43_srivastava2021comparative}
+Shrey Srivastava, Amit~Vishvas Divekar, Chandu Anilkumar, Ishika Naik, Ved
+  Kulkarni, and V~Pattabiraman.
+\newblock Comparative analysis of deep learning image detection algorithms.
+\newblock {\em Journal of Big Data}, 8(1):1--27, 2021.
+
+\bibitem{47_minaee2021image}
+Shervin Minaee, Yuri~Y Boykov, Fatih Porikli, Antonio~J Plaza, Nasser
+  Kehtarnavaz, and Demetri Terzopoulos.
+\newblock Image segmentation using deep learning: A survey.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  2021.
+
+\bibitem{48_jensen1999temporal}
+Christian~S Jensen and Richard~T Snodgrass.
+\newblock Temporal data management.
+\newblock {\em IEEE Transactions on knowledge and data engineering},
+  11(1):36--44, 1999.
+
+\bibitem{49_atluri2018spatio}
+Gowtham Atluri, Anuj Karpatne, and Vipin Kumar.
+\newblock Spatio-temporal data mining: A survey of problems and methods.
+\newblock {\em ACM Computing Surveys (CSUR)}, 51(4):1--41, 2018.
+
+\bibitem{50_lim2021temporal}
+Bryan Lim, Sercan~{\"O} Ar{\i}k, Nicolas Loeff, and Tomas Pfister.
+\newblock Temporal fusion transformers for interpretable multi-horizon time
+  series forecasting.
+\newblock {\em International Journal of Forecasting}, 37(4):1748--1764, 2021.
+
+\bibitem{51_meng2021adafuse}
+Yue Meng, Rameswar Panda, Chung-Ching Lin, Prasanna Sattigeri, Leonid
+  Karlinsky, Kate Saenko, Aude Oliva, and Rogerio Feris.
+\newblock Adafuse: Adaptive temporal fusion network for efficient action
+  recognition.
+\newblock {\em arXiv preprint arXiv:2102.05775}, 2021.
+
+\bibitem{52_hou2019multi}
+Yuxin Hou, Juho Kannala, and Arno Solin.
+\newblock Multi-view stereo by temporal nonparametric fusion.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 2651--2660, 2019.
+
+\bibitem{53_duzceker2021deepvideomvs}
+Arda Duzceker, Silvano Galliani, Christoph Vogel, Pablo Speciale, Mihai
+  Dusmanu, and Marc Pollefeys.
+\newblock Deepvideomvs: Multi-view stereo on video with recurrent
+  spatio-temporal fusion.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 15324--15333, 2021.
+
+\bibitem{54_zhang2021multiple}
+Kai Zhang, Yifan Sun, Rui Wang, Haichang Li, and Xiaohui Hu.
+\newblock Multiple fusion adaptation: A strong framework for unsupervised
+  semantic segmentation adaptation.
+\newblock {\em arXiv preprint arXiv:2112.00295}, 2021.
+
+\bibitem{56_otsu1979threshold}
+Nobuyuki Otsu.
+\newblock A threshold selection method from gray-level histograms.
+\newblock {\em IEEE transactions on systems, man, and cybernetics},
+  9(1):62--66, 1979.
+
+\bibitem{57_otsu1979threshold}
+Nobuyuki Otsu.
+\newblock A threshold selection method from gray-level histograms.
+\newblock {\em IEEE transactions on systems, man, and cybernetics},
+  9(1):62--66, 1979.
+
+\bibitem{58_boykov2001fast}
+Yuri Boykov, Olga Veksler, and Ramin Zabih.
+\newblock Fast approximate energy minimization via graph cuts.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  23(11):1222--1239, 2001.
+
+\bibitem{59_starck2005image}
+J-L Starck, Michael Elad, and David~L Donoho.
+\newblock Image decomposition via the combination of sparse representations and
+  a variational approach.
+\newblock {\em IEEE transactions on image processing}, 14(10):1570--1582, 2005.
+
+\bibitem{61_chen2017rethinking}
+Liang-Chieh Chen, George Papandreou, Florian Schroff, and Hartwig Adam.
+\newblock Rethinking atrous convolution for semantic image segmentation.
+\newblock {\em arXiv preprint arXiv:1706.05587}, 2017.
+
+\bibitem{62_badrinarayanan2017segnet}
+Vijay Badrinarayanan, Alex Kendall, and Roberto Cipolla.
+\newblock Segnet: A deep convolutional encoder-decoder architecture for image
+  segmentation.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  39(12):2481--2495, 2017.
+
+\bibitem{63_goodfellow2014generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
+  Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial nets.
+\newblock {\em Advances in neural information processing systems}, 27, 2014.
 
 \bibitem{05_hsiao2005temporal}
 Ko~Ming Hsiao, Geoff West, Svetha Venkatesh, and Mohan Kumar.

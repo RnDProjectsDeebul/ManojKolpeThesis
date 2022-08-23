@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  31 JUL 2022 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  23 AUG 2022 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,7 +679,7 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Logo-HBRS-cyan.png, id=309, 1965.3425pt x 353.32pt>
+<images/Logo-HBRS-cyan.png, id=305, 1965.3425pt x 353.32pt>
 File: images/Logo-HBRS-cyan.png Graphic file (type png)
 <use images/Logo-HBRS-cyan.png>
 Package pdftex.def Info: images/Logo-HBRS-cyan.png  used on input line 59.
@@ -725,7 +725,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<images/b-it.pdf, id=310, 1949.2825pt x 516.93124pt>
+<images/b-it.pdf, id=306, 1949.2825pt x 516.93124pt>
 File: images/b-it.pdf Graphic file (type pdf)
 <use images/b-it.pdf>
 Package pdftex.def Info: images/b-it.pdf  used on input line 59.
@@ -777,7 +777,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] (./chapters/ch01_introduction.tex
 Chapter 1.
-<images/df.png, id=484, 395.4775pt x 255.95625pt>
+<images/df.png, id=491, 395.4775pt x 255.95625pt>
 File: images/df.png Graphic file (type png)
 <use images/df.png>
 Package pdftex.def Info: images/df.png  used on input line 11.
@@ -790,61 +790,98 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5])
 (./chapters/ch02_stateoftheart.tex [6]
 Chapter 2.
-<images/mldl.png, id=592, 739.76375pt x 484.81125pt>
+<images/mldl.png, id=599, 739.76375pt x 484.81125pt>
 File: images/mldl.png Graphic file (type png)
 <use images/mldl.png>
 Package pdftex.def Info: images/mldl.png  used on input line 15.
 (pdftex.def)             Requested size: 284.52756pt x 186.46426pt.
 [7
 
- <./images/mldl.png>]
+ <./images/mldl.png>] [8]
+<images/ss.jpg, id=650, 835.12pt x 591.20876pt>
+File: images/ss.jpg Graphic file (type jpg)
+<use images/ss.jpg>
+Package pdftex.def Info: images/ss.jpg  used on input line 49.
+(pdftex.def)             Requested size: 341.43306pt x 241.71155pt.
 
-LaTeX Warning: Citation `art1' on page 8 undefined on input line 30.
 
-) (./chapters/ch03_methodology.tex [8]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10 <./images/ss.jpg>]
+<images/en_de.png, id=681, 948.54375pt x 203.76125pt>
+File: images/en_de.png Graphic file (type png)
+<use images/en_de.png>
+Package pdftex.def Info: images/en_de.png  used on input line 79.
+(pdftex.def)             Requested size: 398.33858pt x 85.56981pt.
+<images/general_seg.png, id=685, 1386.17876pt x 404.51125pt>
+File: images/general_seg.png Graphic file (type png)
+<use images/general_seg.png>
+Package pdftex.def Info: images/general_seg.png  used on input line 88.
+(pdftex.def)             Requested size: 398.33858pt x 116.2436pt.
+ [11 <./images/en_de.png> <./images/general_seg.png>]
+
+LaTeX Warning: Citation `art1' on page 12 undefined on input line 99.
+
+) (./chapters/ch03_methodology.tex [12]
 Chapter 3.
-) (./chapters/ch05_evaluation_and_result.tex [9
+) (./chapters/ch05_evaluation_and_result.tex [13
 
-] [10
+] [14
 
 ]
 Chapter 4.
 ) (./chapters/ch06_android_deployment.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+ [15]
 Overfull \vbox (180.96979pt too high) has occurred while \output is active []
 
 
-[12]
+[16]
 Chapter 5.
-) (./chapters/ch07_conclusion.tex [13
+) (./chapters/ch07_conclusion.tex [17
 
-] [14
+] [18
 
 ]
 Chapter 6.
-) (./chapters/appendix.tex [15] [16
+) (./chapters/appendix.tex [19] [20
 
 ]
 Appendix A.
-[17] [18
+[21] [22
 
 ]
 Appendix B.
-) [19] [20
+) [23] [24
 
-] (./report.bbl [21
+] (./report.bbl
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+11.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-] [22] [23])
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+\OT1/lmtt/m/n/10 guide-[]to-[]image-[]segmentation# : [] : text = Different % 2
+0types % 20of % 20image % 20segmentation %
+ []
+
+[25
+
+] [26] [27] [28] [29])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
- [24]
+ [30]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 52C9B43555A1E0C105A0250701370262;5811.
+(rerunfilecheck)             Checksum: 036736064FAD581F9F4D5A7FE3B22B7E;5753.
 
 
 LaTeX Warning: There were undefined references.
@@ -852,23 +889,27 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 13435 strings out of 483183
- 211381 string characters out of 5966292
+ 13582 strings out of 483183
+ 214052 string characters out of 5966292
  668455 words of memory out of 5000000
- 27886 multiletter control sequences out of 15000+600000
- 588079 words of font info for 107 fonts, out of 8000000 for 9000
+ 27972 multiletter control sequences out of 15000+600000
+ 589318 words of font info for 116 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,51p,1810b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,51p,1810b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
-Output written on report.pdf (42 pages, 385801 bytes).
+ips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/
+lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on report.pdf (48 pages, 867243 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 674 compressed objects within 7 object streams
- 160 named destinations out of 1000 (max. 500000)
- 14965 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 870 PDF objects out of 1000 (max. 8388607)
+ 785 compressed objects within 8 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 15484 words of extra memory for PDF output out of 17280 (max. 10000000)
 

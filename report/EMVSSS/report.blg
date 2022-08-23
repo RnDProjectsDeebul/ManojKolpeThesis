@@ -5,51 +5,47 @@ The style file: unsrt.bst
 Database file #1: references.bib
 Warning--entry type for "35_mldl" isn't style-file defined
 --line 309 of file references.bib
-I was expecting a `,' or a `}'---line 317 of file references.bib
- : 
- : @Comment{jabref-meta: databaseType:bibtex;}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "art1"
-You've used 36 entries,
+Warning--can't use both volume and number fields in 40_ciodaro2012online
+You've used 65 entries,
             1791 wiz_defined-function locations,
-            639 strings with 11152 characters,
-and the built_in function-call counts, 11585 in all, are:
-= -- 1050
-> -- 550
-< -- 23
-+ -- 196
-- -- 160
-* -- 742
-:= -- 1666
-add.period$ -- 117
-call.type$ -- 36
-change.case$ -- 35
+            784 strings with 16219 characters,
+and the built_in function-call counts, 19360 in all, are:
+= -- 1720
+> -- 989
+< -- 29
++ -- 353
+- -- 288
+* -- 1332
+:= -- 2896
+add.period$ -- 206
+call.type$ -- 65
+change.case$ -- 64
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 565
-empty$ -- 1079
-format.name$ -- 160
-if$ -- 2719
+cite$ -- 66
+duplicate$ -- 888
+empty$ -- 1769
+format.name$ -- 288
+if$ -- 4427
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 36
-newline$ -- 182
-num.names$ -- 36
-pop$ -- 160
+int.to.str$ -- 65
+missing$ -- 64
+newline$ -- 327
+num.names$ -- 64
+pop$ -- 232
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 366
+skip$ -- 533
 stack$ -- 0
-substring$ -- 817
-swap$ -- 246
-text.length$ -- 23
+substring$ -- 1360
+swap$ -- 339
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 110
-width$ -- 38
-write$ -- 400
-(There was 1 error message)
+warning$ -- 1
+while$ -- 182
+width$ -- 67
+write$ -- 716
+(There were 3 warnings)
