@@ -5,6 +5,12 @@ Michael Middleton.
 \newblock Deep learning vs. machine learning — what’s the difference?,
   2021.
 
+\bibitem{52_hou2019multi}
+Yuxin Hou, Juho Kannala, and Arno Solin.
+\newblock Multi-view stereo by temporal nonparametric fusion.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 2651--2660, 2019.
+
 \bibitem{55_WinNT}
 Your complete guide to image segmentation.
 \newblock
@@ -23,6 +29,30 @@ Hyeonwoo Noh, Seunghoon Hong, and Bohyung Han.
 \newblock Learning deconvolution network for semantic segmentation.
 \newblock In {\em Proceedings of the IEEE international conference on computer
   vision}, pages 1520--1528, 2015.
+
+\bibitem{62_badrinarayanan2017segnet}
+Vijay Badrinarayanan, Alex Kendall, and Roberto Cipolla.
+\newblock Segnet: A deep convolutional encoder-decoder architecture for image
+  segmentation.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  39(12):2481--2495, 2017.
+
+\bibitem{70_ronneberger2015u}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In {\em International Conference on Medical image computing and
+  computer-assisted intervention}, pages 234--241. Springer, 2015.
+
+\bibitem{78_hu2020temporally}
+Ping Hu, Fabian Caba, Oliver Wang, Zhe Lin, Stan Sclaroff, and Federico
+  Perazzi.
+\newblock Temporally distributed networks for fast video semantic segmentation.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 8818--8827, 2020.
+
+\bibitem{82_iou}
+Adrian Rosebrock.
+\newblock Intersection over union (iou) for object detection, 2016.
 
 \bibitem{01_mandic2005data}
 Danilo~P Mandic, Dragan Obradovic, Anthony Kuh, T{\"u}lay Adali, Udo
@@ -346,12 +376,6 @@ Yue Meng, Rameswar Panda, Chung-Ching Lin, Prasanna Sattigeri, Leonid
   recognition.
 \newblock {\em arXiv preprint arXiv:2102.05775}, 2021.
 
-\bibitem{52_hou2019multi}
-Yuxin Hou, Juho Kannala, and Arno Solin.
-\newblock Multi-view stereo by temporal nonparametric fusion.
-\newblock In {\em Proceedings of the IEEE/CVF International Conference on
-  Computer Vision}, pages 2651--2660, 2019.
-
 \bibitem{53_duzceker2021deepvideomvs}
 Arda Duzceker, Silvano Galliani, Christoph Vogel, Pablo Speciale, Mihai
   Dusmanu, and Marc Pollefeys.
@@ -395,18 +419,113 @@ Liang-Chieh Chen, George Papandreou, Florian Schroff, and Hartwig Adam.
 \newblock Rethinking atrous convolution for semantic image segmentation.
 \newblock {\em arXiv preprint arXiv:1706.05587}, 2017.
 
-\bibitem{62_badrinarayanan2017segnet}
-Vijay Badrinarayanan, Alex Kendall, and Roberto Cipolla.
-\newblock Segnet: A deep convolutional encoder-decoder architecture for image
-  segmentation.
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  39(12):2481--2495, 2017.
-
 \bibitem{63_goodfellow2014generative}
 Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
   Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
 \newblock Generative adversarial nets.
 \newblock {\em Advances in neural information processing systems}, 27, 2014.
+
+\bibitem{65_kendall2015bayesian}
+Alex Kendall, Vijay Badrinarayanan, and Roberto Cipolla.
+\newblock Bayesian segnet: Model uncertainty in deep convolutional
+  encoder-decoder architectures for scene understanding.
+\newblock {\em arXiv preprint arXiv:1511.02680}, 2015.
+
+\bibitem{66_sun2019high}
+Ke~Sun, Yang Zhao, Borui Jiang, Tianheng Cheng, Bin Xiao, Dong Liu, Yadong Mu,
+  Xinggang Wang, Wenyu Liu, and Jingdong Wang.
+\newblock High-resolution representations for labeling pixels and regions.
+\newblock {\em arXiv preprint arXiv:1904.04514}, 2019.
+
+\bibitem{67_fu2019stacked}
+Jun Fu, Jing Liu, Yuhang Wang, Jin Zhou, Changyong Wang, and Hanqing Lu.
+\newblock Stacked deconvolutional network for semantic segmentation.
+\newblock {\em IEEE Transactions on Image Processing}, 2019.
+
+\bibitem{68_hu2018learning}
+Ronghang Hu, Piotr Doll{\'a}r, Kaiming He, Trevor Darrell, and Ross Girshick.
+\newblock Learning to segment every thing.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 4233--4241, 2018.
+
+\bibitem{69_xia2017w}
+Xide Xia and Brian Kulis.
+\newblock W-net: A deep model for fully unsupervised image segmentation.
+\newblock {\em arXiv preprint arXiv:1711.08506}, 2017.
+
+\bibitem{71_milletari2016v}
+Fausto Milletari, Nassir Navab, and Seyed-Ahmad Ahmadi.
+\newblock V-net: Fully convolutional neural networks for volumetric medical
+  image segmentation.
+\newblock In {\em 2016 fourth international conference on 3D vision (3DV)},
+  pages 565--571. IEEE, 2016.
+
+\bibitem{72_jin2017video}
+Xiaojie Jin, Xin Li, Huaxin Xiao, Xiaohui Shen, Zhe Lin, Jimei Yang, Yunpeng
+  Chen, Jian Dong, Luoqi Liu, Zequn Jie, et~al.
+\newblock Video scene parsing with predictive feature learning.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 5580--5588, 2017.
+
+\bibitem{73_gadde2017semantic}
+Raghudeep Gadde, Varun Jampani, and Peter~V Gehler.
+\newblock Semantic video cnns through representation warping.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 4453--4462, 2017.
+
+\bibitem{74_jin2017video}
+Xiaojie Jin, Xin Li, Huaxin Xiao, Xiaohui Shen, Zhe Lin, Jimei Yang, Yunpeng
+  Chen, Jian Dong, Luoqi Liu, Zequn Jie, et~al.
+\newblock Video scene parsing with predictive feature learning.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 5580--5588, 2017.
+
+\bibitem{75_nilsson2018semantic}
+David Nilsson and Cristian Sminchisescu.
+\newblock Semantic video segmentation by gated recurrent flow propagation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 6819--6828, 2018.
+
+\bibitem{76_jain2019accel}
+Samvit Jain, Xin Wang, and Joseph~E Gonzalez.
+\newblock Accel: A corrective fusion network for efficient semantic
+  segmentation on video.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 8866--8875, 2019.
+
+\bibitem{77_mahasseni2017budget}
+Behrooz Mahasseni, Sinisa Todorovic, and Alan Fern.
+\newblock Budget-aware deep semantic video segmentation.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1029--1038, 2017.
+
+\bibitem{79_dai2017scannet}
+Angela Dai, Angel~X. Chang, Manolis Savva, Maciej Halber, Thomas Funkhouser,
+  and Matthias Nie{\ss}ner.
+\newblock Scannet: Richly-annotated 3d reconstructions of indoor scenes.
+\newblock In {\em Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  2017.
+
+\bibitem{80_cabon2020vkitti2}
+Yohann Cabon, Naila Murray, and Martin Humenberger.
+\newblock Virtual kitti 2, 2020.
+
+\bibitem{81_minodaRAL2021}
+Koji Minoda, Fabian Schilling, Valentin W\"{u}est, Dario Floreano, and Takehisa
+  Yairi.
+\newblock {VIODE}: A simulated dataset to address the challenges of
+  visual-inertial odometry in dynamic environments.
+\newblock {\em IEEE Robotics and Automation Letters}, 6(2):1343--1350, 2021.
+
+\bibitem{84_ulku2022survey}
+Irem Ulku and Erdem Akag{\"u}nd{\"u}z.
+\newblock A survey on deep learning-based architectures for semantic
+  segmentation on 2d images.
+\newblock {\em Applied Artificial Intelligence}, pages 1--45, 2022.
+
+\bibitem{83_iou}
+JEREMY JORDAN.
+\newblock Evaluating image segmentation models, 2018.
 
 \bibitem{05_hsiao2005temporal}
 Ko~Ming Hsiao, Geoff West, Svetha Venkatesh, and Mohan Kumar.

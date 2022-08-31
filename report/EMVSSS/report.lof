@@ -2,11 +2,28 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Data fusion categories based on timestamp\relax }}{1}{figure.caption.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Deep learning in the artificial intelligence domain. Courtesy of \cite {35_mldl}\relax }}{7}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Semantic and Instance segmentation example. Courtesy of \cite {55_WinNT}\relax }}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Simple encoder-decoder architecture. Courtesy of \cite {60_minaee2021image}\relax }}{11}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Simple encoder-decoder architecture. Courtesy of \cite {64_noh2015learning}\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Mulit view stereo architecture for depth estimation. Courtesy of \cite {52_hou2019multi}\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Semantic and Instance segmentation example. Courtesy of \cite {55_WinNT}\relax }}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Simple encoder-decoder architecture. Courtesy of \cite {60_minaee2021image}\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Simple encoder-decoder architecture. Courtesy of \cite {64_noh2015learning}\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces SegNet architecture. Courtesy of \cite {62_badrinarayanan2017segnet}\relax }}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Unet architecture. Courtesy of \cite {70_ronneberger2015u}\relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces TDNet. Courtesy of \cite {78_hu2020temporally}\relax }}{14}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces IoU. Courtesy of \cite {82_iou}\relax }}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Per class pixel distribution of the ground truth pixel class label\relax }}{21}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Per class pixel distribution of the predicted pixel class label\relax }}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ordered set of images\relax }}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Distance matrix depicted as heatmap\relax }}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Kernel matrix depicted as heatmap\relax }}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ordered set of images\relax }}{26}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Distance matrix depicted as heatmap\relax }}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Kernel matrix depicted as heatmap\relax }}{28}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Per class pixel distribution of the ground truth pixel class label for gp model\relax }}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Per class pixel distribution of the ground truth pixel class label for lstm model\relax }}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{31}{figure.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

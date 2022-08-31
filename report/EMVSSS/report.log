@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  23 AUG 2022 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  30 AUG 2022 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -18,6 +18,23 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen134
+\ar@mcellbox=\box45
+\extrarowheight=\dimen135
+\NC@list=\toks14
+\extratabsurround=\skip47
+\backup@length=\skip48
+\ar@cellbox=\box46
+)
+\everycr=\toks15
+\minrowclearance=\skip49
+)
+\rownum=\count167
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -36,18 +53,18 @@ Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen134
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@figure=\count175
+\c@table=\count176
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\bibindent=\dimen136
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -59,7 +76,7 @@ Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -72,12 +89,12 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -85,51 +102,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen137
+\@emptytoks=\toks17
+\ex@=\dimen139
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen138
+\pmbraise@=\dimen140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count176
+\inf@bad=\count177
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count177
-\leftroot@=\count178
+\uproot@=\count178
+\leftroot@=\count179
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count179
-\DOTSCASE@=\count180
+\classnum@=\count180
+\DOTSCASE@=\count181
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen139
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count181
-\c@MaxMatrixCols=\count182
+\macc@depth=\count182
+\c@MaxMatrixCols=\count183
 \dotsspace@=\muskip16
-\c@parentequation=\count183
-\dspbrk@lvl=\count184
-\tag@help=\toks16
-\row@=\count185
-\column@=\count186
-\maxfields@=\count187
-\andhelp@=\toks17
-\eqnshift@=\dimen140
-\alignsep@=\dimen141
-\tagshift@=\dimen142
-\tagwidth@=\dimen143
-\totwidth@=\dimen144
-\lineht@=\dimen145
-\@envbody=\toks18
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
+\c@parentequation=\count184
+\dspbrk@lvl=\count185
+\tag@help=\toks18
+\row@=\count186
+\column@=\count187
+\maxfields@=\count188
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -146,33 +163,33 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/theorem.sty
 Package: theorem 2014/10/28 v2.2c Theorem extension package (FMi)
-\theorem@style=\toks20
-\theorem@bodyfont=\toks21
-\theorempreskipamount=\skip52
-\theorempostskipamount=\skip53
+\theorem@style=\toks22
+\theorem@bodyfont=\toks23
+\theorempreskipamount=\skip55
+\theorempostskipamount=\skip56
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/thp.sty
 File: thp.sty 2014/10/28 v2.2c Theorem extension package (FMi)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count188
-\lst@gtempboxa=\box47
-\lst@token=\toks22
-\lst@length=\count189
-\lst@currlwidth=\dimen146
-\lst@column=\count190
-\lst@pos=\count191
-\lst@lostspace=\dimen147
-\lst@width=\dimen148
-\lst@newlines=\count192
-\lst@lineno=\count193
-\lst@maxwidth=\dimen149
+\lst@mode=\count189
+\lst@gtempboxa=\box49
+\lst@token=\toks24
+\lst@length=\count190
+\lst@currlwidth=\dimen148
+\lst@column=\count191
+\lst@pos=\count192
+\lst@lostspace=\dimen149
+\lst@width=\dimen150
+\lst@newlines=\count193
+\lst@lineno=\count194
+\lst@maxwidth=\dimen151
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count194
-\lst@skipnumbers=\count195
-\lst@framebox=\box48
+\c@lstnumber=\count195
+\lst@skipnumbers=\count196
+\lst@framebox=\box50
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
@@ -181,39 +198,39 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen150
-\lightrulewidth=\dimen151
-\cmidrulewidth=\dimen152
-\belowrulesep=\dimen153
-\belowbottomsep=\dimen154
-\aboverulesep=\dimen155
-\abovetopsep=\dimen156
-\cmidrulesep=\dimen157
-\cmidrulekern=\dimen158
-\defaultaddspace=\dimen159
-\@cmidla=\count196
-\@cmidlb=\count197
-\@aboverulesep=\dimen160
-\@belowrulesep=\dimen161
-\@thisruleclass=\count198
-\@lastruleclass=\count199
-\@thisrulewidth=\dimen162
+\heavyrulewidth=\dimen152
+\lightrulewidth=\dimen153
+\cmidrulewidth=\dimen154
+\belowrulesep=\dimen155
+\belowbottomsep=\dimen156
+\aboverulesep=\dimen157
+\abovetopsep=\dimen158
+\cmidrulesep=\dimen159
+\cmidrulekern=\dimen160
+\defaultaddspace=\dimen161
+\@cmidla=\count197
+\@cmidlb=\count198
+\@aboverulesep=\dimen162
+\@belowrulesep=\dimen163
+\@thisruleclass=\count199
+\@lastruleclass=\count266
+\@thisrulewidth=\dimen164
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks23
-\MT@count=\count266
+\MT@toks=\toks25
+\MT@count=\count267
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen163
+\MT@outer@kern=\dimen165
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count267
+\MT@listname@count=\count268
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 914.
 LaTeX Info: Redefining \lslig on input line 914.
-\MT@outer@space=\skip54
+\MT@outer@space=\skip57
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -222,9 +239,9 @@ File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count268
-\c@@ppsavesec=\count269
-\c@@ppsaveapp=\count270
+\c@@pps=\count269
+\c@@ppsavesec=\count270
+\c@@ppsaveapp=\count271
 )
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -244,18 +261,18 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-\Gm@cnth=\count271
-\Gm@cntv=\count272
-\c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen164
-\Gm@wd@mp=\dimen165
-\Gm@odd@mp=\dimen166
-\Gm@even@mp=\dimen167
-\Gm@layoutwidth=\dimen168
-\Gm@layoutheight=\dimen169
-\Gm@layouthoffset=\dimen170
-\Gm@layoutvoffset=\dimen171
-\Gm@dimlist=\toks24
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen166
+\Gm@wd@mp=\dimen167
+\Gm@odd@mp=\dimen168
+\Gm@even@mp=\dimen169
+\Gm@layoutwidth=\dimen170
+\Gm@layoutheight=\dimen171
+\Gm@layouthoffset=\dimen172
+\Gm@layoutvoffset=\dimen173
+\Gm@dimlist=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
@@ -266,36 +283,36 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen172
-\captionmargin@=\dimen173
-\captionwidth=\dimen174
-\caption@tempdima=\dimen175
-\caption@indent=\dimen176
-\caption@parindent=\dimen177
-\caption@hangindent=\dimen178
+\captionmargin=\dimen174
+\captionmargin@=\dimen175
+\captionwidth=\dimen176
+\caption@tempdima=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count274
-\c@continuedfloat=\count275
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
 Package caption Info: listings package is loaded.
 )
-\c@subfigure=\count276
-\c@subtable=\count277
+\c@subfigure=\count277
+\c@subtable=\count278
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip55
-\multirow@cntb=\count278
-\multirow@dima=\skip56
-\bigstrutjot=\dimen179
+\multirow@colwidth=\skip58
+\multirow@cntb=\count279
+\multirow@dima=\skip59
+\bigstrutjot=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count279
-\rotFPtop=\skip57
-\rotFPbot=\skip58
-\rot@float@box=\box49
-\rot@mess@toks=\toks25
+\c@r@tfl@t=\count280
+\rotFPtop=\skip60
+\rotFPbot=\skip61
+\rot@float@box=\box51
+\rot@mess@toks=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
@@ -335,9 +352,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen180
-\Hy@linkcounter=\count280
-\Hy@pagecounter=\count281
+\@linkdim=\dimen182
+\Hy@linkcounter=\count281
+\Hy@pagecounter=\count282
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -350,8 +367,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count282
-\pdfmajorversion=\count283
+\Hy@SavedSpaceFactor=\count283
+\pdfmajorversion=\count284
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -359,14 +376,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count284
+\c@Hy@tempcnt=\count285
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen181
+\XeTeXLinkMargin=\dimen183
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -375,9 +392,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count285
-\Field@Width=\dimen182
-\Fld@charsize=\dimen183
+\Fld@menulength=\count286
+\Field@Width=\dimen184
+\Fld@charsize=\dimen185
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -391,9 +408,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count286
-\c@Item=\count287
-\c@Hfootnote=\count288
+\Hy@abspage=\count287
+\c@Item=\count288
+\c@Hfootnote=\count289
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -404,8 +421,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count289
-\c@bookmark@seq@number=\count290
+\Fld@listcount=\count290
+\c@bookmark@seq@number=\count291
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -416,13 +433,13 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip59
+\Hy@SectionHShift=\skip62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip60
-\thanksmargin=\skip61
-\droptitle=\skip62
+\thanksmarkwidth=\skip63
+\thanksmargin=\skip64
+\droptitle=\skip65
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -437,15 +454,15 @@ Package: expl3 2020-02-14 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count291
-\l__pdf_internal_box=\box50
+\l__kernel_color_stack_int=\count292
+\l__pdf_internal_box=\box52
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count292
-\g__xparse_grabber_int=\count293
-\l__xparse_m_args_int=\count294
-\l__xparse_v_nesting_int=\count295
+\l__xparse_current_arg_int=\count293
+\g__xparse_grabber_int=\count294
+\l__xparse_m_args_int=\count295
+\l__xparse_v_nesting_int=\count296
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -489,28 +506,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box51
-\beforetitleunit=\skip63
-\aftertitleunit=\skip64
-\ttl@plus=\dimen184
-\ttl@minus=\dimen185
-\ttl@toksa=\toks26
-\titlewidth=\dimen186
-\titlewidthlast=\dimen187
-\titlewidthfirst=\dimen188
+\ttl@box=\box53
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen186
+\ttl@minus=\dimen187
+\ttl@toksa=\toks28
+\titlewidth=\dimen188
+\titlewidthlast=\dimen189
+\titlewidthfirst=\dimen190
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip65
-\f@nch@O@elh=\skip66
-\f@nch@O@erh=\skip67
-\f@nch@O@olh=\skip68
-\f@nch@O@orh=\skip69
-\f@nch@O@elf=\skip70
-\f@nch@O@erf=\skip71
-\f@nch@O@olf=\skip72
-\f@nch@O@orf=\skip73
+\f@nch@headwidth=\skip68
+\f@nch@O@elh=\skip69
+\f@nch@O@erh=\skip70
+\f@nch@O@olh=\skip71
+\f@nch@O@orh=\skip72
+\f@nch@O@elf=\skip73
+\f@nch@O@erf=\skip74
+\f@nch@O@olf=\skip75
+\f@nch@O@orf=\skip76
 ))
 
 LaTeX Warning: Unused global option(s):
@@ -542,17 +559,17 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count296
-\scratchdimen=\dimen189
-\scratchbox=\box52
-\nofMPsegments=\count297
-\nofMParguments=\count298
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count299
-\MPscratchDim=\dimen190
-\MPnumerator=\count300
-\makeMPintoPDFobject=\count301
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count297
+\scratchdimen=\dimen191
+\scratchbox=\box54
+\nofMPsegments=\count298
+\nofMParguments=\count299
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen192
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
+\everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -562,7 +579,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count302
+\c@lstlisting=\count303
 LaTeX Info: Redefining \microtypecontext on input line 55.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -617,7 +634,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box53
+\AtBeginShipoutBox=\box55
 Package hyperref Info: Link coloring OFF on input line 55.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -628,7 +645,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count303
+\c@section@level=\count304
 )
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
@@ -679,7 +696,7 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Logo-HBRS-cyan.png, id=305, 1965.3425pt x 353.32pt>
+<images/Logo-HBRS-cyan.png, id=309, 1965.3425pt x 353.32pt>
 File: images/Logo-HBRS-cyan.png Graphic file (type png)
 <use images/Logo-HBRS-cyan.png>
 Package pdftex.def Info: images/Logo-HBRS-cyan.png  used on input line 59.
@@ -725,7 +742,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<images/b-it.pdf, id=306, 1949.2825pt x 516.93124pt>
+<images/b-it.pdf, id=310, 1949.2825pt x 516.93124pt>
 File: images/b-it.pdf Graphic file (type pdf)
 <use images/b-it.pdf>
 Package pdftex.def Info: images/b-it.pdf  used on input line 59.
@@ -777,7 +794,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] (./chapters/ch01_introduction.tex
 Chapter 1.
-<images/df.png, id=491, 395.4775pt x 255.95625pt>
+<images/df.png, id=541, 395.4775pt x 255.95625pt>
 File: images/df.png Graphic file (type png)
 <use images/df.png>
 Package pdftex.def Info: images/df.png  used on input line 11.
@@ -790,7 +807,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5])
 (./chapters/ch02_stateoftheart.tex [6]
 Chapter 2.
-<images/mldl.png, id=599, 739.76375pt x 484.81125pt>
+<images/mldl.png, id=648, 739.76375pt x 484.81125pt>
 File: images/mldl.png Graphic file (type png)
 <use images/mldl.png>
 Package pdftex.def Info: images/mldl.png  used on input line 15.
@@ -798,66 +815,189 @@ Package pdftex.def Info: images/mldl.png  used on input line 15.
 [7
 
  <./images/mldl.png>] [8]
-<images/ss.jpg, id=650, 835.12pt x 591.20876pt>
+<images/MVS.png, id=699, 590.205pt x 616.3025pt>
+File: images/MVS.png Graphic file (type png)
+<use images/MVS.png>
+Package pdftex.def Info: images/MVS.png  used on input line 40.
+(pdftex.def)             Requested size: 170.71652pt x 178.26234pt.
+ [9 <./images/MVS.png>]
+<images/ss.jpg, id=711, 835.12pt x 591.20876pt>
 File: images/ss.jpg Graphic file (type jpg)
 <use images/ss.jpg>
-Package pdftex.def Info: images/ss.jpg  used on input line 49.
+Package pdftex.def Info: images/ss.jpg  used on input line 56.
 (pdftex.def)             Requested size: 341.43306pt x 241.71155pt.
+ [10 <./images/ss.jpg>]
+<images/en_de.png, id=734, 948.54375pt x 203.76125pt>
+File: images/en_de.png Graphic file (type png)
+<use images/en_de.png>
+Package pdftex.def Info: images/en_de.png  used on input line 86.
+(pdftex.def)             Requested size: 398.33858pt x 85.56981pt.
+<images/general_seg.png, id=738, 1386.17876pt x 404.51125pt>
+File: images/general_seg.png Graphic file (type png)
+<use images/general_seg.png>
+Package pdftex.def Info: images/general_seg.png  used on input line 95.
+(pdftex.def)             Requested size: 398.33858pt x 116.2436pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10 <./images/ss.jpg>]
-<images/en_de.png, id=681, 948.54375pt x 203.76125pt>
-File: images/en_de.png Graphic file (type png)
-<use images/en_de.png>
-Package pdftex.def Info: images/en_de.png  used on input line 79.
-(pdftex.def)             Requested size: 398.33858pt x 85.56981pt.
-<images/general_seg.png, id=685, 1386.17876pt x 404.51125pt>
-File: images/general_seg.png Graphic file (type png)
-<use images/general_seg.png>
-Package pdftex.def Info: images/general_seg.png  used on input line 88.
-(pdftex.def)             Requested size: 398.33858pt x 116.2436pt.
- [11 <./images/en_de.png> <./images/general_seg.png>]
+<images/segnet.png, id=743, 1396.21625pt x 398.48875pt>
+File: images/segnet.png Graphic file (type png)
+<use images/segnet.png>
+Package pdftex.def Info: images/segnet.png  used on input line 104.
+(pdftex.def)             Requested size: 398.33858pt x 113.68599pt.
 
-LaTeX Warning: Citation `art1' on page 12 undefined on input line 99.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/ch03_methodology.tex [12]
+[11 <./images/en_de.png>]
+<images/unet.png, id=760, 1128.215pt x 797.98125pt>
+File: images/unet.png Graphic file (type png)
+<use images/unet.png>
+Package pdftex.def Info: images/unet.png  used on input line 115.
+(pdftex.def)             Requested size: 398.33858pt x 281.74503pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./images/general_seg.png> <./images/segnet.png>] [13 <./images/unet.png>]
+<images/TDNet.png, id=800, 956.57375pt x 715.67375pt>
+File: images/TDNet.png Graphic file (type png)
+<use images/TDNet.png>
+Package pdftex.def Info: images/TDNet.png  used on input line 128.
+(pdftex.def)             Requested size: 341.43306pt x 255.44737pt.
+) (./chapters/ch03_methodology.tex [14 <./images/TDNet.png>]
 Chapter 3.
-) (./chapters/ch05_evaluation_and_result.tex [13
+) (./chapters/ch05_evaluation_and_result.tex [15
 
-] [14
+] [16
 
 ]
 Chapter 4.
-) (./chapters/ch06_android_deployment.tex
+[17]
+<images/IoU.png, id=832, 635.37375pt x 470.75874pt>
+File: images/IoU.png Graphic file (type png)
+<use images/IoU.png>
+Package pdftex.def Info: images/IoU.png  used on input line 55.
+(pdftex.def)             Requested size: 341.43306pt x 252.97762pt.
+
+Underfull \vbox (badness 2689) has occurred while \output is active []
+
+ [18 <./images/IoU.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-Overfull \vbox (180.96979pt too high) has occurred while \output is active []
+ [19]
+[20]
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 98--115
+ [] 
+ []
+
+<images/Y_ground_truth_vanilla.png, id=854, 1509.64pt x 850.17625pt>
+File: images/Y_ground_truth_vanilla.png Graphic file (type png)
+<use images/Y_ground_truth_vanilla.png>
+Package pdftex.def Info: images/Y_ground_truth_vanilla.png  used on input line 
+119.
+(pdftex.def)             Requested size: 455.24408pt x 256.37805pt.
+<images/Y_predicted_vanilla.png, id=855, 1500.60625pt x 849.1725pt>
+File: images/Y_predicted_vanilla.png Graphic file (type png)
+<use images/Y_predicted_vanilla.png>
+Package pdftex.def Info: images/Y_predicted_vanilla.png  used on input line 126
+.
+(pdftex.def)             Requested size: 455.24408pt x 257.61728pt.
+<images/ordered_images.jpg, id=856, 1445.4pt x 1927.2pt>
+File: images/ordered_images.jpg Graphic file (type jpg)
+<use images/ordered_images.jpg>
+Package pdftex.def Info: images/ordered_images.jpg  used on input line 139.
+(pdftex.def)             Requested size: 341.43306pt x 455.2446pt.
+<images/ordered_D.png, id=857, 1066.98625pt x 1122.1925pt>
+File: images/ordered_D.png Graphic file (type png)
+<use images/ordered_D.png>
+Package pdftex.def Info: images/ordered_D.png  used on input line 146.
+(pdftex.def)             Requested size: 341.43306pt x 359.09181pt.
+<images/ordered_K.png, id=858, 1086.0575pt x 1122.1925pt>
+File: images/ordered_K.png Graphic file (type png)
+<use images/ordered_K.png>
+Package pdftex.def Info: images/ordered_K.png  used on input line 153.
+(pdftex.def)             Requested size: 341.43306pt x 352.79045pt.
+<images/unordered_images.jpg, id=859, 1445.4pt x 1927.2pt>
+File: images/unordered_images.jpg Graphic file (type jpg)
+<use images/unordered_images.jpg>
+Package pdftex.def Info: images/unordered_images.jpg  used on input line 160.
+(pdftex.def)             Requested size: 341.43306pt x 455.2446pt.
+<images/unordered_D.png, id=860, 1060.96375pt x 1122.1925pt>
+File: images/unordered_D.png Graphic file (type png)
+<use images/unordered_D.png>
+Package pdftex.def Info: images/unordered_D.png  used on input line 167.
+(pdftex.def)             Requested size: 341.43306pt x 361.12949pt.
+<images/unordered_K.png, id=861, 1072.005pt x 1122.1925pt>
+File: images/unordered_K.png Graphic file (type png)
+<use images/unordered_K.png>
+Package pdftex.def Info: images/unordered_K.png  used on input line 174.
+(pdftex.def)             Requested size: 341.43306pt x 357.41374pt.
+
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 182--199
+ [] 
+ []
+
+[21 <./images/Y_ground_truth_vanilla.png>]
+<images/Y_ground_truth_gp.png, id=867, 1510.64375pt x 850.17625pt>
+File: images/Y_ground_truth_gp.png Graphic file (type png)
+<use images/Y_ground_truth_gp.png>
+Package pdftex.def Info: images/Y_ground_truth_gp.png  used on input line 203.
+(pdftex.def)             Requested size: 455.24408pt x 256.20941pt.
+<images/Y_predicted_gp.png, id=868, 1501.61pt x 852.18375pt>
+File: images/Y_predicted_gp.png Graphic file (type png)
+<use images/Y_predicted_gp.png>
+Package pdftex.def Info: images/Y_predicted_gp.png  used on input line 210.
+(pdftex.def)             Requested size: 455.24408pt x 258.34877pt.
+
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 218--233
+ [] 
+ []
 
 
-[16]
+Underfull \vbox (badness 1515) has occurred while \output is active []
+
+ [22 <./images/Y_predicted_vanilla.png>] [23 <./images/ordered_images.jpg>] [24
+ <./images/ordered_D.png>] [25 <./images/ordered_K.png>] [26 <./images/unordere
+d_images.jpg>] [27 <./images/unordered_D.png>] [28 <./images/unordered_K.png>] 
+[29 <./images/Y_ground_truth_gp.png> <./images/Y_predicted_gp.png>]
+<images/Y_ground_truth_lstm.png, id=910, 1506.62875pt x 850.17625pt>
+File: images/Y_ground_truth_lstm.png Graphic file (type png)
+<use images/Y_ground_truth_lstm.png>
+Package pdftex.def Info: images/Y_ground_truth_lstm.png  used on input line 237
+.
+(pdftex.def)             Requested size: 455.24408pt x 256.88399pt.
+<images/Y_predicted_lstm.png, id=911, 1516.66624pt x 866.23625pt>
+File: images/Y_predicted_lstm.png Graphic file (type png)
+<use images/Y_predicted_lstm.png>
+Package pdftex.def Info: images/Y_predicted_lstm.png  used on input line 244.
+(pdftex.def)             Requested size: 455.24408pt x 260.00505pt.
+)
+(./chapters/ch06_android_deployment.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./images/Y_ground_truth_lstm.png>] [31 <./images/Y_predicted_lstm.png>] [
+32
+
+]
 Chapter 5.
-) (./chapters/ch07_conclusion.tex [17
-
-] [18
+) (./chapters/ch07_conclusion.tex [33] [34
 
 ]
 Chapter 6.
-) (./chapters/appendix.tex [19] [20
+) (./chapters/appendix.tex [35] [36
 
 ]
 Appendix A.
-[21] [22
+[37] [38
 
 ]
 Appendix B.
-) [23] [24
+) [39] [40
 
 ] (./report.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-11.
+17.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -866,50 +1006,49 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
 \OT1/lmtt/m/n/10 guide-[]to-[]image-[]segmentation# : [] : text = Different % 2
 0types % 20of % 20image % 20segmentation %
  []
 
-[25
+[41
 
-] [26] [27] [28] [29])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
- [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+] [42] [43] [44] [45] [46])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+ [47]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 036736064FAD581F9F4D5A7FE3B22B7E;5753.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+(rerunfilecheck)             Checksum: 9E81669FEBEDBC63CCC2B83E028DE473;5998.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 13582 strings out of 483183
- 214052 string characters out of 5966292
- 668455 words of memory out of 5000000
- 27972 multiletter control sequences out of 15000+600000
- 589318 words of font info for 116 fonts, out of 8000000 for 9000
+ 13886 strings out of 483183
+ 219442 string characters out of 5966292
+ 670801 words of memory out of 5000000
+ 28194 multiletter control sequences out of 15000+600000
+ 595320 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,51p,1810b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/
-lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (48 pages, 867243 bytes).
+ 56i,12n,51p,1810b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
+lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf
+/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx1
+2.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
+t10.pfb>
+Output written on report.pdf (65 pages, 6715965 bytes).
 PDF statistics:
- 870 PDF objects out of 1000 (max. 8388607)
- 785 compressed objects within 8 object streams
- 197 named destinations out of 1000 (max. 500000)
- 15484 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 1103 PDF objects out of 1200 (max. 8388607)
+ 960 compressed objects within 10 object streams
+ 252 named destinations out of 1000 (max. 500000)
+ 16601 words of extra memory for PDF output out of 17280 (max. 10000000)
 

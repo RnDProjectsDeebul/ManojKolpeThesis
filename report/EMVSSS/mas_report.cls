@@ -9,6 +9,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mas_report}[2018/01/25 The MAS report class]
 
+\usepackage[table]{xcolor}
 \RequirePackage{xcolor}
 \RequirePackage{ifthen}
 \definecolor{slcolor}{HTML}{882B21}
