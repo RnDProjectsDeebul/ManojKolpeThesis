@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  30 AUG 2022 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  1 SEP 2022 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -794,7 +794,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] (./chapters/ch01_introduction.tex
 Chapter 1.
-<images/df.png, id=541, 395.4775pt x 255.95625pt>
+<images/df.png, id=562, 395.4775pt x 255.95625pt>
 File: images/df.png Graphic file (type png)
 <use images/df.png>
 Package pdftex.def Info: images/df.png  used on input line 11.
@@ -807,7 +807,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5])
 (./chapters/ch02_stateoftheart.tex [6]
 Chapter 2.
-<images/mldl.png, id=648, 739.76375pt x 484.81125pt>
+<images/mldl.png, id=670, 739.76375pt x 484.81125pt>
 File: images/mldl.png Graphic file (type png)
 <use images/mldl.png>
 Package pdftex.def Info: images/mldl.png  used on input line 15.
@@ -815,24 +815,24 @@ Package pdftex.def Info: images/mldl.png  used on input line 15.
 [7
 
  <./images/mldl.png>] [8]
-<images/MVS.png, id=699, 590.205pt x 616.3025pt>
+<images/MVS.png, id=720, 590.205pt x 616.3025pt>
 File: images/MVS.png Graphic file (type png)
 <use images/MVS.png>
 Package pdftex.def Info: images/MVS.png  used on input line 40.
 (pdftex.def)             Requested size: 170.71652pt x 178.26234pt.
  [9 <./images/MVS.png>]
-<images/ss.jpg, id=711, 835.12pt x 591.20876pt>
+<images/ss.jpg, id=732, 835.12pt x 591.20876pt>
 File: images/ss.jpg Graphic file (type jpg)
 <use images/ss.jpg>
 Package pdftex.def Info: images/ss.jpg  used on input line 56.
 (pdftex.def)             Requested size: 341.43306pt x 241.71155pt.
  [10 <./images/ss.jpg>]
-<images/en_de.png, id=734, 948.54375pt x 203.76125pt>
+<images/en_de.png, id=755, 948.54375pt x 203.76125pt>
 File: images/en_de.png Graphic file (type png)
 <use images/en_de.png>
 Package pdftex.def Info: images/en_de.png  used on input line 86.
 (pdftex.def)             Requested size: 398.33858pt x 85.56981pt.
-<images/general_seg.png, id=738, 1386.17876pt x 404.51125pt>
+<images/general_seg.png, id=759, 1386.17876pt x 404.51125pt>
 File: images/general_seg.png Graphic file (type png)
 <use images/general_seg.png>
 Package pdftex.def Info: images/general_seg.png  used on input line 95.
@@ -841,7 +841,7 @@ Package pdftex.def Info: images/general_seg.png  used on input line 95.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/segnet.png, id=743, 1396.21625pt x 398.48875pt>
+<images/segnet.png, id=764, 1396.21625pt x 398.48875pt>
 File: images/segnet.png Graphic file (type png)
 <use images/segnet.png>
 Package pdftex.def Info: images/segnet.png  used on input line 104.
@@ -850,7 +850,7 @@ Package pdftex.def Info: images/segnet.png  used on input line 104.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./images/en_de.png>]
-<images/unet.png, id=760, 1128.215pt x 797.98125pt>
+<images/unet.png, id=781, 1128.215pt x 797.98125pt>
 File: images/unet.png Graphic file (type png)
 <use images/unet.png>
 Package pdftex.def Info: images/unet.png  used on input line 115.
@@ -860,21 +860,36 @@ Package pdftex.def Info: images/unet.png  used on input line 115.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./images/general_seg.png> <./images/segnet.png>] [13 <./images/unet.png>]
-<images/TDNet.png, id=800, 956.57375pt x 715.67375pt>
+<images/TDNet.png, id=822, 956.57375pt x 715.67375pt>
 File: images/TDNet.png Graphic file (type png)
 <use images/TDNet.png>
 Package pdftex.def Info: images/TDNet.png  used on input line 128.
 (pdftex.def)             Requested size: 341.43306pt x 255.44737pt.
 ) (./chapters/ch03_methodology.tex [14 <./images/TDNet.png>]
 Chapter 3.
+
+Overfull \hbox (63.65271pt too wide) in paragraph at lines 17--62
+ [] 
+ []
+
+
+Overfull \hbox (35.19995pt too wide) in paragraph at lines 70--78
+ [] 
+ []
+
+
+Overfull \hbox (63.65271pt too wide) in paragraph at lines 85--97
+ [] 
+ []
+
 ) (./chapters/ch05_evaluation_and_result.tex [15
 
-] [16
+] [16] [17] [18]
+Chapter 4.
+[19
 
 ]
-Chapter 4.
-[17]
-<images/IoU.png, id=832, 635.37375pt x 470.75874pt>
+<images/IoU.png, id=862, 635.37375pt x 470.75874pt>
 File: images/IoU.png Graphic file (type png)
 <use images/IoU.png>
 Package pdftex.def Info: images/IoU.png  used on input line 55.
@@ -882,118 +897,158 @@ Package pdftex.def Info: images/IoU.png  used on input line 55.
 
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
- [18 <./images/IoU.png>]
+ [20 <./images/IoU.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-[20]
-Overfull \hbox (2.38974pt too wide) in paragraph at lines 98--115
+ [21]
+[22] [23]
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 99--116
  [] 
  []
 
-<images/Y_ground_truth_vanilla.png, id=854, 1509.64pt x 850.17625pt>
+<images/Y_ground_truth_vanilla.png, id=894, 1509.64pt x 850.17625pt>
 File: images/Y_ground_truth_vanilla.png Graphic file (type png)
 <use images/Y_ground_truth_vanilla.png>
 Package pdftex.def Info: images/Y_ground_truth_vanilla.png  used on input line 
-119.
+120.
 (pdftex.def)             Requested size: 455.24408pt x 256.37805pt.
-<images/Y_predicted_vanilla.png, id=855, 1500.60625pt x 849.1725pt>
+<images/Y_predicted_vanilla.png, id=895, 1500.60625pt x 849.1725pt>
 File: images/Y_predicted_vanilla.png Graphic file (type png)
 <use images/Y_predicted_vanilla.png>
-Package pdftex.def Info: images/Y_predicted_vanilla.png  used on input line 126
+Package pdftex.def Info: images/Y_predicted_vanilla.png  used on input line 127
 .
 (pdftex.def)             Requested size: 455.24408pt x 257.61728pt.
-<images/ordered_images.jpg, id=856, 1445.4pt x 1927.2pt>
+<images/ordered_images.jpg, id=896, 1445.4pt x 1927.2pt>
 File: images/ordered_images.jpg Graphic file (type jpg)
 <use images/ordered_images.jpg>
-Package pdftex.def Info: images/ordered_images.jpg  used on input line 139.
+Package pdftex.def Info: images/ordered_images.jpg  used on input line 140.
 (pdftex.def)             Requested size: 341.43306pt x 455.2446pt.
-<images/ordered_D.png, id=857, 1066.98625pt x 1122.1925pt>
+<images/ordered_D.png, id=897, 1066.98625pt x 1122.1925pt>
 File: images/ordered_D.png Graphic file (type png)
 <use images/ordered_D.png>
-Package pdftex.def Info: images/ordered_D.png  used on input line 146.
+Package pdftex.def Info: images/ordered_D.png  used on input line 147.
 (pdftex.def)             Requested size: 341.43306pt x 359.09181pt.
-<images/ordered_K.png, id=858, 1086.0575pt x 1122.1925pt>
+<images/ordered_K.png, id=898, 1086.0575pt x 1122.1925pt>
 File: images/ordered_K.png Graphic file (type png)
 <use images/ordered_K.png>
-Package pdftex.def Info: images/ordered_K.png  used on input line 153.
+Package pdftex.def Info: images/ordered_K.png  used on input line 154.
 (pdftex.def)             Requested size: 341.43306pt x 352.79045pt.
-<images/unordered_images.jpg, id=859, 1445.4pt x 1927.2pt>
+<images/unordered_images.jpg, id=899, 1445.4pt x 1927.2pt>
 File: images/unordered_images.jpg Graphic file (type jpg)
 <use images/unordered_images.jpg>
-Package pdftex.def Info: images/unordered_images.jpg  used on input line 160.
+Package pdftex.def Info: images/unordered_images.jpg  used on input line 161.
 (pdftex.def)             Requested size: 341.43306pt x 455.2446pt.
-<images/unordered_D.png, id=860, 1060.96375pt x 1122.1925pt>
+<images/unordered_D.png, id=900, 1060.96375pt x 1122.1925pt>
 File: images/unordered_D.png Graphic file (type png)
 <use images/unordered_D.png>
-Package pdftex.def Info: images/unordered_D.png  used on input line 167.
+Package pdftex.def Info: images/unordered_D.png  used on input line 168.
 (pdftex.def)             Requested size: 341.43306pt x 361.12949pt.
-<images/unordered_K.png, id=861, 1072.005pt x 1122.1925pt>
+<images/unordered_K.png, id=901, 1072.005pt x 1122.1925pt>
 File: images/unordered_K.png Graphic file (type png)
 <use images/unordered_K.png>
-Package pdftex.def Info: images/unordered_K.png  used on input line 174.
+Package pdftex.def Info: images/unordered_K.png  used on input line 175.
 (pdftex.def)             Requested size: 341.43306pt x 357.41374pt.
 
-Overfull \hbox (2.38974pt too wide) in paragraph at lines 182--199
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 183--200
  [] 
  []
 
-[21 <./images/Y_ground_truth_vanilla.png>]
-<images/Y_ground_truth_gp.png, id=867, 1510.64375pt x 850.17625pt>
+[24 <./images/Y_ground_truth_vanilla.png>]
+<images/Y_ground_truth_gp.png, id=908, 1510.64375pt x 850.17625pt>
 File: images/Y_ground_truth_gp.png Graphic file (type png)
 <use images/Y_ground_truth_gp.png>
-Package pdftex.def Info: images/Y_ground_truth_gp.png  used on input line 203.
+Package pdftex.def Info: images/Y_ground_truth_gp.png  used on input line 204.
 (pdftex.def)             Requested size: 455.24408pt x 256.20941pt.
-<images/Y_predicted_gp.png, id=868, 1501.61pt x 852.18375pt>
+<images/Y_predicted_gp.png, id=909, 1501.61pt x 852.18375pt>
 File: images/Y_predicted_gp.png Graphic file (type png)
 <use images/Y_predicted_gp.png>
-Package pdftex.def Info: images/Y_predicted_gp.png  used on input line 210.
+Package pdftex.def Info: images/Y_predicted_gp.png  used on input line 211.
 (pdftex.def)             Requested size: 455.24408pt x 258.34877pt.
 
-Overfull \hbox (2.38974pt too wide) in paragraph at lines 218--233
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 219--234
  [] 
  []
 
 
 Underfull \vbox (badness 1515) has occurred while \output is active []
 
- [22 <./images/Y_predicted_vanilla.png>] [23 <./images/ordered_images.jpg>] [24
- <./images/ordered_D.png>] [25 <./images/ordered_K.png>] [26 <./images/unordere
-d_images.jpg>] [27 <./images/unordered_D.png>] [28 <./images/unordered_K.png>] 
-[29 <./images/Y_ground_truth_gp.png> <./images/Y_predicted_gp.png>]
-<images/Y_ground_truth_lstm.png, id=910, 1506.62875pt x 850.17625pt>
+ [25 <./images/Y_predicted_vanilla.png>] [26 <./images/ordered_images.jpg>] [27
+ <./images/ordered_D.png>] [28 <./images/ordered_K.png>] [29 <./images/unordere
+d_images.jpg>] [30 <./images/unordered_D.png>] [31 <./images/unordered_K.png>] 
+[32 <./images/Y_ground_truth_gp.png> <./images/Y_predicted_gp.png>]
+<images/Y_ground_truth_lstm.png, id=951, 1506.62875pt x 850.17625pt>
 File: images/Y_ground_truth_lstm.png Graphic file (type png)
 <use images/Y_ground_truth_lstm.png>
-Package pdftex.def Info: images/Y_ground_truth_lstm.png  used on input line 237
+Package pdftex.def Info: images/Y_ground_truth_lstm.png  used on input line 238
 .
 (pdftex.def)             Requested size: 455.24408pt x 256.88399pt.
-<images/Y_predicted_lstm.png, id=911, 1516.66624pt x 866.23625pt>
+<images/Y_predicted_lstm.png, id=952, 1516.66624pt x 866.23625pt>
 File: images/Y_predicted_lstm.png Graphic file (type png)
 <use images/Y_predicted_lstm.png>
-Package pdftex.def Info: images/Y_predicted_lstm.png  used on input line 244.
+Package pdftex.def Info: images/Y_predicted_lstm.png  used on input line 245.
 (pdftex.def)             Requested size: 455.24408pt x 260.00505pt.
-)
-(./chapters/ch06_android_deployment.tex
+<images/output_vanilla.png, id=953, 1084.05pt x 2890.8pt>
+File: images/output_vanilla.png Graphic file (type png)
+<use images/output_vanilla.png>
+Package pdftex.def Info: images/output_vanilla.png  used on input line 254.
+(pdftex.def)             Requested size: 455.24408pt x 1213.99542pt.
+
+
+LaTeX Warning: Float too large for page by 656.46523pt on input line 257.
+
+
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 261--272
+ [] 
+ []
+
+<images/output_gp.png, id=954, 1084.05pt x 2890.8pt>
+File: images/output_gp.png Graphic file (type png)
+<use images/output_gp.png>
+Package pdftex.def Info: images/output_gp.png  used on input line 279.
+(pdftex.def)             Requested size: 455.24408pt x 1213.99542pt.
+
+LaTeX Warning: Float too large for page by 656.46523pt on input line 282.
+
+
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 286--297
+ [] 
+ []
+
+<images/output_lstm.png, id=955, 1084.05pt x 2890.8pt>
+File: images/output_lstm.png Graphic file (type png)
+<use images/output_lstm.png>
+Package pdftex.def Info: images/output_lstm.png  used on input line 305.
+(pdftex.def)             Requested size: 455.24408pt x 1213.99542pt.
+
+LaTeX Warning: Float too large for page by 656.46523pt on input line 308.
+
+
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 312--323
+ [] 
+ []
+
+) (./chapters/ch06_android_deployment.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <./images/Y_ground_truth_lstm.png>] [31 <./images/Y_predicted_lstm.png>] [
-32
-
-]
+ [33 <./images/Y_ground_truth_lstm.png>] [34 <./images/Y_predicted_lstm.png>] [
+35 <./images/output_vanilla.png>] [36 <./images/output_gp.png>] [37 <./images/o
+utput_lstm.png>] [38]
 Chapter 5.
-) (./chapters/ch07_conclusion.tex [33] [34
+) (./chapters/ch07_conclusion.tex [39
+
+] [40
 
 ]
 Chapter 6.
-) (./chapters/appendix.tex [35] [36
+) (./chapters/appendix.tex [41] [42
 
 ]
 Appendix A.
-[37] [38
+[43] [44
 
 ]
 Appendix B.
-) [39] [40
+) [45] [46
 
 ] (./report.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
@@ -1011,27 +1066,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
 0types % 20of % 20image % 20segmentation %
  []
 
-[41
+[47
 
-] [42] [43] [44] [45] [46])
+] [48] [49] [50] [51] [52])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
- [47]
+ [53]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9E81669FEBEDBC63CCC2B83E028DE473;5998.
+(rerunfilecheck)             Checksum: CB1DB0D06909431DDBB85263026BF1E9;5998.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 13886 strings out of 483183
- 219442 string characters out of 5966292
- 670801 words of memory out of 5000000
- 28194 multiletter control sequences out of 15000+600000
+ 13931 strings out of 483183
+ 220328 string characters out of 5966292
+ 684801 words of memory out of 5000000
+ 28220 multiletter control sequences out of 15000+600000
  595320 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,51p,1810b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,51p,3931b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
@@ -1045,10 +1100,10 @@ are/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
 t10.pfb>
-Output written on report.pdf (65 pages, 6715965 bytes).
+Output written on report.pdf (71 pages, 9792528 bytes).
 PDF statistics:
- 1103 PDF objects out of 1200 (max. 8388607)
- 960 compressed objects within 10 object streams
- 252 named destinations out of 1000 (max. 500000)
- 16601 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 1167 PDF objects out of 1200 (max. 8388607)
+ 1011 compressed objects within 11 object streams
+ 268 named destinations out of 1000 (max. 500000)
+ 16616 words of extra memory for PDF output out of 17280 (max. 10000000)
 

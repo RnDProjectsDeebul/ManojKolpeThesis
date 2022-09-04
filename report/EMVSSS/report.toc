@@ -39,38 +39,38 @@
 \contentsline {section}{\numberline {3.4}Training and Evaluation Pipeline}{15}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Training Procedure}{15}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Hardware Configuration}{15}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Evaluation Metric}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{17}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}IoU}{18}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}RQ1: What are the works on state-of-the-art temporal fusion?}{20}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Experiment1.1: U-Net and W-Net model with single sequence data}{20}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Experiment1.2: U-Net and W-Net model with two sequence data}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Experiment1.3: U-Net and W-Net model with three sequence data}{20}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Experiment1.4: U-Net and W-Net model with four sequence data}{20}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Experiment1.5: U-Net and W-Net model with all sequence data}{20}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{20}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Experiment1.1: U-Net and W-Net model with single sequence data}{20}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Experiment1.2: U-Net and W-Net model with two sequence data}{20}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Experiment1.3: U-Net and W-Net model with three sequence data}{20}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Experiment1.4: U-Net and W-Net model with four sequence data}{20}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Experiment1.5: U-Net and W-Net model with all sequence data}{20}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{20}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Experiment1.1: U-Net vanilla model}{20}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Experiment1.2: U-Net temporally fused gp model}{21}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Experiment1.3: U-Net temporally fused lstm model}{22}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Temporal fusion on a continuous sequence data}{31}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}RQ3.1: Which fusion method is good for the scannet data?}{31}{subsection.4.4.5}%
-\contentsline {subsection}{\numberline {4.4.6}RQ3.2: Which fusion method is good for the virtual kitti data?}{31}{subsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.4.7}RQ3.3: Which fusion method is good for the VIODE data?}{31}{subsection.4.4.7}%
-\contentsline {chapter}{\numberline {5}Android Deployment}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Framework}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Pipeline}{33}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Deployment and Results}{33}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusions}{35}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Contributions}{35}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Lessons learned}{35}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Future work}{35}{section.6.3}%
-\contentsline {chapter}{Appendix \numberline {A}Design Details}{37}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Parameters}{39}{appendix.a.B}%
-\contentsline {chapter}{References}{41}{appendix*.28}%
+\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Evaluation Metric}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{19}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}IoU}{20}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}RQ1: What are the works on state-of-the-art temporal fusion?}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Experiment1.1: U-Net and W-Net model with single sequence data}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Experiment1.2: U-Net and W-Net model with two sequence data}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Experiment1.3: U-Net and W-Net model with three sequence data}{22}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Experiment1.4: U-Net and W-Net model with four sequence data}{22}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Experiment1.5: U-Net and W-Net model with all sequence data}{22}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{22}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Experiment1.1: U-Net and W-Net model with single sequence data}{22}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Experiment1.2: U-Net and W-Net model with two sequence data}{22}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Experiment1.3: U-Net and W-Net model with three sequence data}{22}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Experiment1.4: U-Net and W-Net model with four sequence data}{22}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Experiment1.5: U-Net and W-Net model with all sequence data}{22}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{22}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Experiment1.1: U-Net vanilla model}{22}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Experiment1.2: U-Net temporally fused gp model}{24}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Experiment1.3: U-Net temporally fused lstm model}{25}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Temporal fusion on a continuous sequence data}{38}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}RQ3.1: Which fusion method is good for the scannet data?}{38}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}RQ3.2: Which fusion method is good for the virtual kitti data?}{38}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}RQ3.3: Which fusion method is good for the VIODE data?}{38}{subsection.4.4.7}%
+\contentsline {chapter}{\numberline {5}Android Deployment}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Framework}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Pipeline}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Deployment and Results}{39}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusions}{41}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Contributions}{41}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Lessons learned}{41}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future work}{41}{section.6.3}%
+\contentsline {chapter}{Appendix \numberline {A}Design Details}{43}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Parameters}{45}{appendix.a.B}%
+\contentsline {chapter}{References}{47}{appendix*.37}%

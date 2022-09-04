@@ -91,6 +91,7 @@
     \section{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}
     \subsection{Experiment1.1: U-Net vanilla model}
     
+    U-net model is developed to categorize the biomedical images. Currently the model is used in the other application areas as well. The original network is mainly based on the data augmentation strategy. The network consist of a encoder and decoder along with the interconnection between different layers of encoder and decoder. The expanding path of the U-net model helps to capture the location of the objects in the image. The vanilla U-net model code is referenced from the Kaggle competition \cite{85_kag_challenge}. The result presented below is for vanilla U-net model trained on the scannet dataset \cite{79_dai2017scannet}. The model is trained for 300 epochs. The below figure \ref{fig:y_gt_vanilla} depicts the distribution of the pixel based on the classes. There are totally 41 classes [ \ref{table:Classes in scannet_1} , \ref{table:Classes in scannet_2} , \ref{table:Classes in scannet_3}] present in the entire Scannet datasets.        
     
     \newpage 
     
@@ -248,8 +249,81 @@
 	
 	\subsection{Temporal fusion on a continuous sequence data}
 	
+	\begin{figure}
+		\centering
+		\includegraphics[width=16cm]{images/output_vanilla.png}
+		\caption{Plotting of raw input image, ground truth and vanilla model predicted output on a continuous sequence data}
+		\label{fig:output_vanilla}
+	\end{figure}
 	
+	\begin{table}
+	\begin{center}
+		\begin{tabular}{ | l | p{12cm} |}
+			\hline
+			
+			\cellcolor{purple!30}Metric & \cellcolor{purple!30}Value \\ \hline
+			Pixel Accuracy & 0.4342 \\ \hline
+			Pixel Mean accuracy & 0.6232  \\ \hline
+			meanIOU & 0.145 \\ \hline
+			IoU & [0.2737, 0.2809] \\ \hline
+			FwIoU & 0.2793 \\ \hline
+			\hline
+		\end{tabular}
+		\caption{Performance of Vanilla model with respect to different metric and two classes}
+		\label{table:Vanilla_conti_seq}
+	\end{center}
+	\end{table}
 	
+	\begin{figure}
+		\centering
+		\includegraphics[width=16cm]{images/output_gp.png}
+		\caption{Plotting of raw input image, ground truth and GP model predicted output on a continuous sequence two class data }
+		\label{fig:output_gp}
+	\end{figure}
+	
+	\begin{table}
+	\begin{center}
+		\begin{tabular}{ | l | p{12cm} |}
+			\hline
+			
+			\cellcolor{purple!30}Metric & \cellcolor{purple!30}Value \\ \hline
+			Pixel Accuracy & 0.3764 \\ \hline
+			Pixel Mean accuracy & 0.5625  \\ \hline
+			meanIOU & 0.2318 \\ \hline
+			IoU & [0.2377, 0.2259] \\ \hline
+			FwIoU & 0.2284 \\ \hline
+			\hline
+		\end{tabular}
+		\caption{Performance of GP model with respect to different metric and two classes}
+		\label{table:GP_conti_seq}
+	\end{center}
+	\end{table}
+	
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=16cm]{images/output_lstm.png}
+		\caption{Plotting of raw input image, ground truth and lstm model predicted output on a continuous sequence two class data}
+		\label{fig:output_lstm}
+	\end{figure}
+	
+	\begin{table}
+	\begin{center}
+		\begin{tabular}{ | l | p{12cm} |}
+			\hline
+			
+			\cellcolor{purple!30}Metric & \cellcolor{purple!30}Value \\ \hline
+			Pixel Accuracy & 0.4496 \\ \hline
+			Pixel Mean accuracy & 0.5301  \\ \hline
+			meanIOU & 0.2832 \\ \hline
+			IoU & [0.2135, 0.3530] \\ \hline
+			FwIoU & 0.3221 \\ \hline
+			\hline
+		\end{tabular}
+		\caption{Performance of LSTM model with respect to different metric and two classes}
+		\label{table:LSTM_conti_seq}
+	\end{center}
+	\end{table}
 	
     \subsection{RQ3.1: Which fusion method is good for the scannet data?}
     \subsection{RQ3.2: Which fusion method is good for the virtual kitti data?}
