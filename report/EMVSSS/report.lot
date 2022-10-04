@@ -5,9 +5,13 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{17}{table.caption.16}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{18}{table.caption.17}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{34}{table.caption.32}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Performance of GP model with respect to different metric and two classes\relax }}{34}{table.caption.34}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Performance of LSTM model with respect to different metric and two classes\relax }}{38}{table.caption.36}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces A normal caption\relax }}{27}{table.caption.26}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces A normal caption\relax }}{28}{table.caption.28}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces A normal caption\relax }}{29}{table.caption.30}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{31}{table.caption.35}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{32}{table.caption.38}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{36}{table.caption.41}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{37}{table.caption.45}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

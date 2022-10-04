@@ -12,21 +12,28 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces IoU. Courtesy of \cite {82_iou}\relax }}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Per class pixel distribution of the ground truth pixel class label\relax }}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Per class pixel distribution of the predicted pixel class label\relax }}{25}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Ordered set of images\relax }}{26}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Distance matrix depicted as heatmap\relax }}{27}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Kernel matrix depicted as heatmap\relax }}{28}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ordered set of images\relax }}{29}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Distance matrix depicted as heatmap\relax }}{30}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Kernel matrix depicted as heatmap\relax }}{31}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Per class pixel distribution of the ground truth pixel class label for gp model\relax }}{32}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{32}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Per class pixel distribution of the ground truth pixel class label for lstm model\relax }}{33}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{34}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Plotting of raw input image, ground truth and vanilla model predicted output on a continuous sequence data\relax }}{35}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Plotting of raw input image, ground truth and GP model predicted output on a continuous sequence two class data \relax }}{36}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Plotting of raw input image, ground truth and lstm model predicted output on a continuous sequence two class data\relax }}{37}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Per class pixel distribution of the entire scannet dataset\relax }}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{23}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pixel distribution for the scannet data for two classes\relax }}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pixel distribution for the scannet data for three classes\relax }}{24}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ordered and Unordered set of images\relax }}{25}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Distance matrix and Kernel matrix for ordered set of images\relax }}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Distance matrix and Kernel matrix for unordered set of images\relax }}{26}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{28}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{29}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric\relax }}{30}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance\relax }}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }}{33}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{34}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{35}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{36}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{37}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{38}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{39}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{39}{figure.caption.47}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
