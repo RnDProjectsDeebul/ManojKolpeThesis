@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of Figures}{xv}{chapter*.4}%
-\contentsline {chapter}{List of Tables}{xvii}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{xiii}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{xv}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Temporal fusion}{2}{subsection.1.1.1}%
@@ -27,41 +27,38 @@
 \contentsline {section}{\numberline {2.5}Limitations of Previous Work}{14}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Dataset}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}ScanNet}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Virtual KITTI 2}{15}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}VIODE}{15}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Data Collection and Preprocessing}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Experimental Design}{15}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}U-Net Vanilla model}{15}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}U-Net with Temporal Fusion}{15}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}W-Net Vanilla model}{15}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}W-Net with Temporal Fusion}{15}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Training and Evaluation Pipeline}{15}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Training Procedure}{15}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Hardware Configuration}{15}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Evaluation Metric}{19}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{19}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}IoU}{20}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Hypothesis}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{22}{section.4.3}%
-\contentsline {section}{\numberline {4.4}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{22}{section.4.4}%
-\contentsline {section}{\numberline {4.5}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{22}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Combining scannet dataset classes for experiment}{22}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Distance and Kernel matrix}{25}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{25}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{31}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{32}{subsection.4.5.5}%
-\contentsline {section}{\numberline {4.6}Experiment 2.1: Experiment with vkitti dataset with clone and sunset as the testing data}{35}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{37}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Android Deployment}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Framework}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Pipeline}{41}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Deployment and Results}{41}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Contributions}{43}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Lessons learned}{43}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Future work}{43}{section.6.3}%
-\contentsline {chapter}{Appendix \numberline {A}Design Details}{45}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Parameters}{47}{appendix.a.B}%
-\contentsline {chapter}{References}{49}{appendix*.48}%
+\contentsline {subsection}{\numberline {3.1.1}ScanNet \ref {90_dai2017scannet}}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Virtual KITTI 2 \ref {92_cabon2020virtual}}{16}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Data Collection and Preprocessing}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Experimental Design}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}U-Net Vanilla model}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}U-Net with Gaussian process}{20}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}U-Net with Long Short Term Memory (LSTM)}{21}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Training and Evaluation Pipeline}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Hardware Configuration}{24}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Evaluation Metric}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{25}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}IoU}{26}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Hypothesis}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{31}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Combining scannet dataset classes for experiment}{31}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Distance and Kernel matrix}{31}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{34}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{40}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{41}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Experiment 2.1: Experiment with vkitti dataset with clone and sunset as the testing data}{44}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{46}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Android Deployment}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Framework}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Pipeline}{49}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Deployment and Results}{49}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Contributions}{51}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Lessons learned}{51}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future work}{51}{section.6.3}%
+\contentsline {chapter}{Appendix \numberline {A}Design Details}{53}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Parameters}{57}{appendix.a.B}%
+\contentsline {chapter}{References}{61}{appendix*.66}%

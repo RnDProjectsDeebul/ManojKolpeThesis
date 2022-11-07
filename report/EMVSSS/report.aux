@@ -25,8 +25,8 @@
 \citation{70_ronneberger2015u}
 \citation{78_hu2020temporally}
 \citation{82_iou}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{xv}{chapter*.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{xvii}{chapter*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{xiii}{chapter*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{xv}{chapter*.5}\protected@file@percent }
 \citation{01_mandic2005data}
 \citation{06_castanedo2013review}
 \citation{02_lim2021temporal}
@@ -187,136 +187,179 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:methodology}{{3}{15}{Methodology}{chapter.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Dataset}{15}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}ScanNet}{15}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Virtual KITTI 2}{15}{subsection.3.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}VIODE}{15}{subsection.3.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Data Collection and Preprocessing}{15}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Experimental Design}{15}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}U-Net Vanilla model}{15}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}U-Net with Temporal Fusion}{15}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}W-Net Vanilla model}{15}{subsection.3.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}W-Net with Temporal Fusion}{15}{subsection.3.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Training and Evaluation Pipeline}{15}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Training Procedure}{15}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Hardware Configuration}{15}{section.3.6}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{16}{table.caption.15}\protected@file@percent }
-\newlabel{table:Classes in scannet_1}{{3.1}{16}{Classes and ids of the Scannet dataset\relax }{table.caption.15}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{17}{table.caption.16}\protected@file@percent }
-\newlabel{table:Classes in scannet_2}{{3.2}{17}{Classes and ids of the Scannet dataset\relax }{table.caption.16}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{18}{table.caption.17}\protected@file@percent }
-\newlabel{table:Classes in scannet_3}{{3.3}{18}{Classes and ids of the Scannet dataset\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}ScanNet \ref  {90_dai2017scannet}}{15}{subsection.3.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sample of Scannet dataset rgb and semantic label\relax }}{15}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:sample_rgb_seg_scannet}{{3.1}{15}{Sample of Scannet dataset rgb and semantic label\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Sample of Scannet dataset pose\relax }}{16}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:sample_pose_scannet}{{3.2}{16}{Sample of Scannet dataset pose\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Virtual KITTI 2 \ref  {92_cabon2020virtual}}{16}{subsection.3.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Scannet dataset class distribution\relax }}{17}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:scannet_class_distribution}{{3.3}{17}{Scannet dataset class distribution\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Sample of Virtual Kitti 2 dataset\relax }}{17}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:sample_scannet_vkitti_2}{{3.4}{17}{Sample of Virtual Kitti 2 dataset\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Data Collection and Preprocessing}{17}{section.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Sample of Virtual Kitti 2 dataset\relax }}{18}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:sample_pose_scannet_vkitti_2}{{3.5}{18}{Sample of Virtual Kitti 2 dataset\relax }{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces RGB, Label and Pose dataset sample of scannet and vkitti data\relax }}{19}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:scannet_vkitti}{{3.6}{19}{RGB, Label and Pose dataset sample of scannet and vkitti data\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Experimental Design}{19}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}U-Net Vanilla model}{19}{subsection.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces RGB, Label and Pose dataset sample of scannet and vkitti data\relax }}{20}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:unet_model}{{3.7}{20}{RGB, Label and Pose dataset sample of scannet and vkitti data\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}U-Net with Gaussian process}{20}{subsection.3.3.2}\protected@file@percent }
+\newlabel{eq:distance_matrix}{{3.1}{21}{U-Net with Gaussian process}{equation.3.3.1}{}}
+\newlabel{eq:covariance_matrix}{{3.2}{21}{U-Net with Gaussian process}{equation.3.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces RGB, Label and Pose dataset sample of scannet and vkitti data\relax }}{21}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:unet_gp}{{3.8}{21}{RGB, Label and Pose dataset sample of scannet and vkitti data\relax }{figure.caption.22}{}}
+\newlabel{eq:gp}{{3.3}{21}{U-Net with Gaussian process}{equation.3.3.3}{}}
+\newlabel{eq:encode_output}{{3.4}{21}{U-Net with Gaussian process}{equation.3.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}U-Net with Long Short Term Memory (LSTM)}{21}{subsection.3.3.3}\protected@file@percent }
+\newlabel{eq:it}{{3.5}{22}{U-Net with Long Short Term Memory (LSTM)}{equation.3.3.5}{}}
+\newlabel{eq:ft}{{3.6}{22}{U-Net with Long Short Term Memory (LSTM)}{equation.3.3.6}{}}
+\newlabel{eq:ot}{{3.7}{22}{U-Net with Long Short Term Memory (LSTM)}{equation.3.3.7}{}}
+\newlabel{eq:gt}{{3.8}{22}{U-Net with Long Short Term Memory (LSTM)}{equation.3.3.8}{}}
+\newlabel{eq:Ct}{{3.9}{22}{U-Net with Long Short Term Memory (LSTM)}{equation.3.3.9}{}}
+\newlabel{eq:Ht}{{3.10}{22}{U-Net with Long Short Term Memory (LSTM)}{equation.3.3.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Training and Evaluation Pipeline}{22}{section.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Unet with ConvLSTM cell\relax }}{23}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:unet_lstm}{{3.9}{23}{Unet with ConvLSTM cell\relax }{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Training pipeline\relax }}{24}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:unet_training}{{3.10}{24}{Training pipeline\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Evaluation pipeline\relax }}{24}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:unet_evaluation}{{3.11}{24}{Evaluation pipeline\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Hardware Configuration}{24}{section.3.5}\protected@file@percent }
 \citation{79_dai2017scannet}
 \citation{80_cabon2020vkitti2}
 \citation{81_minodaRAL2021}
 \citation{84_ulku2022survey}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{19}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{25}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:evaluationandresult}{{4}{19}{Evaluation and Experimental Result}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Evaluation Metric}{19}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{19}{subsection.4.1.1}\protected@file@percent }
+\newlabel{chap:evaluationandresult}{{4}{25}{Evaluation and Experimental Result}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Evaluation Metric}{25}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{25}{subsection.4.1.1}\protected@file@percent }
 \citation{83_iou}
 \citation{82_iou}
 \citation{82_iou}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}IoU}{20}{subsection.4.1.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces IoU. Courtesy of \cite  {82_iou}\relax }}{20}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:IoU}{{4.1}{20}{IoU. Courtesy of \cite {82_iou}\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}IoU}{26}{subsection.4.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces IoU. Courtesy of \cite  {82_iou}\relax }}{26}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:IoU}{{4.1}{26}{IoU. Courtesy of \cite {82_iou}\relax }{figure.caption.26}{}}
 \citation{84_ulku2022survey}
 \citation{84_ulku2022survey}
 \citation{78_hu2020temporally}
 \citation{52_hou2019multi}
 \citation{03_duzceker2021deepvideomvs}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Hypothesis}{27}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{27}{section.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces VIS proposed framework. Courtesy of [87]\relax }}{28}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:vis}{{4.2}{28}{VIS proposed framework. Courtesy of [87]\relax }{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The frame level detector take frame queries and mask features and generate the embeddings and pass onto the VITA model for mask prediction. The object-aware knowledge in the spatial scenes is captured by construction of the temporal interactions between the frame queries. Finally mask trajectories are obtained form the VITA model. Courtesy of [88]\relax }}{29}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:vita}{{4.3}{29}{The frame level detector take frame queries and mask features and generate the embeddings and pass onto the VITA model for mask prediction. The object-aware knowledge in the spatial scenes is captured by construction of the temporal interactions between the frame queries. Finally mask trajectories are obtained form the VITA model. Courtesy of [88]\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces (a) MinVIS trained on query based segmentation individually for every frame. (b) Inference of the video instance segmentation from the segmented image using bipartite matching of th query embeddings. Courtesy of [89] \relax }}{29}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:minVIS}{{4.4}{29}{(a) MinVIS trained on query based segmentation individually for every frame. (b) Inference of the video instance segmentation from the segmented image using bipartite matching of th query embeddings. Courtesy of [89] \relax }{figure.caption.29}{}}
 \citation{85_kag_challenge}
 \citation{79_dai2017scannet}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Hypothesis}{21}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{22}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{22}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{22}{section.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Combining scannet dataset classes for experiment}{22}{subsection.4.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Per class pixel distribution of the entire scannet dataset\relax }}{23}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:scannet_class}{{4.2}{23}{Per class pixel distribution of the entire scannet dataset\relax }{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{23}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:scannet_all_classes}{{4.3}{23}{Pixel distribution for the scannet data containing all the classes\relax }{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Pixel distribution for the scannet data for two classes\relax }}{24}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:scannet_two_classes}{{4.4}{24}{Pixel distribution for the scannet data for two classes\relax }{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Pixel distribution for the scannet data for three classes\relax }}{24}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:scannet_three_classes}{{4.5}{24}{Pixel distribution for the scannet data for three classes\relax }{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Distance and Kernel matrix}{25}{subsection.4.5.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Ordered and Unordered set of images\relax }}{25}{figure.caption.23}\protected@file@percent }
-\newlabel{fig:ordered_and_unordered_images}{{4.6}{25}{Ordered and Unordered set of images\relax }{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{25}{subsection.4.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Distance matrix and Kernel matrix for ordered set of images\relax }}{26}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:ordered_D_and_K}{{4.7}{26}{Distance matrix and Kernel matrix for ordered set of images\relax }{figure.caption.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Distance matrix and Kernel matrix for unordered set of images\relax }}{26}{figure.caption.25}\protected@file@percent }
-\newlabel{fig:unordered_D_and_K}{{4.8}{26}{Distance matrix and Kernel matrix for unordered set of images\relax }{figure.caption.25}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces A normal caption\relax }}{27}{table.caption.26}\protected@file@percent }
-\newlabel{tab:caption}{{4.1}{27}{A normal caption\relax }{table.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }}{27}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:y_gt_pred_vanilla}{{4.9}{27}{Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }{figure.caption.27}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces A normal caption\relax }}{28}{table.caption.28}\protected@file@percent }
-\newlabel{tab:caption}{{4.2}{28}{A normal caption\relax }{table.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{28}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:y_gt_and_predic_gp}{{4.10}{28}{Per class pixel distribution of the predicted pixel class label for gp model\relax }{figure.caption.29}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces A normal caption\relax }}{29}{table.caption.30}\protected@file@percent }
-\newlabel{tab:caption}{{4.3}{29}{A normal caption\relax }{table.caption.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{29}{figure.caption.31}\protected@file@percent }
-\newlabel{fig:y_gt_and_predic_lstm}{{4.11}{29}{Per class pixel distribution of the predicted pixel class label for lstm model\relax }{figure.caption.31}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric\relax }}{30}{figure.caption.32}\protected@file@percent }
-\newlabel{fig:unet_model_metric_comparison_all_classes}{{4.12}{30}{Comparison of VANILLA, GP and LSTM model performance based on metric\relax }{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance\relax }}{31}{figure.caption.33}\protected@file@percent }
-\newlabel{fig:unet_model}{{4.13}{31}{Comparison of VANILLA, GP and LSTM model performance\relax }{figure.caption.33}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{31}{subsection.4.5.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{31}{table.caption.35}\protected@file@percent }
-\newlabel{table:unet_two_classes}{{4.4}{31}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.35}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{32}{figure.caption.34}\protected@file@percent }
-\newlabel{fig:output_vanilla}{{4.14}{32}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }{figure.caption.34}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.5}Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{32}{subsection.4.5.5}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{32}{table.caption.38}\protected@file@percent }
-\newlabel{table:unet_scannet_three_classes}{{4.5}{32}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }}{33}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:unet_model_metric_comparison}{{4.15}{33}{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }{figure.caption.36}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{33}{figure.caption.37}\protected@file@percent }
-\newlabel{fig:performance_metric_three_classes_scannet}{{4.16}{33}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }{figure.caption.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{34}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:performance_metric_three_classes_unet}{{4.17}{34}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Experiment 2.1: Experiment with vkitti dataset with clone and sunset as the testing data}{35}{section.4.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.18}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{35}{figure.caption.40}\protected@file@percent }
-\newlabel{fig:vkitti_unet_two}{{4.18}{35}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.40}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{36}{table.caption.41}\protected@file@percent }
-\newlabel{table:unet_vkitti_two_classes}{{4.6}{36}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.19}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{36}{figure.caption.42}\protected@file@percent }
-\newlabel{fig:performance_metric_vkitti_two_class_box_plot}{{4.19}{36}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{37}{figure.caption.43}\protected@file@percent }
-\newlabel{fig:performance_metric_three_classes}{{4.20}{37}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.43}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{37}{table.caption.45}\protected@file@percent }
-\newlabel{table:Vanilla_conti_seq}{{4.7}{37}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.45}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{37}{section.4.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.21}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{38}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:unet_side_by_side_five_classes}{{4.21}{38}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.44}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.22}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{39}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:performance_metric_unet}{{4.22}{39}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.23}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{39}{figure.caption.47}\protected@file@percent }
-\newlabel{fig:performance_metric_three_classes_unet_five}{{4.23}{39}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.47}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Android Deployment}{41}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces  A mask2former with video instance segmentation. Courtesy of [90]\relax }}{30}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:mask2former}{{4.5}{30}{A mask2former with video instance segmentation. Courtesy of [90]\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{30}{section.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces A normal caption\relax }}{30}{table.caption.31}\protected@file@percent }
+\newlabel{tab:sota_ytube_vis}{{4.1}{30}{A normal caption\relax }{table.caption.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{31}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Combining scannet dataset classes for experiment}{31}{subsection.4.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Distance and Kernel matrix}{31}{subsection.4.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Per class pixel distribution of the entire scannet dataset\relax }}{32}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:scannet_class}{{4.6}{32}{Per class pixel distribution of the entire scannet dataset\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{32}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:scannet_all_classes}{{4.7}{32}{Pixel distribution for the scannet data containing all the classes\relax }{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Pixel distribution for the scannet data for two classes\relax }}{33}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:scannet_two_classes}{{4.8}{33}{Pixel distribution for the scannet data for two classes\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Pixel distribution for the scannet data for three classes\relax }}{33}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:scannet_three_classes}{{4.9}{33}{Pixel distribution for the scannet data for three classes\relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Ordered and Unordered set of images\relax }}{34}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:ordered_and_unordered_images}{{4.10}{34}{Ordered and Unordered set of images\relax }{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{34}{subsection.4.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Distance matrix and Kernel matrix for ordered set of images\relax }}{35}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:ordered_D_and_K}{{4.11}{35}{Distance matrix and Kernel matrix for ordered set of images\relax }{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Distance matrix and Kernel matrix for unordered set of images\relax }}{35}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:unordered_D_and_K}{{4.12}{35}{Distance matrix and Kernel matrix for unordered set of images\relax }{figure.caption.38}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces A normal caption\relax }}{36}{table.caption.39}\protected@file@percent }
+\newlabel{tab:caption}{{4.2}{36}{A normal caption\relax }{table.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }}{36}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:y_gt_pred_vanilla}{{4.13}{36}{Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }{figure.caption.40}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces A normal caption\relax }}{37}{table.caption.41}\protected@file@percent }
+\newlabel{tab:caption}{{4.3}{37}{A normal caption\relax }{table.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{37}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:y_gt_and_predic_gp}{{4.14}{37}{Per class pixel distribution of the predicted pixel class label for gp model\relax }{figure.caption.42}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces A normal caption\relax }}{38}{table.caption.43}\protected@file@percent }
+\newlabel{tab:caption}{{4.4}{38}{A normal caption\relax }{table.caption.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{38}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:y_gt_and_predic_lstm}{{4.15}{38}{Per class pixel distribution of the predicted pixel class label for lstm model\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric\relax }}{39}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:unet_model_metric_comparison_all_classes}{{4.16}{39}{Comparison of VANILLA, GP and LSTM model performance based on metric\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance\relax }}{40}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:unet_model}{{4.17}{40}{Comparison of VANILLA, GP and LSTM model performance\relax }{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{40}{subsection.4.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{40}{table.caption.48}\protected@file@percent }
+\newlabel{table:unet_two_classes}{{4.5}{40}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.18}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{41}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:output_vanilla}{{4.18}{41}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }{figure.caption.47}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.5}Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{41}{subsection.4.5.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{41}{table.caption.51}\protected@file@percent }
+\newlabel{table:unet_scannet_three_classes}{{4.6}{41}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.19}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }}{42}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:unet_model_metric_comparison}{{4.19}{42}{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }{figure.caption.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{42}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:performance_metric_three_classes_scannet}{{4.20}{42}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.21}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{43}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:performance_metric_three_classes_unet}{{4.21}{43}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Experiment 2.1: Experiment with vkitti dataset with clone and sunset as the testing data}{44}{section.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.22}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{44}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:vkitti_unet_two}{{4.22}{44}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.53}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{45}{table.caption.54}\protected@file@percent }
+\newlabel{table:unet_vkitti_two_classes}{{4.7}{45}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.23}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{45}{figure.caption.55}\protected@file@percent }
+\newlabel{fig:performance_metric_vkitti_two_class_box_plot}{{4.23}{45}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.24}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{46}{figure.caption.56}\protected@file@percent }
+\newlabel{fig:performance_metric_three_classes}{{4.24}{46}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.56}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{46}{table.caption.58}\protected@file@percent }
+\newlabel{table:Vanilla_conti_seq}{{4.8}{46}{Performance of Vanilla model with respect to different metric and two classes\relax }{table.caption.58}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{46}{section.4.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.25}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{47}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:unet_side_by_side_five_classes}{{4.25}{47}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.57}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.26}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{48}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:performance_metric_unet}{{4.26}{48}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.27}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{48}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:performance_metric_three_classes_unet_five}{{4.27}{48}{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Android Deployment}{49}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:androiddeploy}{{5}{41}{Android Deployment}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Framework}{41}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Pipeline}{41}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Deployment and Results}{41}{section.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}\protected@file@percent }
+\newlabel{chap:androiddeploy}{{5}{49}{Android Deployment}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Framework}{49}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Pipeline}{49}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Deployment and Results}{49}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:conclusion}{{6}{43}{Conclusions}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Contributions}{43}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Lessons learned}{43}{section.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Future work}{43}{section.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {A}Design Details}{45}{appendix.a.A}\protected@file@percent }
+\newlabel{chap:conclusion}{{6}{51}{Conclusions}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Contributions}{51}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Lessons learned}{51}{section.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Future work}{51}{section.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {A}Design Details}{53}{appendix.a.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {B}Parameters}{47}{appendix.a.B}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Unet vanilla model architecture\relax }}{54}{table.caption.61}\protected@file@percent }
+\newlabel{table:unet_vanilla_model_1}{{A.1}{54}{Unet vanilla model architecture\relax }{table.caption.61}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Unet vanilla model architecture\relax }}{55}{table.caption.62}\protected@file@percent }
+\newlabel{table:unet_vanilla_model_2}{{A.2}{55}{Unet vanilla model architecture\relax }{table.caption.62}{}}
+\@writefile{toc}{\contentsline {chapter}{Appendix \numberline {B}Parameters}{57}{appendix.a.B}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{58}{table.caption.63}\protected@file@percent }
+\newlabel{table:Classes in scannet_1}{{B.1}{58}{Classes and ids of the Scannet dataset\relax }{table.caption.63}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{59}{table.caption.64}\protected@file@percent }
+\newlabel{table:Classes in scannet_2}{{B.2}{59}{Classes and ids of the Scannet dataset\relax }{table.caption.64}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{60}{table.caption.65}\protected@file@percent }
+\newlabel{table:Classes in scannet_3}{{B.3}{60}{Classes and ids of the Scannet dataset\relax }{table.caption.65}{}}
 \bibstyle{unsrt}
 \bibdata{references}
 \bibcite{35_mldl}{1}
@@ -331,8 +374,8 @@
 \bibcite{01_mandic2005data}{10}
 \bibcite{06_castanedo2013review}{11}
 \bibcite{02_lim2021temporal}{12}
+\@writefile{toc}{\contentsline {chapter}{References}{61}{appendix*.66}\protected@file@percent }
 \bibcite{03_duzceker2021deepvideomvs}{13}
-\@writefile{toc}{\contentsline {chapter}{References}{49}{appendix*.48}\protected@file@percent }
 \bibcite{04_li2021spatial}{14}
 \bibcite{005_hsiao2005temporal}{15}
 \bibcite{07_hsiao2005temporal}{16}
@@ -406,4 +449,17 @@
 \bibcite{83_iou}{84}
 \bibcite{85_kag_challenge}{85}
 \bibcite{05_hsiao2005temporal}{86}
+\bibcite{86_li2022hybrid}{87}
+\bibcite{87_heo2022vita}{88}
+\bibcite{88_huang2022minvis}{89}
+\bibcite{89_cheng2021mask2former}{90}
+\bibcite{90_dai2017scannet}{91}
+\bibcite{91_ScanNet}{92}
+\bibcite{92_cabon2020virtual}{93}
+\bibcite{93_ScanNet}{94}
+\bibcite{94_ScanNet}{95}
+\bibcite{95_mazzotti2016measure}{96}
+\bibcite{96_GPML}{97}
+\bibcite{97_williams2006gaussian}{98}
+\bibcite{99_shi2015convolutional}{99}
 \citation{*}

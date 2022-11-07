@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="241d827a-6f65-42b7-8c77-33e5b0cca64e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/chapters/ch05_evaluation_and_result.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/chapters/ch05_evaluation_and_result.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/references.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.lof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.lot" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.lot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/EMVSSS/report.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/EMVSSS/report.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V1.0/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/V1.0/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V2.0/app/src/main/java/com/chaquo/myapplication/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/V2.0/app/src/main/java/com/chaquo/myapplication/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V2.0/app/src/main/python/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/V2.0/app/src/main/python/plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V2.0/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/V2.0/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V2.0/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/V2.0/local.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2GG2ouDfNZL3vyds0crSObXtebh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="241d827a-6f65-42b7-8c77-33e5b0cca64e" name="Changes" comment="" />
+      <created>1666000777807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666000777807</updated>
+    </task>
+    <servers />
+  </component>
+</project>

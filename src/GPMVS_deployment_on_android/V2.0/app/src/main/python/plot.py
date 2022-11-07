@@ -145,7 +145,6 @@ def plot():
 
     # Decoder
 
-
     def down_conv_layer(input_channels, output_channels, kernel_size):
         return nn.Sequential(
             nn.Conv2d(
@@ -456,6 +455,7 @@ def plot():
        [ 0.33531535,  0.9405307 ,  0.05358316,  0.1364616 ],
        [-0.3503717 ,  0.07171355,  0.933794  , -0.53893393],
        [ 0.        ,  0.        ,  0.        ,  1.        ]])]
+
     with torch.no_grad():
         poses = []
         idepths = []

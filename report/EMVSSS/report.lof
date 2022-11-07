@@ -10,30 +10,45 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Unet architecture. Courtesy of \cite {70_ronneberger2015u}\relax }}{13}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces TDNet. Courtesy of \cite {78_hu2020temporally}\relax }}{14}{figure.caption.14}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sample of Scannet dataset rgb and semantic label\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Sample of Scannet dataset pose\relax }}{16}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Scannet dataset class distribution\relax }}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sample of Virtual Kitti 2 dataset\relax }}{17}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sample of Virtual Kitti 2 dataset\relax }}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces RGB, Label and Pose dataset sample of scannet and vkitti data\relax }}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces RGB, Label and Pose dataset sample of scannet and vkitti data\relax }}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces RGB, Label and Pose dataset sample of scannet and vkitti data\relax }}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Unet with ConvLSTM cell\relax }}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Training pipeline\relax }}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Evaluation pipeline\relax }}{24}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces IoU. Courtesy of \cite {82_iou}\relax }}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Per class pixel distribution of the entire scannet dataset\relax }}{23}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{23}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Pixel distribution for the scannet data for two classes\relax }}{24}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Pixel distribution for the scannet data for three classes\relax }}{24}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ordered and Unordered set of images\relax }}{25}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Distance matrix and Kernel matrix for ordered set of images\relax }}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Distance matrix and Kernel matrix for unordered set of images\relax }}{26}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{28}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{29}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric\relax }}{30}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance\relax }}{31}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{32}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }}{33}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{33}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{34}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{35}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{36}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{37}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{38}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{39}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{39}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces IoU. Courtesy of \cite {82_iou}\relax }}{26}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces VIS proposed framework. Courtesy of [87]\relax }}{28}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The frame level detector take frame queries and mask features and generate the embeddings and pass onto the VITA model for mask prediction. The object-aware knowledge in the spatial scenes is captured by construction of the temporal interactions between the frame queries. Finally mask trajectories are obtained form the VITA model. Courtesy of [88]\relax }}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces (a) MinVIS trained on query based segmentation individually for every frame. (b) Inference of the video instance segmentation from the segmented image using bipartite matching of th query embeddings. Courtesy of [89] \relax }}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A mask2former with video instance segmentation. Courtesy of [90]\relax }}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Per class pixel distribution of the entire scannet dataset\relax }}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{32}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Pixel distribution for the scannet data for two classes\relax }}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Pixel distribution for the scannet data for three classes\relax }}{33}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Ordered and Unordered set of images\relax }}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Distance matrix and Kernel matrix for ordered set of images\relax }}{35}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Distance matrix and Kernel matrix for unordered set of images\relax }}{35}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{37}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{38}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric\relax }}{39}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance\relax }}{40}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{41}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }}{42}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{42}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{43}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{44}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{45}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{46}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{47}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{48}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{48}{figure.caption.60}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

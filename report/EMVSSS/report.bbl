@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{35_mldl}
 Michael Middleton.
@@ -537,5 +537,83 @@ Ko~Ming Hsiao, Geoff West, Svetha Venkatesh, and Mohan Kumar.
   warping.
 \newblock In {\em SENSORFUSION 2005: Workshop on Information Fusion and
   Dissemination in Wireless Sensor Networks}, pages 1--9. IEEE, 2005.
+
+\bibitem{86_li2022hybrid}
+Xiang Li, Jinglu Wang, Xiao Li, and Yan Lu.
+\newblock Hybrid instance-aware temporal fusion for online video instance
+  segmentation.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~36, pages 1429--1437, 2022.
+
+\bibitem{87_heo2022vita}
+Miran Heo, Sukjun Hwang, Seoung~Wug Oh, Joon-Young Lee, and Seon~Joo Kim.
+\newblock Vita: Video instance segmentation via object token association.
+\newblock {\em arXiv preprint arXiv:2206.04403}, 2022.
+
+\bibitem{88_huang2022minvis}
+De-An Huang, Zhiding Yu, and Anima Anandkumar.
+\newblock Minvis: A minimal video instance segmentation framework without
+  video-based training.
+\newblock {\em arXiv preprint arXiv:2208.02245}, 2022.
+
+\bibitem{89_cheng2021mask2former}
+Bowen Cheng, Anwesa Choudhuri, Ishan Misra, Alexander Kirillov, Rohit Girdhar,
+  and Alexander~G Schwing.
+\newblock Mask2former for video instance segmentation.
+\newblock {\em arXiv preprint arXiv:2112.10764}, 2021.
+
+\bibitem{90_dai2017scannet}
+Angela Dai, Angel~X Chang, Manolis Savva, Maciej Halber, Thomas Funkhouser, and
+  Matthias Nie{\ss}ner.
+\newblock Scannet: Richly-annotated 3d reconstructions of indoor scenes.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 5828--5839, 2017.
+
+\bibitem{91_ScanNet}
+Manolis Savva Maciej Halber Thomas Funkhouser Matthias~Nießner Angela~Dai,
+  Angel X.~Chang.
+\newblock Scannet: Richly-annotated 3d reconstructions of indoor scenes, 2018.
+
+\bibitem{92_cabon2020virtual}
+Yohann Cabon, Naila Murray, and Martin Humenberger.
+\newblock Virtual kitti 2.
+\newblock {\em arXiv preprint arXiv:2001.10773}, 2020.
+
+\bibitem{93_ScanNet}
+Manolis Savva Maciej Halber Thomas Funkhouser Matthias~Nießner Angela~Dai,
+  Angel X.~Chang.
+\newblock Scannet: Richly-annotated 3d reconstructions of indoor scenes, 2018.
+
+\bibitem{94_ScanNet}
+Manoj~Kolpe Lingappa.
+\newblock Scannet data processing, 2022.
+
+\bibitem{95_mazzotti2016measure}
+Claudio Mazzotti, Nicola Sancisi, and Vincenzo Parenti-Castelli.
+\newblock A measure of the distance between two rigid-body poses based on the
+  use of platonic solids.
+\newblock In {\em Symposium on Robot Design, Dynamics and Control}, pages
+  81--89. Springer, 2016.
+
+\bibitem{96_GPML}
+Carl~Edward Rasmussen and Christopher K.~I. Williams.
+\newblock {\em {Gaussian Processes for Machine Learning}}.
+\newblock The MIT Press, 11 2005.
+
+\bibitem{97_williams2006gaussian}
+Christopher~KI Williams and Carl~Edward Rasmussen.
+\newblock {\em Gaussian processes for machine learning}, volume~2.
+\newblock MIT press Cambridge, MA, 2006.
+
+\bibitem{98_ConvLSTM}
+Andrea Palazzi.
+\newblock Convlstm pytorch, 2022.
+
+\bibitem{99_shi2015convolutional}
+Xingjian Shi, Zhourong Chen, Hao Wang, Dit-Yan Yeung, Wai-Kin Wong, and
+  Wang-chun Woo.
+\newblock Convolutional lstm network: A machine learning approach for
+  precipitation nowcasting.
+\newblock {\em Advances in neural information processing systems}, 28, 2015.
 
 \end{thebibliography}

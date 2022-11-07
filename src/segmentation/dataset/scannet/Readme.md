@@ -92,4 +92,4 @@ scene0000_01/
 
 To get the color segmentation image from the label 8-bit pngs, find the jupyter notebook (raw_image_to_segmented_image.ipynb) given inside the `raw_to_color` folder (One folder above the current folder).  
 
-
+Courtesy: https://github.com/ScanNet/ScanNet

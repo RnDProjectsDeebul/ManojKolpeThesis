@@ -89,11 +89,81 @@
     
     \section{RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}
 	
+	Segmentation is the process of assigning pixel labels for a given image. Segmentation can be observed in different context such as Video instance segmentation (VIS), Semantic segmentation of the key frames of a video sequence, Video panoptic segmentation, MRI image segmentation, autonomous driving scene understanding. Youtube - Video Instance Segmentation (VOS), Scannet are the common datasets in the semantic segmentation domain. 
 	
+	{ \bf Youtube VIS data}
+	Youtube - Video Instance Segmentation (VIS) is a dataset that extends the image instance segmentation from the image to the video domain. The dataset aims to solve the problem of simultaneous detection, segmentation and tracking problem. Scannet is an RGB-D video dataset containing 2.5 millions views with more than 1500 scans. 
+%	\ref{59_starck2005image}
+	A paper by Xiang Li et.al [87] explains the temporal fusion for online video instance segmentation. The author introduced the concept of an online video framework with novel aware temporal fusion method. A cropping free temporal fusion approach to model the temporal consistency between video frames. A bottom-up online transformer based network is used to solve the VIS problem. A transformer layer is introduced in the convolutional neural network (CNN) to include the instance information. A attention layer between the frames used to extract the instance code for the current frame. A skip connection is used to use low level contextual information and use dynamic convolution to generate the segmentation map. CNN feature map and the latent code combined together helps to jointly represent instance aware features. A instance code is a LxD vector to VIS task, where L is the maximum detected instances number in a frame D is the feature instance for each instance. Inter and intra frame attention module for fusing the temporal information. The network architecture is presented in Fig \ref{fig:vis}. Three types of attention code-to-code(c2c), code-to-pixel(c2p), and pixel-to-code(p2c) used to construct the	relation between the instance code and feature map. Inter frame used to build the temporal correlation and combine contextual features across frames. Inter frame c2c, c2p and p2c are used to construct the temporal information.
+	
+    \begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/VIS.png}
+		\caption{VIS proposed framework. Courtesy of [87]}
+		\label{fig:vis}
+	\end{figure}
+%	\ref{87_heo2022vita}
+	Miran Heo et al [88] worked on the video instance segmentation via Object Token Association (VITA). The work effectively understand the video by the object centric tokens. The VITA model requires a frame-level detector. The frame level detector localizes instances using masks without the need of bounding boxes. Two features is generated for the frame-level predictions specifically: a) dynamic 1x1 convolution weight from the frame queries f b) per-pixel embeddings from the pixel decoder. Dot product between the two embeddings are taken in the frame-level predictions. The end-to-end video instance segmentation method VITA is divided into three stages. Firstly, VITA works with the frame-level detector in a manner that is frame independent. No computation between the frames are involved. The frame queries that holds the object centric information are collected throughout the video sequence and object encoder is used to build the video level information between the frames. And thirdly the decoder combines the information from the frame and video queries which is finally used to find the object mask in the video frames. 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/VITA.png}
+		\caption{The frame level detector take frame queries and mask features and generate the embeddings and pass onto the VITA model for mask prediction. The object-aware knowledge in the spatial scenes is captured by construction of the temporal interactions between the frame queries. Finally mask trajectories are obtained form the VITA model. Courtesy of [88]}
+		\label{fig:vita}
+	\end{figure}
+%	\ref{88_huang2022minvis}
+	A minimal video instance segmentation (MinVIS) by De-An Huang et al [89] does not require video based training and can be applied directly to image containing sparse image instance segmentations annotations. MinVIS is a two stage approach: 1) Independent image instance segmentation on each frame 2) Instance association between the frames. Image Instance Segmentation has three unique main components a)Encoder to extract features from the image b) Transformer decoder, used to process the output of image encoder to update the query embeddings c) Prediction head takes the query embeddings to predict the output. Association between the instance segmented frames is calculated by bipartite matching of the respective query embeddings.   
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/minVIS.png}
+		\caption{(a) MinVIS trained on query based segmentation individually for every frame. (b) Inference of the video instance segmentation from the segmented image using bipartite matching of th query embeddings. Courtesy of [89] }
+		\label{fig:minVIS}
+	\end{figure}
+%	\ref{89_cheng2021mask2former}
+	Mask classification in image segmentation problem is solved by the state of the art segmentation models. B.Cheng et al [90] proposed a method to process directly the video rather than the image. This is achieved by feeding the Mask2Former with 3D spatio-temporal features and predict the 3D volume to track each object instances across time. For data with single frame the Mask2Former works as a general image segmentation model. For data with more than 1 frame the model segments and tracks instances across frames. 
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/mask2former.png}
+		\caption{ A mask2former with video instance segmentation. Courtesy of  [90]}
+		\label{fig:mask2former}
+	\end{figure}	
 	
     \section{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}
     
-    
+   	All of the above mentioned approaches are trained and tested on the Youtube VIS datasets. The performance of the models are tabulated in table \ref{tab:sota_ytube_vis}.
+   
+	\begin{table}[h]
+   		\begin{center}
+   			\begin{tabular}{ | l | l| l| l| l| p{2cm} |}
+   				\hline
+   				
+   				\cellcolor{purple!30}Method & \cellcolor{purple!30}AP & \cellcolor{purple!30}AP50 & \cellcolor{purple!30}AP75 & \cellcolor{purple!30}AR1 & \cellcolor{purple!30}AR10 \\ \hline
+%   				\ref{86_li2022hybrid}
+   				HIATF for VIS 2019 [87] & 41.3 & 61.5 & 43.5 & 42.7 & 47.8 \\ \hline
+%   				\ref{87_heo2022vita}
+   				VITA ResNet-50 2019 [88]  & 49.8 & 72.6 & 54.5 & 49.4 & 61.0  \\ \hline
+%   				\ref{87_heo2022vita}
+   				VITA ResNet-101 2019 [88]  & 51.9 & 75.4 & 57.0 & 49.6 & 59.1 \\ \hline
+%   				\ref{87_heo2022vita}
+   				VITA Swin-L 2019 [88]  & 63.0 & 86.9 & 67.9 & 56.3 & 68.1 \\ \hline
+%   				\ref{87_heo2022vita}
+   				VITA 2021 [88]  & 45.7 & 67.4 & 49.5 & 40.9 & 53.6 \\ \hline
+%   				\ref{88_huang2022minvis}
+   				Min VIS 2019 [89] & 61.6 & 83.3 & 68.6 & 54.8 & 66.6 \\ \hline
+%   				\ref{88_huang2022minvis}
+   				Min VIS 2021 [89] & 55.3 & 76.6 & 62.0 & 45.9 & 60.8 \\ \hline
+%   				\ref{89_cheng2021mask2former}
+   				Mask2former 2019 [90]  & 60.4 & 84.4 & 67.0 & - & - \\ \hline
+%   				\ref{89_cheng2021mask2former}   
+   				Mask2former 2021 [90]  & 52.6 & 76.4 & 57.2 & - & - \\ \hline
+   				\hline
+   			\end{tabular}
+   			\caption{A normal caption}
+   			\label{tab:sota_ytube_vis}
+   		\end{center}
+   	\end{table}
     
     \section{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}
     
@@ -278,15 +348,15 @@
 		\begin{tabular}{ | l | p{12cm} |}
 			\hline		
 			\cellcolor{purple!30}Metric & \cellcolor{purple!30}Value \\ \hline
-			Pixel Accuracy & 0.5601 \\ \hline
-			Pixel Mean accuracy & 0.2254  \\ \hline
-			meanIOU & 0.145 \\ \hline
-			IoU & [0.2664, 0.6187, 0.6561, 0.0875, 0.4232, 0.1989, 0.0567, 0.1796, 0.2832,
-			0.1905, 0.0258, 0.2313, 0.0013, 0.0000, 0.0681, 0.1169, 0.2300, 0.0685,
-			0.1384, 0.0182, 0.0000, 0.0600, 0.1695, 0.0515, 0.0000, 0.3135, 0.0000,
-			0.0000, 0.0069, 0.0335, 0.1894,    nan, 0.0804, 0.1759, 0.1104, 0.1517,
-			0.0053, 0.0996, 0.1119, 0.1184, 0.2613] \\ \hline
-			FwIoU & 0.3996 \\ \hline
+			Pixel Accuracy & 0.5426 \\ \hline
+			Pixel Mean accuracy & 0.3509  \\ \hline
+			meanIOU & 0.1411 \\ \hline
+			IoU & [0.1690, 0.5573, 0.5949, 0.1428, 0.1170, 0.1984, 0.1930, 0.1278, 0.2010,
+			0.0778, 0.0071, 0.0514, 0.0216, 0.0070, 0.0426, 0.0610, 0.1063, 0.0020,
+			0.0907, 0.0017, 0.0000, 0.0114, 0.0422, 0.0015, 0.0380, 0.0209, 0.0000,
+			0.0362, 0.0710, 0.0010, 0.0182, 0.0000, 0.0174, 0.1382, 0.0534, 0.0077,
+			0.0558, 0.0016, 0.0646, 0.1776, 0.1697] \\ \hline
+			FwIoU & 0.7643 \\ \hline
 			\hline
 		\end{tabular}
 		\caption{A normal caption}
@@ -338,11 +408,11 @@
 				\hline
 				
 				\cellcolor{purple!30}Metric & \cellcolor{purple!30}Vanilla & \cellcolor{purple!30}GP & \cellcolor{purple!30}LSTM\\ \hline
-				Pixel Accuracy & 0.4342 & 0.3764 & 0.4496\\ \hline
-				Pixel Mean accuracy & 0.6232 & 0.5625 & 0.5301 \\ \hline
-				meanIOU & 0.145 & 0.2318 & 0.2832 \\ \hline
-				IoU & [0.2737, 0.2809] & [0.2377, 0.2259] & [0.2135, 0.3530] \\ \hline
-				FwIoU & 0.2793 & 0.2284 & 0.3221 \\ \hline
+				Pixel Accuracy & 0.4342 & 0.3764 & 0.8549\\ \hline
+				Pixel Mean accuracy & 0.6232 & 0.5625 & 0.7837 \\ \hline
+				meanIOU & 0.145 & 0.2318 & 0.6593 \\ \hline
+				IoU & [0.2737, 0.2809] & [0.2377, 0.2259] & [0.8280, 0.4903] \\ \hline
+				FwIoU & 0.2793 & 0.2284 & 0.7643 \\ \hline
 				\hline
 			\end{tabular}
 			\caption{Performance of Vanilla model with respect to different metric and two classes}
@@ -377,10 +447,10 @@
 				
 				\cellcolor{purple!30}Metric & \cellcolor{purple!30}Vanilla & \cellcolor{purple!30}GP & \cellcolor{purple!30}LSTM\\ \hline
 				Pixel Accuracy & 0.3289 & 0.5731 & 0.6266 \\ \hline
-				Pixel Mean accuracy & 0.3135 & 0.4779 & 0.5596 \\ \hline
-				meanIOU & 0.1820 & 0.3356 & 0.4049 \\ \hline
-				IoU & [0.2732, 0.1686, 0.1042] & [0.5178, 0.3066, 0.1823] & [0.5513, 0.3845, 0.2791] \\ \hline
-				FwIoU & 0.2160 & 0.4033 & 0.4596 \\ \hline
+				Pixel Mean accuracy & 0.3135 & 0.4779 & 0.6920 \\ \hline
+				meanIOU & 0.1820 & 0.3356 & 0.4870 \\ \hline
+				IoU & [0.2732, 0.1686, 0.1042] & [0.5178, 0.3066, 0.1823] & [0.6810, 0.4661, 0.2998] \\ \hline
+				FwIoU & 0.2160 & 0.4033 & 0.6245 \\ \hline
 				\hline
 			\end{tabular}
 			\caption{Performance of Vanilla model with respect to different metric and two classes}
@@ -479,7 +549,7 @@
 		\end{center}
 	\end{table}
 	
-	The box plot of the vanilla, gp and lstm model performance is shown in the Fig \ref{fig:performance_metric_unet}. The pixel accuracy, and  FwIoU is high for the lstm model and for the gp and vanilla model the performance is comparable. Mean pixel accuracy and meanIoU are high for the lstm model. Traffic light, Pole and Misc class IoU are low in vanilla, gp and lstm models. The same is shown in the Fig \ref{fig:performance_metric_three_classes_unet_five}. Hence from the result table we can prove that by incorporating the temporal fusion data for the semantic segmentation improves the performance.
+	The box plot of the vanilla, gp and lstm model performance is shown in the Fig \ref{fig:performance_metric_unet}. The pixel accuracy, and  FwIoU is high for the lstm model and for the gp and vanilla model the performance is comparable. Mean pixel accuracy and meanIoU are high for the lstm model. Traffic light, Pole and Misc class IoU are low in vanilla, gp and lstm models. The same is shown in the Fig \ref{fig:performance_metric_three_classes_unet_five}. Hence from the result table we can prove that by incorporating the temporal fusion data for the semantic segmentation improves the performance. 
 	
 	\begin{figure}[h]
 		\centering

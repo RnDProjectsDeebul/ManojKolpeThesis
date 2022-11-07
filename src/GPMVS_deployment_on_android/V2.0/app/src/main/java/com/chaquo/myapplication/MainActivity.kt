@@ -6,13 +6,13 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -28,10 +28,14 @@ class MainActivity : AppCompatActivity() {
     var mBitmap: Bitmap? = null
     var mImageView: ImageView? = null
     var mResultView: ImageView? = null
+    // declaring a null variable for VideoView
+//    var simpleVideoView: VideoView? = null
+//    // declaring a null variable for MediaController
+//    var mediaControls: MediaController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
 
         if (ContextCompat.checkSelfPermission(
@@ -59,6 +63,20 @@ class MainActivity : AppCompatActivity() {
             Log.e("Object Detection", "Error reading assets", e)
             finish()
         }
+        // assigning id of VideoView from
+        // activity_main.xml layout file
+//        simpleVideoView = findViewById<View>(R.id.simpleVideoView) as VideoView
+//        if (mediaControls == null) {
+//            // creating an object of media controller class
+//            mediaControls = MediaController(this)
+//
+//            // set the anchor view for the video view
+//            mediaControls!!.setAnchorView(this.simpleVideoView)
+//        }
+//
+//        // set the media controller for video view
+//        simpleVideoView!!.setMediaController(mediaControls)
+
         findViewById<ImageView>(R.id.imageView).setImageBitmap(mBitmap)
 //        findViewById<ImageView>(R.id.imageView).setVisibility(View.INVISIBLE)
 //
@@ -129,6 +147,43 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
             }
         }
+//        findViewById<Button>(R.id.button).setOnClickListener {
+//            try {
+//                val bytes = module.callAttr("plot").toJava(ByteArray::class.java)
+//                val bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
+//                findViewById<ImageView>(R.id.imageView).setImageBitmap(bitmap)
+//
+//                // set the absolute path of the video file which is going to be played
+////                simpleVideoView!!.setVideoURI(
+////                    Uri.parse("python/movie.mp4"))
+////
+////                simpleVideoView!!.requestFocus()
+////
+////                // starting the video
+////                simpleVideoView!!.start()
+////
+////                // display a toast message
+////                // after the video is completed
+////                simpleVideoView!!.setOnCompletionListener {
+////                    Toast.makeText(applicationContext, "Video completed",
+////                        Toast.LENGTH_LONG).show()
+////                }
+////
+////                // display a toast message if any
+////                // error occurs while playing the video
+////                simpleVideoView!!.setOnErrorListener { mp, what, extra ->
+////                    Toast.makeText(applicationContext, "An Error Occurred " +
+////                            "While Playing Video !!!", Toast.LENGTH_LONG).show()
+////                    false
+////                }
+//                currentFocus?.let {
+//                    (getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager)
+//                        .hideSoftInputFromWindow(it.windowToken, 0)
+//                }
+//            } catch (e: PyException) {
+//                Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
+//            }
+//        }
 
     }
 }
