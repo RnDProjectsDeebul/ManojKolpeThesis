@@ -5,7 +5,7 @@ Semantic segmentation is the process of labelling each pixel in a RGB image. In 
 Model prediction
 
 <p align="center">
-  ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/15636057/205967284-ebfc3b7b-f2f8-46d9-9c41-0a8cb4f08375.gif)
+  <img  src="literature/prediction.gif">
 </p>
 
 <p align="center">
