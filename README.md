@@ -2,6 +2,10 @@
 
 Semantic segmentation is the process of labelling each pixel in a RGB image. In general setting, for a video sequence data semantic segmentation is performed on all the frames of the video or on the key frames without fusing the information from the previous frames. The overlapping information from the past frames can be utilized to make the prediction better. This work aims to understand the fusing of information from the previous frame to the current frame predition with the help of Gaussian process and Long Short Term Memory.
 
+Model prediction
+
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/15636057/205967284-ebfc3b7b-f2f8-46d9-9c41-0a8cb4f08375.gif)
+
 <p align="center">
   <img  src="literature/test_depth.gif">
 </p>
