@@ -1,5 +1,12 @@
-# ManojKolpeThesis - Depth estimation using multi view stereo 
-Depth estimation is a crucial step towards inferring scene geometry from 2D images. The goal in monocular depth estimation is to predict the depth value of each pixel or inferring depth information, given only a RGB images as input.
+# ManojKolpeThesis - Semantic segmentation using temporal fusion 
+
+Semantic segmentation is the process of labelling each pixel in a RGB image. In general setting, for a video sequence data semantic segmentation is performed on all the frames of the video or on the key frames without fusing the information from the previous frames. The overlapping information from the past frames can be utilized to make the prediction better. This work aims to understand the fusing of information from the previous frame to the current frame predition with the help of Gaussian process and Long Short Term Memory.
+
+Model prediction
+
+<p align="center">
+  <img  src="literature/prediction.gif">
+</p>
 
 <p align="center">
   <img  src="literature/test_depth.gif">
