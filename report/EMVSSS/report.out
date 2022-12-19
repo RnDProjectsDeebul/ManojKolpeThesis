@@ -27,8 +27,8 @@
 \BOOKMARK [1][-]{section.2.5}{Limitations of Previous Work}{chapter.2}% 27
 \BOOKMARK [0][-]{chapter.3}{Methodology}{}% 28
 \BOOKMARK [1][-]{section.3.1}{Dataset}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.1.1}{ScanNet ??}{section.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.1.2}{Virtual KITTI 2 ??}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.1}{ScanNet [91]}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.2}{Virtual KITTI 2 [93]}{section.3.1}% 31
 \BOOKMARK [1][-]{section.3.2}{Data Collection and Preprocessing}{chapter.3}% 32
 \BOOKMARK [1][-]{section.3.3}{Experimental Design}{chapter.3}% 33
 \BOOKMARK [2][-]{subsection.3.3.1}{U-Net Vanilla model}{section.3.3}% 34
@@ -49,16 +49,17 @@
 \BOOKMARK [2][-]{subsection.4.5.3}{Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{section.4.5}% 49
 \BOOKMARK [2][-]{subsection.4.5.4}{Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{section.4.5}% 50
 \BOOKMARK [2][-]{subsection.4.5.5}{Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{section.4.5}% 51
-\BOOKMARK [1][-]{section.4.6}{Experiment 2.1: Experiment with vkitti dataset with clone and sunset as the testing data}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.7}{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{chapter.4}% 53
-\BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 54
-\BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.2}{Pipeline}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.3}{Deployment and Results}{chapter.5}% 57
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 58
-\BOOKMARK [1][-]{section.6.1}{Contributions}{chapter.6}% 59
-\BOOKMARK [1][-]{section.6.2}{Lessons learned}{chapter.6}% 60
-\BOOKMARK [1][-]{section.6.3}{Future work}{chapter.6}% 61
-\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 62
-\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 63
-\BOOKMARK [0][-]{appendix*.66}{References}{}% 64
+\BOOKMARK [1][-]{section.4.6}{Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.6.1}{Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{section.4.6}% 53
+\BOOKMARK [1][-]{section.4.7}{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.8}{Comments and Discussion}{chapter.4}% 55
+\BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 56
+\BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.2}{Display of results}{chapter.5}% 58
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 59
+\BOOKMARK [1][-]{section.6.1}{Contributions}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.2}{Lessons learned}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.3}{Future work}{chapter.6}% 62
+\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 63
+\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 64
+\BOOKMARK [0][-]{appendix*.75}{References}{}% 65

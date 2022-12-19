@@ -3,9 +3,32 @@
 \begin{document}
     \chapter{Conclusions}
 	\label{chap:conclusion}
+	
+	In general settings, semantic segmentation of the video sequence data is done by performing segmentation on the keyframes or the entire frames without fusing the rich information from the previous frame. The overlapping data in the consecutive frames can be propagated and fused forward to improve the segmentation performance. This project studies the latent space encoding temporal fusion in the context of continuous sequence video data with the help of the Gaussian Process (GP) and Long Short-Term Memory (LSTM). Comparative evaluation of the baseline, GP, and LSTM is conducted, and the best-performing model is deployed on an android device. In order to conduct the experiment, Scannet and Vkitti data are considered. It is a continuous video sequence data with overlapping information in consecutive frames. The overlapping data is leveraged for temporal fusion with the help of GP and LSTM. The overlapping information is modeled with the help of camera pose information for the GP, and a convolution LSTM cell is introduced in the latent space encoding for temporal fusion from the previous frames. The impact of the training batch size on the model performance is also studied. The main objective of the project is to
+	
+	\begin{itemize}
+		\item Literature review on the temporal fusion models
+		\item Comparison of the state of the art temporal fusion architecture performance
+		\item Implementation of the baseline encoder-decoder type Unet model
+		\item Model the overlapping information with pose information and fuse the data in the latent space encoding with the Gaussian Process
+		\item Temporal fusion in the latent space encoding with LSTM
+		\item Comparative evaluation of the baseline, GP and LSTM model performance
+		\item Implementation of best performing model on the android device
+		
+	\end{itemize} 
+	
+	Challenges encountered during the projects
+	
+	\begin{itemize}
+		\item Finding the dataset containing the pose information
+		\item How to fuse the information?
+		\item Lightweight encoder-decoder architecture
+	\end{itemize}
+	
     \section{Contributions}
-
+	
     \section{Lessons learned}
 
     \section{Future work}
+    
 \end{document}
