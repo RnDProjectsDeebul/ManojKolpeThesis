@@ -131,6 +131,10 @@
 		\label{fig:mask2former}
 	\end{figure}	
 	
+	\section{RQ1 Conclusion}
+	
+	There is much work with respect to temporal fusion. Temporal fusion can be done by taking the previous single feature data or multiple past features and combining them in the current stage. Feature combination can be done at multiple stages of the network. Subjecting the feature can be done in different ways, such as subjecting the feature to Gaussian Process, Long-Short-Term memory, combining the instance code with the encoder features, finding masks in the individual frame and combining them,or taking multiple features from the decoder and passing them to the transformer to model the temporal data. The approaches are made without considering the pose information. Hence, a new temporal fusion approach needs to be developed to model the temporal fusion data to improve performance. 
+	
     \section{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}
     
    	All of the above mentioned approaches are trained and tested on the Youtube VIS datasets. The performance of the models are tabulated in table \ref{tab:sota_ytube_vis}.
@@ -148,7 +152,7 @@
 %   				\ref{87_heo2022vita}
    				VITA ResNet-101 2019 [88]  & 51.9 & 75.4 & 57.0 & 49.6 & 59.1 \\ \hline
 %   				\ref{87_heo2022vita}
-   				VITA Swin-L 2019 [88]  & 63.0 & 86.9 & 67.9 & 56.3 & 68.1 \\ \hline
+   				VITA Swin-L 2019 [88]  & { \bf 63.0}  & { \bf 86.9} & { \bf 67.9} & { \bf 56.3} & { \bf 68.1} \\ \hline
 %   				\ref{87_heo2022vita}
    				VITA 2021 [88]  & 45.7 & 67.4 & 49.5 & 40.9 & 53.6 \\ \hline
 %   				\ref{88_huang2022minvis}
@@ -165,6 +169,10 @@
    			\label{tab:sota_ytube_vis}
    		\end{center}
    	\end{table}
+    
+   	\section{RQ2 Conclusion}
+    
+	 It is evident from the table \ref{tab:sota_ytube_vis} that temporal fusion with the VITA network outperformed the rest of the model performance with Swin-L as the backbone. The comparison is made with the average precision metric. Swin-L transformer is a general-purpose backbone for computer vision tasks. The representation is computed with the transformer. The comparison is made with the Youtube VIS dataset. The dataset does not contain the pose information. VIS network is a temporal fusion architecture containing inter and intra-frame fusion for a fusion of temporal data. From the result table \ref{tab:sota_ytube_vis}. The method of temporal fusion by taking only a single frame data from the previous frame is a better approach than computing the temporal fusion of all the data at a time.
     
     \section{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}
     
@@ -287,7 +295,7 @@
     		FwIoU & 0.3531 \\ \hline
     		\hline
     	\end{tabular}
-   		\caption{A normal caption}
+   		\caption{Vanilla model performance with respect to all the metrics. Higher values means top performing model.}
 	    \label{tab:caption}
     \end{center}
 	\end{table}
@@ -324,7 +332,7 @@
 			FwIoU & 0.3497 \\ \hline
 			\hline
 		\end{tabular}
-		\caption{A normal caption}
+		\caption{GP model performance with respect to all the metrics. Higher values means top performing model.}
 		\label{tab:caption}
 	\end{center}
 	\end{table}
@@ -349,18 +357,18 @@
 		\begin{tabular}{ | l | p{12cm} |}
 			\hline		
 			\cellcolor{purple!30}Metric & \cellcolor{purple!30}Value \\ \hline
-			Pixel Accuracy & 0.5426 \\ \hline
-			Pixel Mean accuracy & 0.3509  \\ \hline
-			meanIOU & 0.1411 \\ \hline
-			IoU & [0.1690, 0.5573, 0.5949, 0.1428, 0.1170, 0.1984, 0.1930, 0.1278, 0.2010,
-			0.0778, 0.0071, 0.0514, 0.0216, 0.0070, 0.0426, 0.0610, 0.1063, 0.0020,
-			0.0907, 0.0017, 0.0000, 0.0114, 0.0422, 0.0015, 0.0380, 0.0209, 0.0000,
-			0.0362, 0.0710, 0.0010, 0.0182, 0.0000, 0.0174, 0.1382, 0.0534, 0.0077,
-			0.0558, 0.0016, 0.0646, 0.1776, 0.1697] \\ \hline
-			FwIoU & 0.7643 \\ \hline
+			Pixel Accuracy & { \bf 0.5426 }  \\ \hline
+			Pixel Mean accuracy & { \bf 0.3509 }   \\ \hline
+			meanIOU & { \bf 0.1411 }  \\ \hline
+			IoU & { \bf [0.1690, 0.5573, 0.5949, 0.1428, 0.1170, 0.1984, 0.1930, 0.1278, 0.2010,
+				0.0778, 0.0071, 0.0514, 0.0216, 0.0070, 0.0426, 0.0610, 0.1063, 0.0020,
+				0.0907, 0.0017, 0.0000, 0.0114, 0.0422, 0.0015, 0.0380, 0.0209, 0.0000,
+				0.0362, 0.0710, 0.0010, 0.0182, 0.0000, 0.0174, 0.1382, 0.0534, 0.0077,
+				0.0558, 0.0016, 0.0646, 0.1776, 0.1697] }  \\ \hline
+			FwIoU & { \bf 0.7643 }  \\ \hline
 			\hline
 		\end{tabular}
-		\caption{A normal caption}
+		\caption{LSTM model performance with respect to all the metrics. Higher values means top performing model.}
 		\label{tab:caption}
 	\end{center}
 	\end{table}
@@ -376,10 +384,38 @@
 
 	Accuracy, mean accuracy, meanIoU, and FWIoU comparison is plotted as the bar graph in \ref{fig:unet_model_metric_comparison_all_classes}. The accuracy is highest for the LSTM model compared to the vanilla and GP. However, the mean accuracy is lowest for the GP model concerning other models. The experiment shows that the performance improves by incorporating temporal fusion in the semantic segmentation for the continuous sequence data. The overlapping and the past information is learned, stored, and passed onto the computation of the future frames' semantic segmentation. The temporal dependency between the frames is exploited to efficiently perform the segmentation by taking pose into account in the Gaussian process and compressed information in the hidden state of the ConVlstm cell. The Gaussian process works because if the two frames are very close to each other, represented by the pose information, there is a high probability of overlapping regions in the consecutive frames. The output of the decoder is based on the input to the decoder. The output of the encoder is passed onto the gaussian process; it takes into account the current and previous pose information and outputs a latent encoding based on the distance between the current and the previous frame. Hence, if two frames are close to each other, then the latent output of the Gaussian process is similar, resulting in information transfer from the past learned latent representation to the current latent output resulting in improved performance. The raw RGB ground truth and predicted segmentation map are compared in Fig \ref{fig:unet_model}. It can be observed from the figure that the Vanilla and LSTM model performed reasonably well in comparison with the GP model. However, overall metric-wise, LSTM outperformed vanilla and GP.   
 	
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=12cm]{images/scannet_performance_all_classes.png}
+%		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric. Higher the value means top performing model.}
+%		\label{fig:unet_model_metric_comparison_all_classes}
+%	\end{figure}
+
 	\begin{figure}
 		\centering
-		\includegraphics[width=12cm]{images/scannet_performance_all_classes.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric}
+		\includegraphics[width=12cm]{images/all_classes_acc.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on  accuracy metric. Higher the value means top performing model.}
+		\label{fig:unet_model_metric_comparison_all_classes}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/all_classes_meanacc.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on mean accuracy metric. Higher the value means top performing model.}
+		\label{fig:unet_model_metric_comparison_all_classes}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/all_classes_meanIoU.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric. Higher the value means top performing model.}
+		\label{fig:unet_model_metric_comparison_all_classes}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/all_classes_FwIoU.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on FwIoU metric. Higher the value means top performing model.}
 		\label{fig:unet_model_metric_comparison_all_classes}
 	\end{figure}
 	
@@ -409,26 +445,53 @@
 				\hline
 				
 				\cellcolor{purple!30}Metric & \cellcolor{purple!30}Vanilla & \cellcolor{purple!30}GP & \cellcolor{purple!30}LSTM\\ \hline
-				Pixel Accuracy & 0.4342 & 0.3764 & 0.8549\\ \hline
-				Pixel Mean accuracy & 0.6232 & 0.5625 & 0.7837 \\ \hline
-				meanIOU & 0.145 & 0.2318 & 0.6593 \\ \hline
-				IoU & [0.2737, 0.2809] & [0.2377, 0.2259] & [0.8280, 0.4903] \\ \hline
-				FwIoU & 0.2793 & 0.2284 & 0.7643 \\ \hline
+				Pixel Accuracy & 0.4342 & 0.3764 & { \bf 0.8549 }\\ \hline
+				Pixel Mean accuracy & 0.6232 & 0.5625 & { \bf 0.7837 }  \\ \hline
+				meanIOU & 0.145 & 0.2318 & { \bf 0.6593 }  \\ \hline
+				IoU & [0.2737, 0.2809] & [0.2377, 0.2259] & { \bf [0.8280, 0.4903] } \\ \hline
+				FwIoU & 0.2793 & 0.2284 & { \bf 0.7643 } \\ \hline
 				\hline
 			\end{tabular}
-			\caption{Performance of Vanilla model with respect to different metric and two classes}
+			\caption{Performance of Vanilla model with respect to different metric and two classes. Higher the value means top performing model.}
 			\label{table:unet_two_classes}
 		\end{center}
 	\end{table}
 	
 	
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=12cm]{images/scannet_performance_two_classes.png}
+%		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes}
+%		\label{fig:unet_model_metric_comparison}
+%	\end{figure}
+
 	\begin{figure}
 		\centering
-		\includegraphics[width=12cm]{images/scannet_performance_two_classes.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes}
+		\includegraphics[width=12cm]{images/two_classes_acc.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on accuracy metric for scannet two classes}
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
 
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/two_classes_meanacc.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based mean accuracy on metric for scannet two classes}
+		\label{fig:unet_model_metric_comparison}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/two_classes_meanIoU.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric for scannet two classes}
+		\label{fig:unet_model_metric_comparison}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/two_classes_FwIoU.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on FwIoU metric for scannet two classes}
+		\label{fig:unet_model_metric_comparison}
+	\end{figure}
     %------------------------------------------------------------------------------------------------------
     \subsection{Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}
 	
@@ -447,22 +510,50 @@
 				\hline
 				
 				\cellcolor{purple!30}Metric & \cellcolor{purple!30}Vanilla & \cellcolor{purple!30}GP & \cellcolor{purple!30}LSTM\\ \hline
-				Pixel Accuracy & 0.3289 & 0.5731 & 0.6266 \\ \hline
-				Pixel Mean accuracy & 0.3135 & 0.4779 & 0.6920 \\ \hline
-				meanIOU & 0.1820 & 0.3356 & 0.4870 \\ \hline
-				IoU & [0.2732, 0.1686, 0.1042] & [0.5178, 0.3066, 0.1823] & [0.6810, 0.4661, 0.2998] \\ \hline
-				FwIoU & 0.2160 & 0.4033 & 0.6245 \\ \hline
+				Pixel Accuracy & 0.3289 & 0.5731 & {\bf 0.6266} \\ \hline
+				Pixel Mean accuracy & 0.3135 & 0.4779 & {\bf 0.6920} \\ \hline
+				meanIOU & 0.1820 & 0.3356 & {\bf 0.4870} \\ \hline
+				IoU & [0.2732, 0.1686, 0.1042] & [0.5178, 0.3066, 0.1823] & {\bf [0.6810, 0.4661, 0.2998]} \\ \hline
+				FwIoU & 0.2160 & 0.4033 & {\bf 0.6245} \\ \hline
 				\hline
 			\end{tabular}
-			\caption{Performance of Vanilla model with respect to different metric and two classes}
+			\caption{Performance of Vanilla, GP and LSTM model with respect to different metric and two classes. Higher the value means top performing model.}
 			\label{table:unet_scannet_three_classes}
 		\end{center}
 	\end{table}	
 	
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=12cm]{images/scannet_performance_three_classes.png}
+%		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet three classes. Higher the value means top performing model.}
+%		\label{fig:performance_metric_three_classes_unet}
+%	\end{figure}
+
 	\begin{figure}
 		\centering
-		\includegraphics[width=12cm]{images/scannet_performance_three_classes.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet three classes}
+		\includegraphics[width=12cm]{images/three_classes_acc.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on accuracy metric for scannet three classes. Higher the value means top performing model.}
+		\label{fig:performance_metric_three_classes_unet}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/three_classes_meanacc.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on mean accuracy metric for scannet three classes. Higher the value means top performing model.}
+		\label{fig:performance_metric_three_classes_unet}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/three_classes_meanIoU.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based on  meanIoU metric for scannet three classes. Higher the value means top performing model.}
+		\label{fig:performance_metric_three_classes_unet}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12cm]{images/three_classes_FwIoU.png}
+		\caption{Comparison of VANILLA, GP and LSTM model performance based  FwIoU on metric for scannet three classes. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes_unet}
 	\end{figure}
 
@@ -489,34 +580,93 @@
 				
 				\cellcolor{purple!30}Metric & \cellcolor{purple!30}Vanilla & \cellcolor{purple!30}GP & \cellcolor{purple!30}LSTM\\ \hline
 				
-				Pixel Accuracy & 0.7423 & 0.7606 & 0.8684 \\ \hline
-				Pixel Mean accuracy & 0.6216 & 0.6314 & 0.7449 \\ \hline
-				meanIOU & 0.4854 & 0.5122 & 0.6022 \\ \hline
+				Pixel Accuracy & 0.7423 & 0.7606 & {\bf 0.8684}  \\ \hline 
+				Pixel Mean accuracy & 0.6216 & 0.6314 & { \bf 0.7449} \\ \hline
+				meanIOU & 0.4854 & 0.5122 & { \bf 0.6022}  \\ \hline
 				IoU & [0.5875, 0.7965,	0.5829,	0.4324,	0.1781,	0.7548,	0.6065,	0.5338,	0.2594,	0.3727,	0.2758,	0.2034,	0.8220,	0.3904] & 
 				[0.6025,	0.7333,	0.5950, 0.4614,	0.1925,	0.8191,	0.7302,	0.4889,	0.3784,	0.4061,	0.2493,	0.3585,	0.7927,	0.3630] 
-				& [ 0.7773,	0.7840,	0.7326,	0.5551,	0.3964,	0.9073,	0.7310,	0.6568,	0.4651,	0.5150,	0.3285,	0.2872,	0.8563,	0.4378]
+				& { \bf [ 0.7773,	0.7840,	0.7326,	0.5551,	0.3964,	0.9073,	0.7310,	0.6568,	0.4651,	0.5150,	0.3285,	0.2872,	0.8563,	0.4378]} 
 				\\ \hline
-				FwIoU & 0.6451 & 0.6585 & 0.7857 \\ \hline
+				FwIoU & 0.6451 & 0.6585 & { \bf 0.7857} \\ \hline
 				\hline
 			\end{tabular}
-			\caption{Performance of Vanilla model with respect to different metric and two classes}
+			\caption{Performance of Vanilla model with respect to different metric. Higher the value means top performing model.}
 			\label{table:unet_vkitti_two_classes}
 		\end{center}
 	\end{table}
 	
+%	\begin{figure}
+%		\centering
+%		
+%		\includegraphics[width=13cm]{images/vkitti_validation_data_two_class_box_plot.png}
+%		\caption{Performance comparison of the VANILLA, GP and LSTM model based on different metrics. Higher the value means top performing model.}
+%		\label{fig:performance_metric_vkitti_two_class_box_plot}
+%	\end{figure}
+
 	\begin{figure}
 		\centering
-		\includegraphics[width=12cm]{images/vkitti_validation_data_two_class_box_plot.png}
-		\caption{Performance comparison of the VANILLA, GP and LSTM model based on different metrics}
+		
+		\includegraphics[width=13cm]{images/two_vkitti_acc.png}
+		\caption{Performance comparison of the VANILLA, GP and LSTM model based on accuracy metrics. Higher the value means top performing model.}
+		\label{fig:performance_metric_vkitti_two_class_box_plot}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+	
+		\includegraphics[width=13cm]{images/two_vkitti_meanacc.png}
+		\caption{Performance comparison of the VANILLA, GP and LSTM model based on mean accuracy metrics. Higher the value means top performing model.}
 		\label{fig:performance_metric_vkitti_two_class_box_plot}
 	\end{figure}
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=19cm]{images/IoU_two.png}
-		\caption{IoU predictions for all the classes for VANILLA, GP and LSTM model}
+		
+		\includegraphics[width=13cm]{images/two_vkitti_mIoU.png}
+		\caption{Performance comparison of the VANILLA, GP and LSTM model based on mIoU metrics. Higher the value means top performing model.}
+		\label{fig:performance_metric_vkitti_two_class_box_plot}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+	
+		\includegraphics[width=13cm]{images/two_vkitti_FwIoU.png}
+		\caption{Performance comparison of the VANILLA, GP and LSTM model based on FwIoU metrics. Higher the value means top performing model.}
+		\label{fig:performance_metric_vkitti_two_class_box_plot}
+	\end{figure}
+
+%-------------------------------------------------------------------------------------------------------
+		
+%	\begin{figure}
+%		\centering
+%		\hspace*{-2cm}
+%		\includegraphics[width=19cm]{images/IoU_two.png}
+%		\caption{IoU predictions for all the classes for VANILLA, GP and LSTM model. Higher the value means top performing model.}
+%		\label{fig:performance_metric_three_classes}
+%	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/IoU_vanilla_two_class.png}
+		\caption{IoU predictions for all the classes for VANILLA model. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes}
 	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/IoU_gp_two_class.png}
+		\caption{IoU predictions for all the classes for GP model. Higher the value means top performing model.}
+		\label{fig:performance_metric_three_classes}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/IoU_lstm_two_class.png}
+		\caption{IoU predictions for all the classes for LSTM model. Higher the value means top performing model.}
+		\label{fig:performance_metric_three_classes}
+	\end{figure}
+
+%-------------------------------------------------------------------------------------------------------
 
 	\begin{figure}
 		\centering
@@ -539,7 +689,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=16cm]{images/batch_wise_performance_comparison.png}
-		\caption{Impact of training batch size on the evaluation dataset prediction}
+		\caption{Impact of training batch size on the evaluation dataset prediction. Higher the value means top performing model.}
 		\label{fig:batch_wise_performance}
 	\end{figure}		    
 	
@@ -561,130 +711,105 @@
 				\hline
 				
 				\cellcolor{purple!30}Metric & \cellcolor{purple!30}Vanilla & \cellcolor{purple!30}GP & \cellcolor{purple!30}LSTM\\ \hline
-				Pixel Accuracy & 0.9419 & 0.9329 & 0.9491 \\ \hline
-				Pixel Mean accuracy & 0.7797 & 0.7878 & 0.8083 \\ \hline
-				meanIOU & 0.6884 & 0.6977 & 0.7206 \\ \hline
+				Pixel Accuracy & 0.9419 & 0.9329 & {\bf 0.9491} \\ \hline
+				Pixel Mean accuracy & 0.7797 & 0.7878 & {\bf 0.8083}  \\ \hline
+				meanIOU & 0.6884 & 0.6977 & {\bf 0.7206} \\ \hline
 				IoU & [0.9128, 0.9417, 0.92, 0.6876, 0.7247, 0.958, 0.8576, 0.6196, 0.4536, 0.4217, 0.3476, 0.5452, 0.8674, 0.3803] & 
 				[0.8961, 0.8985, 0.8949, 0.7113, 0.7408, 0.9505, 0.8602, 0.6862, 0.5612, 0.4683, 0.3427, 0.4788, 0.8506, 0.4285]
-				& [0.9078, 0.9565, 0.9296, 0.7427, 0.7816, 0.96, 0.8669, 0.6828, 0.4898, 0.4464, 0.4182, 0.6187, 0.8843, 0.4025]
+				& {\bf [0.9078, 0.9565, 0.9296, 0.7427, 0.7816, 0.96, 0.8669, 0.6828, 0.4898, 0.4464, 0.4182, 0.6187, 0.8843, 0.4025]} 
 				\\ \hline
-				FwIoU & 0.8959 & 0.8788 & 0.9074 \\ \hline
+				FwIoU & 0.8959 & 0.8788 & {\bf 0.9074} \\ \hline
 				\hline
 			\end{tabular}
-			\caption{Performance of Vanilla model with respect to different metric and two classes}
+			\caption{Performance of Vanilla model with respect to different metric and two classes. Higher the value means top performing model.}
 			\label{table:Vanilla_conti_seq}
 		\end{center}
 	\end{table}
 	
 	The box plot of the performance of the vanilla, GP, and lstm model is shown in Fig \ref{fig:performance_metric_unet}. The pixel accuracy and  FwIoU are high for the lstm model, and the performance is comparable for the GP and vanilla models. Mean pixel accuracy and meanIoU are high for the lstm model. Traffic light, Pole, and Misc class IoU are low in vanilla, GP, and lstm models. The same is shown in Fig \ref{fig:performance_metric_three_classes_unet_five}. Hence from the result table, we can prove that incorporating the temporal fusion data for the semantic segmentation improves the performance. 
 	
+%	\begin{figure}[h]
+%		\centering
+%		
+%		\includegraphics[width=12cm]{images/vkitti_validation_data_five_class_box_plot.png}
+%		\caption{Comparison of model performance based on different metrics. Higher the value means top performing model.}
+%		\label{fig:performance_metric_unet}
+%	\end{figure}
+
+%------------------------------------------------------------------------------------------------------
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=12cm]{images/vkitti_validation_data_five_class_box_plot.png}
-		\caption{Comparison of model performance based on different metrics}
+	
+		\includegraphics[width=12cm]{images/two_vkitti_acc.png}
+		\caption{Comparison of model performance based on accuracy metrics. Higher the value means top performing model.}
 		\label{fig:performance_metric_unet}
 	\end{figure}
+
+	\begin{figure}[h]
+		\centering
 	
+		\includegraphics[width=12cm]{images/two_vkitti_meanacc.png}
+		\caption{Comparison of model performance based on mean accuracy metrics. Higher the value means top performing model.}
+		\label{fig:performance_metric_unet}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+	
+		\includegraphics[width=12cm]{images/two_vkitti_mIoU.png}
+		\caption{Comparison of model performance based on mIoU metrics. Higher the value means top performing model.}
+		\label{fig:performance_metric_unet}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+	
+		\includegraphics[width=12cm]{images/two_vkitti_FwIoU.png}
+		\caption{Comparison of model performance based on FwIoU metrics. Higher the value means top performing model.}
+		\label{fig:performance_metric_unet}
+	\end{figure}
+
+%------------------------------------------------------------------------------------------------------	
 	\begin{figure}
 		\centering
-		\includegraphics[width=19cm]{images/IoU_five.png}
-		\caption{IoU for all the classes in the dataset with respect to different model predictions}
+		\hspace*{-2cm}
+		\includegraphics[width=20cm]{images/IoU_five.png}
+		\caption{IoU for all the classes in the dataset with respect to different model predictions. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes_unet_five}
 	\end{figure}
 	
 	
-	\section{Comments and Discussion}   
+	\section{RQ3: Conclusion}   
 	
 	The Long Short-Term Memory (LSTM) model outperformed the performance of the vanilla/baseline and Gaussian Process (GP) models. The LSTM model can effectively model long temporal data, and the Gaussian Process (GP) uses pose information to model temporal data. The GP method is adopted from the depth estimation approach, where a cost volume is generated by taking consecutive frames. This cost volume captures the overlapping information present in the consecutive frames. However, building a cost volume is optional for semantic segmentation, as it is specifically designed for the depth estimation task.
 	However, a modified GP approach is performed by subjecting the latent space encoding to GP and averaging the previous latent space encoding that was subjected to GP with the current latent space encoding.
 	
-%	\newpage
-%	
-%	\section{Benchmarking of results for scannet dataset and vkitti dataset}
-%	
-%	{ \bf Scannet dataset}
-%	
-%	The table \ref{table:scannet_benchmark} lists all the state of the art semantic segmentation model performance. The best average iou for the entire scannet dataset is 0.745. In this model 
-%	
-%	The pixel accuracy is 50.96\% for the validation dataset. The is due to the presence of large number of classes with unequal pixel distribution. However, the IoU for the Wall, Floor and Mattress is high at 0.56, 0.608, 0.382 due to the high pixel distribution for these classes. Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.
-%	
-%	The pixel accuracy is 50.96\% for the validation dataset. The is due to the presence of large number of classes with unequal pixel distribution. However, the IoU for the Wall, Floor and Mattress is high at 0.56, 0.608, 0.382 due to the high pixel distribution for these classes. Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}. Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.
-%	Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.
+	\newpage
+	\section{Experiment hyper-parameter and configuration detail }
 	
-%	\begin{table}[h]
-%		\begin{center}
-%			\begin{tabular}{ | l | l | l | l| p{4cm} |}
-%				\hline
-%				
-%				\cellcolor{purple!30}Method & \cellcolor{purple!30}Avg iou & \cellcolor{purple!30} Pixel Accuracy & \cellcolor{purple!30} Mean Pixel Accuracy & \cellcolor{purple!30} FwIoU \\ \hline
-%				
-%				Virtual MVFusion (R) & 0.745 & - & - & -  \\ \hline
-%				BPNet\_2D & 0.67 & - & - & -  \\ \hline
-%				CU-Hybrid-2D Net & 0.636  & - & - & -  \\ \hline
-%				CMX & 0.613 & - & - & -  \\ \hline
-%				DMMF\_3d & 0.605 & - & -  & - \\ \hline
-%				MCA-Net & 0.595 & - & -  & - \\ \hline
-%				RFBNet & 0.592 & - & -  & - \\ \hline
-%				DCRedNet & 0.583 & -  & - & - \\ \hline
-%				SSMA & 0.577 & - & -  & - \\ \hline
-%				SN\_RN152pyrx8\_RVC & 0.546 & - & - & - \\ \hline
-%				FuseNet & 0.535 & - & -  & - \\ \hline
-%				AdapNet++ & 0.503 & - & -  & - \\ \hline
-%				3DMV (2d proj) & 0.498 & - & - & - \\ \hline
-%				MSeg1080\_RVC & 0.485 & -  & - & - \\ \hline
-%				ILC-PSPNet & 0.475 & - & - & - \\ \hline
-%				Enet & 0.376 & - & - & - \\ \hline
-%				ScanNet & 0.33 & - & - & - \\ \hline
-%				LSTM Unet & 0.145 & - & -  & - \\ \hline
-%				GP Unet & 0.1161  & - & - & - \\ \hline
-%				Vanilla Unet & 0.112 & - & - & - \\ \hline
-%			
-%				\hline
-%			\end{tabular}
-%			\caption{Comparison of model performance on the Scannet data}
-%			\label{table:scannet_benchmark}
-%		\end{center}
-%	\end{table}	
-%	
-%	\newpage
-%	
-%	{ \bf Vkitti dataset, refer: https://arxiv.org/pdf/2006.04080v2.pdf}
-%	
-%	The pixel accuracy is 50.96\% for the validation dataset. The is due to the presence of large number of classes with unequal pixel distribution. However, the IoU for the Wall, Floor and Mattress is high at 0.56, 0.608, 0.382 due to the high pixel distribution for these classes. Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}. Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.
-%	Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.Frequency weighted IoU take into account the unequal pixel distribution and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in the Fig \ref{fig:y_gt_pred_vanilla}.
+	The experiments were conducted with the configuration listed in the table \ref{table:hype}. Training of Vanilla, Gaussian Process and Long Short Term Memory models are done in parallel and the training time is listed in the table.
 	
-%	\begin{table}[h]
-%		\begin{center}
-%			\begin{tabular}{ | l | l | l | l| p{4cm} |}
-%				\hline
-%				
-%				\cellcolor{purple!30}Method & \cellcolor{purple!30}Avg iou & \cellcolor{purple!30} Pixel Accuracy & \cellcolor{purple!30} Mean Pixel Accuracy & \cellcolor{purple!30} FwIoU \\ \hline
-%				
-%				Virtual MVFusion (R) & 0.745 & - & - & -  \\ \hline
-%				BPNet\_2D & 0.67 & - & - & -  \\ \hline
-%				CU-Hybrid-2D Net & 0.636  & - & - & -  \\ \hline
-%				CMX & 0.613 & - & - & -  \\ \hline
-%				DMMF\_3d & 0.605 & - & -  & - \\ \hline
-%				MCA-Net & 0.595 & - & -  & - \\ \hline
-%				RFBNet & 0.592 & - & -  & - \\ \hline
-%				DCRedNet & 0.583 & -  & - & - \\ \hline
-%				SSMA & 0.577 & - & -  & - \\ \hline
-%				SN\_RN152pyrx8\_RVC & 0.546 & - & - & - \\ \hline
-%				FuseNet & 0.535 & - & -  & - \\ \hline
-%				AdapNet++ & 0.503 & - & -  & - \\ \hline
-%				3DMV (2d proj) & 0.498 & - & - & - \\ \hline
-%				MSeg1080\_RVC & 0.485 & -  & - & - \\ \hline
-%				ILC-PSPNet & 0.475 & - & - & - \\ \hline
-%				Enet & 0.376 & - & - & - \\ \hline
-%				ScanNet & 0.33 & - & - & - \\ \hline
-%				Vanilla Unet & 0.112 & - & - & - \\ \hline
-%				GP Unet & 0.1161  & - & - & - \\ \hline
-%				LSTM Unet & 0.145 & - & -  & - \\ \hline
-%				\hline
-%			\end{tabular}
-%			\caption{Comparison of model performance on the Scannet data}
-%			\label{table:LSTM_conti_seq}
-%		\end{center}
-%	\end{table}
+	\begin{table}[h]
+		\begin{center}
+			\begin{tabular}{ | l | p{4cm} |}
+				\hline
+				
+				\cellcolor{purple!30}Parameter & \cellcolor{purple!30}Value \\ \hline
+				Learning rate & 0.001  \\ \hline
+				Batch size & 8 \\ \hline
+				Epoch & 200 \\ \hline
+				Weight decay factor & 1e-5
+				\\ \hline
+				Optimizer & Adam  \\ \hline
+				Parallel processing & Cuda  \\ \hline
+				Logger & tensorboard  \\ \hline
+				Training time for Scannet & 8 hours  \\ \hline
+				Training time for Vkitti & 5 hours  \\ \hline
+				\hline
+			\end{tabular}
+			\caption{Hyperparameter used to train the model.}
+			\label{table:hype}
+		\end{center}
+	\end{table}
     
 \end{document}

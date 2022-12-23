@@ -42,24 +42,29 @@
 \BOOKMARK [2][-]{subsection.4.1.2}{IoU}{section.4.1}% 42
 \BOOKMARK [1][-]{section.4.2}{Hypothesis}{chapter.4}% 43
 \BOOKMARK [1][-]{section.4.3}{RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.4}{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.5.1}{Combining scannet dataset classes for experiment}{section.4.5}% 47
-\BOOKMARK [2][-]{subsection.4.5.2}{Distance and Kernel matrix}{section.4.5}% 48
-\BOOKMARK [2][-]{subsection.4.5.3}{Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{section.4.5}% 49
-\BOOKMARK [2][-]{subsection.4.5.4}{Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{section.4.5}% 50
-\BOOKMARK [2][-]{subsection.4.5.5}{Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{section.4.5}% 51
-\BOOKMARK [1][-]{section.4.6}{Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.6.1}{Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{section.4.6}% 53
-\BOOKMARK [1][-]{section.4.7}{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{chapter.4}% 54
-\BOOKMARK [1][-]{section.4.8}{Comments and Discussion}{chapter.4}% 55
-\BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 56
-\BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.2}{Display of results}{chapter.5}% 58
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 59
-\BOOKMARK [1][-]{section.6.1}{Contributions}{chapter.6}% 60
-\BOOKMARK [1][-]{section.6.2}{Lessons learned}{chapter.6}% 61
-\BOOKMARK [1][-]{section.6.3}{Future work}{chapter.6}% 62
-\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 63
-\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 64
-\BOOKMARK [0][-]{appendix*.75}{References}{}% 65
+\BOOKMARK [1][-]{section.4.4}{RQ1 Conclusion}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.5}{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.6}{RQ2 Conclusion}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.7}{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.7.1}{Combining scannet dataset classes for experiment}{section.4.7}% 49
+\BOOKMARK [2][-]{subsection.4.7.2}{Distance and Kernel matrix}{section.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.7.3}{Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{section.4.7}% 51
+\BOOKMARK [2][-]{subsection.4.7.4}{Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{section.4.7}% 52
+\BOOKMARK [2][-]{subsection.4.7.5}{Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{section.4.7}% 53
+\BOOKMARK [1][-]{section.4.8}{Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.8.1}{Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{section.4.8}% 55
+\BOOKMARK [1][-]{section.4.9}{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.10}{RQ3: Conclusion}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.11}{Experiment hyper-parameter and configuration detail }{chapter.4}% 58
+\BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 59
+\BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.2}{Display of results}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.3}{Runtime}{chapter.5}% 62
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 63
+\BOOKMARK [1][-]{section.6.1}{Contributions}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{Limitation}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.3}{Future work}{chapter.6}% 66
+\BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 67
+\BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 68
+\BOOKMARK [0][-]{appendix.a.C}{Appendix Training details}{}% 69
+\BOOKMARK [0][-]{appendix*.100}{References}{}% 70

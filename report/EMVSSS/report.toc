@@ -1,5 +1,5 @@
 \contentsline {chapter}{List of Figures}{xv}{chapter*.4}%
-\contentsline {chapter}{List of Tables}{xvii}{chapter*.5}%
+\contentsline {chapter}{List of Tables}{xix}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Temporal fusion}{2}{subsection.1.1.1}%
@@ -42,24 +42,29 @@
 \contentsline {subsection}{\numberline {4.1.2}IoU}{30}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Hypothesis}{31}{section.4.2}%
 \contentsline {section}{\numberline {4.3}RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{31}{section.4.3}%
-\contentsline {section}{\numberline {4.4}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{34}{section.4.4}%
-\contentsline {section}{\numberline {4.5}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{35}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Combining scannet dataset classes for experiment}{35}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Distance and Kernel matrix}{35}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{38}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{44}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{45}{subsection.4.5.5}%
-\contentsline {section}{\numberline {4.6}Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{48}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{49}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{53}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Comments and Discussion}{54}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Android Deployment}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Framework}{57}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Display of results}{59}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusions}{61}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Contributions}{62}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Lessons learned}{62}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Future work}{62}{section.6.3}%
-\contentsline {chapter}{Appendix \numberline {A}Design Details}{63}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Parameters}{67}{appendix.a.B}%
-\contentsline {chapter}{References}{71}{appendix*.75}%
+\contentsline {section}{\numberline {4.4}RQ1 Conclusion}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{34}{section.4.5}%
+\contentsline {section}{\numberline {4.6}RQ2 Conclusion}{34}{section.4.6}%
+\contentsline {section}{\numberline {4.7}RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{35}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Combining scannet dataset classes for experiment}{35}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Distance and Kernel matrix}{36}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{38}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{47}{subsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.7.5}Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{47}{subsection.4.7.5}%
+\contentsline {section}{\numberline {4.8}Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{57}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{58}{subsection.4.8.1}%
+\contentsline {section}{\numberline {4.9}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{66}{section.4.9}%
+\contentsline {section}{\numberline {4.10}RQ3: Conclusion}{68}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Experiment hyper-parameter and configuration detail }{69}{section.4.11}%
+\contentsline {chapter}{\numberline {5}Android Deployment}{73}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Framework}{73}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Display of results}{75}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Runtime}{76}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusions}{77}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Contributions}{78}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitation}{79}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future work}{79}{section.6.3}%
+\contentsline {chapter}{Appendix \numberline {A}Design Details}{81}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Parameters}{85}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Training details}{89}{appendix.a.C}%
+\contentsline {chapter}{References}{93}{appendix*.100}%

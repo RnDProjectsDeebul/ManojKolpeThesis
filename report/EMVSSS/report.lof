@@ -31,7 +31,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces (a) MinVIS trained on query-based segmentation individually for every frame. (b) Inference of the video instance segmentation from the segmented image using bipartite matching of the query embeddings. Courtesy of [89] \relax }}{33}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces A mask2former with video instance segmentation. Courtesy of [90]\relax }}{34}{figure.caption.33}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Per class pixel distribution of the entire scannet dataset\relax }}{36}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{36}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pixel distribution for the scannet data containing all the classes\relax }}{37}{figure.caption.36}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Pixel distribution for the scannet data for two classes\relax }}{37}{figure.caption.37}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Pixel distribution for the scannet data for three classes\relax }}{37}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Ordered and Unordered set of images\relax }}{38}{figure.caption.39}%
@@ -40,24 +40,48 @@
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Pixel distribution for the ground truth and predicted scannet data for vanilla unet model\relax }}{40}{figure.caption.43}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Per class pixel distribution of the predicted pixel class label for gp model\relax }}{41}{figure.caption.45}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Per class pixel distribution of the predicted pixel class label for lstm model\relax }}{42}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric\relax }}{43}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{44}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model for two class dataset\relax }}{45}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes\relax }}{46}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{46}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on metric for scannet three classes\relax }}{47}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm for vkitti dataset\relax }}{49}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Performance comparison of the VANILLA, GP and LSTM model based on different metrics\relax }}{50}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces IoU predictions for all the classes for VANILLA, GP and LSTM model\relax }}{50}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Side by side comparison of models predictions for continuous sequence data from frame 1 to 4\relax }}{51}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Side by side comparison of models predictions for continuous sequence data from frame 5 to 8\relax }}{52}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Impact of training batch size on the evaluation dataset prediction\relax }}{53}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{53}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Comparison of model performance based on different metrics\relax }}{54}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces IoU for all the classes in the dataset with respect to different model predictions\relax }}{55}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on accuracy metric. Higher the value means top performing model.\relax }}{43}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on mean accuracy metric. Higher the value means top performing model.\relax }}{44}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric. Higher the value means top performing model.\relax }}{45}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on FwIoU metric. Higher the value means top performing model.\relax }}{46}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{46}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model for two class dataset\relax }}{47}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on accuracy metric for scannet two classes\relax }}{48}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based mean accuracy on metric for scannet two classes\relax }}{49}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric for scannet two classes\relax }}{50}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on FwIoU metric for scannet two classes\relax }}{51}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model\relax }}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on accuracy metric for scannet three classes. Higher the value means top performing model.\relax }}{53}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on mean accuracy metric for scannet three classes. Higher the value means top performing model.\relax }}{54}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric for scannet three classes. Higher the value means top performing model.\relax }}{55}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Comparison of VANILLA, GP and LSTM model performance based FwIoU on metric for scannet three classes. Higher the value means top performing model.\relax }}{56}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm for vkitti dataset\relax }}{58}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Performance comparison of the VANILLA, GP and LSTM model based on accuracy metrics. Higher the value means top performing model.\relax }}{59}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Performance comparison of the VANILLA, GP and LSTM model based on mean accuracy metrics. Higher the value means top performing model.\relax }}{59}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Performance comparison of the VANILLA, GP and LSTM model based on mIoU metrics. Higher the value means top performing model.\relax }}{60}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Performance comparison of the VANILLA, GP and LSTM model based on FwIoU metrics. Higher the value means top performing model.\relax }}{60}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces IoU predictions for all the classes for VANILLA model. Higher the value means top performing model.\relax }}{61}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces IoU predictions for all the classes for GP model. Higher the value means top performing model.\relax }}{62}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces IoU predictions for all the classes for LSTM model. Higher the value means top performing model.\relax }}{63}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Side by side comparison of models predictions for continuous sequence data from frame 1 to 4\relax }}{64}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Side by side comparison of models predictions for continuous sequence data from frame 5 to 8\relax }}{65}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Impact of training batch size on the evaluation dataset prediction. Higher the value means top performing model.\relax }}{66}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm\relax }}{67}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Comparison of model performance based on accuracy metrics. Higher the value means top performing model.\relax }}{68}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Comparison of model performance based on mean accuracy metrics. Higher the value means top performing model.\relax }}{69}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Comparison of model performance based on mIoU metrics. Higher the value means top performing model.\relax }}{70}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Comparison of model performance based on FwIoU metrics. Higher the value means top performing model.\relax }}{70}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.47}{\ignorespaces IoU for all the classes in the dataset with respect to different model predictions. Higher the value means top performing model.\relax }}{71}{figure.caption.83}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Training and evaluation procedure\relax }}{58}{figure.caption.67}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Android deployment results\relax }}{59}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Training and evaluation procedure\relax }}{74}{figure.caption.85}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Android deployment results\relax }}{75}{figure.caption.87}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Scannet step losses for vanilla\relax }}{89}{figure.caption.94}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Scannet epoch losses for vanilla\relax }}{90}{figure.caption.95}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Scannet step losses for GP\relax }}{90}{figure.caption.96}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Scannet epoch losses for GP\relax }}{90}{figure.caption.97}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Scannet step losses for lstm\relax }}{91}{figure.caption.98}%
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Scannet epoch losses for lstm\relax }}{91}{figure.caption.99}%

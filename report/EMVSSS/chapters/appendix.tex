@@ -50,15 +50,7 @@
     			Conv2d-39          & {[}-1, 512, 30, 40{]}   & 2,359,808 \\ \hline
     			ReLU-40            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
     			BatchNorm2d-41     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
-    			ConvTranspose2d-42 & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
-    			Conv2d-43          & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
-    			ReLU-44            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
-    			BatchNorm2d-45     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
-    			Conv2d-46          & {[}-1, 256, 60, 80{]}   & 590,080   \\ \hline
-    			ReLU-47            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
-    			BatchNorm2d-48     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
-    			ConvTranspose2d-49 & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
-    			Conv2d-50          & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
+
     		\end{tabular}
     		\caption{Unet vanilla model architecture}
     		\label{table:unet_vanilla_model_1}
@@ -69,6 +61,15 @@
     	\begin{center}
     		\begin{tabular}{| l | l | p{3cm} |}
     			\hline
+    			ConvTranspose2d-42 & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
+				Conv2d-43          & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
+				ReLU-44            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
+				BatchNorm2d-45     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
+				Conv2d-46          & {[}-1, 256, 60, 80{]}   & 590,080   \\ \hline
+				ReLU-47            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
+				BatchNorm2d-48     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
+				ConvTranspose2d-49 & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
+				Conv2d-50          & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
     			ReLU-51            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
     			BatchNorm2d-52     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
     			Conv2d-53          & {[}-1, 128, 120, 160{]} & 147,584   \\ \hline
@@ -175,5 +176,49 @@
     		\label{table:Classes in scannet_3}
     	\end{center}
     \end{table}
+	
+	\chapter{Training details}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/scannet_step_vanilla_all.png}
+		\caption{Scannet step losses for vanilla}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/scannet_epoch_vanilla_all.png}
+		\caption{Scannet epoch losses for vanilla}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/scannet_gp_step.png}
+		\caption{Scannet step losses for GP}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/scannet_gp_epoch_all.png}
+		\caption{Scannet epoch losses for GP}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/scannet_step_lstm.png}
+		\caption{Scannet step losses for lstm}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/scannet_lstm_epoch_all.png}
+		\caption{Scannet epoch losses for lstm}
+		\label{fig:android_result}
+	\end{figure}
 
 \end{document}

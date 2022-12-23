@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.5)  19 DEC 2022 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.9.5)  23 DEC 2022 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,13 +550,94 @@ LaTeX Warning: Label `tab:caption' multiply defined.
 LaTeX Warning: Label `tab:caption' multiply defined.
 
 
+LaTeX Warning: Label `fig:unet_model_metric_comparison_all_classes' multiply de
+fined.
+
+
+LaTeX Warning: Label `fig:unet_model_metric_comparison_all_classes' multiply de
+fined.
+
+
+LaTeX Warning: Label `fig:unet_model_metric_comparison_all_classes' multiply de
+fined.
+
+
 LaTeX Warning: Label `fig:unet_model' multiply defined.
 
 
+LaTeX Warning: Label `fig:unet_model_metric_comparison' multiply defined.
+
+
+LaTeX Warning: Label `fig:unet_model_metric_comparison' multiply defined.
+
+
+LaTeX Warning: Label `fig:unet_model_metric_comparison' multiply defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_three_classes_unet' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:performance_metric_three_classes_unet' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:performance_metric_three_classes_unet' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:performance_metric_vkitti_two_class_box_plot' multipl
+y defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_vkitti_two_class_box_plot' multipl
+y defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_vkitti_two_class_box_plot' multipl
+y defined.
+
+
 LaTeX Warning: Label `fig:performance_metric_three_classes' multiply defined.
 
 
 LaTeX Warning: Label `fig:performance_metric_three_classes' multiply defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_three_classes' multiply defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_three_classes' multiply defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_unet' multiply defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_unet' multiply defined.
+
+
+LaTeX Warning: Label `fig:performance_metric_unet' multiply defined.
+
+
+LaTeX Warning: Label `table:android_spec' multiply defined.
+
+
+LaTeX Warning: Label `fig:android_result' multiply defined.
+
+
+LaTeX Warning: Label `fig:android_result' multiply defined.
+
+
+LaTeX Warning: Label `fig:android_result' multiply defined.
+
+
+LaTeX Warning: Label `fig:android_result' multiply defined.
+
+
+LaTeX Warning: Label `fig:android_result' multiply defined.
+
+
+LaTeX Warning: Label `fig:android_result' multiply defined.
 
 )
 \openout1 = `report.aux'.
@@ -721,7 +802,7 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Logo-HBRS-cyan.png, id=265, 1965.3425pt x 353.32pt>
+<images/Logo-HBRS-cyan.png, id=285, 1965.3425pt x 353.32pt>
 File: images/Logo-HBRS-cyan.png Graphic file (type png)
 <use images/Logo-HBRS-cyan.png>
 Package pdftex.def Info: images/Logo-HBRS-cyan.png  used on input line 59.
@@ -767,7 +848,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<images/b-it.pdf, id=266, 1949.2825pt x 516.93124pt>
+<images/b-it.pdf, id=286, 1949.2825pt x 516.93124pt>
 File: images/b-it.pdf Graphic file (type pdf)
 <use images/b-it.pdf>
 Package pdftex.def Info: images/b-it.pdf  used on input line 59.
@@ -805,24 +886,25 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  [13] [14
 
-] (./report.lof [15])
+] (./report.lof [15] [16] [17])
 \tf@lof=\write5
 \openout5 = `report.lof'.
 
- [16] (./report.lot)
+ [18]
+(./report.lot)
 \tf@lot=\write6
 \openout6 = `report.lot'.
 
-[17
+ [19
 
-] [18
+] [20
 
 ] (./chapters/ch01_introduction.tex
 Chapter 1.
-<images/df.png, id=595, 514.92375pt x 379.4175pt>
+<images/df.png, id=710, 514.92375pt x 379.4175pt>
 File: images/df.png Graphic file (type png)
 <use images/df.png>
-Package pdftex.def Info: images/df.png  used on input line 11.
+Package pdftex.def Info: images/df.png  used on input line 12.
 (pdftex.def)             Requested size: 284.52756pt x 209.6529pt.
 [1
 
@@ -832,7 +914,7 @@ Underfull \vbox (badness 1776) has occurred while \output is active []
  [5])
 (./chapters/ch02_stateoftheart.tex [6]
 Chapter 2.
-<images/mldl.png, id=703, 739.76375pt x 484.81125pt>
+<images/mldl.png, id=818, 739.76375pt x 484.81125pt>
 File: images/mldl.png Graphic file (type png)
 <use images/mldl.png>
 Package pdftex.def Info: images/mldl.png  used on input line 16.
@@ -840,7 +922,7 @@ Package pdftex.def Info: images/mldl.png  used on input line 16.
 [7
 
  <./images/mldl.png>] [8]
-<images/MVS.png, id=753, 590.205pt x 616.3025pt>
+<images/MVS.png, id=867, 590.205pt x 616.3025pt>
 File: images/MVS.png Graphic file (type png)
 <use images/MVS.png>
 Package pdftex.def Info: images/MVS.png  used on input line 40.
@@ -853,18 +935,18 @@ gions $[]$
  []
 
 [9 <./images/MVS.png>]
-<images/ss.jpg, id=768, 835.12pt x 591.20876pt>
+<images/ss.jpg, id=882, 835.12pt x 591.20876pt>
 File: images/ss.jpg Graphic file (type jpg)
 <use images/ss.jpg>
 Package pdftex.def Info: images/ss.jpg  used on input line 57.
 (pdftex.def)             Requested size: 341.43306pt x 241.71155pt.
  [10 <./images/ss.jpg>]
-<images/en_de.png, id=788, 948.54375pt x 203.76125pt>
+<images/en_de.png, id=902, 948.54375pt x 203.76125pt>
 File: images/en_de.png Graphic file (type png)
 <use images/en_de.png>
 Package pdftex.def Info: images/en_de.png  used on input line 87.
 (pdftex.def)             Requested size: 398.33858pt x 85.56981pt.
-<images/general_seg.png, id=792, 1386.17876pt x 404.51125pt>
+<images/general_seg.png, id=906, 1386.17876pt x 404.51125pt>
 File: images/general_seg.png Graphic file (type png)
 <use images/general_seg.png>
 Package pdftex.def Info: images/general_seg.png  used on input line 96.
@@ -873,7 +955,7 @@ Package pdftex.def Info: images/general_seg.png  used on input line 96.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/segnet.png, id=797, 1396.21625pt x 398.48875pt>
+<images/segnet.png, id=911, 1396.21625pt x 398.48875pt>
 File: images/segnet.png Graphic file (type png)
 <use images/segnet.png>
 Package pdftex.def Info: images/segnet.png  used on input line 105.
@@ -882,7 +964,7 @@ Package pdftex.def Info: images/segnet.png  used on input line 105.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./images/en_de.png>]
-<images/unet.png, id=814, 1128.215pt x 797.98125pt>
+<images/unet.png, id=929, 1128.215pt x 797.98125pt>
 File: images/unet.png Graphic file (type png)
 <use images/unet.png>
 Package pdftex.def Info: images/unet.png  used on input line 116.
@@ -892,14 +974,14 @@ Package pdftex.def Info: images/unet.png  used on input line 116.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./images/general_seg.png> <./images/segnet.png>] [13 <./images/unet.png>]
-<images/TDNet.png, id=855, 956.57375pt x 715.67375pt>
+<images/TDNet.png, id=969, 956.57375pt x 715.67375pt>
 File: images/TDNet.png Graphic file (type png)
 <use images/TDNet.png>
 Package pdftex.def Info: images/TDNet.png  used on input line 129.
 (pdftex.def)             Requested size: 341.43306pt x 255.44737pt.
 ) (./chapters/ch03_methodology.tex [14 <./images/TDNet.png>]
 Chapter 3.
-<images/images_segm_scannet.png, id=864, 962.59625pt x 368.37625pt>
+<images/images_segm_scannet.png, id=978, 962.59625pt x 368.37625pt>
 File: images/images_segm_scannet.png Graphic file (type png)
 <use images/images_segm_scannet.png>
 Package pdftex.def Info: images/images_segm_scannet.png  used on input line 18.
@@ -917,7 +999,7 @@ LaTeX Warning: Reference `90_dai2017scannet' on page 15 undefined on input line
 
 LaTeX Warning: Reference `91_ScanNet' on page 15 undefined on input line 23.
 
-<images/pose_viz_scannet.png, id=865, 586.1097pt x 570.933pt>
+<images/pose_viz_scannet.png, id=979, 586.1097pt x 570.933pt>
 File: images/pose_viz_scannet.png Graphic file (type png)
 <use images/pose_viz_scannet.png>
 Package pdftex.def Info: images/pose_viz_scannet.png  used on input line 27.
@@ -925,19 +1007,19 @@ Package pdftex.def Info: images/pose_viz_scannet.png  used on input line 27.
 [15
 
  <./images/images_segm_scannet.png>]
-<images/scannet_data_class_distribution.png, id=876, 960.4683pt x 560.8152pt>
+<images/scannet_data_class_distribution.png, id=990, 960.4683pt x 560.8152pt>
 File: images/scannet_data_class_distribution.png Graphic file (type png)
 <use images/scannet_data_class_distribution.png>
 Package pdftex.def Info: images/scannet_data_class_distribution.png  used on in
 put line 36.
 (pdftex.def)             Requested size: 312.9803pt x 182.75055pt.
  [16 <./images/pose_viz_scannet.png>]
-<images/images_segm_vkitti.png, id=884, 924.45375pt x 356.33125pt>
+<images/images_segm_vkitti.png, id=998, 924.45375pt x 356.33125pt>
 File: images/images_segm_vkitti.png Graphic file (type png)
 <use images/images_segm_vkitti.png>
 Package pdftex.def Info: images/images_segm_vkitti.png  used on input line 48.
 (pdftex.def)             Requested size: 398.33858pt x 153.54024pt.
-<images/pose_viz_vkitti.png, id=885, 586.1097pt x 570.933pt>
+<images/pose_viz_vkitti.png, id=999, 586.1097pt x 570.933pt>
 File: images/pose_viz_vkitti.png Graphic file (type png)
 <use images/pose_viz_vkitti.png>
 Package pdftex.def Info: images/pose_viz_vkitti.png  used on input line 55.
@@ -960,13 +1042,13 @@ i.png>]
 Underfull \vbox (badness 2922) has occurred while \output is active []
 
  [18 <./images/pose_viz_vkitti.png>]
-<images/scannet_vkitti_data.png, id=898, 963.6pt x 468.75125pt>
+<images/scannet_vkitti_data.png, id=1013, 963.6pt x 468.75125pt>
 File: images/scannet_vkitti_data.png Graphic file (type png)
 <use images/scannet_vkitti_data.png>
 Package pdftex.def Info: images/scannet_vkitti_data.png  used on input line 66.
 
 (pdftex.def)             Requested size: 398.33858pt x 193.76996pt.
-<images/scannet_scanes_samples.png, id=899, 1609.4529pt x 1160.6562pt>
+<images/scannet_scanes_samples.png, id=1014, 1609.4529pt x 1160.6562pt>
 File: images/scannet_scanes_samples.png Graphic file (type png)
 <use images/scannet_scanes_samples.png>
 Package pdftex.def Info: images/scannet_scanes_samples.png  used on input line 
@@ -976,7 +1058,7 @@ Package pdftex.def Info: images/scannet_scanes_samples.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vkitti_scanes_samples.png, id=900, 1559.5866pt x 1160.6562pt>
+<images/vkitti_scanes_samples.png, id=1015, 1559.5866pt x 1160.6562pt>
 File: images/vkitti_scanes_samples.png Graphic file (type png)
 <use images/vkitti_scanes_samples.png>
 Package pdftex.def Info: images/vkitti_scanes_samples.png  used on input line 8
@@ -989,7 +1071,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Reference `70_ronneberger2015u' on page 19 undefined on input li
 ne 87.
 
-<images/Unet.jpg, id=901, 3420.78pt x 2964.07375pt>
+<images/Unet.jpg, id=1016, 3420.78pt x 2964.07375pt>
 File: images/Unet.jpg Graphic file (type jpg)
 <use images/Unet.jpg>
 Package pdftex.def Info: images/Unet.jpg  used on input line 95.
@@ -1017,7 +1099,7 @@ LaTeX Warning: Reference `96_GPML' on page 21 undefined on input line 109.
 LaTeX Warning: Reference `97_williams2006gaussian' on page 21 undefined on inpu
 t line 109.
 
-<images/unet_gp.png, id=919, 2304.61pt x 963.6pt>
+<images/unet_gp.png, id=1033, 2304.61pt x 963.6pt>
 File: images/unet_gp.png Graphic file (type png)
 <use images/unet_gp.png>
 Package pdftex.def Info: images/unet_gp.png  used on input line 119.
@@ -1044,23 +1126,23 @@ input line 137.
 Underfull \vbox (badness 1292) has occurred while \output is active []
 
  [22 <./images/Unet.jpg>]
-<images/unet_lstm.png, id=936, 819.06pt x 1038.88126pt>
+<images/unet_lstm.png, id=1050, 819.06pt x 1038.88126pt>
 File: images/unet_lstm.png Graphic file (type png)
 <use images/unet_lstm.png>
 Package pdftex.def Info: images/unet_lstm.png  used on input line 168.
 (pdftex.def)             Requested size: 398.33858pt x 505.25179pt.
  [23 <./images/unet_gp.png>] [24 <./images/unet_lstm.png>]
-<images/training.png, id=954, 1701.35625pt x 610.28pt>
+<images/training.png, id=1068, 1701.35625pt x 610.28pt>
 File: images/training.png Graphic file (type png)
 <use images/training.png>
 Package pdftex.def Info: images/training.png  used on input line 182.
 (pdftex.def)             Requested size: 398.33858pt x 142.88503pt.
-<images/evaluation.png, id=955, 1456.44125pt x 716.6775pt>
+<images/evaluation.png, id=1069, 1456.44125pt x 716.6775pt>
 File: images/evaluation.png Graphic file (type png)
 <use images/evaluation.png>
 Package pdftex.def Info: images/evaluation.png  used on input line 189.
 (pdftex.def)             Requested size: 398.33858pt x 196.00977pt.
-<images/training_and_evaluation.png, id=956, 1003.75pt x 1174.3875pt>
+<images/training_and_evaluation.png, id=1070, 1003.75pt x 1174.3875pt>
 File: images/training_and_evaluation.png Graphic file (type png)
 <use images/training_and_evaluation.png>
 Package pdftex.def Info: images/training_and_evaluation.png  used on input line
@@ -1074,7 +1156,7 @@ Package pdftex.def Info: images/training_and_evaluation.png  used on input line
 ]
 Chapter 4.
 [29]
-<images/IoU.png, id=991, 635.37375pt x 470.75874pt>
+<images/IoU.png, id=1106, 635.37375pt x 470.75874pt>
 File: images/IoU.png Graphic file (type png)
 <use images/IoU.png>
 Package pdftex.def Info: images/IoU.png  used on input line 56.
@@ -1083,242 +1165,301 @@ Package pdftex.def Info: images/IoU.png  used on input line 56.
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
  [30 <./images/IoU.png>] [31]
-<images/VIS.png, id=1011, 1735.48375pt x 812.03375pt>
+<images/VIS.png, id=1125, 1735.48375pt x 812.03375pt>
 File: images/VIS.png Graphic file (type png)
 <use images/VIS.png>
 Package pdftex.def Info: images/VIS.png  used on input line 102.
 (pdftex.def)             Requested size: 369.88582pt x 173.0598pt.
  [32 <./images/VIS.png>]
-<images/VITA.png, id=1017, 1626.075pt x 510.90875pt>
+<images/VITA.png, id=1131, 1626.075pt x 510.90875pt>
 File: images/VITA.png Graphic file (type png)
 <use images/VITA.png>
 Package pdftex.def Info: images/VITA.png  used on input line 111.
 (pdftex.def)             Requested size: 369.88582pt x 116.21243pt.
-<images/minVIS.png, id=1018, 1331.97626pt x 350.30875pt>
+<images/minVIS.png, id=1132, 1331.97626pt x 350.30875pt>
 File: images/minVIS.png Graphic file (type png)
 <use images/minVIS.png>
 Package pdftex.def Info: images/minVIS.png  used on input line 120.
 (pdftex.def)             Requested size: 369.88582pt x 97.27864pt.
  [33 <./images/VITA.png> <./images/minVIS.png>]
-<images/mask2former.png, id=1025, 1041.8925pt x 454.69875pt>
+<images/mask2former.png, id=1139, 1041.8925pt x 454.69875pt>
 File: images/mask2former.png Graphic file (type png)
 <use images/mask2former.png>
 Package pdftex.def Info: images/mask2former.png  used on input line 129.
 (pdftex.def)             Requested size: 369.88582pt x 161.42265pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <./images/mask2former.png>]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Reference `label' on page 35 undefined on input line 179.
+[34 <./images/mask2former.png>]
 
+LaTeX Warning: Reference `label' on page 35 undefined on input line 187.
+
+[35]
 File: images/scannet_data_class_distribution.png Graphic file (type png)
 <use images/scannet_data_class_distribution.png>
 Package pdftex.def Info: images/scannet_data_class_distribution.png  used on in
-put line 193.
+put line 201.
 (pdftex.def)             Requested size: 369.88582pt x 215.9787pt.
-<images/scannet_training_data_class_distribution.png, id=1041, 947.4597pt x 560
+<images/scannet_training_data_class_distribution.png, id=1163, 947.4597pt x 560
 .8152pt>
 File: images/scannet_training_data_class_distribution.png Graphic file (type pn
 g)
 <use images/scannet_training_data_class_distribution.png>
 Package pdftex.def Info: images/scannet_training_data_class_distribution.png  u
-sed on input line 200.
+sed on input line 208.
 (pdftex.def)             Requested size: 199.16928pt x 117.88591pt.
-<images/scannet_testing_data_class_distribution.png, id=1042, 953.964pt x 560.8
+<images/scannet_testing_data_class_distribution.png, id=1164, 953.964pt x 560.8
 152pt>
 File: images/scannet_testing_data_class_distribution.png Graphic file (type png
 )
 <use images/scannet_testing_data_class_distribution.png>
 Package pdftex.def Info: images/scannet_testing_data_class_distribution.png  us
-ed on input line 202.
+ed on input line 210.
 (pdftex.def)             Requested size: 199.16928pt x 117.08151pt.
-<images/scannet_training_data_class_distribution_two_classes.png, id=1043, 489.
+<images/scannet_training_data_class_distribution_two_classes.png, id=1165, 489.
 9906pt x 393.1488pt>
 File: images/scannet_training_data_class_distribution_two_classes.png Graphic f
 ile (type png)
 <use images/scannet_training_data_class_distribution_two_classes.png>
 Package pdftex.def Info: images/scannet_training_data_class_distribution_two_cl
-asses.png  used on input line 209.
+asses.png  used on input line 217.
 (pdftex.def)             Requested size: 199.16928pt x 159.80629pt.
-<images/scannet_testing_data_class_distribution_two_classes.png, id=1044, 505.8
+<images/scannet_testing_data_class_distribution_two_classes.png, id=1166, 505.8
 9pt x 393.1488pt>
 File: images/scannet_testing_data_class_distribution_two_classes.png Graphic fi
 le (type png)
 <use images/scannet_testing_data_class_distribution_two_classes.png>
 Package pdftex.def Info: images/scannet_testing_data_class_distribution_two_cla
-sses.png  used on input line 211.
+sses.png  used on input line 219.
 (pdftex.def)             Requested size: 199.16928pt x 154.78516pt.
-<images/scannet_training_data_class_distribution_three_classes.png, id=1045, 94
+<images/scannet_training_data_class_distribution_three_classes.png, id=1167, 94
 7.4597pt x 560.8152pt>
 File: images/scannet_training_data_class_distribution_three_classes.png Graphic
  file (type png)
 <use images/scannet_training_data_class_distribution_three_classes.png>
 Package pdftex.def Info: images/scannet_training_data_class_distribution_three_
-classes.png  used on input line 218.
+classes.png  used on input line 226.
 (pdftex.def)             Requested size: 199.16928pt x 117.88591pt.
-<images/scannet_testing_data_class_distribution_three_classes.png, id=1046, 947
+<images/scannet_testing_data_class_distribution_three_classes.png, id=1168, 947
 .4597pt x 560.8152pt>
 File: images/scannet_testing_data_class_distribution_three_classes.png Graphic 
 file (type png)
 <use images/scannet_testing_data_class_distribution_three_classes.png>
 Package pdftex.def Info: images/scannet_testing_data_class_distribution_three_c
-lasses.png  used on input line 220.
+lasses.png  used on input line 228.
 (pdftex.def)             Requested size: 199.16928pt x 117.88591pt.
-[35] [36 <./images/scannet_training_data_class_distribution.png> <./images/scan
-net_testing_data_class_distribution.png>] [37 <./images/scannet_training_data_c
-lass_distribution_two_classes.png> <./images/scannet_testing_data_class_distrib
-ution_two_classes.png> <./images/scannet_training_data_class_distribution_three
-_classes.png> <./images/scannet_testing_data_class_distribution_three_classes.p
-ng>]
-<images/ordered_images.jpg, id=1070, 1383.1675pt x 217.81375pt>
+<images/ordered_images.jpg, id=1171, 1383.1675pt x 217.81375pt>
 File: images/ordered_images.jpg Graphic file (type jpg)
 <use images/ordered_images.jpg>
-Package pdftex.def Info: images/ordered_images.jpg  used on input line 231.
+Package pdftex.def Info: images/ordered_images.jpg  used on input line 239.
 (pdftex.def)             Requested size: 398.33858pt x 62.72565pt.
-<images/unordered_images.jpg, id=1071, 1386.17876pt x 230.8625pt>
+<images/unordered_images.jpg, id=1172, 1386.17876pt x 230.8625pt>
 File: images/unordered_images.jpg Graphic file (type jpg)
 <use images/unordered_images.jpg>
-Package pdftex.def Info: images/unordered_images.jpg  used on input line 233.
+Package pdftex.def Info: images/unordered_images.jpg  used on input line 241.
 (pdftex.def)             Requested size: 398.33858pt x 66.3425pt.
-<images/ordered_D.png, id=1075, 1066.98625pt x 1122.1925pt>
+ [36] [37 <./images/scannet_training_data_class_distribution.png> <./images/sca
+nnet_testing_data_class_distribution.png> <./images/scannet_training_data_class
+_distribution_two_classes.png> <./images/scannet_testing_data_class_distributio
+n_two_classes.png> <./images/scannet_training_data_class_distribution_three_cla
+sses.png> <./images/scannet_testing_data_class_distribution_three_classes.png>]
+<images/ordered_D.png, id=1191, 1066.98625pt x 1122.1925pt>
 File: images/ordered_D.png Graphic file (type png)
 <use images/ordered_D.png>
-Package pdftex.def Info: images/ordered_D.png  used on input line 242.
+Package pdftex.def Info: images/ordered_D.png  used on input line 250.
 (pdftex.def)             Requested size: 199.16928pt x 209.4688pt.
-<images/ordered_K.png, id=1076, 1086.0575pt x 1122.1925pt>
+<images/ordered_K.png, id=1192, 1086.0575pt x 1122.1925pt>
 File: images/ordered_K.png Graphic file (type png)
 <use images/ordered_K.png>
-Package pdftex.def Info: images/ordered_K.png  used on input line 244.
+Package pdftex.def Info: images/ordered_K.png  used on input line 252.
 (pdftex.def)             Requested size: 199.16928pt x 205.7873pt.
-<images/unordered_D.png, id=1077, 1060.96375pt x 1122.1925pt>
+<images/unordered_D.png, id=1193, 1060.96375pt x 1122.1925pt>
 File: images/unordered_D.png Graphic file (type png)
 <use images/unordered_D.png>
-Package pdftex.def Info: images/unordered_D.png  used on input line 251.
+Package pdftex.def Info: images/unordered_D.png  used on input line 259.
 (pdftex.def)             Requested size: 199.16928pt x 210.6503pt.
-<images/unordered_K.png, id=1078, 1072.005pt x 1122.1925pt>
+<images/unordered_K.png, id=1194, 1072.005pt x 1122.1925pt>
 File: images/unordered_K.png Graphic file (type png)
 <use images/unordered_K.png>
-Package pdftex.def Info: images/unordered_K.png  used on input line 253.
+Package pdftex.def Info: images/unordered_K.png  used on input line 261.
 (pdftex.def)             Requested size: 199.16928pt x 208.49277pt.
 
-Overfull \hbox (2.38974pt too wide) in paragraph at lines 273--290
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 281--298
  [] 
  []
 
-<images/Y_ground_truth_vanilla.png, id=1080, 950.3505pt x 558.6471pt>
+<images/Y_ground_truth_vanilla.png, id=1196, 950.3505pt x 558.6471pt>
 File: images/Y_ground_truth_vanilla.png Graphic file (type png)
 <use images/Y_ground_truth_vanilla.png>
 Package pdftex.def Info: images/Y_ground_truth_vanilla.png  used on input line 
-297.
+305.
 (pdftex.def)             Requested size: 199.16928pt x 117.07214pt.
-<images/Y_predicted_vanilla.png, id=1081, 956.1321pt x 553.5882pt>
+<images/Y_predicted_vanilla.png, id=1197, 956.1321pt x 553.5882pt>
 File: images/Y_predicted_vanilla.png Graphic file (type png)
 <use images/Y_predicted_vanilla.png>
-Package pdftex.def Info: images/Y_predicted_vanilla.png  used on input line 299
+Package pdftex.def Info: images/Y_predicted_vanilla.png  used on input line 307
 .
 (pdftex.def)             Requested size: 199.16928pt x 115.31087pt.
 [38 <./images/ordered_images.jpg> <./images/unordered_images.jpg>] [39 <./image
 s/ordered_D.png> <./images/ordered_K.png> <./images/unordered_D.png> <./images/
 unordered_K.png>] [40 <./images/Y_ground_truth_vanilla.png> <./images/Y_predict
 ed_vanilla.png>]
-Overfull \hbox (2.38974pt too wide) in paragraph at lines 310--327
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 318--335
  [] 
  []
 
-<images/Y_ground_truth_gp.png, id=1103, 965.5272pt x 556.479pt>
+<images/Y_ground_truth_gp.png, id=1219, 965.5272pt x 556.479pt>
 File: images/Y_ground_truth_gp.png Graphic file (type png)
 <use images/Y_ground_truth_gp.png>
-Package pdftex.def Info: images/Y_ground_truth_gp.png  used on input line 334.
+Package pdftex.def Info: images/Y_ground_truth_gp.png  used on input line 342.
 (pdftex.def)             Requested size: 199.16928pt x 114.78369pt.
-<images/Y_predicted_gp.png, id=1104, 957.5775pt x 555.7563pt>
+<images/Y_predicted_gp.png, id=1220, 957.5775pt x 555.7563pt>
 File: images/Y_predicted_gp.png Graphic file (type png)
 <use images/Y_predicted_gp.png>
-Package pdftex.def Info: images/Y_predicted_gp.png  used on input line 336.
+Package pdftex.def Info: images/Y_predicted_gp.png  used on input line 344.
 (pdftex.def)             Requested size: 199.16928pt x 115.59288pt.
 [41 <./images/Y_ground_truth_gp.png> <./images/Y_predicted_gp.png>]
 
 LaTeX Warning: Reference `tab:lstm_result_all_classes' on page 42 undefined on 
-input line 345.
+input line 353.
 
 
-Overfull \hbox (2.38974pt too wide) in paragraph at lines 349--363
+Overfull \hbox (2.38974pt too wide) in paragraph at lines 357--371
  [] 
  []
 
-<images/Y_ground_truth_lstm.png, id=1111, 968.418pt x 558.6471pt>
+<images/Y_ground_truth_lstm.png, id=1228, 968.418pt x 558.6471pt>
 File: images/Y_ground_truth_lstm.png Graphic file (type png)
 <use images/Y_ground_truth_lstm.png>
-Package pdftex.def Info: images/Y_ground_truth_lstm.png  used on input line 370
+Package pdftex.def Info: images/Y_ground_truth_lstm.png  used on input line 378
 .
 (pdftex.def)             Requested size: 199.16928pt x 114.88994pt.
-<images/Y_predicted_lstm.png, id=1112, 961.191pt x 553.5882pt>
+<images/Y_predicted_lstm.png, id=1229, 961.191pt x 553.5882pt>
 File: images/Y_predicted_lstm.png Graphic file (type png)
 <use images/Y_predicted_lstm.png>
-Package pdftex.def Info: images/Y_predicted_lstm.png  used on input line 372.
+Package pdftex.def Info: images/Y_predicted_lstm.png  used on input line 380.
 (pdftex.def)             Requested size: 199.16928pt x 114.70268pt.
 [42 <./images/Y_ground_truth_lstm.png> <./images/Y_predicted_lstm.png>]
-<images/scannet_performance_all_classes.png, id=1121, 1538.6283pt x 1373.8527pt
->
-File: images/scannet_performance_all_classes.png Graphic file (type png)
-<use images/scannet_performance_all_classes.png>
-Package pdftex.def Info: images/scannet_performance_all_classes.png  used on in
-put line 381.
-(pdftex.def)             Requested size: 341.43306pt x 304.86894pt.
-<images/unet_scannet_all_classes.png, id=1122, 1712.3975pt x 731.73375pt>
+<images/all_classes_acc.png, id=1238, 1578.3768pt x 1328.3226pt>
+File: images/all_classes_acc.png Graphic file (type png)
+<use images/all_classes_acc.png>
+Package pdftex.def Info: images/all_classes_acc.png  used on input line 396.
+(pdftex.def)             Requested size: 341.43306pt x 287.32689pt.
+<images/all_classes_meanacc.png, id=1239, 1610.1756pt x 1328.3226pt>
+File: images/all_classes_meanacc.png Graphic file (type png)
+<use images/all_classes_meanacc.png>
+Package pdftex.def Info: images/all_classes_meanacc.png  used on input line 403
+.
+(pdftex.def)             Requested size: 341.43306pt x 281.65169pt.
+<images/all_classes_meanIoU.png, id=1240, 1610.1756pt x 1328.3226pt>
+File: images/all_classes_meanIoU.png Graphic file (type png)
+<use images/all_classes_meanIoU.png>
+Package pdftex.def Info: images/all_classes_meanIoU.png  used on input line 410
+.
+(pdftex.def)             Requested size: 341.43306pt x 281.65169pt.
+<images/all_classes_FwIoU.png, id=1241, 1610.1756pt x 1328.3226pt>
+File: images/all_classes_FwIoU.png Graphic file (type png)
+<use images/all_classes_FwIoU.png>
+Package pdftex.def Info: images/all_classes_FwIoU.png  used on input line 417.
+(pdftex.def)             Requested size: 341.43306pt x 281.65169pt.
+<images/unet_scannet_all_classes.png, id=1242, 1712.3975pt x 731.73375pt>
 File: images/unet_scannet_all_classes.png Graphic file (type png)
 <use images/unet_scannet_all_classes.png>
 Package pdftex.def Info: images/unet_scannet_all_classes.png  used on input lin
-e 388.
+e 424.
 (pdftex.def)             Requested size: 455.24408pt x 194.53378pt.
 
-[43 <./images/scannet_performance_all_classes.png>]
-<images/output_unet_two_classes.png, id=1132, 1673.25125pt x 706.64pt>
+[43 <./images/all_classes_acc.png>] [44 <./images/all_classes_meanacc.png>]
+[45 <./images/all_classes_meanIoU.png>] [46 <./images/all_classes_FwIoU.png> <.
+/images/unet_scannet_all_classes.png>]
+<images/output_unet_two_classes.png, id=1267, 1673.25125pt x 706.64pt>
 File: images/output_unet_two_classes.png Graphic file (type png)
 <use images/output_unet_two_classes.png>
 Package pdftex.def Info: images/output_unet_two_classes.png  used on input line
- 401.
+ 437.
 (pdftex.def)             Requested size: 455.24408pt x 192.25098pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/scannet_performance_two_classes.png, id=1133, 1519.1154pt x 1373.8527pt
->
-File: images/scannet_performance_two_classes.png Graphic file (type png)
-<use images/scannet_performance_two_classes.png>
-Package pdftex.def Info: images/scannet_performance_two_classes.png  used on in
-put line 427.
-(pdftex.def)             Requested size: 341.43306pt x 308.76811pt.
-[44 <./images/unet_scannet_all_classes.png>]
-<images/unet_scannet_three_classes.png, id=1142, 1397.22pt x 559.08875pt>
+<images/two_classes_acc.png, id=1268, 1558.1412pt x 1328.3226pt>
+File: images/two_classes_acc.png Graphic file (type png)
+<use images/two_classes_acc.png>
+Package pdftex.def Info: images/two_classes_acc.png  used on input line 470.
+(pdftex.def)             Requested size: 341.43306pt x 291.0563pt.
+<images/two_classes_meanacc.png, id=1269, 1558.1412pt x 1328.3226pt>
+File: images/two_classes_meanacc.png Graphic file (type png)
+<use images/two_classes_meanacc.png>
+Package pdftex.def Info: images/two_classes_meanacc.png  used on input line 477
+.
+(pdftex.def)             Requested size: 341.43306pt x 291.0563pt.
+<images/two_classes_meanIoU.png, id=1270, 1558.1412pt x 1328.3226pt>
+File: images/two_classes_meanIoU.png Graphic file (type png)
+<use images/two_classes_meanIoU.png>
+Package pdftex.def Info: images/two_classes_meanIoU.png  used on input line 484
+.
+(pdftex.def)             Requested size: 341.43306pt x 291.0563pt.
+<images/two_classes_FwIoU.png, id=1271, 1558.1412pt x 1328.3226pt>
+File: images/two_classes_FwIoU.png Graphic file (type png)
+<use images/two_classes_FwIoU.png>
+Package pdftex.def Info: images/two_classes_FwIoU.png  used on input line 491.
+(pdftex.def)             Requested size: 341.43306pt x 291.0563pt.
+[47 <./images/output_unet_two_classes.png>] [48 <./images/two_classes_acc.png>]
+[49 <./images/two_classes_meanacc.png>] [50 <./images/two_classes_meanIoU.png>]
+[51 <./images/two_classes_FwIoU.png>]
+<images/unet_scannet_three_classes.png, id=1301, 1397.22pt x 559.08875pt>
 File: images/unet_scannet_three_classes.png Graphic file (type png)
 <use images/unet_scannet_three_classes.png>
 Package pdftex.def Info: images/unet_scannet_three_classes.png  used on input l
-ine 439.
+ine 502.
 (pdftex.def)             Requested size: 455.24408pt x 182.16235pt.
 
-Overfull \hbox (1.78958pt too wide) in paragraph at lines 446--457
+Underfull \hbox (badness 10000) in paragraph at lines 516--516
+[]|\OT1/lmr/bx/n/10 [0.6810, 0.4661,
+ []
+
+
+Overfull \hbox (1.78958pt too wide) in paragraph at lines 509--520
  [] 
  []
 
-<images/scannet_performance_three_classes.png, id=1143, 1531.4013pt x 1373.8527
-pt>
-File: images/scannet_performance_three_classes.png Graphic file (type png)
-<use images/scannet_performance_three_classes.png>
-Package pdftex.def Info: images/scannet_performance_three_classes.png  used on 
-input line 464.
-(pdftex.def)             Requested size: 341.43306pt x 306.29445pt.
-[45 <./images/output_unet_two_classes.png>] [46 <./images/scannet_performance_t
-wo_classes.png> <./images/unet_scannet_three_classes.png>] [47 <./images/scanne
-t_performance_three_classes.png>]
-<images/unet_vkitti_two.png, id=1164, 1775.63374pt x 782.925pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/three_classes_acc.png, id=1302, 1571.1498pt x 1328.3226pt>
+File: images/three_classes_acc.png Graphic file (type png)
+<use images/three_classes_acc.png>
+Package pdftex.def Info: images/three_classes_acc.png  used on input line 534.
+(pdftex.def)             Requested size: 341.43306pt x 288.66461pt.
+<images/three_classes_meanacc.png, id=1303, 1571.1498pt x 1328.3226pt>
+File: images/three_classes_meanacc.png Graphic file (type png)
+<use images/three_classes_meanacc.png>
+Package pdftex.def Info: images/three_classes_meanacc.png  used on input line 5
+41.
+(pdftex.def)             Requested size: 341.43306pt x 288.66461pt.
+<images/three_classes_meanIoU.png, id=1304, 1571.1498pt x 1328.3226pt>
+File: images/three_classes_meanIoU.png Graphic file (type png)
+<use images/three_classes_meanIoU.png>
+Package pdftex.def Info: images/three_classes_meanIoU.png  used on input line 5
+48.
+(pdftex.def)             Requested size: 341.43306pt x 288.66461pt.
+<images/three_classes_FwIoU.png, id=1305, 1571.1498pt x 1328.3226pt>
+File: images/three_classes_FwIoU.png Graphic file (type png)
+<use images/three_classes_FwIoU.png>
+Package pdftex.def Info: images/three_classes_FwIoU.png  used on input line 555
+.
+(pdftex.def)             Requested size: 341.43306pt x 288.66461pt.
+[52 <./images/unet_scannet_three_classes.png>] [53 <./images/three_classes_acc.
+png>] [54 <./images/three_classes_meanacc.png>] [55 <./images/three_classes_mea
+nIoU.png>] [56 <./images/three_classes_FwIoU.png>]
+<images/unet_vkitti_two.png, id=1336, 1775.63374pt x 782.925pt>
 File: images/unet_vkitti_two.png Graphic file (type png)
 <use images/unet_vkitti_two.png>
-Package pdftex.def Info: images/unet_vkitti_two.png  used on input line 480.
+Package pdftex.def Info: images/unet_vkitti_two.png  used on input line 571.
 (pdftex.def)             Requested size: 483.69684pt x 213.26817pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 480--481
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 571--572
  [][] 
  []
 
@@ -1326,224 +1467,242 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 480--481
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 495--495
+Underfull \hbox (badness 2503) in paragraph at lines 586--586
 []|\OT1/lmr/m/n/10 (+20) [0.5875, 0.7965, 0.5829,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 495--495
+Underfull \hbox (badness 4686) in paragraph at lines 586--586
 \OT1/lmr/m/n/10 (+20) 0.4324, 0.1781, 0.7548,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 495--495
+Underfull \hbox (badness 4686) in paragraph at lines 586--586
 \OT1/lmr/m/n/10 (+20) 0.6065, 0.5338, 0.2594,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 495--495
+Underfull \hbox (badness 4686) in paragraph at lines 586--586
 \OT1/lmr/m/n/10 (+20) 0.3727, 0.2758, 0.2034,
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 496--497
+Underfull \hbox (badness 2503) in paragraph at lines 587--588
 []|\OT1/lmr/m/n/10 (+20) [0.6025, 0.7333, 0.5950,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 496--497
+Underfull \hbox (badness 4686) in paragraph at lines 587--588
 \OT1/lmr/m/n/10 (+20) 0.4614, 0.1925, 0.8191,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 496--497
+Underfull \hbox (badness 4686) in paragraph at lines 587--588
 \OT1/lmr/m/n/10 (+20) 0.7302, 0.4889, 0.3784,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 496--497
+Underfull \hbox (badness 4686) in paragraph at lines 587--588
 \OT1/lmr/m/n/10 (+20) 0.4061, 0.2493, 0.3585,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 497--498
-\OT1/lmr/m/n/10 (+20) 0.5551, 0.3964, 0.9073,
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+[]|\OT1/lmr/bx/n/10 [ 0.7773, 0.7840,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 497--498
-\OT1/lmr/m/n/10 (+20) 0.7310, 0.6568, 0.4651,
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 497--498
-\OT1/lmr/m/n/10 (+20) 0.5150, 0.3285, 0.2872,
- []
-
-
-Overfull \hbox (27.18973pt too wide) in paragraph at lines 487--502
+Overfull \hbox (27.18973pt too wide) in paragraph at lines 578--593
  [] 
  []
 
-<images/vkitti_validation_data_two_class_box_plot.png, id=1165, 604.8999pt x 47
-3.3685pt>
-File: images/vkitti_validation_data_two_class_box_plot.png Graphic file (type p
-ng)
-<use images/vkitti_validation_data_two_class_box_plot.png>
-Package pdftex.def Info: images/vkitti_validation_data_two_class_box_plot.png  
-used on input line 509.
-(pdftex.def)             Requested size: 341.43306pt x 267.2009pt.
-<images/IoU_two.png, id=1166, 1953.2975pt x 611.28375pt>
-File: images/IoU_two.png Graphic file (type png)
-<use images/IoU_two.png>
-Package pdftex.def Info: images/IoU_two.png  used on input line 516.
-(pdftex.def)             Requested size: 540.60236pt x 169.18086pt.
+<images/two_vkitti_acc.png, id=1337, 645.3711pt x 448.7967pt>
+File: images/two_vkitti_acc.png Graphic file (type png)
+<use images/two_vkitti_acc.png>
+Package pdftex.def Info: images/two_vkitti_acc.png  used on input line 609.
+(pdftex.def)             Requested size: 369.88582pt x 257.22748pt.
+<images/two_vkitti_meanacc.png, id=1338, 634.5306pt x 443.0151pt>
+File: images/two_vkitti_meanacc.png Graphic file (type png)
+<use images/two_vkitti_meanacc.png>
+Package pdftex.def Info: images/two_vkitti_meanacc.png  used on input line 617.
 
-Overfull \hbox (85.35825pt too wide) in paragraph at lines 516--517
- [][] 
- []
+(pdftex.def)             Requested size: 369.88582pt x 258.25359pt.
+<images/two_vkitti_mIoU.png, id=1339, 645.3711pt x 448.7967pt>
+File: images/two_vkitti_mIoU.png Graphic file (type png)
+<use images/two_vkitti_mIoU.png>
+Package pdftex.def Info: images/two_vkitti_mIoU.png  used on input line 625.
+(pdftex.def)             Requested size: 369.88582pt x 257.22748pt.
+<images/two_vkitti_FwIoU.png, id=1340, 645.3711pt x 448.7967pt>
+File: images/two_vkitti_FwIoU.png Graphic file (type png)
+<use images/two_vkitti_FwIoU.png>
+Package pdftex.def Info: images/two_vkitti_FwIoU.png  used on input line 633.
+(pdftex.def)             Requested size: 369.88582pt x 257.22748pt.
+<images/IoU_vanilla_two_class.png, id=1341, 596.9502pt x 453.8556pt>
+File: images/IoU_vanilla_two_class.png Graphic file (type png)
+<use images/IoU_vanilla_two_class.png>
+Package pdftex.def Info: images/IoU_vanilla_two_class.png  used on input line 6
+50.
+(pdftex.def)             Requested size: 369.88582pt x 281.22136pt.
+<images/IoU_gp_two_class.png, id=1342, 596.9502pt x 453.8556pt>
+File: images/IoU_gp_two_class.png Graphic file (type png)
+<use images/IoU_gp_two_class.png>
+Package pdftex.def Info: images/IoU_gp_two_class.png  used on input line 657.
+(pdftex.def)             Requested size: 369.88582pt x 281.22136pt.
+<images/IoU_lstm_two_class.png, id=1343, 596.9502pt x 453.8556pt>
+File: images/IoU_lstm_two_class.png Graphic file (type png)
+<use images/IoU_lstm_two_class.png>
+Package pdftex.def Info: images/IoU_lstm_two_class.png  used on input line 664.
 
-<images/continuous_sequence_data1.png, id=1167, 1084.05pt x 1141.866pt>
+(pdftex.def)             Requested size: 369.88582pt x 281.22136pt.
+<images/continuous_sequence_data1.png, id=1344, 1084.05pt x 1141.866pt>
 File: images/continuous_sequence_data1.png Graphic file (type png)
 <use images/continuous_sequence_data1.png>
 Package pdftex.def Info: images/continuous_sequence_data1.png  used on input li
-ne 523.
+ne 673.
 (pdftex.def)             Requested size: 540.60236pt x 569.4506pt.
 
-Overfull \hbox (85.35825pt too wide) in paragraph at lines 523--524
+Overfull \hbox (85.35825pt too wide) in paragraph at lines 673--674
  [][] 
  []
 
-<images/continuous_sequence_data2.png, id=1168, 1084.05pt x 1141.866pt>
+<images/continuous_sequence_data2.png, id=1345, 1084.05pt x 1141.866pt>
 File: images/continuous_sequence_data2.png Graphic file (type png)
 <use images/continuous_sequence_data2.png>
 Package pdftex.def Info: images/continuous_sequence_data2.png  used on input li
-ne 530.
+ne 680.
 (pdftex.def)             Requested size: 540.60236pt x 569.4506pt.
 
-Overfull \hbox (85.35825pt too wide) in paragraph at lines 530--531
+Overfull \hbox (85.35825pt too wide) in paragraph at lines 680--681
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
-<images/batch_wise_performance_comparison.png, id=1174, 1885.0425pt x 572.1375p
+ [57]
+[58 <./images/unet_vkitti_two.png>] [59 <./images/two_vkitti_acc.png> <./images
+/two_vkitti_meanacc.png>] [60 <./images/two_vkitti_mIoU.png> <./images/two_vkit
+ti_FwIoU.png>] [61 <./images/IoU_vanilla_two_class.png>] [62 <./images/IoU_gp_t
+wo_class.png>] [63 <./images/IoU_lstm_two_class.png>] [64 <./images/continuous_
+sequence_data1.png>] [65 <./images/continuous_sequence_data2.png>]
+<images/batch_wise_performance_comparison.png, id=1396, 1885.0425pt x 572.1375p
 t>
 File: images/batch_wise_performance_comparison.png Graphic file (type png)
 <use images/batch_wise_performance_comparison.png>
 Package pdftex.def Info: images/batch_wise_performance_comparison.png  used on 
-input line 541.
+input line 691.
 (pdftex.def)             Requested size: 455.24408pt x 138.17134pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49 <./images/unet_vkitti_two.png>] [50 <./images/vkitti_validation_data_two_c
-lass_box_plot.png> <./images/IoU_two.png>] [51 <./images/continuous_sequence_da
-ta1.png>]
-[52 <./images/continuous_sequence_data2.png>]
-<images/unet_vkitti_five.png, id=1199, 1594.95876pt x 684.5575pt>
+<images/unet_vkitti_five.png, id=1399, 1594.95876pt x 684.5575pt>
 File: images/unet_vkitti_five.png Graphic file (type png)
 <use images/unet_vkitti_five.png>
-Package pdftex.def Info: images/unet_vkitti_five.png  used on input line 553.
+Package pdftex.def Info: images/unet_vkitti_five.png  used on input line 703.
 (pdftex.def)             Requested size: 483.69684pt x 207.60416pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 553--554
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 703--704
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+Underfull \hbox (badness 10000) in paragraph at lines 717--717
 []|\OT1/lmr/m/n/10 (+20) [0.9128, 0.9417, 0.92,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+Underfull \hbox (badness 10000) in paragraph at lines 717--717
 \OT1/lmr/m/n/10 (+20) 0.6876, 0.7247, 0.958,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 567--567
+Underfull \hbox (badness 4686) in paragraph at lines 717--717
 \OT1/lmr/m/n/10 (+20) 0.8576, 0.6196, 0.4536,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 567--567
+Underfull \hbox (badness 4686) in paragraph at lines 717--717
 \OT1/lmr/m/n/10 (+20) 0.4217, 0.3476, 0.5452,
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 568--569
+Underfull \hbox (badness 2503) in paragraph at lines 718--719
 []|\OT1/lmr/m/n/10 (+20) [0.8961, 0.8985, 0.8949,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 568--569
+Underfull \hbox (badness 4686) in paragraph at lines 718--719
 \OT1/lmr/m/n/10 (+20) 0.7113, 0.7408, 0.9505,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 568--569
+Underfull \hbox (badness 4686) in paragraph at lines 718--719
 \OT1/lmr/m/n/10 (+20) 0.8602, 0.6862, 0.5612,
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 568--569
+Underfull \hbox (badness 4686) in paragraph at lines 718--719
 \OT1/lmr/m/n/10 (+20) 0.4683, 0.3427, 0.4788,
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 569--570
-[]|\OT1/lmr/m/n/10 (+20) [0.9078, 0.9565, 0.9296,
+Underfull \hbox (badness 2393) in paragraph at lines 719--720
+\OT1/lmr/bx/n/10 0.7427, 0.7816, 0.96,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
-\OT1/lmr/m/n/10 (+20) 0.7427, 0.7816, 0.96,
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 569--570
-\OT1/lmr/m/n/10 (+20) 0.8669, 0.6828, 0.4898,
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 569--570
-\OT1/lmr/m/n/10 (+20) 0.4464, 0.4182, 0.6187,
- []
-
-
-Overfull \hbox (27.18973pt too wide) in paragraph at lines 560--574
+Overfull \hbox (27.18973pt too wide) in paragraph at lines 710--724
  [] 
  []
 
-[53 <./images/batch_wise_performance_comparison.png> <./images/unet_vkitti_five
-.png>]
-<images/vkitti_validation_data_five_class_box_plot.png, id=1209, 688.0104pt x 4
-73.3685pt>
-File: images/vkitti_validation_data_five_class_box_plot.png Graphic file (type 
-png)
-<use images/vkitti_validation_data_five_class_box_plot.png>
-Package pdftex.def Info: images/vkitti_validation_data_five_class_box_plot.png 
- used on input line 583.
-(pdftex.def)             Requested size: 341.43306pt x 234.91403pt.
-<images/IoU_five.png, id=1210, 1619.04875pt x 467.7475pt>
+File: images/two_vkitti_acc.png Graphic file (type png)
+<use images/two_vkitti_acc.png>
+Package pdftex.def Info: images/two_vkitti_acc.png  used on input line 743.
+(pdftex.def)             Requested size: 341.43306pt x 237.44337pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 22.48878pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[66 <./images/batch_wise_performance_comparison.png>] [67 <./images/unet_vkitti
+_five.png>]
+File: images/two_vkitti_meanacc.png Graphic file (type png)
+<use images/two_vkitti_meanacc.png>
+Package pdftex.def Info: images/two_vkitti_meanacc.png  used on input line 751.
+
+(pdftex.def)             Requested size: 341.43306pt x 238.38637pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: images/two_vkitti_mIoU.png Graphic file (type png)
+<use images/two_vkitti_mIoU.png>
+Package pdftex.def Info: images/two_vkitti_mIoU.png  used on input line 759.
+(pdftex.def)             Requested size: 341.43306pt x 237.44337pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: images/two_vkitti_FwIoU.png Graphic file (type png)
+<use images/two_vkitti_FwIoU.png>
+Package pdftex.def Info: images/two_vkitti_FwIoU.png  used on input line 767.
+(pdftex.def)             Requested size: 341.43306pt x 237.44337pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/IoU_five.png, id=1412, 1619.04875pt x 467.7475pt>
 File: images/IoU_five.png Graphic file (type png)
 <use images/IoU_five.png>
-Package pdftex.def Info: images/IoU_five.png  used on input line 590.
-(pdftex.def)             Requested size: 540.60236pt x 156.18428pt.
+Package pdftex.def Info: images/IoU_five.png  used on input line 776.
+(pdftex.def)             Requested size: 569.05511pt x 164.39925pt.
 
-Overfull \hbox (85.35825pt too wide) in paragraph at lines 590--591
- [][] 
+Overfull \hbox (59.12772pt too wide) in paragraph at lines 775--777
+ []|  [] 
  []
 
-[54 <./images/vkitti_validation_data_five_class_box_plot.png>])
-(./chapters/ch06_android_deployment.tex [55 <./images/IoU_five.png>] [56
+[68]) (./chapters/ch06_android_deployment.tex [69] [70] [71 <./images/IoU_five.
+png>] [72
 
 ]
 Chapter 5.
-<images/android_deployment.png, id=1229, 623.32875pt x 927.465pt>
+<images/android_deployment.png, id=1439, 623.32875pt x 927.465pt>
 File: images/android_deployment.png Graphic file (type png)
 <use images/android_deployment.png>
 Package pdftex.def Info: images/android_deployment.png  used on input line 15.
@@ -1556,39 +1715,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--26
 
 Underfull \vbox (badness 1057) has occurred while \output is active []
 
- [57]
-[58 <./images/android_deployment.png>]
-<images/android_ss.jpg, id=1242, 986.7264pt x 828.696pt>
+ [73]
+[74 <./images/android_deployment.png>]
+<images/android_ss.jpg, id=1452, 986.7264pt x 828.696pt>
 File: images/android_ss.jpg Graphic file (type jpg)
 <use images/android_ss.jpg>
 Package pdftex.def Info: images/android_ss.jpg  used on input line 44.
 (pdftex.def)             Requested size: 369.88582pt x 310.64642pt.
-) (./chapters/ch07_conclusion.tex
-[59 <./images/android_ss.jpg>] [60
+ [75 <./images/android_ss.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\OT1/lmr/m/n/10 (+20) Oxygen OS
+ []
+
+) (./chapters/ch07_conclusion.tex [76]
+Chapter 6.
+[77
+
+] [78]) (./chapters/appendix.tex [79] [80
 
 ]
-Chapter 6.
-) (./chapters/appendix.tex [61] [62]
 Appendix A.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 7.
 
 
-LaTeX Warning: Float too large for page by 73.26949pt on input line 66.
-
-
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 68.
+               Default added (so using `tbp') on input line 60.
 
-[63
-
-] [64] [65] [66
+[81] [82] [83] [84
 
 ]
 Appendix B.
 
-Overfull \hbox (63.65271pt too wide) in paragraph at lines 94--139
+Overfull \hbox (63.65271pt too wide) in paragraph at lines 95--140
  [] 
  []
 
@@ -1596,16 +1756,59 @@ Overfull \hbox (63.65271pt too wide) in paragraph at lines 94--139
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (35.19995pt too wide) in paragraph at lines 147--155
+Overfull \hbox (35.19995pt too wide) in paragraph at lines 148--156
  [] 
  []
 
 
-Overfull \hbox (63.65271pt too wide) in paragraph at lines 162--174
+Overfull \hbox (63.65271pt too wide) in paragraph at lines 163--175
  [] 
  []
 
-) [67] [68] [69] [70] (./report.bbl
+[85] [86] [87] [88]
+Appendix C.
+<images/scannet_step_vanilla_all.png, id=1518, 1191.0096pt x 451.6875pt>
+File: images/scannet_step_vanilla_all.png Graphic file (type png)
+<use images/scannet_step_vanilla_all.png>
+Package pdftex.def Info: images/scannet_step_vanilla_all.png  used on input lin
+e 184.
+(pdftex.def)             Requested size: 369.88582pt x 140.27669pt.
+<images/scannet_epoch_vanilla_all.png, id=1519, 1211.2452pt x 451.6875pt>
+File: images/scannet_epoch_vanilla_all.png Graphic file (type png)
+<use images/scannet_epoch_vanilla_all.png>
+Package pdftex.def Info: images/scannet_epoch_vanilla_all.png  used on input li
+ne 191.
+(pdftex.def)             Requested size: 369.88582pt x 137.93333pt.
+<images/scannet_gp_step.png, id=1520, 1175.8329pt x 451.6875pt>
+File: images/scannet_gp_step.png Graphic file (type png)
+<use images/scannet_gp_step.png>
+Package pdftex.def Info: images/scannet_gp_step.png  used on input line 198.
+(pdftex.def)             Requested size: 369.88582pt x 142.08932pt.
+<images/scannet_gp_epoch_all.png, id=1521, 1206.1863pt x 451.6875pt>
+File: images/scannet_gp_epoch_all.png Graphic file (type png)
+<use images/scannet_gp_epoch_all.png>
+Package pdftex.def Info: images/scannet_gp_epoch_all.png  used on input line 20
+5.
+(pdftex.def)             Requested size: 369.88582pt x 138.51228pt.
+<images/scannet_step_lstm.png, id=1522, 1191.0096pt x 455.301pt>
+File: images/scannet_step_lstm.png Graphic file (type png)
+<use images/scannet_step_lstm.png>
+Package pdftex.def Info: images/scannet_step_lstm.png  used on input line 212.
+(pdftex.def)             Requested size: 369.88582pt x 141.3989pt.
+<images/scannet_lstm_epoch_all.png, id=1523, 1196.0685pt x 451.6875pt>
+File: images/scannet_lstm_epoch_all.png Graphic file (type png)
+<use images/scannet_lstm_epoch_all.png>
+Package pdftex.def Info: images/scannet_lstm_epoch_all.png  used on input line 
+219.
+(pdftex.def)             Requested size: 369.88582pt x 139.68394pt.
+) [89
+
+ <./images/scannet_step_vanilla_all.png>] [90 <./images/scannet_epoch_vanilla_a
+ll.png> <./images/scannet_gp_step.png> <./images/scannet_gp_epoch_all.png>] [91
+ <./images/scannet_step_lstm.png> <./images/scannet_lstm_epoch_all.png>]
+[92
+
+] (./report.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 17.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
@@ -1627,18 +1830,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
 fferent % 20types % 20of % 20image %
  []
 
-[71
+[93
 
-
-] [72] [73] [74] [75] [76] [77])
+] [94] [95] [96] [97] [98] [99])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
- [78]
+ [100]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 81E288D525860916972EF2C0B537D3AC;5106.
+(rerunfilecheck)             Checksum: 2334E2FA81E01BA6C71CC5305A50CD31;5435.
 
 
 LaTeX Warning: There were undefined references.
@@ -1649,13 +1851,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 14311 strings out of 483183
- 231373 string characters out of 5966293
- 683801 words of memory out of 5000000
- 28475 multiletter control sequences out of 15000+600000
+ 14486 strings out of 483183
+ 235251 string characters out of 5966293
+ 686801 words of memory out of 5000000
+ 28577 multiletter control sequences out of 15000+600000
  598735 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,59p,3931b,649s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,59p,3931b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
@@ -1670,10 +1872,10 @@ m/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (96 pages, 13928748 bytes).
+Output written on report.pdf (120 pages, 15237597 bytes).
 PDF statistics:
- 1481 PDF objects out of 1728 (max. 8388607)
- 1220 compressed objects within 13 object streams
- 344 named destinations out of 1000 (max. 500000)
- 18766 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1747 PDF objects out of 2073 (max. 8388607)
+ 1422 compressed objects within 15 object streams
+ 398 named destinations out of 1000 (max. 500000)
+ 18901 words of extra memory for PDF output out of 20736 (max. 10000000)
 
