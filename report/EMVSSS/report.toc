@@ -66,5 +66,5 @@
 \contentsline {section}{\numberline {6.3}Future work}{79}{section.6.3}%
 \contentsline {chapter}{Appendix \numberline {A}Design Details}{81}{appendix.a.A}%
 \contentsline {chapter}{Appendix \numberline {B}Parameters}{85}{appendix.a.B}%
-\contentsline {chapter}{Appendix \numberline {C}Training details}{89}{appendix.a.C}%
-\contentsline {chapter}{References}{93}{appendix*.100}%
+\contentsline {chapter}{Appendix \numberline {C}Training details}{91}{appendix.a.C}%
+\contentsline {chapter}{References}{95}{appendix*.106}%

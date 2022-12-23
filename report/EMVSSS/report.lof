@@ -78,10 +78,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Scannet and vkitti dataset sample\relax }}{86}{figure.caption.95}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Scannet step losses for vanilla\relax }}{89}{figure.caption.94}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Scannet epoch losses for vanilla\relax }}{90}{figure.caption.95}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Scannet step losses for GP\relax }}{90}{figure.caption.96}%
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Scannet epoch losses for GP\relax }}{90}{figure.caption.97}%
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Scannet step losses for lstm\relax }}{91}{figure.caption.98}%
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Scannet epoch losses for lstm\relax }}{91}{figure.caption.99}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Scannet step losses for vanilla\relax }}{91}{figure.caption.96}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Scannet epoch losses for vanilla\relax }}{92}{figure.caption.97}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Scannet step losses for GP\relax }}{92}{figure.caption.98}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Scannet epoch losses for GP\relax }}{92}{figure.caption.99}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Scannet step losses for lstm\relax }}{93}{figure.caption.100}%
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Scannet epoch losses for lstm\relax }}{93}{figure.caption.101}%
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Vkitti step loss vanilla\relax }}{93}{figure.caption.102}%
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Vkitti step loss GP\relax }}{94}{figure.caption.103}%
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Vkitti step loss lstm\relax }}{94}{figure.caption.104}%
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Learning rate finder\relax }}{94}{figure.caption.105}%

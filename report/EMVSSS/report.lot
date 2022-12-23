@@ -10,7 +10,7 @@
 \contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric and two classes. Higher the value means top performing model.\relax }}{57}{table.caption.60}%
 \contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric. Higher the value means top performing model.\relax }}{58}{table.caption.66}%
 \contentsline {table}{\numberline {4.8}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes. Higher the value means top performing model.\relax }}{67}{table.caption.78}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Hyperparameter used to train the model.\relax }}{69}{table.caption.84}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Hyperparameter used to train the model.\relax }}{71}{table.caption.84}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes\relax }}{73}{table.caption.86}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Runtime detail for processing of single image\relax }}{76}{table.caption.88}%
@@ -19,7 +19,8 @@
 \contentsline {table}{\numberline {A.1}{\ignorespaces Unet vanilla model architecture\relax }}{82}{table.caption.89}%
 \contentsline {table}{\numberline {A.2}{\ignorespaces Unet vanilla model architecture\relax }}{83}{table.caption.90}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{86}{table.caption.91}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{87}{table.caption.92}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{88}{table.caption.93}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{87}{table.caption.91}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{88}{table.caption.92}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{89}{table.caption.93}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces Vkitti dataset classes\relax }}{90}{table.caption.94}%
 \addvspace {10\p@ }

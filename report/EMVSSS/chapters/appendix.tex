@@ -92,7 +92,7 @@
     \chapter{Parameters}
         \begin{table}[h]
     	\begin{center}
-    		\begin{tabular}{ | l | p{17cm} |}
+    		\begin{tabular}{ | l | p{14cm} |}
     			\hline
     			
     			\cellcolor{purple!30}Id & \cellcolor{purple!30}Classes \\ \hline
@@ -145,7 +145,7 @@
     
     \begin{table}
     	\begin{center}
-    		\begin{tabular}{ | l | p{16cm} |}
+    		\begin{tabular}{ | l | p{14cm} |}
     			\hline
     			
     			\cellcolor{purple!30}Id & \cellcolor{purple!30}Classes \\ \hline
@@ -160,7 +160,7 @@
     
     \begin{table}
     	\begin{center}
-    		\begin{tabular}{ | l | p{17cm} |}
+    		\begin{tabular}{ | l | p{14cm} |}
     			\hline
     			
     			\cellcolor{purple!30}Id & \cellcolor{purple!30}Classes \\ \hline
@@ -177,6 +177,41 @@
     	\end{center}
     \end{table}
 	
+ 	\begin{table}
+		\begin{center}
+			\begin{tabular}{ | l | p{16cm} |}
+				\hline
+				
+				\cellcolor{purple!30}Id & \cellcolor{purple!30}Classes \\ \hline
+				0 & Other \\ \hline
+				1 & Terrain \\ \hline
+				2 & Sky \\ \hline
+				3 & Tree \\ \hline
+				4 & Vegetation \\ \hline
+				5 & Building \\ \hline
+				6 & Road \\ \hline
+				7 & Guardrail \\ \hline
+				8 & Traffic Sign \\ \hline
+				9 & Traffic light \\ \hline
+				10 & Pole \\ \hline
+				11 & Misc \\ \hline
+				12 & Truck \\ \hline
+				13 & Car \\ \hline
+				14 & Van \\ \hline
+				\hline
+			\end{tabular}
+			\caption{Vkitti dataset classes}
+			\label{table:Classes in scannet_2}
+		\end{center}
+	\end{table}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/dataset.png}
+		\caption{Scannet and vkitti dataset sample}
+		\label{fig:android_result}
+	\end{figure}
+
 	\chapter{Training details}
 	
 	\begin{figure}
@@ -218,6 +253,34 @@
 		\centering
 		\includegraphics[width=13cm]{images/scannet_lstm_epoch_all.png}
 		\caption{Scannet epoch losses for lstm}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/vanilla_step_loss_vkitti.png}
+		\caption{Vkitti step loss vanilla}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/gp_step_loss_vkitti.png}
+		\caption{Vkitti step loss GP}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/lstm_step_loss_vkitti.png}
+		\caption{Vkitti step loss lstm}
+		\label{fig:android_result}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=13cm]{images/lr_finder_41.png}
+		\caption{Learning rate finder}
 		\label{fig:android_result}
 	\end{figure}
 
