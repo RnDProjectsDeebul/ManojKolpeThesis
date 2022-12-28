@@ -4,90 +4,439 @@
 
     \chapter{Design Details}
     
-        \begin{table}[]
-    	\begin{center}
-    		\begin{tabular}{| l | l | p{3cm} |}
-    			\hline
-    			Layer (type)       & Output Shape            & Param \#  \\ \hline
-    			Conv2d-1           & {[}-1, 64, 240, 320{]}  & 1,792     \\ \hline
-    			ReLU-2             & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
-    			BatchNorm2d-3      & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
-    			Conv2d-4           & {[}-1, 64, 240, 320{]}  & 36,928    \\ \hline
-    			ReLU-5             & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
-    			BatchNorm2d-6      & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
-    			MaxPool2d-7        & {[}-1, 64, 120, 160{]}  & 0         \\ \hline
-    			Conv2d-8           & {[}-1, 128, 120, 160{]} & 73,856    \\ \hline
-    			ReLU-9             & {[}-1, 128, 120, 160{]} & 0         \\ \hline
-    			BatchNorm2d-10     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
-    			Conv2d-11          & {[}-1, 128, 120, 160{]} & 147,584   \\ \hline
-    			ReLU-12            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
-    			BatchNorm2d-13     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
-    			MaxPool2d-14       & {[}-1, 128, 60, 80{]}   & 0         \\ \hline
-    			Conv2d-15          & {[}-1, 256, 60, 80{]}   & 295,168   \\ \hline
-    			ReLU-16            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
-    			BatchNorm2d-17     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
-    			Conv2d-18          & {[}-1, 256, 60, 80{]}   & 590,080   \\ \hline
-    			ReLU-19            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
-    			BatchNorm2d-20     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
-    			MaxPool2d-21       & {[}-1, 256, 30, 40{]}   & 0         \\ \hline
-    			Conv2d-22          & {[}-1, 512, 30, 40{]}   & 1,180,160 \\ \hline
-    			ReLU-23            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
-    			BatchNorm2d-24     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
-    			Conv2d-25          & {[}-1, 512, 30, 40{]}   & 2,359,808 \\ \hline
-    			ReLU-26            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
-    			BatchNorm2d-27     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
-    			MaxPool2d-28       & {[}-1, 512, 15, 20{]}   & 0         \\ \hline
-    			Conv2d-29          & {[}-1, 1024, 15, 20{]}  & 4,719,616 \\ \hline
-    			ReLU-30            & {[}-1, 1024, 15, 20{]}  & 0         \\ \hline
-    			BatchNorm2d-31     & {[}-1, 1024, 15, 20{]}  & 2,048     \\ \hline
-    			Conv2d-32          & {[}-1, 1024, 15, 20{]}  & 9,438,208 \\ \hline
-    			ReLU-33            & {[}-1, 1024, 15, 20{]}  & 0         \\ \hline
-    			BatchNorm2d-34     & {[}-1, 1024, 15, 20{]}  & 2,048     \\ \hline
-    			ConvTranspose2d-35 & {[}-1, 512, 30, 40{]}   & 4,719,104 \\ \hline
-    			Conv2d-36          & {[}-1, 512, 30, 40{]}   & 4,719,104 \\ \hline
-    			ReLU-37            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
-    			BatchNorm2d-38     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
-    			Conv2d-39          & {[}-1, 512, 30, 40{]}   & 2,359,808 \\ \hline
-    			ReLU-40            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
-    			BatchNorm2d-41     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
-
-    		\end{tabular}
-    		\caption{Unet vanilla model architecture}
-    		\label{table:unet_vanilla_model_1}
-    	\end{center}
-    \end{table}
+    The code related to the project can be found at the following GITHUB repositories \url{https://github.com/RnDProjectsDeebul/ManojKolpeThesis}. 
     
-    \begin{table}[]
-    	\begin{center}
-    		\begin{tabular}{| l | l | p{3cm} |}
-    			\hline
-    			ConvTranspose2d-42 & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
-				Conv2d-43          & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
-				ReLU-44            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
-				BatchNorm2d-45     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
-				Conv2d-46          & {[}-1, 256, 60, 80{]}   & 590,080   \\ \hline
-				ReLU-47            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
-				BatchNorm2d-48     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
-				ConvTranspose2d-49 & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
-				Conv2d-50          & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
-    			ReLU-51            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
-    			BatchNorm2d-52     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
-    			Conv2d-53          & {[}-1, 128, 120, 160{]} & 147,584   \\ \hline
-    			ReLU-54            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
-    			BatchNorm2d-55     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
-    			ConvTranspose2d-56 & {[}-1, 64, 240, 320{]}  & 73,792    \\ \hline
-    			Conv2d-57          & {[}-1, 64, 240, 320{]}  & 73,792    \\ \hline
-    			ReLU-58            & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
-    			BatchNorm2d-59     & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
-    			Conv2d-60          & {[}-1, 64, 240, 320{]}  & 36,928    \\ \hline
-    			ReLU-61            & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
-    			BatchNorm2d-62     & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
-    			Conv2d-63          & {[}-1, 41, 240, 320{]}  & 23,657    \\ \hline
-    		\end{tabular}
-    		\caption{Unet vanilla model architecture}
-    		\label{table:unet_vanilla_model_2}
-    	\end{center}
-    \end{table}
+%        \begin{table}[]
+%    	\begin{center}
+%    		\begin{tabular}{| l | l | p{3cm} |}
+%    			\hline
+%    			Layer (type)       & Output Shape            & Param \#  \\ \hline
+%    			Conv2d-1           & {[}-1, 64, 240, 320{]}  & 1,792     \\ \hline
+%    			ReLU-2             & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
+%    			BatchNorm2d-3      & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
+%    			Conv2d-4           & {[}-1, 64, 240, 320{]}  & 36,928    \\ \hline
+%    			ReLU-5             & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
+%    			BatchNorm2d-6      & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
+%    			MaxPool2d-7        & {[}-1, 64, 120, 160{]}  & 0         \\ \hline
+%    			Conv2d-8           & {[}-1, 128, 120, 160{]} & 73,856    \\ \hline
+%    			ReLU-9             & {[}-1, 128, 120, 160{]} & 0         \\ \hline
+%    			BatchNorm2d-10     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
+%    			Conv2d-11          & {[}-1, 128, 120, 160{]} & 147,584   \\ \hline
+%    			ReLU-12            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
+%    			BatchNorm2d-13     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
+%    			MaxPool2d-14       & {[}-1, 128, 60, 80{]}   & 0         \\ \hline
+%    			Conv2d-15          & {[}-1, 256, 60, 80{]}   & 295,168   \\ \hline
+%    			ReLU-16            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
+%    			BatchNorm2d-17     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
+%    			Conv2d-18          & {[}-1, 256, 60, 80{]}   & 590,080   \\ \hline
+%    			ReLU-19            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
+%    			BatchNorm2d-20     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
+%    			MaxPool2d-21       & {[}-1, 256, 30, 40{]}   & 0         \\ \hline
+%    			Conv2d-22          & {[}-1, 512, 30, 40{]}   & 1,180,160 \\ \hline
+%    			ReLU-23            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
+%    			BatchNorm2d-24     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
+%    			Conv2d-25          & {[}-1, 512, 30, 40{]}   & 2,359,808 \\ \hline
+%    			ReLU-26            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
+%    			BatchNorm2d-27     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
+%    			MaxPool2d-28       & {[}-1, 512, 15, 20{]}   & 0         \\ \hline
+%    			Conv2d-29          & {[}-1, 1024, 15, 20{]}  & 4,719,616 \\ \hline
+%    			ReLU-30            & {[}-1, 1024, 15, 20{]}  & 0         \\ \hline
+%    			BatchNorm2d-31     & {[}-1, 1024, 15, 20{]}  & 2,048     \\ \hline
+%    			Conv2d-32          & {[}-1, 1024, 15, 20{]}  & 9,438,208 \\ \hline
+%    			ReLU-33            & {[}-1, 1024, 15, 20{]}  & 0         \\ \hline
+%    			BatchNorm2d-34     & {[}-1, 1024, 15, 20{]}  & 2,048     \\ \hline
+%    			ConvTranspose2d-35 & {[}-1, 512, 30, 40{]}   & 4,719,104 \\ \hline
+%    			Conv2d-36          & {[}-1, 512, 30, 40{]}   & 4,719,104 \\ \hline
+%    			ReLU-37            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
+%    			BatchNorm2d-38     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
+%    			Conv2d-39          & {[}-1, 512, 30, 40{]}   & 2,359,808 \\ \hline
+%    			ReLU-40            & {[}-1, 512, 30, 40{]}   & 0         \\ \hline
+%    			BatchNorm2d-41     & {[}-1, 512, 30, 40{]}   & 1,024     \\ \hline
+%
+%    		\end{tabular}
+%    		\caption{Unet vanilla model architecture}
+%    		\label{table:unet_vanilla_model_1}
+%    	\end{center}
+%    \end{table}
+%    
+%    \begin{table}[]
+%    	\begin{center}
+%    		\begin{tabular}{| l | l | p{3cm} |}
+%    			\hline
+%    			ConvTranspose2d-42 & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
+%				Conv2d-43          & {[}-1, 256, 60, 80{]}   & 1,179,904 \\ \hline
+%				ReLU-44            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
+%				BatchNorm2d-45     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
+%				Conv2d-46          & {[}-1, 256, 60, 80{]}   & 590,080   \\ \hline
+%				ReLU-47            & {[}-1, 256, 60, 80{]}   & 0         \\ \hline
+%				BatchNorm2d-48     & {[}-1, 256, 60, 80{]}   & 512       \\ \hline
+%				ConvTranspose2d-49 & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
+%				Conv2d-50          & {[}-1, 128, 120, 160{]} & 295,040   \\ \hline
+%    			ReLU-51            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
+%    			BatchNorm2d-52     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
+%    			Conv2d-53          & {[}-1, 128, 120, 160{]} & 147,584   \\ \hline
+%    			ReLU-54            & {[}-1, 128, 120, 160{]} & 0         \\ \hline
+%    			BatchNorm2d-55     & {[}-1, 128, 120, 160{]} & 256       \\ \hline
+%    			ConvTranspose2d-56 & {[}-1, 64, 240, 320{]}  & 73,792    \\ \hline
+%    			Conv2d-57          & {[}-1, 64, 240, 320{]}  & 73,792    \\ \hline
+%    			ReLU-58            & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
+%    			BatchNorm2d-59     & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
+%    			Conv2d-60          & {[}-1, 64, 240, 320{]}  & 36,928    \\ \hline
+%    			ReLU-61            & {[}-1, 64, 240, 320{]}  & 0         \\ \hline
+%    			BatchNorm2d-62     & {[}-1, 64, 240, 320{]}  & 128       \\ \hline
+%    			Conv2d-63          & {[}-1, 41, 240, 320{]}  & 23,657    \\ \hline
+%    		\end{tabular}
+%    		\caption{Unet vanilla model architecture}
+%    		\label{table:unet_vanilla_model_2}
+%    	\end{center}
+%    \end{table}
+	
+	\begin{lstlisting}[caption={Unet Vanilla model architecture description},label=lst:unetbaseline]
+	UNet_vanilla(
+	(contracting_11): Sequential(
+	(0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+		 track_running_stats=True)
+	(3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(contracting_12): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, 
+	     ceil_mode=False)
+	(contracting_21): Sequential(
+	(0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(contracting_22): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, 
+	     ceil_mode=False)
+	(contracting_31): Sequential(
+	(0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(contracting_32): MaxPool2d(kernel_size=2, stride=2, padding=0, 
+	 dilation=1, ceil_mode=False)
+	(contracting_41): Sequential(
+	(0): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(contracting_42): MaxPool2d(kernel_size=2, stride=2, padding=0, 
+	     dilation=1, ceil_mode=False)
+	(middle): Sequential(
+	(0): Conv2d(512, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(1024, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(expansive_11): ConvTranspose2d(1024, 512, kernel_size=(3, 3), 
+	     stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_12): Sequential(
+	(0): Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(expansive_21): ConvTranspose2d(512, 256, kernel_size=(3, 3), 
+	     stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_22): Sequential(
+	(0): Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(expansive_31): ConvTranspose2d(256, 128, kernel_size=(3, 3), 
+	     stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_32): Sequential(
+	(0): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(expansive_41): ConvTranspose2d(128, 64, kernel_size=(3, 3), 
+	     stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_42): Sequential(
+	(0): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	(3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	     track_running_stats=True)
+	)
+	(output): Conv2d(64, 41, kernel_size=(3, 3), stride=(1, 1), 
+	     padding=(1, 1))
+	)
+	\end{lstlisting}
+	
+	\begin{lstlisting}[caption={Unet GP model architecture description},label=lst:unetgp]
+	
+	UNet_gp(
+	(contracting_11): Sequential(
+	(0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_12): MaxPool2d(kernel_size=2, stride=2, padding=0, 
+	dilation=1, ceil_mode=False)
+	(contracting_21): Sequential(
+	(0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_22): MaxPool2d(kernel_size=2, stride=2, padding=0, 
+	dilation=1, ceil_mode=False)
+	(contracting_31): Sequential(
+	(0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_32): MaxPool2d(kernel_size=2, stride=2, padding=0,
+	 dilation=1, ceil_mode=False)
+	(contracting_41): Sequential(
+	(0): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_42): MaxPool2d(kernel_size=2, stride=2, padding=0,
+	 dilation=1, ceil_mode=False)
+	(middle): Sequential(
+	(0): Conv2d(512, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(1024, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_11): ConvTranspose2d(1024, 512, kernel_size=(3, 3),
+	 stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_12): Sequential(
+	(0): Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True,
+	 track_running_stats=True)
+	)
+	(expansive_21): ConvTranspose2d(512, 256, kernel_size=(3, 3), 
+	stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_22): Sequential(
+	(0): Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_31): ConvTranspose2d(256, 128, kernel_size=(3, 3), 
+	stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_32): Sequential(
+	(0): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_41): ConvTranspose2d(128, 64, kernel_size=(3, 3),
+	 stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_42): Sequential(
+	(0): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True,
+	 track_running_stats=True)
+	(3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True,
+	 track_running_stats=True)
+	)
+	(output): Conv2d(64, 41, kernel_size=(3, 3), stride=(1, 1),
+	 padding=(1, 1))
+	)
+	
+	\end{lstlisting}
+
+	\begin{lstlisting}[caption={Unet LSTM model architecture description},label=lst:unetlstm]
+	
+	UNet_lstm(
+	(contracting_11): Sequential(
+	(0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_12): MaxPool2d(kernel_size=2, stride=2, padding=0, 
+	dilation=1, ceil_mode=False)
+	(contracting_21): Sequential(
+	(0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_22): MaxPool2d(kernel_size=2, stride=2, padding=0,
+	 dilation=1, ceil_mode=False)
+	(contracting_31): Sequential(
+	(0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_32): MaxPool2d(kernel_size=2, stride=2, padding=0, 
+	dilation=1, ceil_mode=False)
+	(contracting_41): Sequential(
+	(0): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(contracting_42): MaxPool2d(kernel_size=2, stride=2, padding=0,
+	 dilation=1, ceil_mode=False)
+	(middle): Sequential(
+	(0): Conv2d(512, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(1024, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_11): ConvTranspose2d(1024, 512, kernel_size=(3, 3), 
+	stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_12): Sequential(
+	(0): Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_21): ConvTranspose2d(512, 256, kernel_size=(3, 3), 
+	stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_22): Sequential(
+	(0): Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_31): ConvTranspose2d(256, 128, kernel_size=(3, 3), 
+	stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_32): Sequential(
+	(0): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(expansive_41): ConvTranspose2d(128, 64, kernel_size=(3, 3), 
+	stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+	(expansive_42): Sequential(
+	(0): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(1): ReLU()
+	(2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	(3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(4): ReLU()
+	(5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, 
+	track_running_stats=True)
+	)
+	(output): Conv2d(64, 41, kernel_size=(3, 3), stride=(1, 1), 
+	padding=(1, 1))
+	(lstm_cell): MVSLayernormConvLSTMCell(
+	(conv): Conv2d(2048, 4096, kernel_size=(3, 3), stride=(1, 1), 
+	padding=(1, 1), bias=False)
+	)
+	)
+	
+	\end{lstlisting}
 
     \chapter{Parameters}
         \begin{table}[h]
@@ -205,12 +554,12 @@
 		\end{center}
 	\end{table}
 	
-	\begin{figure}
-		\centering
-		\includegraphics[width=13cm]{images/dataset.png}
-		\caption{Scannet and vkitti dataset sample}
-		\label{fig:android_result}
-	\end{figure}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=13cm]{images/dataset.png}
+%		\caption{Scannet and vkitti dataset sample}
+%		\label{fig:android_result}
+%	\end{figure}
 
 	\chapter{Training details}
 	

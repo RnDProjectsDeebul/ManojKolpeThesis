@@ -38,7 +38,7 @@
     \begin{figure}
     	\centering
     	\includegraphics[width=6cm]{images/MVS.png}
-    	\caption{Mulit view stereo architecture for depth estimation. Courtesy of \cite{52_hou2019multi}}
+    	\caption{Multi-View Stereo by Temporal Nonparametric Fusion. Two consecutive frames are used to construct the cost volume and the output is passed onto the encoder to generate latent space encoding. The frames coordinates are transferred to the Gaussian Process to generate the updated latent space encoding. The Gaussian Process take encoder output, frame coordinates, and the propagated latent space encoding. The output of Gaussian Process is forwarded to decoder to generate the depth map. Courtesy of \cite{52_hou2019multi}}
     	\label{fig:mvs}
     \end{figure} 	
 
@@ -55,7 +55,7 @@
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=12cm]{images/ss.jpg}
-    	\caption{Semantic and Instance segmentation example. Courtesy of \cite{55_WinNT}}
+    	\caption{Picture depicting the semantic, instance and panoptic segmentation examples. Courtesy of \cite{55_WinNT}}
     	\label{fig:SS}
     \end{figure}
     
@@ -85,7 +85,7 @@
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=14cm]{images/en_de.png}
-    	\caption{Simple encoder-decoder architecture. Courtesy of \cite{60_minaee2021image}}
+    	\caption{Plain encoder-decoder architecture with latent space encoding. Courtesy of \cite{60_minaee2021image}}
     	\label{fig:en_de}
     \end{figure} 		
     
@@ -94,7 +94,7 @@
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=14cm]{images/general_seg.png}
-    	\caption{Simple encoder-decoder architecture. Courtesy of \cite{64_noh2015learning}}
+    	\caption{Simple encoder-decoder architecture with convolution and deconvolution network. Courtesy of \cite{64_noh2015learning}}
     	\label{fig:general_seg}
     \end{figure} 
     
@@ -103,7 +103,7 @@
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=14cm]{images/segnet.png}
-    	\caption{SegNet architecture. Courtesy of \cite{62_badrinarayanan2017segnet}}
+    	\caption{SegNet architecture with novel upsampling of latent space encoding. Courtesy of \cite{62_badrinarayanan2017segnet}}
     	\label{fig:segnet}
     \end{figure} 
     
@@ -114,7 +114,7 @@
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=14cm]{images/unet.png}
-    	\caption{Unet architecture. Courtesy of \cite{70_ronneberger2015u}}
+    	\caption{Unet architecture. A semantic segmentation network for biomedical applications with the strong use of augmentation. The network consist of encoder that down samples the features and a decoder for up sampling. Courtesy of \cite{70_ronneberger2015u}}
     	\label{fig:unet}
     \end{figure} 
 	
@@ -122,17 +122,103 @@
 	 
     \section{Temporal Fusion in Semantic Segmentation}
     
-	Semantic segmentation of sequence data aims to assign pixel-wise semantic labels to the video frames. It is an essential task in visual understanding \cite{72_jin2017video}. A strong representation of the feature map is essential for the segmentation task. One common video segmentation approach is performing the image segmentation to each frame independently. However, this approach needs to capture the temporal information of the dynamic scenes. A standard solution to the problem is to apply semantic segmentation to every frame and add a layer on top to capture the temporal data to extract the better features \cite{73_gadde2017semantic}, \cite{74_jin2017video}, \cite{75_nilsson2018semantic}. However, such an approach does not help improve the performance as the feature needs to be computed at every frame. So a good approach is to apply the segmentation at keyframes and reuse the already computed features for the other frames \cite{76_jain2019accel}, \cite{77_mahasseni2017budget}. A new highly efficient and low accuracy neural network-based model is developed for semantic video segmentation called Temporally Distributed Network (TDNet) \cite{78_hu2020temporally}. In the TDNet feature, extraction is distributed evenly across the sequential frames to eliminate the re-computation. Then these features are combined using the Attention Propagation Module (APM) to get the solid features for accurate segmentation \cite{78_hu2020temporally}. The pictorial representation of the same is described in Fig \ref{fig:TDNet}. 
+	Semantic segmentation of sequence data aims to assign pixel-wise semantic labels to the video frames. It is an essential task in visual understanding \cite{72_jin2017video}. A strong representation of the feature map is essential for the segmentation task. One common video segmentation approach is performing the image segmentation to each frame independently. However, this approach needs to capture the temporal information of the dynamic scenes. A standard solution to the problem is to apply semantic segmentation to every frame and add a layer on top to capture the temporal data to extract the better features \cite{73_gadde2017semantic}, \cite{74_jin2017video}, \cite{75_nilsson2018semantic}. However, such an approach does not help improve the performance as the feature needs to be computed at every frame. So a good approach is to apply the segmentation at keyframes and reuse the already computed features for the other frames \cite{76_jain2019accel}, \cite{77_mahasseni2017budget}. A new highly efficient and accuracy neural network-based model is developed for semantic video segmentation called Temporally Distributed Network (TDNet) \cite{78_hu2020temporally}. In the TDNet feature, extraction is distributed evenly across the sequential frames to eliminate the re-computation. Then these features are combined using the Attention Propagation Module (APM) to get the solid features for accurate segmentation \cite{78_hu2020temporally}. The pictorial representation of the same is described in Fig \ref{fig:TDNet}. 
     
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=12cm]{images/TDNet.png}
-    	\caption{TDNet. Courtesy of \cite{78_hu2020temporally}}
+    	\caption{TDNet is a efficient and accurate video segmentation framework. Courtesy of \cite{78_hu2020temporally}}
     	\label{fig:TDNet}
     \end{figure}  
     
+    \section{RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}
+    
+    Segmentation is the process of assigning pixel labels for a given image. Segmentation can be observed in different contexts, such as Video instance segmentation (VIS), Semantic segmentation of the key frames of a video sequence, Video panoptic segmentation, MRI image segmentation, and autonomous driving scene understanding. Youtube - Video Instance Segmentation (VOS) and Scannet are the standard datasets in the semantic segmentation domain. 
+    
+    { \bf Youtube VIS data}
+    Youtube - Video Instance Segmentation (VIS) is a dataset that extends the image instance segmentation from the image to the video domain. The dataset aims to solve the problem of simultaneous detection, segmentation, and tracking problem. Scannet is an RGB-D video dataset containing 2.5 million views with more than 1500 scans. 
+    %	\ref{59_starck2005image}
+    A paper by Xiang Li et al. [87] explains the temporal fusion for online video instance segmentation. The author introduced the concept of an online video framework with a novel, aware temporal fusion method. A cropping-free temporal fusion approach to model the temporal consistency between video frames. A bottom-up online transformer-based network is used to solve the VIS problem. A transformer layer is introduced in the convolutional neural network (CNN) to include the instance information. An attention layer between the frames is used to extract the instance code for the current frame. A skip connection uses low-level contextual information and dynamic convolution to generate the segmentation map—the CNN feature map and the latent code help to represent instance-aware features jointly. An instance code is an LxD vector to the VIS task, where L is the maximum detected instances number in a frame D is the feature instance for each instance. Inter and Intra frame attention module for fusing the temporal information. The network architecture is presented in Fig \ref{fig:vis}. Three types of attention are code-to-code(c2c), code-to-pixel(c2p), and pixel-to-code(p2c), used to construct the	relationship between the instance code and feature map. Interframes are used to build the temporal correlation and combine contextual features across frames. Interframe c2c, c2p, and p2c are used to construct the temporal information.	
+    
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=13cm]{images/VIS.png}
+    	\caption{VIS proposed framework.An online video instance segmentation framework with instance aware temporal fusion method. Intra frame attention framework for combining instance code and feature map. Inter-frame attention for fusing the hybrid temporal information from previous prediction stage. Courtesy of [87]}
+    	\label{fig:vis}
+    \end{figure}
+    %	\ref{87_heo2022vita}
+    Miran Heo et al. [88] worked on video instance segmentation via Object Token Association (VITA). The work effectively understands the video through the object-centric tokens. The VITA model requires a frame-level detector. The frame-level detector localizes instances using masks without bounding boxes. Two features are generated for the frame-level predictions: a) dynamic 1x1 convolution weight from the frame queries f b) per-pixel embeddings from the pixel decoder. The dot product between the two embeddings is taken in the frame-level predictions. The end-to-end video instance segmentation method VITA is divided into three stages. Firstly, VITA works with the frame-level detector in a frame-independent manner. No computation between the frames is involved. The frame queries that hold the object-centric information are collected throughout the video sequence, and an object encoder is used to build the video-level information between the frames. Moreover, thirdly the decoder combines the information from the frame and video queries which is finally used to find the object mask in the video frames. 
+    
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=13cm]{images/VITA.png}
+    	\caption{The frame level detector takes frame queries and mask features, generates the embeddings, and pass onto the VITA model for mask prediction. Constructing the temporal interactions between the frame queries captures the object-aware knowledge in the spatial scenes. Finally, mask trajectories are obtained from the VITA model. Courtesy of [88]}
+    	\label{fig:vita}
+    \end{figure}
+    %	\ref{88_huang2022minvis}
+    A minimal video instance segmentation (MinVIS) by De-An Huang et al. [89] does not require video-based training and can be applied directly to images containing sparse image instance segmentations annotations. MinVIS is a two-stage approach: 1) Independent image instance segmentation on each frame and 2) Instance association between the frames. Image Instance Segmentation has three unique main components a)Encoder to extract features from the image b) Transformer decoder, used to process the output of the image encoder to update the query embeddings c) Prediction head takes the query embeddings to predict the output. Association between the instance segmented frames is calculated by bipartite matching of the respective query embeddings.   
+    
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=13cm]{images/minVIS.png}
+    	\caption{(a) MinVIS trained on query-based segmentation individually for every frame. (b) Inference of the video instance segmentation from the segmented image using bipartite matching of the query embeddings. Courtesy of [89] }
+    	\label{fig:minVIS}
+    \end{figure}
+    %	\ref{89_cheng2021mask2former}
+    The state-of-the-art segmentation models solve mask classification in image segmentation problems. B. Cheng et al. [90] proposed a method to process the video directly rather than the image. This is achieved by feeding the Mask2Former with 3D spatiotemporal features and predicting the 3D volume to track each object instance across time. The Mask2Former works as a general image segmentation model for data with single frames and for data with more than one frame the model segments and tracks instances across frames. 
+    
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=13cm]{images/mask2former.png}
+    	\caption{ A mask2former with video instance segmentation. The architecture can also tackle the semantic and panoptic segmentation task. Courtesy of [90]}
+    	\label{fig:mask2former}
+    \end{figure}	
+    
+    \section{RQ1 Conclusion}
+    
+    There is much work with respect to temporal fusion. Temporal fusion can be done by taking the previous single feature data or multiple past features and combining them in the current stage. Feature combination can be done at multiple stages of the network. Subjecting the feature can be done in different ways, such as subjecting the feature to Gaussian Process, Long-Short-Term memory, combining the instance code with the encoder features, finding masks in the individual frame and combining them,or taking multiple features from the decoder and passing them to the transformer to model the temporal data. The approaches are made without considering the pose information. Hence, a new temporal fusion approach needs to be developed to model the temporal fusion data to improve performance. 
+    
+    \section{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}
+    
+    All of the above mentioned approaches are trained and tested on the Youtube VIS datasets. The performance of the models are tabulated in table \ref{tab:sota_ytube_vis}.
+    
+    \begin{table}[h]
+    	\begin{center}
+    		\begin{tabular}{ | l | l| l| l| l| p{2cm} |}
+    			\hline
+    			
+    			\cellcolor{purple!30}Method & \cellcolor{purple!30}AP & \cellcolor{purple!30}AP50 & \cellcolor{purple!30}AP75 & \cellcolor{purple!30}AR1 & \cellcolor{purple!30}AR10 \\ \hline
+    			%   				\ref{86_li2022hybrid}
+    			HIATF for VIS 2019 [87] & 41.3 & 61.5 & 43.5 & 42.7 & 47.8 \\ \hline
+    			%   				\ref{87_heo2022vita}
+    			VITA ResNet-50 2019 [88]  & 49.8 & 72.6 & 54.5 & 49.4 & 61.0  \\ \hline
+    			%   				\ref{87_heo2022vita}
+    			VITA ResNet-101 2019 [88]  & 51.9 & 75.4 & 57.0 & 49.6 & 59.1 \\ \hline
+    			%   				\ref{87_heo2022vita}
+    			VITA Swin-L 2019 [88]  & { \bf 63.0}  & { \bf 86.9} & { \bf 67.9} & { \bf 56.3} & { \bf 68.1} \\ \hline
+    			%   				\ref{87_heo2022vita}
+    			VITA 2021 [88]  & 45.7 & 67.4 & 49.5 & 40.9 & 53.6 \\ \hline
+    			%   				\ref{88_huang2022minvis}
+    			Min VIS 2019 [89] & 61.6 & 83.3 & 68.6 & 54.8 & 66.6 \\ \hline
+    			%   				\ref{88_huang2022minvis}
+    			Min VIS 2021 [89] & 55.3 & 76.6 & 62.0 & 45.9 & 60.8 \\ \hline
+    			%   				\ref{89_cheng2021mask2former}
+    			Mask2former 2019 [90]  & 60.4 & 84.4 & 67.0 & - & - \\ \hline
+    			%   				\ref{89_cheng2021mask2former}   
+    			Mask2former 2021 [90]  & 52.6 & 76.4 & 57.2 & - & - \\ \hline
+    			\hline
+    		\end{tabular}
+    		\caption{Comparison of temporal fusion model performance with respect to Youtube VIS dataset}
+    		\label{tab:sota_ytube_vis}
+    	\end{center}
+    \end{table}
+    
+    \section{RQ2 Conclusion}
+    
+    It is evident from the table \ref{tab:sota_ytube_vis} that temporal fusion with the VITA network outperformed the rest of the model performance with Swin-L as the backbone. The comparison is made with the average precision metric. Swin-L transformer is a general-purpose backbone for computer vision tasks. The representation is computed with the transformer. The comparison is made with the Youtube VIS dataset. The dataset does not contain the pose information. VIS network is a temporal fusion architecture containing inter and intra-frame fusion for a fusion of temporal data. From the result table \ref{tab:sota_ytube_vis}. The method of temporal fusion by taking only a single frame data from the previous frame is a better approach than computing the temporal fusion of all the data at a time.
+    
     \section{Limitations of Previous Work}
     
-    The perception system of the modern ADAS uses segmentation to understand the surrounding environment by capturing the environment with the help of modern cameras. The high FPS data collected by the camera are in a continuous sequence where every frame is related to its previous frames. In general, setting segmentation is performed on these frames to understand the object and its boundaries, the number of objects, types of objects present in the frame. A work by Hou et al. \cite{52_hou2019multi} integrates the camera pose data into the computation of the depth maps; however, a similar strategy is not studied for a segmentation task. Also, the study of temporal data fusion in the latent space using LSTM is not studied in any previous work. This thesis aims to study the impact of temporal pose data on the computation of the semantic segmentation and to take the previous frame data onto the current frame semantic segmentation task using the LSTM network is studied. 
+    The perception system of the modern ADAS uses segmentation to understand the surrounding environment by capturing the environment with the help of modern cameras. The high FPS data collected by the camera are in a continuous sequence where every frame is related to its previous frames. In general, setting segmentation is performed on these frames to understand the object and its boundaries, the number of objects, types of objects present in the frame. A work by Hou et al. \cite{52_hou2019multi} integrates the camera pose data into the computation of the depth maps; however, a similar strategy is not studied for a segmentation task. Additionally, the study of using temporal data fusion in the encoder and decoder based network latent space with LSTM for semantic segmentation represents a novel approach for incorporating past frame information in the current step. This thesis aims to study the impact of temporal pose data on the computation of the semantic segmentation and to take the previous frame data onto the current frame semantic segmentation task using the LSTM network is studied. 
     
 \end{document}

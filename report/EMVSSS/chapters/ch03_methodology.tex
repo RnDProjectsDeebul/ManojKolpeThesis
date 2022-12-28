@@ -13,19 +13,19 @@
 %    \subsection{ScanNet \ref{90_dai2017scannet}}
     \subsection{ScanNet [91]}
 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=17cm]{images/images_segm_scannet.png}
-		\caption{Sample of Scannet dataset rgb and semantic label}
+		\caption{Sample of Scannet dataset continuous frame rgb and semantic label. Courtesy of \ref{91_ScanNet} }
 		\label{fig:sample_rgb_seg_scannet}
 	\end{figure}
         
-	ScanNet is a video sequence dataset with 1513 scenes captured in 707 distinct spaces. The dataset contains a total of 2.5M RGB-D images. The dataset was initially designed for the task of indoor scenes 3D reconstruction, including 3D object classification, semantic voxel labeling, and CAD model retrieval [91] \ref{90_dai2017scannet}, [92] \ref{91_ScanNet}. The dataset contains the details of the 3D camera poses, surface reconstruction, and instance-level semantic segmentation. One sample of the data is shown in the figure
+	ScanNet is a video sequence dataset with 1513 scenes captured in 707 distinct spaces. The dataset contains a total of 2.5M RGB-D images. The dataset was initially designed for the task of indoor scenes 3D reconstruction, including 3D object classification, semantic voxel labeling, and CAD model retrieval [91], [92]. The dataset contains the details of the 3D camera poses, surface reconstruction, and instance-level semantic segmentation. One sample of the data is shown in the figure
 	
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=11cm]{images/pose_viz_scannet.png}
-		\caption{Sample of Scannet dataset pose}
+		\caption{Sample of Scannet dataset pose. Each point represent the pose of the camera in 3D frame when a particular frame is captured. The representation shows how the camera is moving in the 3D world.}
 		\label{fig:sample_pose_scannet}
 	\end{figure}
 	
@@ -34,7 +34,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=11cm]{images/scannet_data_class_distribution.png}
-		\caption{Scannet dataset class distribution}
+		\caption{Scannet dataset class distribution. Horizontal axis represent the classes in Scannet dataset and vertical axis represent the normalized number of pixels per class. There are high number of pixels in entire data belonging to class 1 and class 2.}
 		\label{fig:scannet_class_distribution}
 	\end{figure}
 
@@ -43,42 +43,42 @@
     
 	The virtual KITTI dataset is the first released to the public domain with driving applications. It is a synthetic dataset representing the simulation of the vehicle in different environmental conditions. And it is a cost-effective alternative to real-world data. Virtual KITTI 2 is the next-generation dataset with an improved photo-realistic and featured version of the original virtual KITTI dataset. The virtual KITTI 2 contains stereo camera views to expand the application areas. The dataset contains the exact five sequences clones with camera 0 representing the same dataset as virtual KITTI, and camera 1 is 0.5327m to its right. Each camera contains RGB, class segmentation, instance segmentation, depth, forward and backward optical flow, and forward and backward scene flow images. Each sequence contains camera parameters, vehicle color, pose, and bounding boxes. One sample from the sequence and corresponding pose representation in the 3D plane is shown in Figure \ref{fig:sample_scannet_vkitti_2} and \ref{fig:sample_pose_scannet_vkitti_2} respectively.
 	 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/images_segm_vkitti.png}
-		\caption{Sample of Virtual Kitti 2 dataset}
+		\caption{Sample of Virtual Kitti 2 dataset. Top row represent the continuous frame number followed by rgb and semantic labels. Courtesy of [93]}
 		\label{fig:sample_scannet_vkitti_2}
 	\end{figure}
 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/pose_viz_vkitti.png}
-		\caption{Sample of Virtual Kitti 2 dataset pose}
+		\caption{Sample of Virtual Kitti 2 dataset pose. Each point represent the pose of the camera in 3D frame when a particular frame is captured. The representation shows how the camera is moving in the 3D world.}
 		\label{fig:sample_pose_scannet_vkitti_2}
 	\end{figure}
 	
 	\section{Data Collection and Preprocessing}
 	
-	After submitting the agreement terms, the RGB-D scannet dataset can be downloaded from the python script sent to the user from the dataset development group. The description and format of the dataset can be found on GitHub [94]\ref{93_ScanNet}. There are 1500 scans. Any specific scans, and file types,  can be downloaded. There is multiple information regarding a scan in a file. These files are further processed to color, label, pose, and depth data for each scan. More details are documented in the GitHub [95]\ref{94_ScanNet} repository. The raw RGB image is normalized before passing it into the model for quick convergence of learning. The input image is a 3-channel RGB data in .jpg format, the label is a single-channel image in .png format with 40 classes total, and the pose data is in text format. The pose data contains the rotation matrix and transnational vector inhomogeneous matrix format. The vkitti dataset is also in a similar format. However, there is a total of 15 classes in the vkitti dataset. The raw RGB image, label, and pose data are shown in figure \ref{fig:scannet_vkitti}. 
+	After submitting the agreement terms, the RGB-D scannet dataset can be downloaded from the python script sent to the user from the dataset development group. The description and format of the dataset can be found on GitHub [94]. There are 1500 scans. Any specific scans, and file types,  can be downloaded. There is multiple information regarding a scan in a file. These files are further processed to color, label, pose, and depth data for each scan. More details are documented in the GitHub [95] repository. The raw RGB image is normalized before passing it into the model for quick convergence of learning. The input image is a 3-channel RGB data in .jpg format, the label is a single-channel image in .png format with 40 classes total, and the pose data is in text format. The pose data contains the rotation matrix and transnational vector inhomogeneous matrix format. The vkitti dataset is also in a similar format. However, there is a total of 15 classes in the vkitti dataset. The raw RGB image, label, and pose data are shown in figure \ref{fig:scannet_vkitti}. 
 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/scannet_vkitti_data.png}
-		\caption{RGB, Label and Pose dataset sample of scannet and vkitti data}
+		\caption{RGB, Label and Pose sample of Scannet and Vkitti data}
 		\label{fig:scannet_vkitti}
 	\end{figure}	
 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/scannet_scanes_samples.png}
-		\caption{Scannet data distribution}
+		\caption{Scannet data distribution. Horizontal axis represent the video sequence number and vertical axis represent the number of frames in each video sequence.}
 		\label{fig:scannet_vkitti}
 	\end{figure}
 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/vkitti_scanes_samples.png}
-		\caption{Vkitti data distribution}
+		\caption{Vkitti data distribution. Horizontal axis represent the scenes and under each scene there is 15-deg-left, fog, overcast, morning, 30-deg-right, 15-deg-right, 30-deg-left, clone, rain and sunset categories.}
 		\label{fig:scannet_vkitti}
 	\end{figure}	
 	
@@ -90,34 +90,34 @@
     
 	U-Net vanilla model is a simple semantic segmentation model with encoder-decoder architecture. The encoder is a contracting path, and the decoder is an expanding path. The input image is fed into the encoder, consisting of a convolutional neural net. The architecture consists of two 3x3 2d convolutional layers followed by a rectified linear unit (ReLU) and batchnorm2d with 2d downsampling Maxpool layer. At every step of the convolutional block, the number of out channels/ feature channels is doubled. From 64 features in the first convolutional block output to 1024 features at the downsampled fifth layer or the latent space encoding. The upsampling layer consists of a 2d convolution with a halved feature map at every step, followed by a concatenation of the corresponding feature map from the encoder path. The convolution2d consists of two 3x3 convolutions, each followed by a ReLU function. At the final layer of the decoder, a 2d convolutional layer was introduced to map the previous convolutional block output to the predicted class labels. There are 23 convolutional blocks in the entire network.    
 	
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/Unet.jpg}
-		\caption{Unet model architecture}
+		\caption{Unet model architecture. Generated with modification \href{https://github.com/HarisIqbal88/PlotNeuralNet}{PlotNeuralNet}}
 		\label{fig:unet_model}
 	\end{figure}
 	
     \subsection{U-Net with Gaussian process}
     
-    In the second type of experiment, the latent space encoding of the U-Net model is taken and subjected to the gaussian process. The gaussian process ensures that the frames close to each other have similar latent space encodings. This is done by building the kernel of the gaussian process with a distance matrix. A probabilistic prior on the latent space accounts for the prior knowledge that poses very close have similar latent space encoding to the poses that are very far from each other. This information is encoded in the covariance matrix. The distance measured between the camera poses is calculated with a metric to define the closeness. The distance between the camera poses is calculated with the help of work by Yuxin Hou et al. \ref{52_hou2019multi} [02] and Mazzotti et al. [97] \ref{95_mazzotti2016measure}. This measures the distance between the rigid body poses. The pose-distance measure between the two camera poses $P_i$, and $P_j$ is defined in equation \ref{eq:distance_matrix}. Where $t$ is the translation vector, $R$ is the rotational vector, $I$ is the identity matrix, and $tr()$ is the trace of the matrix.  
+    In the second type of experiment, the latent space encoding of the U-Net model is taken and subjected to the gaussian process. The gaussian process ensures that the frames close to each other have similar latent space encodings. This is done by building the kernel of the gaussian process with a distance matrix. A probabilistic prior on the latent space accounts for the prior knowledge that poses very close have similar latent space encoding to the poses that are very far from each other. This information is encoded in the covariance matrix. The distance measured between the camera poses is calculated with a metric to define the closeness. The distance between the camera poses is calculated with the help of work by Yuxin Hou et al. [02] and Mazzotti et al. [97]. This measures the distance between the rigid body poses. The pose-distance measure between the two camera poses $P_i$, and $P_j$ is defined in equation \ref{eq:distance_matrix}. Where $t$ is the translation vector, $R$ is the rotational vector, $I$ is the identity matrix, and $tr()$ is the trace of the matrix.  
     
     \begin{equation}
      D[P_i, P_j] = \sqrt{{||t_i - t_j||}^2 + \frac{2}{3} tr(I - R_i^TR_j)}
      \label{eq:distance_matrix}    
     \end{equation}
 	
-	The covariance function is defined from this distance matrix $D[P_i, P_j]$. The covariance function is chosen from the Matern class \ref{96_GPML}, \ref{97_williams2006gaussian} [97] [98] in equation \ref{eq:covariance_matrix}.  
+	The covariance function is defined from this distance matrix $D[P_i, P_j]$. The covariance function is chosen from the Matern class [97] [98] in equation \ref{eq:covariance_matrix}.  
 	
 	\begin{equation}
 		k(P,P') = \gamma^2(1+\frac{\sqrt{3}D[P,P']}{l}exp(-\frac{\sqrt{3}D[P,P']}{l}))
 		\label{eq:covariance_matrix}
 	\end{equation}
-	The hyperparameter $\gamma^2$ and $l$ define the magnitude and length-scale of the processes. Independent GP priors to all values in $Z_i$, and the output of the encoder is assumed to be the noise corrupted version of the expected latent space encodings. The GP regression model is defined from this initialization settings and defined in the equation \ref{eq:encode_output} \ref{eq:gp} [02]. The architecture of the unet model with gaussian process is depicted in the figure \ref{fig:unet_gp}.
+	The hyperparameter $\gamma^2$ and $l$ define the magnitude and length-scale of the processes. Independent GP priors to all values in $Z_i$, and the output of the encoder is assumed to be the noise corrupted version of the expected latent space encodings. The GP regression model is defined from this initialization settings and defined in the equation \ref{eq:encode_output} \ref{eq:gp} [02]. The architecture of the unet model with gaussian process is depicted in the figure \ref{fig:unet_gp}. The encoder output is assumed to be noise corrupted hence the term $\epsilon_{j,i}$. 
 
-	\begin{figure}[h]
+	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/unet_gp.png}
-		\caption{Unet model architecture with temporal fusion in latent space using Gaussian Process}
+		\caption{Unet model architecture with temporal fusion in latent space using Gaussian Process.The latent space encoding is propagated forward. During every computation the Gaussian Process takes latent space encoding, previous updated latent space and the current and previous pose to update the current latent space encoding. Generated with \href{https://app.diagrams.net/}{Diagrams.net}}
 		\label{fig:unet_gp}
 	\end{figure}
 
@@ -134,7 +134,7 @@
     
     \subsection{U-Net with Long Short Term Memory (LSTM)}
     
-    In the third type of experiment, the U-Net model is subjected to temporal fusion with the help of Long Short Term Memory (LSTM) by passing the latent space encoding onto the LSTM convolutional cell. The overlapping information in the consecutive frame data is passed onto the future frame prediction by incorporating the convolutional LSTM cell to improve performance and model the spatiotemporal relations compared to the vanilla model. The partial scene geometry information from the previous frame is used in the current step frame prediction. A hidden state propagation approach from the LSTM method is used to pass the latent space information. The adaption of temporal fusion with LSTM is inspired by the work of Arda Düzçeker et al. [13] \ref{03_duzceker2021deepvideomvs}. The author introduced a convolutional LSTM cell in the latent space to learn the shared information between the frames to predict the depth of objects in video sequence data. The convolutional LSTM cell is inspired from [99] \ref{98_ConvLSTM}. The original LSTM version is explained in the article [100] \ref{99_shi2015convolutional}. The hidden state $H$ and cell state $C$ are initialized to a value. Let $X$ denote the output of the bottleneck encoder network, then the logic to compute the hidden state and current state can be calculated as below (Courtesy of [13] \ref{03_duzceker2021deepvideomvs})
+    In the third type of experiment, the U-Net model is subjected to temporal fusion with the help of Long Short Term Memory (LSTM) by passing the latent space encoding onto the LSTM convolutional cell. The overlapping information in the consecutive frame data is passed onto the future frame prediction by incorporating the convolutional LSTM cell to improve performance and model the spatiotemporal relations compared to the vanilla model. The partial scene geometry information from the previous frame is used in the current step frame prediction. A hidden state propagation approach from the LSTM method is used to pass the latent space information. The adaption of temporal fusion with LSTM is inspired by the work of Arda Düzçeker et al. [13]. The author introduced a convolutional LSTM cell in the latent space to learn the shared information between the frames to predict the depth of objects in video sequence data. The convolutional LSTM cell is inspired from [99]. The original LSTM version is explained in the article [100]. The hidden state $H$ and cell state $C$ are initialized to a value. Let $X$ denote the output of the bottleneck encoder network, then the logic to compute the hidden state and current state can be calculated as below (Courtesy of [13])
     
     \begin{equation}
     	i_t = \sigma(w_{xi}*X_t+w_{hi}*H_{t-1})
@@ -166,7 +166,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/unet_lstm.png}
-		\caption{Unet model architecture with temporal fusion in latent space using the ConvLSTM cell}
+		\caption{Unet model architecture with temporal fusion in latent space using the ConvLSTM cell. At every frames semantic label computation the previous convolutional LSTM cell hidden and cell state are passed to the current cell computation. Thereby modeling the temporal dependency in the consecutive frames. Generated with \href{https://app.diagrams.net/}{Diagrams.net}}
 		\label{fig:unet_lstm}
 	\end{figure}     
         
@@ -180,21 +180,21 @@
    	\begin{figure}
     	\centering
     	\includegraphics[width=14cm]{images/training.png}
-    	\caption{Training pipeline}
+    	\caption{Training pipeline. Generated with \href{https://app.diagrams.net/}{Diagrams.net}}
     	\label{fig:unet_training}
     \end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/evaluation.png}
-		\caption{Evaluation pipeline}
+		\caption{Evaluation pipeline. Generated with \href{https://app.diagrams.net/}{Diagrams.net}}
 		\label{fig:unet_evaluation}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=14cm]{images/training_and_evaluation.png}
-		\caption{Pictorial representation of training and evaluation procedure}
+		\caption{Pictorial representation of training and evaluation procedure. The picture represent the how the training and evaluation is conducted with and without the temporal fusion. In the Vanilla network the model is trained on individual frames without temporal fusion and in the GP and LSTM model temporal data is propagated from one frame to another. Generated with \href{https://app.diagrams.net/}{Diagrams.net}}
 		\label{fig:unet_evaluation}
 	\end{figure}
 

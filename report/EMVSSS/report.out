@@ -24,38 +24,38 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Classical Semantic Segmentation}{section.2.3}% 24
 \BOOKMARK [2][-]{subsection.2.3.2}{Deep Learning based Semantic Segmentation}{section.2.3}% 25
 \BOOKMARK [1][-]{section.2.4}{Temporal Fusion in Semantic Segmentation}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.5}{Limitations of Previous Work}{chapter.2}% 27
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Dataset}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.1.1}{ScanNet [91]}{section.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.1.2}{Virtual KITTI 2 [93]}{section.3.1}% 31
-\BOOKMARK [1][-]{section.3.2}{Data Collection and Preprocessing}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.3}{Experimental Design}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.1}{U-Net Vanilla model}{section.3.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.2}{U-Net with Gaussian process}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.3}{U-Net with Long Short Term Memory \(LSTM\)}{section.3.3}% 36
-\BOOKMARK [1][-]{section.3.4}{Training and Evaluation Pipeline}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.5}{Hardware Configuration}{chapter.3}% 38
-\BOOKMARK [0][-]{chapter.4}{Evaluation and Experimental Result}{}% 39
-\BOOKMARK [1][-]{section.4.1}{Evaluation Metric}{chapter.4}% 40
-\BOOKMARK [2][-]{subsection.4.1.1}{Pixel Accuracy}{section.4.1}% 41
-\BOOKMARK [2][-]{subsection.4.1.2}{IoU}{section.4.1}% 42
-\BOOKMARK [1][-]{section.4.2}{Hypothesis}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.3}{RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.4}{RQ1 Conclusion}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.6}{RQ2 Conclusion}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.7}{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.7.1}{Combining scannet dataset classes for experiment}{section.4.7}% 49
-\BOOKMARK [2][-]{subsection.4.7.2}{Distance and Kernel matrix}{section.4.7}% 50
-\BOOKMARK [2][-]{subsection.4.7.3}{Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{section.4.7}% 51
-\BOOKMARK [2][-]{subsection.4.7.4}{Experiment1.2: U-Net Vanilla, Temporally fused gp model and LSTM model considering two classes}{section.4.7}% 52
-\BOOKMARK [2][-]{subsection.4.7.5}{Experiment1.3: U-Net Vanilla, temporally fused gp and lstm model considering three classes}{section.4.7}% 53
-\BOOKMARK [1][-]{section.4.8}{Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{chapter.4}% 54
-\BOOKMARK [2][-]{subsection.4.8.1}{Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{section.4.8}% 55
-\BOOKMARK [1][-]{section.4.9}{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{chapter.4}% 56
-\BOOKMARK [1][-]{section.4.10}{RQ3: Conclusion}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.11}{Experiment hyper-parameter and configuration detail }{chapter.4}% 58
+\BOOKMARK [1][-]{section.2.5}{RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.6}{RQ1 Conclusion}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.7}{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.8}{RQ2 Conclusion}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.9}{Limitations of Previous Work}{chapter.2}% 31
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 32
+\BOOKMARK [1][-]{section.3.1}{Dataset}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.1.1}{ScanNet [91]}{section.3.1}% 34
+\BOOKMARK [2][-]{subsection.3.1.2}{Virtual KITTI 2 [93]}{section.3.1}% 35
+\BOOKMARK [1][-]{section.3.2}{Data Collection and Preprocessing}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.3}{Experimental Design}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.1}{U-Net Vanilla model}{section.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.2}{U-Net with Gaussian process}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.3}{U-Net with Long Short Term Memory \(LSTM\)}{section.3.3}% 40
+\BOOKMARK [1][-]{section.3.4}{Training and Evaluation Pipeline}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.5}{Hardware Configuration}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter.4}{Evaluation and Experimental Result}{}% 43
+\BOOKMARK [1][-]{section.4.1}{Evaluation Metric}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.1.1}{Pixel Accuracy}{section.4.1}% 45
+\BOOKMARK [2][-]{subsection.4.1.2}{IoU}{section.4.1}% 46
+\BOOKMARK [1][-]{section.4.2}{Hypothesis}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.3}{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.3.1}{Combining scannet dataset classes for experiment}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.2}{Distance and Kernel matrix}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.3}{Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.4}{Experiment1.2: U-Net Vanilla, Temporally fused GP model and LSTM model considering two class scannet dataset}{section.4.3}% 52
+\BOOKMARK [2][-]{subsection.4.3.5}{Experiment1.3: U-Net Vanilla, temporally fused GP and LSTM model considering three class scannet dataset}{section.4.3}% 53
+\BOOKMARK [1][-]{section.4.4}{Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.4.1}{Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}{section.4.4}% 55
+\BOOKMARK [1][-]{section.4.5}{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.6}{RQ3 Conclusion}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.7}{Experiment hyper-parameter and configuration detail }{chapter.4}% 58
 \BOOKMARK [0][-]{chapter.5}{Android Deployment}{}% 59
 \BOOKMARK [1][-]{section.5.1}{Framework}{chapter.5}% 60
 \BOOKMARK [1][-]{section.5.2}{Display of results}{chapter.5}% 61
@@ -67,4 +67,4 @@
 \BOOKMARK [0][-]{appendix.a.A}{Appendix Design Details}{}% 67
 \BOOKMARK [0][-]{appendix.a.B}{Appendix Parameters}{}% 68
 \BOOKMARK [0][-]{appendix.a.C}{Appendix Training details}{}% 69
-\BOOKMARK [0][-]{appendix*.106}{References}{}% 70
+\BOOKMARK [0][-]{appendix*.107}{References}{}% 70

@@ -13,7 +13,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=13cm]{images/android_deployment.png}
-		\caption{Training and evaluation procedure}
+		\caption{Kotlin integration with python and sequence of steps from loading the image to display of predicted semantic map.}
 		\label{fig:android_pipeline}
 	\end{figure}
 	
@@ -30,7 +30,7 @@
 			Model & GM1901 \\ \hline
 			\hline
 		\end{tabular}
-		\caption{Performance of Vanilla model with respect to different metric and two classes}
+		\caption{Specification of the android device}
 		\label{table:android_spec}
 	\end{center}
 	\end{table}
@@ -42,13 +42,15 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=13cm]{images/android_ss.jpg}
-		\caption{Android deployment results}
+		\caption{Display of loading the image and predicted semantic map}
 		\label{fig:android_result}
 	\end{figure}
     
     \newpage
     \section{Runtime}
-
+	
+	The android device is subjected with a sample input and the response time is tabulated in the table \ref{table:response_of_android}. The sample is a single frame from the video sequence data. The image goes through multiple stages starting from reading the image to processing and display of the results. 
+	
 	\begin{table}[h]
 		\begin{center}
 			\begin{tabular}{ | l | p{3cm} |}
@@ -62,7 +64,7 @@
 				\hline
 			\end{tabular}
 			\caption{Runtime detail for processing of single image}
-			\label{table:android_spec}
+			\label{table:response_of_android}
 		\end{center}
 	\end{table}    
     
