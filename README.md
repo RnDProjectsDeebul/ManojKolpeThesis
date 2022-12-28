@@ -8,6 +8,7 @@ Model prediction
   <img  src="literature/prediction.gif">
 </p>
 
+<!---
 <p align="center">
   <img  src="literature/test_depth.gif">
 </p>
@@ -39,6 +40,8 @@ Predicted
 <p align="center">
   <img  src="literature/seq-03_formated_manoj_predicted.gif">
 </p>
+
+-->
 
 Plotting of translation and quaterions (rotation matrix) extracted from the android phone
 
