@@ -12,7 +12,7 @@
     
     The proposed model needs to be validated to understand the impact of the newly trained model. To validate the model, different evaluation metrics are proposed. The description of the proposed model is listed below.
     
-    \subsection{Pixel Accuracy}
+    \subsection{Pixel Accuracy (PA), Mean Pixel Accuracy (mPA)}
     
     Pixel accuracy is commonly defined as the percent of pixels in an image correctly classified into a particular class. Accuracy is defined below
     
@@ -48,7 +48,7 @@
     
     where $n_{jj}$ is the total number of pixels both classified and labeled as class $j$. 
     
-    \subsection{IoU}
+    \subsection{IoU, mIoU, FwIoU}
     
     Intersection over Union (IoU), also known as the Jaccard index, quantifies the overlapping between the target mask and the predicted output. In other words, the number of standard pixels between the target and prediction masks by the total number of pixels that exist between the masks \cite{83_iou}. A pictorial representation of the same is presented in Fig \ref{fig:IoU}
     
@@ -188,13 +188,13 @@
     
     The parameter used to train a plain unet model is tabulated in \ref{table:parameters}.
     
-    \subsection{Combining Scannet Dataset Classes for Experiment}
+    \subsection{Merging Scannet Dataset Classes for Experiment}
     
 	There are 41 classes [ \ref{table:Classes in scannet_1} , \ref{table:Classes in scannet_2} , \ref{table:Classes in scannet_3}] present in the entire Scannet dataset. 
 
 	To experiment, 185 indoor video sequence data are considered. The distribution of the entire scannet data classes is presented in Fig \ref{fig:scannet_class}. Of 185 sequences, 149 sequences are taken for training and the remaining 36 for testing. The distribution of pixels in the training data and testing data represented in Fig \ref{fig:scannet_all_classes}.
 	
-	The pixel distribution of the scannet dataset classes is not uniform. Experiments were conducted in three ways; in the first approach, all the classes were considered for experimenting, and no combining of the classes. In the second approach, all the classes other than the wall class are combined to assign a class label of ``zero" and the ``Wall" class is chosen as the second class. The distribution of the pixels is depicted in Fig \ref{fig:scannet_two_classes}.
+	The pixel distribution of the scannet dataset classes is not uniform. Experiments were conducted in three ways; in the first approach, all the classes were considered for experimenting, and no combining of the classes. In the second approach, all the classes other than the wall class are combined to assign a class label of ``Zero" and the ``Wall" class is chosen as the second class. The distribution of the pixels is depicted in Fig \ref{fig:scannet_two_classes}.
 	The Wall, Furniture, and Other classes combined have a high pixel distribution; hence all the furniture classes are combined as class 2nd, Wall as the first class, and the remaining classes are combined into 0th class as Other classes, resulting in three unique classes. The distribution of the three classes is presented in Fig \ref{fig:scannet_three_classes}.
     
     %------------------------------------------------------------------------------------------------------
@@ -267,7 +267,7 @@
 	
 	%---------------------------------------------------------------------------------------------------------
 
-    \subsection{Experiment 1.1: U-Net Vanilla, GP and LSTM Model Considering All the Classes}
+    \subsection{Experiment 1.1: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Scannet Dataset Without Merging Classes}
     
     The below sections explain the results of the conducted experiments. The model is trained and tested with the scannet dataset without merging the classes. The model's performance is evaluated with Pixel accuracy, Mean pixel accuracy, meanIoU, IoU, and FwIoU metrics.
 
@@ -449,7 +449,8 @@
 
 	\newpage
 		
-    \subsection{Experiment 1.2: U-Net Vanilla, Temporally Fused GP Model and LSTM Model Considering Two Class Scannet Dataset}
+    \subsection{Experiment 1.2: U-Net Vanilla, and Temporally Fused GP and Lstm Model on Scannet Dataset With Merging Into Two Classes}
+    
     %------------------------------------------------------------------------------------------------------
 	In the second experiment on the scannet dataset, all the classes are combined except the wall class resulting in the wall and other classes. Table \ref{table:unet_two_classes} compares the results of Vanilla, GP, and LSTM model performance. In this case, the pixel accuracy is similar in the Vanilla and the LSTM model; however, the accuracy dropped for the GP model. A similar observation can be made with the mean accuracy. However, the meanIoU value is high for the LSTM model at 0.28, and Vanilla and GP produced a result of 0.14 and 0.23. The frequency-weighted intersection over union is high for the LSTM model, followed by the Vanilla and GP model. A comparison of model output is presented in Fig \ref{fig:output_vanilla}. In this case, the wall and other categories in the test image are segmented reasonably well by the LSTM model. The metric bar comparison is shown in Fig \ref{fig:unet_model_metric_comparison}. It is evident from the plot that the mean accuracy is good for the Vanilla and GP and LSTM performance is below the other models. However, the meanIoU and FWIoU are high for the LSTM model.
 
@@ -520,7 +521,7 @@
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
     %------------------------------------------------------------------------------------------------------
-    \subsection{Experiment 1.3: U-Net Vanilla, Temporally Fused GP and Lstm Model Considering Three Class Scannet Dataset}
+    \subsection{Experiment 1.3: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Scannet Dataset With Merging Into Three Classes}
 	
 	This experiment considers wall, furniture, and other combined classes due to high pixel distribution, resulting in three unique classes. There is a massive jump in the pixel accuracy for the LSTM and GP models compared to the Vanilla model. The mean pixel accuracy is high at 0.55 compared to the Vanilla model performance at 0.31. An increase of 24\%. The meanIoU value also stands at 0.40 for the LSTM model compared to 0.18 for the Vanilla model, a difference of 22\%. The FwIoU value increased by 25\% for the lstm model. The effect of temporal fusion can be clearly seen with these metrics. Temporal fusion improved the performance by a considerable margin. The GP model also performed well in comparison with Vanilla and LSTM. In this experiment, the pixel classes are well-balanced compared to the two-class approach, where the difference is high. The results are compared in the Table \ref{table:unet_scannet_three_classes}. In Fig \ref{fig:performance_metric_three_classes_scannet}, there is temporal fusion in action. The comparison of model performance with a bar plot is depicted in Fig \ref{fig:performance_metric_three_classes_unet}
 	
@@ -595,8 +596,8 @@
 	\newpage
 	%\subsection{Discussion on comparison of results for Vanilla, GP and LSTM models performance}
 	
-	\subsection{Experiment 2.1: Experiment With Vkitti Dataset With Fog and Morning as the Testing Data}
-	
+	\subsection{Experiment 1.4: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Vkitti Dataset With Fog and Morning Categories as Testing Data}
+	    
 	Similar to the experiments conducted on the scannet dataset, experiments were conducted on the vkitti dataset. Vkitti is a dataset containing a virtual car moving in a cityscape and recorded with a different configuration. There are a totally of 15 classes in the entire dataset. The results were tabulated in Table \ref{table:unet_vkitti_two_classes}. There are a total of ten categories in the entire dataset. Namely 15-deg-left, fog, overcast, morning, 30-deg-right, 15-deg-right, 30-deg-left, clone, rain, sunset. Under each category, there is a total of 14 classes, namely Terrain, Sky, Tree, Vegetation, Building, Road, GuardRail, TrafficSign, TrafficLight, Pole, Misc, Truck, Car, and Van. In this experiment, fog and morning are taken as the testing data and trained on the remaining eight categories of data.
 	The result of the experiments was tabulated in Table \ref{table:unet_vkitti_two_classes}. The Vanilla, GP, and LSTM model performance are compared in the table. Pixel accuracy improved significantly with the LSTM model compared to the Vanilla and Gaussian process. A jump of 11\%. Similar characteristics can be observed concerning the other metrics. All the categories are similar; only the environment changes. A variation in an environment affected the model performance. In this experiment, LSTM performed well compared to the Vanilla and GP models. The accuracy of the model is high, 0.86. Temporal fusion can be observed with mean pixel accuracy, FwIoU, and meanIoU metric with improvement in result. The model is evaluated with the testing data, and the results are calculated for every batch and plotted as the box plot in Fig \ref{fig:performance_metric_vkitti_two_class_box_plot}. For all of the metric, the LSTM produced a better result in comparison to other models. IoU for the building, Misc, and Truck was low with respect to the other classes. The performance of Vanilla and the GP model are comparable to each other. Four test images were taken and run through Vanilla, GP, and LSTM model, and the ground truth and the predictions were compared side by side. Vanilla and GP models ideally segment the Truck; however, the LSTM model does not correctly segment the Truck. However, the car, pole, road, and sky categories are perfectly categorized by these models. The side-by-side comparison is presented in Fig \ref{fig:vkitti_unet_two}. The experiments were conducted in a batch of 8.
 	
@@ -742,13 +743,13 @@
 	\end{figure}
 
 	\begin{figure}
-		\centering
+		\hspace*{-1cm} 
 		\includegraphics[width=19cm]{images/continuous_sequence_data2.png}
 		\caption{Side by side comparison of models predictions for continuous sequence data from frame 4 to 7}
 		\label{fig:performance_metric_three_classes}
 	\end{figure}
 
-	\subsection{Experiment 2.1.2: Impact of Training Data Batch Size on the Evaluation Dataset Performance}
+	\subsection{Experiment 1.5: Impact of Training Data Batch Size on the Model Performance}
 	
 	The neural network model can be trained in batch data. The impact of the batch is studied in this experiment. The temporal fusion aims to pass continuous sequence image data and model the temporal dependency resulting in improved performance. In this experiment, a batch of 1, 2, and 8 data are passed onto the temporal fusing neural network model to train and evaluate the performance. In a batch mode of 1, the information from each frame is passed onto the next frame temporally. At a time single image is passed to the network for learning. Two images are passed in the batch mode of 2 at a time, and temporal information from these two images is learned and passed onto the subsequent two frames' prediction. In a batch mode of 8 at a time, a total of 8 image segmentation are learned from the ground truth. The overlapping information present in the set of 8 images is passed onto the following eight sets of continuous sequence data at a time processing eight images. With this experiment, it is found that the performance improves as the number of images in a batch; in other words, as the batch size increases, the performance improves. The same can be observed with the comparison of model performance on a batch size of 1, 2, and 8 in Fig \ref{fig:batch_wise_performance}. However, there is a limitation to the number of images in a batch. In the experiment, a maximum of 8 images per batch was tried; if the batch size increases above eight, the Cuda memory overflow is observed. This is a limitation set by the hardware. 
 
@@ -759,10 +760,10 @@
 		\label{fig:batch_wise_performance}
 	\end{figure}		    
 	
-	\section{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}
+	\subsection{Experiment 1.6: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Vkitti Dataset With Clone, Sunset, Rain, 15-Deg-Right, and 30-Deg-Left Categories as Testing Data}
 		
-	In the second type of experiment on vkitti data, five('clone/', 'sunset/', 'rain/', '15-deg-right/',
-	'30-deg-left/') categories out of 10 categories are taken for testing. The model is trained on five (15-deg-left/','fog/', 'overcast/', 'morning/', and '30-deg-right/') categories. The result of the experiments is tabulated in Table \ref{table:Vanilla_conti_seq}. It is a side-by-side comparison of the model performance based on a different metric. The performance improvement can be observed with the menIoU metric. The meanIoU improved by 1\% and 3\% for GP and LSTM with respect to the Vanilla model. Similar characteristics can be observed with the mean pixel accuracy. However, the pixel accuracy remained constant for all three models. The side-by comparison of the raw RGB image, ground truth, and predicted segmentation map is shown in Fig \ref{fig:unet_side_by_side_five_classes}. 
+	In the second type of experiment on vkitti data, five(`clone/', `sunset/', `rain/', `15-deg-right/',
+	`30-deg-left/') categories out of 10 categories are taken for testing. The model is trained on five (`15-deg-left/',`fog/', `overcast/', `morning/', and `30-deg-right/') categories. The result of the experiments is tabulated in Table \ref{table:Vanilla_conti_seq}. It is a side-by-side comparison of the model performance based on a different metric. The performance improvement can be observed with the menIoU metric. The meanIoU improved by 1\% and 3\% for GP and LSTM with respect to the Vanilla model. Similar characteristics can be observed with the mean pixel accuracy. However, the pixel accuracy remained constant for all three models. The side-by comparison of the raw RGB image, ground truth, and predicted segmentation map is shown in Fig \ref{fig:unet_side_by_side_five_classes}. 
 	
 	\begin{figure}
 		\centering
@@ -792,7 +793,7 @@
 		\end{center}
 	\end{table}
 	
-	The performance of the Vanilla, GP, and LSTM model is shown in Fig \ref{fig:performance_metric_unet}. The pixel accuracy and  FwIoU are high for the LSTM model, and the performance is comparable for the GP and Vanilla models. Mean pixel accuracy and meanIoU are high for the LSTM model. Traffic light, Pole, and Misc class IoU are low in Vanilla, GP, and LSTM models. The same is shown in Fig \ref{fig:performance_metric_unet1}, \ref{fig:performance_metric_unet2}, \ref{fig:performance_metric_unet3}. Hence from the result table, we can prove that incorporating the temporal fusion data for the semantic segmentation improves the performance. 
+	The performance of the Vanilla, GP, and LSTM model is shown in Fig \ref{fig:performance_metric_unet}. The pixel accuracy and  FwIoU are high for the LSTM model, and the performance is comparable for the GP and Vanilla models. Mean pixel accuracy and meanIoU are high for the LSTM model. Traffic light, Pole, and Misc class IoU are low in Vanilla, GP, and LSTM models. The same is shown in Fig \ref{fig:performance_metric_unet1}, \ref{fig:performance_metric_unet2}, \ref{fig:performance_metric_unet3}. Hence, incorporating temporal fusion data improves semantic segmentation performance.. 
 
 	\begin{figure}
 		\centering
@@ -1007,7 +1008,7 @@
 	\end{table}
 
 	\newpage
-	\section{Experiment Hyper-Parameter and Configuration Details }
+	\section{Hyper-Parameter and Configuration Details }
 	
 	The experiments were conducted with the configuration listed in the Table \ref{table:parameters}. Training of Vanilla, Gaussian Process and Long Short Term Memory models are done in parallel and the training time is listed in the table.
 	

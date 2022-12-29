@@ -258,11 +258,11 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:evaluationandresult}{{4}{35}{Evaluation and Experimental Result}{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Evaluation Metric}{35}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{35}{subsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy (PA), Mean Pixel Accuracy (mPA)}{35}{subsection.4.1.1}\protected@file@percent }
 \citation{83_iou}
 \citation{82_iou}
 \citation{82_iou}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}IoU}{36}{subsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}IoU, mIoU, FwIoU}{36}{subsection.4.1.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Definition of IoU. Courtesy of \cite  {82_iou}\relax }}{36}{figure.caption.34}\protected@file@percent }
 \newlabel{fig:IoU}{{4.1}{36}{Definition of IoU. Courtesy of \cite {82_iou}\relax }{figure.caption.34}{}}
 \citation{84_ulku2022survey}
@@ -274,7 +274,7 @@
 \citation{79_dai2017scannet}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Hypothesis}{37}{section.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}RQ3: How to Cross-Transfer the Temporal Fusion Technique to Semantic Segmentation?}{37}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Combining Scannet Dataset Classes for Experiment}{38}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Merging Scannet Dataset Classes for Experiment}{38}{subsection.4.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Distance and Kernel Matrix}{38}{subsection.4.3.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Per class pixel distribution of the entire scannet dataset. X-axis represent the labels in the Scannet dataset and Y-axis represent the number of pixels per class. High number of pixels belongs to class 1 and class 2\relax }}{39}{figure.caption.35}\protected@file@percent }
 \newlabel{fig:scannet_class}{{4.2}{39}{Per class pixel distribution of the entire scannet dataset. X-axis represent the labels in the Scannet dataset and Y-axis represent the number of pixels per class. High number of pixels belongs to class 1 and class 2\relax }{figure.caption.35}{}}
@@ -286,7 +286,7 @@
 \newlabel{fig:scannet_three_classes}{{4.5}{40}{Pixel distribution for the scannet data for three classes. There are only three classes because all the classes except class 1 and 2 are combined with the 0th class. Horizontal axis represent the class and vertical axis represent the number of pixels belonging to that particular class.\relax }{figure.caption.38}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Ordered and Unordered set of images. Ordered set of images are the images from the video sequence without shuffling the frames. In unordered set of images the frames are shuffled. \relax }}{41}{figure.caption.39}\protected@file@percent }
 \newlabel{fig:ordered_and_unordered_images}{{4.6}{41}{Ordered and Unordered set of images. Ordered set of images are the images from the video sequence without shuffling the frames. In unordered set of images the frames are shuffled. \relax }{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Experiment 1.1: U-Net Vanilla, GP and LSTM Model Considering All the Classes}{41}{subsection.4.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Experiment 1.1: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Scannet Dataset Without Merging Classes}{41}{subsection.4.3.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Distance matrix and Kernel matrix for ordered set of images. Distance matrix represent the distance between the consecutive eight frames poses with respect to each other. Kernel matrix represent the covariance between the consecutive eight frame poses.\relax }}{42}{figure.caption.40}\protected@file@percent }
 \newlabel{fig:ordered_D_and_K}{{4.7}{42}{Distance matrix and Kernel matrix for ordered set of images. Distance matrix represent the distance between the consecutive eight frames poses with respect to each other. Kernel matrix represent the covariance between the consecutive eight frame poses.\relax }{figure.caption.40}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Distance matrix and Kernel matrix for unordered set of images. Distance matrix represent the distance between the shuffled eight frames poses with respect to each other. Kernel matrix represent the covariance between the shuffled eight frame poses.\relax }}{42}{figure.caption.41}\protected@file@percent }
@@ -319,7 +319,7 @@
 \newlabel{fig:unet_model_metric_comparison_all_classes}{{4.18}{50}{Comparison of Vanilla, GP and LSTM model performance based on FwIoU metric. Higher the value means top performing model.\relax }{figure.caption.54}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.19}{\ignorespaces Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model\relax }}{51}{figure.caption.55}\protected@file@percent }
 \newlabel{fig:unet_model}{{4.19}{51}{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model\relax }{figure.caption.55}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Experiment 1.2: U-Net Vanilla, Temporally Fused GP Model and LSTM Model Considering Two Class Scannet Dataset}{52}{subsection.4.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Experiment 1.2: U-Net Vanilla, and Temporally Fused GP and Lstm Model on Scannet Dataset With Merging Into Two Classes}{52}{subsection.4.3.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.20}{\ignorespaces Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model for two class scannet dataset\relax }}{52}{figure.caption.56}\protected@file@percent }
 \newlabel{fig:output_vanilla}{{4.20}{52}{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model for two class scannet dataset\relax }{figure.caption.56}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes. Higher the value means top performing model.\relax }}{52}{table.caption.57}\protected@file@percent }
@@ -336,7 +336,7 @@
 \newlabel{fig:unet_model_metric_comparison}{{4.25}{56}{Comparison of Vanilla, GP and LSTM model performance based on FwIoU metric for scannet two classes\relax }{figure.caption.62}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.26}{\ignorespaces Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model for three class scannet dataset\relax }}{57}{figure.caption.63}\protected@file@percent }
 \newlabel{fig:performance_metric_three_classes_scannet}{{4.26}{57}{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model for three class scannet dataset\relax }{figure.caption.63}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Experiment 1.3: U-Net Vanilla, Temporally Fused GP and Lstm Model Considering Three Class Scannet Dataset}{57}{subsection.4.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Experiment 1.3: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Scannet Dataset With Merging Into Three Classes}{57}{subsection.4.3.5}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric and three class scannet dataset. Higher the value means top performing model.\relax }}{57}{table.caption.64}\protected@file@percent }
 \newlabel{table:unet_scannet_three_classes}{{4.5}{57}{Performance of Vanilla, GP and LSTM model with respect to different metric and three class scannet dataset. Higher the value means top performing model.\relax }{table.caption.64}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.27}{\ignorespaces IoU for Vanilla, GP and LSTM comparison side by side for three classes in scannet dataset\relax }}{58}{figure.caption.65}\protected@file@percent }
@@ -351,10 +351,10 @@
 \newlabel{fig:performance_metric_three_classes_unet}{{4.31}{61}{Comparison of Vanilla, GP and LSTM model performance based FwIoU on metric for three class scannet dataset. Higher the value means top performing model.\relax }{figure.caption.69}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric. Higher the value means top performing model.\relax }}{62}{table.caption.71}\protected@file@percent }
 \newlabel{table:unet_vkitti_two_classes}{{4.6}{62}{Performance of Vanilla, GP and LSTM model with respect to different metric. Higher the value means top performing model.\relax }{table.caption.71}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}Experiment 2.1: Experiment With Vkitti Dataset With Fog and Morning as the Testing Data}{62}{subsection.4.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}Experiment 1.4: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Vkitti Dataset With Fog and Morning Categories as Testing Data}{62}{subsection.4.3.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.32}{\ignorespaces Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM for vkitti dataset with fog and morning as the validation dataset\relax }}{63}{figure.caption.70}\protected@file@percent }
 \newlabel{fig:vkitti_unet_two}{{4.32}{63}{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM for vkitti dataset with fog and morning as the validation dataset\relax }{figure.caption.70}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.7}Experiment 2.1.2: Impact of Training Data Batch Size on the Evaluation Dataset Performance}{63}{subsection.4.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.7}Experiment 1.5: Impact of Training Data Batch Size on the Model Performance}{63}{subsection.4.3.7}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.33}{\ignorespaces IoU for Vanilla model tested with vkitti dataset with fog and morning as the validation data\relax }}{64}{figure.caption.72}\protected@file@percent }
 \newlabel{fig:performance_metric_vkitti_two_class_box_plot}{{4.33}{64}{IoU for Vanilla model tested with vkitti dataset with fog and morning as the validation data\relax }{figure.caption.72}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.34}{\ignorespaces IoU for GP model tested with vkitti dataset with fog and morning as the validation data\relax }}{64}{figure.caption.73}\protected@file@percent }
@@ -371,7 +371,7 @@
 \newlabel{fig:batch_wise_performance}{{4.39}{68}{Impact of training batch size on the evaluation dataset prediction. The model is trained with batch of 2, 4 and 8. The performance of the model is plotted with different metrics. Higher the value means top performing model.\relax }{figure.caption.78}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric with clone, sunset, rain, 15 degree right, and 30 degree left as validation data. Higher the value means top performing model.\relax }}{68}{table.caption.80}\protected@file@percent }
 \newlabel{table:Vanilla_conti_seq}{{4.7}{68}{Performance of Vanilla model with respect to different metric with clone, sunset, rain, 15 degree right, and 30 degree left as validation data. Higher the value means top performing model.\relax }{table.caption.80}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{68}{section.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.8}Experiment 1.6: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Vkitti Dataset With Clone, Sunset, Rain, 15-Deg-Right, and 30-Deg-Left Categories as Testing Data}{68}{subsection.4.3.8}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4.40}{\ignorespaces Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM for vkitti dataset with five categories of dataset taken for validation.\relax }}{69}{figure.caption.79}\protected@file@percent }
 \newlabel{fig:unet_side_by_side_five_classes}{{4.40}{69}{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM for vkitti dataset with five categories of dataset taken for validation.\relax }{figure.caption.79}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.41}{\ignorespaces IoU for Vanilla model with clone, sunset, rain, 15 degree right, and 30 degree left as validation data\relax }}{69}{figure.caption.81}\protected@file@percent }
@@ -384,12 +384,12 @@
 \newlabel{fig:performance_metric_unet}{{4.44}{71}{Comparison of Vanilla, GP, and LSTM model performance with clone, sunset, rain, 15-deg-right, 30-deg-left as the validation data. Higher the value means top performing model.\relax }{figure.caption.84}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for scannet dataset. In all the experiments LSTM model out performed Vanilla and GP.\relax }}{71}{table.caption.85}\protected@file@percent }
 \newlabel{table:hype1}{{4.8}{71}{Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for scannet dataset. In all the experiments LSTM model out performed Vanilla and GP.\relax }{table.caption.85}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}RQ3 Conclusion}{71}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}RQ3 Conclusion}{71}{section.4.4}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for vkitti dataset. In all the experiments LSTM model out-performed Vanilla and GP.\relax }}{72}{table.caption.86}\protected@file@percent }
 \newlabel{table:hype2}{{4.9}{72}{Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for vkitti dataset. In all the experiments LSTM model out-performed Vanilla and GP.\relax }{table.caption.86}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces The Vanilla, GP and LSTM model are trained with different batch sizes. The model prediction is compared side by side with different metrics. Hidden pattern in the data is learned quickly with increase in the batch size.\relax }}{72}{table.caption.87}\protected@file@percent }
 \newlabel{table:hype3}{{4.10}{72}{The Vanilla, GP and LSTM model are trained with different batch sizes. The model prediction is compared side by side with different metrics. Hidden pattern in the data is learned quickly with increase in the batch size.\relax }{table.caption.87}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Experiment Hyper-Parameter and Configuration Details }{73}{section.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Hyper-Parameter and Configuration Details }{73}{section.4.5}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces Hyperparameter to train the model.\relax }}{73}{table.caption.88}\protected@file@percent }
 \newlabel{table:parameters}{{4.11}{73}{Hyperparameter to train the model.\relax }{table.caption.88}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Android Deployment}{75}{chapter.5}\protected@file@percent }

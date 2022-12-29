@@ -42,20 +42,20 @@
 \contentsline {section}{\numberline {3.5}Hardware Configuration}{32}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Evaluation and Experimental Result}{35}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Evaluation Metric}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy}{35}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}IoU}{36}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.1}Pixel Accuracy (PA), Mean Pixel Accuracy (mPA)}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}IoU, mIoU, FwIoU}{36}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Hypothesis}{37}{section.4.2}%
 \contentsline {section}{\numberline {4.3}RQ3: How to Cross-Transfer the Temporal Fusion Technique to Semantic Segmentation?}{37}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Combining Scannet Dataset Classes for Experiment}{38}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Merging Scannet Dataset Classes for Experiment}{38}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Distance and Kernel Matrix}{38}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Experiment 1.1: U-Net Vanilla, GP and LSTM Model Considering All the Classes}{41}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Experiment 1.2: U-Net Vanilla, Temporally Fused GP Model and LSTM Model Considering Two Class Scannet Dataset}{52}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Experiment 1.3: U-Net Vanilla, Temporally Fused GP and Lstm Model Considering Three Class Scannet Dataset}{57}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Experiment 2.1: Experiment With Vkitti Dataset With Fog and Morning as the Testing Data}{62}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}Experiment 2.1.2: Impact of Training Data Batch Size on the Evaluation Dataset Performance}{63}{subsection.4.3.7}%
-\contentsline {section}{\numberline {4.4}Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}{68}{section.4.4}%
-\contentsline {section}{\numberline {4.5}RQ3 Conclusion}{71}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Experiment Hyper-Parameter and Configuration Details }{73}{section.4.6}%
+\contentsline {subsection}{\numberline {4.3.3}Experiment 1.1: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Scannet Dataset Without Merging Classes}{41}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Experiment 1.2: U-Net Vanilla, and Temporally Fused GP and Lstm Model on Scannet Dataset With Merging Into Two Classes}{52}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Experiment 1.3: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Scannet Dataset With Merging Into Three Classes}{57}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Experiment 1.4: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Vkitti Dataset With Fog and Morning Categories as Testing Data}{62}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Experiment 1.5: Impact of Training Data Batch Size on the Model Performance}{63}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Experiment 1.6: U-Net Vanilla, and Temporally Fused GP and LSTM Model on Vkitti Dataset With Clone, Sunset, Rain, 15-Deg-Right, and 30-Deg-Left Categories as Testing Data}{68}{subsection.4.3.8}%
+\contentsline {section}{\numberline {4.4}RQ3 Conclusion}{71}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Hyper-Parameter and Configuration Details }{73}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Android Deployment}{75}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Framework}{75}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Display of Results}{77}{section.5.2}%
