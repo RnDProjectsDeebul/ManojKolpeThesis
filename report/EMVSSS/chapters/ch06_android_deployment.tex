@@ -8,7 +8,7 @@
 	
     \section{Framework}
 	
-	The process of handling a single input image or a sequence is illustrated in Figure \ref{fig:android_pipeline}. The pipeline starts by loading an optimized model and a single image from the media storage in evaluation mode. The image is then passed through the model for prediction. In the final step, the segmented image from the python script is returned to the main Kotlin routine to be displayed. The model is deployed on an Android device with 6 GB of RAM running Android 11. The main routine script is written in Kotlin and integrates with the python script to process the data. The Android device used to deploy the deep learning model is specified in Table \ref{table:android_spec}. The trained model was optimized using the PyTorch \href{https://pytorch.org/docs/stable/mobile_optimizer.html}{\color{teal}mobile optimizer} with evaluation mode modules. The tested Android device takes 13 seconds to read, segment, and display a single input image.
+	The process of handling a single input image or a sequence is illustrated in Fig \ref{fig:android_pipeline}. The pipeline starts by loading an optimized model and a single image from the media storage in evaluation mode. The image is then passed through the model for prediction. In the final step, the segmented image from the python script is returned to the main Kotlin routine to be displayed. The model is deployed on an Android device with 6 GB of RAM running Android 11. The main routine script is written in Kotlin and integrates with the python script to process the data. The Android device used to deploy the deep learning model is specified in Table \ref{table:android_spec}. The trained model was optimized using the PyTorch \href{https://pytorch.org/docs/stable/mobile_optimizer.html}{\color{teal}mobile optimizer} with evaluation mode modules. The tested Android device takes 13 seconds to read, segment, and display a single input image.
 	
 	\begin{figure}
 		\centering
@@ -35,9 +35,9 @@
 	\end{center}
 	\end{table}
 
-    \section{Display of results}
+    \section{Display of Results}
 	
-	The Android application is developed in Kotlin programming language. The layout of the application is shown in Figure \ref{fig:android_result}. The layout consists of six main parts: Heading, Start segmenting the input data, Test Image, Select, Live, and Results display. The Heading is the name of the application, Test Image is the image to be segmented, and any sample image can be selected for segmentation. The Select option allows you to choose images from the media folders and transfer them for processing. The Live option enables live video segmentation and display in real time. Once the target image has been selected, the Start segmenting the input data button initiates the processing of the input data and displays the result on the Android screen. A full description can be found in the image \ref{fig:android_result}. 
+	The Android application is developed in Kotlin programming language. The layout of the application is shown in Fig \ref{fig:android_result}. The layout consists of six main parts: Heading, Start segmenting the input data, Test Image, Select, Live, and Results display. The Heading is the name of the application, Test Image is the image to be segmented, and any sample image can be selected for segmentation. The Select option allows you to choose images from the media folders and transfer them for processing. The Live option enables live video segmentation and display in real time. Once the target image has been selected, the Start segmenting the input data button initiates the processing of the input data and displays the result on the Android screen. A full description can be found in the image \ref{fig:android_result}. 
 	
 	\begin{figure}
 		\centering
@@ -49,7 +49,7 @@
     \newpage
     \section{Runtime}
 	
-	The android device is subjected with a sample input and the response time is tabulated in the table \ref{table:response_of_android}. The sample is a single frame from the video sequence data. The image goes through multiple stages starting from reading the image to processing and display of the results. 
+	The android device is subjected with a sample input and the response time is tabulated in the Table \ref{table:response_of_android}. The sample is a single frame from the video sequence data. The image goes through multiple stages starting from reading the image to processing and display of the results. 
 	
 	\begin{table}[h]
 		\begin{center}

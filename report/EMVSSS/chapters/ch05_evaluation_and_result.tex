@@ -176,9 +176,9 @@
 %    
 %	 It is evident from the table \ref{tab:sota_ytube_vis} that temporal fusion with the VITA network outperformed the rest of the model performance with Swin-L as the backbone. The comparison is made with the average precision metric. Swin-L transformer is a general-purpose backbone for computer vision tasks. The representation is computed with the transformer. The comparison is made with the Youtube VIS dataset. The dataset does not contain the pose information. VIS network is a temporal fusion architecture containing inter and intra-frame fusion for a fusion of temporal data. From the result table \ref{tab:sota_ytube_vis}. The method of temporal fusion by taking only a single frame data from the previous frame is a better approach than computing the temporal fusion of all the data at a time.
     
-    \section{RQ3: How to cross-transfer the temporal fusion technique to semantic segmentation?}
+    \section{RQ3: How to Cross-Transfer the Temporal Fusion Technique to Semantic Segmentation?}
     
-    The U-net model was developed to categorize biomedical images. Currently, the model is used in other application areas as well. The original network is mainly based on the data augmentation strategy. The network consists of an encoder and decoder along with the interconnection between different layers of encoder and decoder. The expanding path of the U-net model helps capture the objects' location in the image. The vanilla U-net model code is referenced from the Kaggle competition \cite{85_kag_challenge}. The result presented below is for the vanilla U-net model trained on the scannet dataset \cite{79_dai2017scannet}. The model is trained for 300 epochs. The plain vanilla model is trained with a neural network-based unet model. The experiment is conducted in three ways
+    The U-net model was developed to categorize biomedical images. Currently, the model is used in other application areas as well. The original network is mainly based on the data augmentation strategy. The network consists of an encoder and decoder along with the interconnection between different layers of encoder and decoder. The expanding path of the U-net model helps capture the objects' location in the image. The Vanilla U-net model code is referenced from the Kaggle competition \cite{85_kag_challenge}. The result presented below is for the Vanilla U-net model trained on the scannet dataset \cite{79_dai2017scannet}. The model is trained for 300 epochs. The plain Vanilla model is trained with a neural network-based unet model. The experiment is conducted in three ways
     \begin{itemize}
     	\item Considering all the classes
     	\item Containing only two classes by combining the low pixel distribution classes together (Wall and Other)
@@ -188,13 +188,13 @@
     
     The parameter used to train a plain unet model is tabulated in \ref{table:parameters}.
     
-    \subsection{Combining scannet dataset classes for experiment}
+    \subsection{Combining Scannet Dataset Classes for Experiment}
     
 	There are 41 classes [ \ref{table:Classes in scannet_1} , \ref{table:Classes in scannet_2} , \ref{table:Classes in scannet_3}] present in the entire Scannet dataset. 
 
 	To experiment, 185 indoor video sequence data are considered. The distribution of the entire scannet data classes is presented in Fig \ref{fig:scannet_class}. Of 185 sequences, 149 sequences are taken for training and the remaining 36 for testing. The distribution of pixels in the training data and testing data represented in Fig \ref{fig:scannet_all_classes}.
 	
-	The pixel distribution of the scannet dataset classes is not uniform. Experiments were conducted in three ways; in the first approach, all the classes were considered for experimenting, and no combining of the classes. In the second approach, all the classes other than the wall class are combined to assign a class label of ``zero," and the ``Wall" class is chosen as the second class. The distribution of the pixels is depicted in Fig \ref{fig:scannet_two_classes}.
+	The pixel distribution of the scannet dataset classes is not uniform. Experiments were conducted in three ways; in the first approach, all the classes were considered for experimenting, and no combining of the classes. In the second approach, all the classes other than the wall class are combined to assign a class label of ``zero" and the ``Wall" class is chosen as the second class. The distribution of the pixels is depicted in Fig \ref{fig:scannet_two_classes}.
 	The Wall, Furniture, and Other classes combined have a high pixel distribution; hence all the furniture classes are combined as class 2nd, Wall as the first class, and the remaining classes are combined into 0th class as Other classes, resulting in three unique classes. The distribution of the three classes is presented in Fig \ref{fig:scannet_three_classes}.
     
     %------------------------------------------------------------------------------------------------------
@@ -232,7 +232,7 @@
     	\label{fig:scannet_three_classes}%
     \end{figure}
     %---------------------------------------------------------------------------------------------------------
-    \subsection{Distance and Kernel matrix}
+    \subsection{Distance and Kernel Matrix}
 	
 	A distance matrix is a square matrix that represents the distance between a pair of objects. Distance matrix can be constructed from the pose information of the captured video sequence. The closer the two frames are in a sequence, the distance between them is; the smaller same can be represented with the matrix plot. Two types of the distance matrix are plotted in Fig \ref{fig:ordered_D_and_K} and \ref{fig:unordered_D_and_K}. In the first type of plot, an ordered frames pose is represented in the x and y-axis. The distance of the pose with respect to itself is zero, and as the frame number increases, the distance keeps increasing. In the second type of unordered pose plot, the frame's pose is shuffled and presented as the matrix plot. These pictures represent the distance of one frame to the other. 
 	
@@ -267,12 +267,12 @@
 	
 	%---------------------------------------------------------------------------------------------------------
 
-    \subsection{Experiment1.1: U-Net Vanilla, GP and LSTM model considering all the classes}
+    \subsection{Experiment 1.1: U-Net Vanilla, GP and LSTM Model Considering All the Classes}
     
     The below sections explain the results of the conducted experiments. The model is trained and tested with the scannet dataset without merging the classes. The model's performance is evaluated with Pixel accuracy, Mean pixel accuracy, meanIoU, IoU, and FwIoU metrics.
 
-	%{ \bf Experiment1.1.1: U-Net vanilla model with all the classes}
-	{ \bf Experiment1.1.2: U-Net vanilla model}
+	%{ \bf Experiment1.1.1: U-Net Vanilla model with all the classes}
+	{ \bf Experiment1.1.2: U-Net Vanilla model}
 	
 	The pixel accuracy is 50.96\% for the validation dataset. This is due to a large number of classes with unequal pixel distribution. However, the IoU for the Wall, Floor, and Mattress is high at 0.56, 0.608, and 0.382 due to the high pixel distribution for these classes. Frequency-weighted IoU considers the unequal pixel distribution, and the values stand at 0.3531. The predicted and the ground truth pixel distribution is presented in Fig \ref{fig:y_gt_pred_vanilla}. The bar plot shows that the predicted "Wall" class distribution is higher than the ground truth. The Wall and Floor class distribution is similar to the baseline and predicted class labels. 
     
@@ -303,7 +303,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=13cm]{images/iou_vanilla_scannet_all_classes.png}
-		\caption{IoU for vanilla model considering all classes in dataset}
+		\caption{IoU for Vanilla model considering all classes in dataset}
 		\label{fig:scannet_class}
 	\end{figure} 
 
@@ -312,13 +312,13 @@
 		\subfloat[\centering Per class pixel distribution of the ground truth pixel class label ]{{\includegraphics[width=7cm]{images/Y_ground_truth_vanilla.png} }}%
 		\qquad
 		\subfloat[\centering Per class pixel distribution of the predicted pixel class label]{{\includegraphics[width=7cm]{images/Y_predicted_vanilla.png} }}%
-		\caption{Pixel distribution for the ground truth and predicted scannet data for vanilla unet model}%
+		\caption{Pixel distribution for the ground truth and predicted scannet data for Vanilla unet model}%
 		\label{fig:y_gt_pred_vanilla}%
 	\end{figure}
     %------------------------------------------------------------------------------------------------------
     { \bf Experiment1.1.2: U-Net GP model}
     
-    In the GP model experiment, the information from the previous frame is passed onto the current frame segmentation computation. The accuracy is slightly better than the vanilla model, with an increase of 1\% with the temporal fusion GP prior to integration. The latent space encoding is subjected to the Gaussian process and then passed onto the decoder for segmentation computation. The mean pixel accuracy is similar to the vanilla model, with slight improvement. A large number of classes is causing the drop in performance. As expected "Wall," "Floor," and "Furniture" classes have high IoU values due to the presence of high pixel distribution. 
+    In the GP model experiment, the information from the previous frame is passed onto the current frame segmentation computation. The accuracy is slightly better than the Vanilla model, with an increase of 1\% with the temporal fusion GP prior to integration. The latent space encoding is subjected to the Gaussian process and then passed onto the decoder for segmentation computation. The mean pixel accuracy is similar to the Vanilla model, with slight improvement. A large number of classes is causing the drop in performance. As expected "Wall," "Floor," and "Furniture" classes have high IoU values due to the presence of high pixel distribution. 
     
     \begin{table}
 	\begin{center}
@@ -353,10 +353,10 @@
 
 	\begin{figure}%
 		\centering
-		\subfloat[\centering Per class pixel distribution of the ground truth pixel class label for gp model ]{{\includegraphics[width=7cm]{images/Y_ground_truth_gp.png} }}%
+		\subfloat[\centering Per class pixel distribution of the ground truth pixel class label for GP model ]{{\includegraphics[width=7cm]{images/Y_ground_truth_gp.png} }}%
 		\qquad
-		\subfloat[\centering Per class pixel distribution of the predicted pixel class for gp model 	label]{{\includegraphics[width=7cm]{images/Y_predicted_gp.png} }}%
-		\caption{Per class pixel distribution of the predicted pixel class label for gp model}%
+		\subfloat[\centering Per class pixel distribution of the predicted pixel class for GP model 	label]{{\includegraphics[width=7cm]{images/Y_predicted_gp.png} }}%
+		\caption{Per class pixel distribution of the predicted pixel class label for GP model}%
 		\label{fig:y_gt_and_predic_gp}%
 	\end{figure}
 
@@ -364,7 +364,7 @@
     \newpage
 	{ \bf Experiment1.1.2: U-Net LSTM model}
 	
-	The scene geometry from the past frame is passed onto a current frame efficiently with the lstm model. The ConvLSTM cell at the latent space compress and store the past information in its states. The change in the viewpoint is captured by the hidden state and passed onto the next hidden state for the computation of the segmentation map. From the result table \ref{tab:unet_lstm}, it is evident that the accuracy has improved by 6\% and 5\% in comparison with the vanilla and GP models, respectively. Mean accuracy has increased by quite a significant margin. A large margin also improves the IoU values. IoU for the "Wall" class is highest with 0.61 in comparison with the vanilla and GP approach. However, for the cabinet class, GP performed well. Table, bookshelf, Counter, and desk class GP outperformed the vanilla and LSTM model. 
+	The scene geometry from the past frame is passed onto a current frame efficiently with the LSTM model. The ConvLSTM cell at the latent space compress and store the past information in its states. The change in the viewpoint is captured by the hidden state and passed onto the next hidden state for the computation of the segmentation map. From the result Table \ref{tab:unet_lstm}, it is evident that the accuracy has improved by 6\% and 5\% in comparison with the Vanilla and GP models, respectively. Mean accuracy has increased by quite a significant margin. A large margin also improves the IoU values. IoU for the "Wall" class is highest with 0.61 in comparison with the Vanilla and GP approach. However, for the cabinet class, GP performed well. Table, bookshelf, Counter, and desk class GP outperformed the Vanilla and LSTM model. 
 	
 	\begin{table}
 	\begin{center}
@@ -396,67 +396,67 @@
 
 	\begin{figure}%
 		\centering
-		\subfloat[\centering Per class pixel distribution of the ground truth pixel class label for lstm model ]{{\includegraphics[width=7cm]{images/Y_ground_truth_lstm.png} }}%
+		\subfloat[\centering Per class pixel distribution of the ground truth pixel class label for LSTM model ]{{\includegraphics[width=7cm]{images/Y_ground_truth_lstm.png} }}%
 		\qquad
-		\subfloat[\centering Per class pixel distribution of the predicted pixel class for lstm model]{{\includegraphics[width=7cm]{images/Y_predicted_lstm.png} }}%
-		\caption{Per class pixel distribution of the predicted pixel class label for lstm model}%
+		\subfloat[\centering Per class pixel distribution of the predicted pixel class for LSTM model]{{\includegraphics[width=7cm]{images/Y_predicted_lstm.png} }}%
+		\caption{Per class pixel distribution of the predicted pixel class label for LSTM model}%
 		\label{fig:y_gt_and_predic_lstm}%
 	\end{figure}
 
-	Accuracy, mean accuracy, meanIoU, and FWIoU comparison is plotted as the bar graph in \ref{fig:unet_model_metric_comparison_all_classes}. The accuracy is highest for the LSTM model compared to the vanilla and GP. However, the mean accuracy is lowest for the GP model concerning other models. The experiment shows that the performance improves by incorporating temporal fusion in the semantic segmentation for the continuous sequence data. The overlapping and the past information is learned, stored, and passed onto the computation of the future frames' semantic segmentation. The temporal dependency between the frames is exploited to efficiently perform the segmentation by taking pose into account in the Gaussian process and compressed information in the hidden state of the ConVlstm cell. The Gaussian process works because if the two frames are very close to each other, represented by the pose information, there is a high probability of overlapping regions in the consecutive frames. The output of the decoder is based on the input to the decoder. The output of the encoder is passed onto the gaussian process; it takes into account the current and previous pose information and outputs a latent encoding based on the distance between the current and the previous frame. Hence, if two frames are close to each other, then the latent output of the Gaussian process is similar, resulting in information transfer from the past learned latent representation to the current latent output resulting in improved performance. The raw RGB ground truth and predicted segmentation map are compared in Fig \ref{fig:unet_model}. It can be observed from the figure that the Vanilla and LSTM model performed reasonably well in comparison with the GP model. However, overall metric-wise, LSTM outperformed vanilla and GP.   
+	Accuracy, mean accuracy, meanIoU, and FWIoU comparison is plotted as the bar graph in \ref{fig:unet_model_metric_comparison_all_classes}. The accuracy is highest for the LSTM model compared to the Vanilla and GP. However, the mean accuracy is lowest for the GP model concerning other models. The experiment shows that the performance improves by incorporating temporal fusion in the semantic segmentation for the continuous sequence data. The overlapping and the past information is learned, stored, and passed onto the computation of the future frames' semantic segmentation. The temporal dependency between the frames is exploited to efficiently perform the segmentation by taking pose into account in the Gaussian process and compressed information in the hidden state of the ConVLSTM cell. The Gaussian process works because if the two frames are very close to each other, represented by the pose information, there is a high probability of overlapping regions in the consecutive frames. The output of the decoder is based on the input to the decoder. The output of the encoder is passed onto the gaussian process; it takes into account the current and previous pose information and outputs a latent encoding based on the distance between the current and the previous frame. Hence, if two frames are close to each other, then the latent output of the Gaussian process is similar, resulting in information transfer from the past learned latent representation to the current latent output resulting in improved performance. The raw RGB ground truth and predicted segmentation map are compared in Fig \ref{fig:unet_model}. It can be observed from the figure that the Vanilla and LSTM model performed reasonably well in comparison with the GP model. However, overall metric-wise, LSTM outperformed Vanilla and GP.   
 	
 %	\begin{figure}
 %		\centering
 %		\includegraphics[width=12cm]{images/scannet_performance_all_classes.png}
-%		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric. Higher the value means top performing model.}
+%		\caption{Comparison of Vanilla, GP and LSTM model performance based on metric. Higher the value means top performing model.}
 %		\label{fig:unet_model_metric_comparison_all_classes}
 %	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/all_classes_acc.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on  accuracy metric. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on  accuracy metric. Higher the value means top performing model.}
 		\label{fig:unet_model_metric_comparison_all_classes}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/all_classes_meanacc.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on mean accuracy metric. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on mean accuracy metric. Higher the value means top performing model.}
 		\label{fig:unet_model_metric_comparison_all_classes}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/all_classes_meanIoU.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on meanIoU metric. Higher the value means top performing model.}
 		\label{fig:unet_model_metric_comparison_all_classes}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/all_classes_FwIoU.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on FwIoU metric. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on FwIoU metric. Higher the value means top performing model.}
 		\label{fig:unet_model_metric_comparison_all_classes}
 	\end{figure}
 	
 	\begin{figure}
 		\centering
 		\includegraphics[width=16cm]{images/unet_scannet_all_classes.png}
-		\caption{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model}
+		\caption{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model}
 		\label{fig:unet_model}
 	\end{figure}
 
 	\newpage
 		
-    \subsection{Experiment1.2: U-Net Vanilla, Temporally fused GP model and LSTM model considering two class scannet dataset}
+    \subsection{Experiment 1.2: U-Net Vanilla, Temporally Fused GP Model and LSTM Model Considering Two Class Scannet Dataset}
     %------------------------------------------------------------------------------------------------------
-	In the second experiment on the scannet dataset, all the classes are combined except the wall class resulting in the wall and other classes. Table \ref{table:unet_two_classes} compares the results of vanilla, GP, and LSTM model performance. In this case, the pixel accuracy is similar in the vanilla and the lstm model; however, the accuracy dropped for the GP model. A similar observation can be made with the mean accuracy. However, the meanIoU value is high for the lstm model at 0.28, and vanilla and GP produced a result of 0.14 and 0.23. The frequency-weighted intersection over union is high for the lstm model, followed by the vanilla and GP model. A comparison of model output is presented in Fig \ref{fig:output_vanilla}. In this case, the wall and other categories in the test image are segmented reasonably well by the LSTM model. The metric bar comparison is shown in Fig \ref{fig:unet_model_metric_comparison}. It is evident from the plot that the mean accuracy is good for the vanilla and GP and lstm performance is below the other models. However, the meanIoU and FWIoU are high for the lstm model.
+	In the second experiment on the scannet dataset, all the classes are combined except the wall class resulting in the wall and other classes. Table \ref{table:unet_two_classes} compares the results of Vanilla, GP, and LSTM model performance. In this case, the pixel accuracy is similar in the Vanilla and the LSTM model; however, the accuracy dropped for the GP model. A similar observation can be made with the mean accuracy. However, the meanIoU value is high for the LSTM model at 0.28, and Vanilla and GP produced a result of 0.14 and 0.23. The frequency-weighted intersection over union is high for the LSTM model, followed by the Vanilla and GP model. A comparison of model output is presented in Fig \ref{fig:output_vanilla}. In this case, the wall and other categories in the test image are segmented reasonably well by the LSTM model. The metric bar comparison is shown in Fig \ref{fig:unet_model_metric_comparison}. It is evident from the plot that the mean accuracy is good for the Vanilla and GP and LSTM performance is below the other models. However, the meanIoU and FWIoU are high for the LSTM model.
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=16cm]{images/output_unet_two_classes.png}
-		\caption{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model for two class scannet dataset}
+		\caption{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model for two class scannet dataset}
 		\label{fig:output_vanilla}
 	\end{figure}
 	
@@ -481,53 +481,53 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/iou_vanilla_gp_lstm_two_classes.png}
-		\caption{IoU for vanilla, GP and LSTM comparison side by side for two classes in scannet dataset}
+		\caption{IoU for Vanilla, GP and LSTM comparison side by side for two classes in scannet dataset}
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
 	
 %	\begin{figure}
 %		\centering
 %		\includegraphics[width=12cm]{images/scannet_performance_two_classes.png}
-%		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet two classes}
+%		\caption{Comparison of Vanilla, GP and LSTM model performance based on metric for scannet two classes}
 %		\label{fig:unet_model_metric_comparison}
 %	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/two_classes_acc.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on accuracy metric for scannet two classes}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on accuracy metric for scannet two classes}
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/two_classes_meanacc.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based mean accuracy on metric for scannet two classes}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based mean accuracy on metric for scannet two classes}
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/two_classes_meanIoU.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on meanIoU metric for scannet two classes}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on meanIoU metric for scannet two classes}
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/two_classes_FwIoU.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on FwIoU metric for scannet two classes}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on FwIoU metric for scannet two classes}
 		\label{fig:unet_model_metric_comparison}
 	\end{figure}
     %------------------------------------------------------------------------------------------------------
-    \subsection{Experiment1.3: U-Net Vanilla, temporally fused GP and LSTM model considering three class scannet dataset}
+    \subsection{Experiment 1.3: U-Net Vanilla, Temporally Fused GP and Lstm Model Considering Three Class Scannet Dataset}
 	
-	This experiment considers wall, furniture, and other combined classes due to high pixel distribution, resulting in three unique classes. There is a massive jump in the pixel accuracy for the lstm and GP models compared to the vanilla model. The mean pixel accuracy is high at 0.55 compared to the vanilla model performance at 0.31. An increase of 24\%. The meanIoU value also stands at 0.40 for the lstm model compared to 0.18 for the vanilla model, a difference of 22\%. The FwIoU value increased by 25\% for the lstm model. The effect of temporal fusion can be clearly seen with these metrics. Temporal fusion improved the performance by a considerable margin. The GP model also performed well in comparison with vanilla and lstm. In this experiment, the pixel classes are well-balanced compared to the two-class approach, where the difference is high. The results are compared in the table Table \ref{table:unet_scannet_three_classes}. In Fig \ref{fig:performance_metric_three_classes_scannet}, there is temporal fusion in action. The comparison of model performance with a bar plot is depicted in Fig \ref{fig:performance_metric_three_classes_unet}
+	This experiment considers wall, furniture, and other combined classes due to high pixel distribution, resulting in three unique classes. There is a massive jump in the pixel accuracy for the LSTM and GP models compared to the Vanilla model. The mean pixel accuracy is high at 0.55 compared to the Vanilla model performance at 0.31. An increase of 24\%. The meanIoU value also stands at 0.40 for the LSTM model compared to 0.18 for the Vanilla model, a difference of 22\%. The FwIoU value increased by 25\% for the lstm model. The effect of temporal fusion can be clearly seen with these metrics. Temporal fusion improved the performance by a considerable margin. The GP model also performed well in comparison with Vanilla and LSTM. In this experiment, the pixel classes are well-balanced compared to the two-class approach, where the difference is high. The results are compared in the Table \ref{table:unet_scannet_three_classes}. In Fig \ref{fig:performance_metric_three_classes_scannet}, there is temporal fusion in action. The comparison of model performance with a bar plot is depicted in Fig \ref{fig:performance_metric_three_classes_unet}
 	
 	\begin{figure}
 		\centering
 		\includegraphics[width=16cm]{images/unet_scannet_three_classes.png}
-		\caption{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm model for three class scannet dataset}
+		\caption{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM model for three class scannet dataset}
 		\label{fig:performance_metric_three_classes_scannet}
 	\end{figure}
 
@@ -552,42 +552,42 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/IoU_v_g_l_three_classes.png}
-		\caption{IoU for vanilla, GP and LSTM comparison side by side for three classes in scannet dataset}
+		\caption{IoU for Vanilla, GP and LSTM comparison side by side for three classes in scannet dataset}
 		\label{fig:performance_metric_three_classes_unet}
 	\end{figure}
 	
 %	\begin{figure}
 %		\centering
 %		\includegraphics[width=12cm]{images/scannet_performance_three_classes.png}
-%		\caption{Comparison of VANILLA, GP and LSTM model performance based on metric for scannet three classes. Higher the value means top performing model.}
+%		\caption{Comparison of Vanilla, GP and LSTM model performance based on metric for scannet three classes. Higher the value means top performing model.}
 %		\label{fig:performance_metric_three_classes_unet}
 %	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/three_classes_acc.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on accuracy metric for scannet three class scannet dataset. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on accuracy metric for scannet three class scannet dataset. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes_unet}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/three_classes_meanacc.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on mean accuracy metric for three class scannet dataset. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on mean accuracy metric for three class scannet dataset. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes_unet}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/three_classes_meanIoU.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based on  meanIoU metric for three class scannet dataset. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based on  meanIoU metric for three class scannet dataset. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes_unet}
 	\end{figure}
 
 	\begin{figure}
 		\centering
 		\includegraphics[width=12cm]{images/three_classes_FwIoU.png}
-		\caption{Comparison of VANILLA, GP and LSTM model performance based  FwIoU on metric for three class scannet dataset. Higher the value means top performing model.}
+		\caption{Comparison of Vanilla, GP and LSTM model performance based  FwIoU on metric for three class scannet dataset. Higher the value means top performing model.}
 		\label{fig:performance_metric_three_classes_unet}
 	\end{figure}
 
@@ -595,15 +595,15 @@
 	\newpage
 	%\subsection{Discussion on comparison of results for Vanilla, GP and LSTM models performance}
 	
-	\section{Experiment 2.1: Experiment with vkitti dataset with fog and morning as the testing data}
+	\subsection{Experiment 2.1: Experiment With Vkitti Dataset With Fog and Morning as the Testing Data}
 	
 	Similar to the experiments conducted on the scannet dataset, experiments were conducted on the vkitti dataset. Vkitti is a dataset containing a virtual car moving in a cityscape and recorded with a different configuration. There are a totally of 15 classes in the entire dataset. The results were tabulated in Table \ref{table:unet_vkitti_two_classes}. There are a total of ten categories in the entire dataset. Namely 15-deg-left, fog, overcast, morning, 30-deg-right, 15-deg-right, 30-deg-left, clone, rain, sunset. Under each category, there is a total of 14 classes, namely Terrain, Sky, Tree, Vegetation, Building, Road, GuardRail, TrafficSign, TrafficLight, Pole, Misc, Truck, Car, and Van. In this experiment, fog and morning are taken as the testing data and trained on the remaining eight categories of data.
-	The result of the experiments was tabulated in Table \ref{table:unet_vkitti_two_classes}. The Vanilla, GP, and LSTM model performance are compared in the table. Pixel accuracy improved significantly with the LSTM model compared to the Vanilla and Gaussian process. A jump of 11\%. Similar characteristics can be observed concerning the other metrics. All the categories are similar; only the environment changes. A variation in an environment affected the model performance. In this experiment, LSTM performed well compared to the Vanilla and GP models. The accuracy of the model is high, 0.86. Temporal fusion can be observed with mean pixel accuracy, FwIoU, and meanIoU metric with improvement in result. The model is evaluated with the testing data, and the results are calculated for every batch and plotted as the box plot in Fig \ref{fig:performance_metric_vkitti_two_class_box_plot}. For all of the metric, the LSTM produced a better result in comparison to other models. IoU for the building, Misc, and Truck was low with respect to the other classes. The performance of vanilla and the GP model are comparable to each other. Four test images were taken and run through vanilla, GP, and LSTM model, and the ground truth and the predictions were compared side by side. Vanilla and GP models ideally segment the Truck; however, the LSTM model does not correctly segment the Truck. However, the car, pole, road, and sky categories are perfectly categorized by these models. The side-by-side comparison is presented in Figure \ref{fig:vkitti_unet_two}. The experiments were conducted in a batch of 8.
+	The result of the experiments was tabulated in Table \ref{table:unet_vkitti_two_classes}. The Vanilla, GP, and LSTM model performance are compared in the table. Pixel accuracy improved significantly with the LSTM model compared to the Vanilla and Gaussian process. A jump of 11\%. Similar characteristics can be observed concerning the other metrics. All the categories are similar; only the environment changes. A variation in an environment affected the model performance. In this experiment, LSTM performed well compared to the Vanilla and GP models. The accuracy of the model is high, 0.86. Temporal fusion can be observed with mean pixel accuracy, FwIoU, and meanIoU metric with improvement in result. The model is evaluated with the testing data, and the results are calculated for every batch and plotted as the box plot in Fig \ref{fig:performance_metric_vkitti_two_class_box_plot}. For all of the metric, the LSTM produced a better result in comparison to other models. IoU for the building, Misc, and Truck was low with respect to the other classes. The performance of Vanilla and the GP model are comparable to each other. Four test images were taken and run through Vanilla, GP, and LSTM model, and the ground truth and the predictions were compared side by side. Vanilla and GP models ideally segment the Truck; however, the LSTM model does not correctly segment the Truck. However, the car, pole, road, and sky categories are perfectly categorized by these models. The side-by-side comparison is presented in Fig \ref{fig:vkitti_unet_two}. The experiments were conducted in a batch of 8.
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=17cm]{images/unet_vkitti_two.png}
-		\caption{Plotting of raw input image, ground truth and predicted output for vanilla, gp and lstm for vkitti dataset with fog and morning as the validation dataset}
+		\caption{Plotting of raw input image, ground truth and predicted output for Vanilla, GP and LSTM for vkitti dataset with fog and morning as the validation dataset}
 		\label{fig:vkitti_unet_two}
 	\end{figure}
 
@@ -633,7 +633,7 @@
 		\centering
 	
 		\includegraphics[width=13cm]{images/IoU_vanilla_vkitti_fm.png}
-		\caption{IoU for vanilla model tested with vkitti dataset with fog and morning as the validation data}
+		\caption{IoU for Vanilla model tested with vkitti dataset with fog and morning as the validation data}
 		\label{fig:performance_metric_vkitti_two_class_box_plot}
 	\end{figure}
 
@@ -657,7 +657,7 @@
 %		\centering
 %		
 %		\includegraphics[width=13cm]{images/vkitti_validation_data_two_class_box_plot.png}
-%		\caption{Performance comparison of the VANILLA, GP and LSTM model based on different metrics. Higher the value means top performing model.}
+%		\caption{Performance comparison of the Vanilla, GP and LSTM model based on different metrics. Higher the value means top performing model.}
 %		\label{fig:performance_metric_vkitti_two_class_box_plot}
 %	\end{figure}
 
@@ -665,7 +665,7 @@
 		\centering
 		
 		\includegraphics[width=13cm]{images/vkitti_performance_metric_fog_morning.png}
-		\caption{Performance comparison of the VANILLA, GP and LSTM model for fog and morning as the validation data. Higher the value means top performing model.}
+		\caption{Performance comparison of the Vanilla, GP and LSTM model for fog and morning as the validation data. Higher the value means top performing model.}
 		\label{fig:performance_metric_vkitti_two_class_box_plot}
 	\end{figure}
 
@@ -673,7 +673,7 @@
 %		\centering
 %		
 %		\includegraphics[width=13cm]{images/two_vkitti_acc.png}
-%		\caption{Performance comparison of the VANILLA, GP and LSTM model based on accuracy metrics. Higher the value means top performing model.}
+%		\caption{Performance comparison of the Vanilla, GP and LSTM model based on accuracy metrics. Higher the value means top performing model.}
 %		\label{fig:performance_metric_vkitti_two_class_box_plot}
 %	\end{figure}
 %
@@ -681,7 +681,7 @@
 %		\centering
 %	
 %		\includegraphics[width=13cm]{images/two_vkitti_meanacc.png}
-%		\caption{Performance comparison of the VANILLA, GP and LSTM model based on mean accuracy metrics. Higher the value means top performing model.}
+%		\caption{Performance comparison of the Vanilla, GP and LSTM model based on mean accuracy metrics. Higher the value means top performing model.}
 %		\label{fig:performance_metric_vkitti_two_class_box_plot}
 %	\end{figure}
 %	
@@ -689,7 +689,7 @@
 %		\centering
 %		
 %		\includegraphics[width=13cm]{images/two_vkitti_mIoU.png}
-%		\caption{Performance comparison of the VANILLA, GP and LSTM model based on mIoU metrics. Higher the value means top performing model.}
+%		\caption{Performance comparison of the Vanilla, GP and LSTM model based on mIoU metrics. Higher the value means top performing model.}
 %		\label{fig:performance_metric_vkitti_two_class_box_plot}
 %	\end{figure}
 %
@@ -697,7 +697,7 @@
 %		\centering
 %	
 %		\includegraphics[width=13cm]{images/two_vkitti_FwIoU.png}
-%		\caption{Performance comparison of the VANILLA, GP and LSTM model based on FwIoU metrics. Higher the value means top performing model.}
+%		\caption{Performance comparison of the Vanilla, GP and LSTM model based on FwIoU metrics. Higher the value means top performing model.}
 %		\label{fig:performance_metric_vkitti_two_class_box_plot}
 %	\end{figure}
 
@@ -707,14 +707,14 @@
 %		\centering
 %		\hspace*{-2cm}
 %		\includegraphics[width=19cm]{images/IoU_two.png}
-%		\caption{IoU predictions for all the classes for VANILLA, GP and LSTM model. Higher the value means top performing model.}
+%		\caption{IoU predictions for all the classes for Vanilla, GP and LSTM model. Higher the value means top performing model.}
 %		\label{fig:performance_metric_three_classes}
 %	\end{figure}
 
 %	\begin{figure}
 %		\centering
-%		\includegraphics[width=13cm]{images/IoU_vanilla_two_class.png}
-%		\caption{IoU predictions for all the classes for VANILLA model. Higher the value means top performing model.}
+%		\includegraphics[width=13cm]{images/IoU_Vanilla_two_class.png}
+%		\caption{IoU predictions for all the classes for Vanilla model. Higher the value means top performing model.}
 %		\label{fig:performance_metric_three_classes}
 %	\end{figure}
 %
@@ -748,9 +748,9 @@
 		\label{fig:performance_metric_three_classes}
 	\end{figure}
 
-	\subsection{Experiment 2.1.2: Impact of training data batch size on the evaluation dataset performance}
+	\subsection{Experiment 2.1.2: Impact of Training Data Batch Size on the Evaluation Dataset Performance}
 	
-	The neural network model can be trained in batch data. The impact of the batch is studied in this experiment. The temporal fusion aims to pass continuous sequence image data and model the temporal dependency resulting in improved performance. In this experiment, a batch of 1, 2, and 8 data are passed onto the temporal fusing neural network model to train and evaluate the performance. In a batch mode of 1, the information from each frame is passed onto the next frame temporally. At a time single image is passed to the network for learning. Two images are passed in the batch mode of 2 at a time, and temporal information from these two images is learned and passed onto the subsequent two frames' prediction. In a batch mode of 8 at a time, a total of 8 image segmentation are learned from the ground truth. The overlapping information present in the set of 8 images is passed onto the following eight sets of continuous sequence data at a time processing eight images. With this experiment, it is found that the performance improves as the number of images in a batch; in other words, as the batch size increases, the performance improves. The same can be observed with the comparison of model performance on a batch size of 1, 2, and 8 in Figure \ref{fig:batch_wise_performance}. However, there is a limitation to the number of images in a batch. In the experiment, a maximum of 8 images per batch was tried; if the batch size increases above eight, the Cuda memory overflow is observed. This is a limitation set by the hardware. 
+	The neural network model can be trained in batch data. The impact of the batch is studied in this experiment. The temporal fusion aims to pass continuous sequence image data and model the temporal dependency resulting in improved performance. In this experiment, a batch of 1, 2, and 8 data are passed onto the temporal fusing neural network model to train and evaluate the performance. In a batch mode of 1, the information from each frame is passed onto the next frame temporally. At a time single image is passed to the network for learning. Two images are passed in the batch mode of 2 at a time, and temporal information from these two images is learned and passed onto the subsequent two frames' prediction. In a batch mode of 8 at a time, a total of 8 image segmentation are learned from the ground truth. The overlapping information present in the set of 8 images is passed onto the following eight sets of continuous sequence data at a time processing eight images. With this experiment, it is found that the performance improves as the number of images in a batch; in other words, as the batch size increases, the performance improves. The same can be observed with the comparison of model performance on a batch size of 1, 2, and 8 in Fig \ref{fig:batch_wise_performance}. However, there is a limitation to the number of images in a batch. In the experiment, a maximum of 8 images per batch was tried; if the batch size increases above eight, the Cuda memory overflow is observed. This is a limitation set by the hardware. 
 
 	\begin{figure}
 		\centering
@@ -762,7 +762,7 @@
 	\section{Experiment 2.2: Experiment with vkitti dataset with clone, sunset, rain, 15-deg-right, and 30-deg-left as the testing data}
 		
 	In the second type of experiment on vkitti data, five('clone/', 'sunset/', 'rain/', '15-deg-right/',
-	'30-deg-left/') categories out of 10 categories are taken for testing. The model is trained on five (15-deg-left/','fog/', 'overcast/', 'morning/', and '30-deg-right/') categories. The result of the experiments is tabulated in Table \ref{table:Vanilla_conti_seq}. It is a side-by-side comparison of the model performance based on a different metric. The performance improvement can be observed with the menIoU metric. The meanIoU improved by 1\% and 3\% for GP and lstm with respect to the vanilla model. Similar characteristics can be observed with the mean pixel accuracy. However, the pixel accuracy remained constant for all three models. The side-by comparison of the raw RGB image, ground truth, and predicted segmentation map is shown in Fig \ref{fig:unet_side_by_side_five_classes}. 
+	'30-deg-left/') categories out of 10 categories are taken for testing. The model is trained on five (15-deg-left/','fog/', 'overcast/', 'morning/', and '30-deg-right/') categories. The result of the experiments is tabulated in Table \ref{table:Vanilla_conti_seq}. It is a side-by-side comparison of the model performance based on a different metric. The performance improvement can be observed with the menIoU metric. The meanIoU improved by 1\% and 3\% for GP and LSTM with respect to the Vanilla model. Similar characteristics can be observed with the mean pixel accuracy. However, the pixel accuracy remained constant for all three models. The side-by comparison of the raw RGB image, ground truth, and predicted segmentation map is shown in Fig \ref{fig:unet_side_by_side_five_classes}. 
 	
 	\begin{figure}
 		\centering
@@ -792,13 +792,13 @@
 		\end{center}
 	\end{table}
 	
-	The box plot of the performance of the vanilla, GP, and lstm model is shown in Fig \ref{fig:performance_metric_unet}. The pixel accuracy and  FwIoU are high for the lstm model, and the performance is comparable for the GP and vanilla models. Mean pixel accuracy and meanIoU are high for the lstm model. Traffic light, Pole, and Misc class IoU are low in vanilla, GP, and lstm models. The same is shown in Fig \ref{fig:performance_metric_unet1}, \ref{fig:performance_metric_unet2}, \ref{fig:performance_metric_unet3}. Hence from the result table, we can prove that incorporating the temporal fusion data for the semantic segmentation improves the performance. 
+	The performance of the Vanilla, GP, and LSTM model is shown in Fig \ref{fig:performance_metric_unet}. The pixel accuracy and  FwIoU are high for the LSTM model, and the performance is comparable for the GP and Vanilla models. Mean pixel accuracy and meanIoU are high for the LSTM model. Traffic light, Pole, and Misc class IoU are low in Vanilla, GP, and LSTM models. The same is shown in Fig \ref{fig:performance_metric_unet1}, \ref{fig:performance_metric_unet2}, \ref{fig:performance_metric_unet3}. Hence from the result table, we can prove that incorporating the temporal fusion data for the semantic segmentation improves the performance. 
 
 	\begin{figure}
 		\centering
 	
 		\includegraphics[width=12cm]{images/iou_vanilla_vkitti_five.png}
-		\caption{IoU for vanilla model with clone, sunset, rain, 15 degree right, and 30 degree left as validation data}
+		\caption{IoU for Vanilla model with clone, sunset, rain, 15 degree right, and 30 degree left as validation data}
 		\label{fig:performance_metric_unet1}
 	\end{figure}
 	
@@ -880,8 +880,8 @@
 	
 	\section{RQ3 Conclusion}   
 	
-	The Long Short-Term Memory (LSTM) model outperformed the performance of the vanilla/baseline and Gaussian Process (GP) models. The LSTM model can effectively model long temporal data, and the Gaussian Process (GP) uses pose information to model temporal data. The GP method is adopted from the depth estimation approach, where a cost volume is generated by taking consecutive frames. This cost volume captures the overlapping information present in the consecutive frames. However, building a cost volume is optional for semantic segmentation, as it is specifically designed for the depth estimation task.
-	However, a modified GP approach is performed by subjecting the latent space encoding to GP and averaging the previous latent space encoding that was subjected to GP with the current latent space encoding. If the continuous frames do not have any overlapping information, these approaches will not be effective because the model relies on the correlated data in the frames. Additionally, video sequences taken with low frame rates may also be impacted because the correlation of the data is affected. All the conducted experiments results are tabulated in table \ref{table:hype1}, \ref{table:hype2}, \ref{table:hype3}.
+	The Long Short-Term Memory (LSTM) model outperformed the performance of the Vanilla/baseline and Gaussian Process (GP) models. The LSTM model can effectively model long temporal data, and the Gaussian Process (GP) uses pose information to model temporal data. The GP method is adopted from the depth estimation approach, where a cost volume is generated by taking consecutive frames. This cost volume captures the overlapping information present in the consecutive frames. However, building a cost volume is optional for semantic segmentation, as it is specifically designed for the depth estimation task.
+	However, a modified GP approach is performed by subjecting the latent space encoding to GP and averaging the previous latent space encoding that was subjected to GP with the current latent space encoding. If the continuous frames do not have any overlapping information, these approaches will not be effective because the model relies on the correlated data in the frames. Additionally, video sequences taken with low frame rates may also be impacted because the correlation of the data is affected. All the conducted experiments results are tabulated in Table \ref{table:hype1}, \ref{table:hype2}, \ref{table:hype3}.
 	
 	% \usepackage{multirow}
 	
@@ -1007,9 +1007,9 @@
 	\end{table}
 
 	\newpage
-	\section{Experiment hyper-parameter and configuration detail }
+	\section{Experiment Hyper-Parameter and Configuration Details }
 	
-	The experiments were conducted with the configuration listed in the table \ref{table:parameters}. Training of Vanilla, Gaussian Process and Long Short Term Memory models are done in parallel and the training time is listed in the table.
+	The experiments were conducted with the configuration listed in the Table \ref{table:parameters}. Training of Vanilla, Gaussian Process and Long Short Term Memory models are done in parallel and the training time is listed in the table.
 	
 	\begin{table}[h]
 		\begin{center}

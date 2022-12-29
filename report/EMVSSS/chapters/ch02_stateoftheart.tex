@@ -63,7 +63,7 @@
     
 	 Most commonly used traditional segmentation techniques are threshold-based technique \cite{56_otsu1979threshold}, histogram-based bundling, region-growing \cite{57_otsu1979threshold}, k-means clustering, watersheds, active contours, graph cuts, conditional and Markov random fields \cite{58_boykov2001fast}, sparsity-based methods \cite{59_starck2005image}. However, deep learning (DL) in recent years yielded a new generation of image segmentation models with state-of-the-art performance. 
     
-    \subsection{Deep Learning based  Semantic Segmentation}
+    \subsection{Deep Learning Based Semantic Segmentation}
     
     Deep learning based segmentation network can be classified into following categories \cite{60_minaee2021image}
     
@@ -131,7 +131,7 @@
     	\label{fig:TDNet}
     \end{figure}  
     
-    \section{RQ1: What are the works on state-of-the-art temporal fusion in semantic segmentation?}
+    \section{RQ1: What Are the Works on State-Of-The-Art Temporal Fusion in Semantic Segmentation?}
     
     Segmentation is the process of assigning pixel labels for a given image. Segmentation can be observed in different contexts, such as Video instance segmentation (VIS), Semantic segmentation of the key frames of a video sequence, Video panoptic segmentation, MRI image segmentation, and autonomous driving scene understanding. Youtube - Video Instance Segmentation (VOS) and Scannet are the standard datasets in the semantic segmentation domain. 
     
@@ -178,7 +178,7 @@
     
     There is much work with respect to temporal fusion. Temporal fusion can be done by taking the previous single feature data or multiple past features and combining them in the current stage. Feature combination can be done at multiple stages of the network. Subjecting the feature can be done in different ways, such as subjecting the feature to Gaussian Process, Long-Short-Term memory, combining the instance code with the encoder features, finding masks in the individual frame and combining them,or taking multiple features from the decoder and passing them to the transformer to model the temporal data. The approaches are made without considering the pose information. Hence, a new temporal fusion approach needs to be developed to model the temporal fusion data to improve performance. 
     
-    \section{RQ2: How are the results from RQ1 compared with each other to perform temporal fusion?}
+    \section{RQ2: How Are the Results From RQ1 Compared With Each Other to Perform Temporal Fusion?}
     
 	In this research, various methods were employed for video instance segmentation with temporal fusion on the Youtube VIS 2019 and 2021 datasets. The results of these approaches' performance are shown in Table 2.1. The Hybrid instance-aware temporal fusion (HIATF) model performed exceptionally well, achieving an mAP (mean average precision) of 41.3 on the Youtube-VIS 2019 dataset. This was the best-performing model among those tested, and it even outperformed some models that used a ResNet-101 backbone. The HIATF model also demonstrated good performance when using a ResNet-50 backbone. However, other approaches were not effective when dealing with overlapping instances. The HIATF model also demonstrated good performance when using both a transformer and an instance code, as opposed to just using a transformer alone.
 	
@@ -221,7 +221,7 @@
     
     \section{RQ2 Conclusion}
     
-    It is evident from the table \ref{tab:sota_ytube_vis} that temporal fusion with the VITA network outperformed the rest of the model performance with Swin-L as the backbone. The comparison is made with the average precision metric. Swin-L transformer is a general-purpose backbone for computer vision tasks. The representation is computed with the transformer. The comparison is made with the Youtube VIS dataset. The dataset does not contain the pose information. VIS network is a temporal fusion architecture containing inter and intra-frame fusion for a fusion of temporal data. From the result table \ref{tab:sota_ytube_vis}. The method of temporal fusion by taking only a single frame data from the previous frame is a better approach than computing the temporal fusion of all the data at a time.
+    It is evident from the Table \ref{tab:sota_ytube_vis} that temporal fusion with the VITA network outperformed the rest of the model performance with Swin-L as the backbone. The comparison is made with the average precision metric. Swin-L transformer is a general-purpose backbone for computer vision tasks. The representation is computed with the transformer. The comparison is made with the Youtube VIS dataset. The dataset does not contain the pose information. VIS network is a temporal fusion architecture containing inter and intra-frame fusion for a fusion of temporal data. From the result Table \ref{tab:sota_ytube_vis}. The method of temporal fusion by taking only a single frame data from the previous frame is a better approach than computing the temporal fusion of all the data at a time.
     
     \section{Limitations of Previous Work}
     

@@ -20,7 +20,7 @@
 		\label{fig:sample_rgb_seg_scannet}
 	\end{figure}
         
-	ScanNet is a video sequence dataset with 1513 scenes captured in 707 distinct spaces. The dataset contains a total of 2.5M RGB-D images. The dataset was initially designed for the task of indoor scenes 3D reconstruction, including 3D object classification, semantic voxel labeling, and CAD model retrieval [91], [92]. The dataset contains the details of the 3D camera poses, surface reconstruction, and instance-level semantic segmentation. One sample of the data is shown in the figure
+	ScanNet is a video sequence dataset with 1513 scenes captured in 707 distinct spaces. The dataset contains a total of 2.5M RGB-D images. The dataset was initially designed for the task of indoor scenes 3D reconstruction, including 3D object classification, semantic voxel labeling, and CAD model retrieval [91], [92]. The dataset contains the details of the 3D camera poses, surface reconstruction, and instance-level semantic segmentation. One sample of the data is shown in the Fig \ref{fig:sample_pose_scannet}
 	
 	\begin{figure}
 		\centering
@@ -29,7 +29,7 @@
 		\label{fig:sample_pose_scannet}
 	\end{figure}
 	
-	The 3D representation of the sample data is presented in the figure\ref{fig:sample_pose_scannet}. There are 40 classes in the dataset, with different varieties under each category. The complete list of the classes is presented in Table \ref{table:Classes in scannet_1}, \ref{table:Classes in scannet_2}, and \ref{table:Classes in scannet_3}. Twenty users collect datasets at different countries' locations. Since the dataset is vast, a subset is taken for performing the experiments. Totally 186 video sequence data is taken for conducting the experiments. These video sequence data are further split into 149 sequences for training the model and 36 sequences for testing. The distribution of the scannet dataset labels is shown in figure \ref{fig:scannet_class_distribution}. There is a high number of pixels in the dataset belonging to the Wall, Other, Floor, and Chair categories. The dataset represents indoor scenes with different varieties. Hence experiments are conducted by combining the low pixel distribution class into single categories to balance the pixel distribution. 
+	The 3D representation of the sample data is presented in the Fig \ref{fig:sample_pose_scannet}. There are 40 classes in the dataset, with different varieties under each category. The complete list of the classes is presented in Table \ref{table:Classes in scannet_1}, \ref{table:Classes in scannet_2}, and \ref{table:Classes in scannet_3}. Twenty users collect datasets at different countries' locations. Since the dataset is vast, a subset is taken for performing the experiments. Totally 186 video sequence data is taken for conducting the experiments. These video sequence data are further split into 149 sequences for training the model and 36 sequences for testing. The distribution of the scannet dataset labels is shown in figure \ref{fig:scannet_class_distribution}. There is a high number of pixels in the dataset belonging to the Wall, Other, Floor, and Chair categories. The dataset represents indoor scenes with different varieties. Hence experiments are conducted by combining the low pixel distribution class into single categories to balance the pixel distribution. 
 	
 	\begin{figure}
 		\centering
@@ -41,7 +41,7 @@
   %  \subsection{Virtual KITTI 2 \ref{92_cabon2020virtual}}
     \subsection{Virtual KITTI 2 [93]}
     
-	The virtual KITTI dataset is the first released to the public domain with driving applications. It is a synthetic dataset representing the simulation of the vehicle in different environmental conditions. And it is a cost-effective alternative to real-world data. Virtual KITTI 2 is the next-generation dataset with an improved photo-realistic and featured version of the original virtual KITTI dataset. The virtual KITTI 2 contains stereo camera views to expand the application areas. The dataset contains the exact five sequences clones with camera 0 representing the same dataset as virtual KITTI, and camera 1 is 0.5327m to its right. Each camera contains RGB, class segmentation, instance segmentation, depth, forward and backward optical flow, and forward and backward scene flow images. Each sequence contains camera parameters, vehicle color, pose, and bounding boxes. One sample from the sequence and corresponding pose representation in the 3D plane is shown in Figure \ref{fig:sample_scannet_vkitti_2} and \ref{fig:sample_pose_scannet_vkitti_2} respectively.
+	The virtual KITTI dataset is the first released to the public domain with driving applications. It is a synthetic dataset representing the simulation of the vehicle in different environmental conditions. And it is a cost-effective alternative to real-world data. Virtual KITTI 2 is the next-generation dataset with an improved photo-realistic and featured version of the original virtual KITTI dataset. The virtual KITTI 2 contains stereo camera views to expand the application areas. The dataset contains the exact five sequences clones with camera 0 representing the same dataset as virtual KITTI, and camera 1 is 0.5327m to its right. Each camera contains RGB, class segmentation, instance segmentation, depth, forward and backward optical flow, and forward and backward scene flow images. Each sequence contains camera parameters, vehicle color, pose, and bounding boxes. One sample from the sequence and corresponding pose representation in the 3D plane is shown in Fig \ref{fig:sample_scannet_vkitti_2} and \ref{fig:sample_pose_scannet_vkitti_2} respectively.
 	 
 	\begin{figure}
 		\centering
@@ -59,7 +59,7 @@
 	
 	\section{Data Collection and Preprocessing}
 	
-	After submitting the agreement terms, the RGB-D scannet dataset can be downloaded from the python script sent to the user from the dataset development group. The description and format of the dataset can be found on GitHub [94]. There are 1500 scans. Any specific scans, and file types,  can be downloaded. There is multiple information regarding a scan in a file. These files are further processed to color, label, pose, and depth data for each scan. More details are documented in the GitHub [95] repository. The raw RGB image is normalized before passing it into the model for quick convergence of learning. The input image is a 3-channel RGB data in .jpg format, the label is a single-channel image in .png format with 40 classes total, and the pose data is in text format. The pose data contains the rotation matrix and transnational vector inhomogeneous matrix format. The vkitti dataset is also in a similar format. However, there is a total of 15 classes in the vkitti dataset. The raw RGB image, label, and pose data are shown in figure \ref{fig:scannet_vkitti}. 
+	After submitting the agreement terms, the RGB-D scannet dataset can be downloaded from the python script sent to the user from the dataset development group. The description and format of the dataset can be found on GitHub [94]. There are 1500 scans. Any specific scans, and file types,  can be downloaded. There is multiple information regarding a scan in a file. These files are further processed to color, label, pose, and depth data for each scan. More details are documented in the GitHub [95] repository. The raw RGB image is normalized before passing it into the model for quick convergence of learning. The input image is a 3-channel RGB data in .jpg format, the label is a single-channel image in .png format with 40 classes total, and the pose data is in text format. The pose data contains the rotation matrix and transnational vector inhomogeneous matrix format. The vkitti dataset is also in a similar format. However, there is a total of 15 classes in the vkitti dataset. The raw RGB image, label, and pose data are shown in Fig \ref{fig:scannet_vkitti}. 
 
 	\begin{figure}
 		\centering
@@ -86,7 +86,7 @@
     
     The experiment aims to incorporate temporal fusion in the latent space to understand the impact of past frame information fusion in future frame segmentation prediction. The Unet model [7] perfectly suits this experiment. The unet model consists of an encoder and a decoder network with latent space encoding in between. Three types of experiments were conducted with the unet model. In the first type, the plain vanilla unet model is taken in the second type of experiment unet model with the gaussian process; the third type is the unet model with Long Short Term Memory (LSTM). In the last two experiments, the latent space encoding is subjected to temporal fusion by the gaussian process and LSTM.   
     
-    \subsection{U-Net Vanilla model}
+    \subsection{U-Net Vanilla Model}
     
 	U-Net vanilla model is a simple semantic segmentation model with encoder-decoder architecture. The encoder is a contracting path, and the decoder is an expanding path. The input image is fed into the encoder, consisting of a convolutional neural net. The architecture consists of two 3x3 2d convolutional layers followed by a rectified linear unit (ReLU) and batchnorm2d with 2d downsampling Maxpool layer. At every step of the convolutional block, the number of out channels/ feature channels is doubled. From 64 features in the first convolutional block output to 1024 features at the downsampled fifth layer or the latent space encoding. The upsampling layer consists of a 2d convolution with a halved feature map at every step, followed by a concatenation of the corresponding feature map from the encoder path. The convolution2d consists of two 3x3 convolutions, each followed by a ReLU function. At the final layer of the decoder, a 2d convolutional layer was introduced to map the previous convolutional block output to the predicted class labels. There are 23 convolutional blocks in the entire network.    
 	
@@ -97,7 +97,7 @@
 		\label{fig:unet_model}
 	\end{figure}
 	
-    \subsection{U-Net with Gaussian process}
+    \subsection{U-Net With Gaussian Process}
     
     In the second type of experiment, the latent space encoding of the U-Net model is taken and subjected to the gaussian process. The gaussian process ensures that the frames close to each other have similar latent space encodings. This is done by building the kernel of the gaussian process with a distance matrix. A probabilistic prior on the latent space accounts for the prior knowledge that poses very close have similar latent space encoding to the poses that are very far from each other. This information is encoded in the covariance matrix. The distance measured between the camera poses is calculated with a metric to define the closeness. The distance between the camera poses is calculated with the help of work by Yuxin Hou et al. [02] and Mazzotti et al. [97]. This measures the distance between the rigid body poses. The pose-distance measure between the two camera poses $P_i$, and $P_j$ is defined in equation \ref{eq:distance_matrix}. Where $t$ is the translation vector, $R$ is the rotational vector, $I$ is the identity matrix, and $tr()$ is the trace of the matrix.  
     
@@ -112,7 +112,7 @@
 		k(P,P') = \gamma^2(1+\frac{\sqrt{3}D[P,P']}{l}exp(-\frac{\sqrt{3}D[P,P']}{l}))
 		\label{eq:covariance_matrix}
 	\end{equation}
-	The hyperparameter $\gamma^2$ and $l$ define the magnitude and length-scale of the processes. Independent GP priors to all values in $Z_i$, and the output of the encoder is assumed to be the noise corrupted version of the expected latent space encodings. The GP regression model is defined from this initialization settings and defined in the equation \ref{eq:encode_output} \ref{eq:gp} [02]. The architecture of the unet model with gaussian process is depicted in the figure \ref{fig:unet_gp}. The encoder output is assumed to be noise corrupted hence the term $\epsilon_{j,i}$. 
+	The hyperparameter $\gamma^2$ and $l$ define the magnitude and length-scale of the processes. Independent GP priors to all values in $Z_i$, and the output of the encoder is assumed to be the noise corrupted version of the expected latent space encodings. The GP regression model is defined from this initialization settings and defined in the equation \ref{eq:encode_output} \ref{eq:gp} [02]. The architecture of the unet model with gaussian process is depicted in the Fig \ref{fig:unet_gp}. The encoder output is assumed to be noise corrupted hence the term $\epsilon_{j,i}$. 
 
 	\begin{figure}
 		\centering
@@ -161,7 +161,7 @@
 	    \label{eq:Ht}
     \end{equation}
     
-    Where $*$ denotes the convolution, $\bigodot$ is the Hadamard product, $\sigma$ is the sigmoid activation function, and $w$ is convolution filter weights. Figure \ref{fig:unet_lstm} presents the exact pictorial representation. Each frame of the sequence video is passed onto the bottleneck U-net model in order, and prediction is made for individual frames. The output from the encoder network is passed through the LSTM cell. The output from the first LSTM cell act as the input to the subsequent LSTM cell computation; thereby, it carries the learned information forward from one frame computation to the following frame computation.   
+    Where $*$ denotes the convolution, $\bigodot$ is the Hadamard product, $\sigma$ is the sigmoid activation function, and $w$ is convolution filter weights. Fig \ref{fig:unet_lstm} presents the exact pictorial representation. Each frame of the sequence video is passed onto the bottleneck U-net model in order, and prediction is made for individual frames. The output from the encoder network is passed through the LSTM cell. The output from the first LSTM cell act as the input to the subsequent LSTM cell computation; thereby, it carries the learned information forward from one frame computation to the following frame computation.   
     
 	\begin{figure}
 		\centering
