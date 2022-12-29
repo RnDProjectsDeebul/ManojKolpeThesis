@@ -3,25 +3,25 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of temporal fusion model performance with respect to Youtube VIS dataset\relax }}{18}{table.caption.19}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Vanilla model performance with respect to all the metrics. Higher values means top performing model.\relax }}{41}{table.caption.42}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces GP model performance with respect to all the metrics. Higher values means top performing model.\relax }}{42}{table.caption.45}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces LSTM model performance with respect to all the metrics. Higher values means top performing model.\relax }}{43}{table.caption.48}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes. Higher the value means top performing model.\relax }}{50}{table.caption.57}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric and three class scannet dataset. Higher the value means top performing model.\relax }}{55}{table.caption.64}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric. Higher the value means top performing model.\relax }}{60}{table.caption.71}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric with clone, sunset, rain, 15 degree right, and 30 degree left as validation data. Higher the value means top performing model.\relax }}{66}{table.caption.80}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for scannet dataset. In all the experiments LSTM model out performed Vanilla and GP.\relax }}{69}{table.caption.85}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for vkitti dataset. In all the experiments LSTM model out-performed Vanilla and GP.\relax }}{70}{table.caption.86}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces The Vanilla, GP and LSTM model are trained with different batch sizes. The model prediction is compared side by side with different metrics. Hidden pattern in the data is learned quickly with increase in the batch size.\relax }}{70}{table.caption.87}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Hyperparameter to train the model.\relax }}{71}{table.caption.88}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Vanilla model performance with respect to all the metrics. Higher values means top performing model.\relax }}{43}{table.caption.42}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces GP model performance with respect to all the metrics. Higher values means top performing model.\relax }}{44}{table.caption.45}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces LSTM model performance with respect to all the metrics. Higher values means top performing model.\relax }}{45}{table.caption.48}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Performance of Vanilla model with respect to different metric and two classes. Higher the value means top performing model.\relax }}{52}{table.caption.57}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric and three class scannet dataset. Higher the value means top performing model.\relax }}{57}{table.caption.64}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Performance of Vanilla, GP and LSTM model with respect to different metric. Higher the value means top performing model.\relax }}{62}{table.caption.71}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Performance of Vanilla model with respect to different metric with clone, sunset, rain, 15 degree right, and 30 degree left as validation data. Higher the value means top performing model.\relax }}{68}{table.caption.80}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for scannet dataset. In all the experiments LSTM model out performed Vanilla and GP.\relax }}{71}{table.caption.85}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Comparison of Vanilla, GP and LSTM model predictions based on four metrics and three different conducted experiments for vkitti dataset. In all the experiments LSTM model out-performed Vanilla and GP.\relax }}{72}{table.caption.86}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces The Vanilla, GP and LSTM model are trained with different batch sizes. The model prediction is compared side by side with different metrics. Hidden pattern in the data is learned quickly with increase in the batch size.\relax }}{72}{table.caption.87}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Hyperparameter to train the model.\relax }}{73}{table.caption.88}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Specification of the android device\relax }}{73}{table.caption.90}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Runtime detail for processing of single image\relax }}{76}{table.caption.92}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Specification of the android device\relax }}{75}{table.caption.90}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Runtime detail for processing of single image\relax }}{78}{table.caption.92}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{92}{table.caption.93}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{93}{table.caption.94}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{94}{table.caption.95}%
-\contentsline {table}{\numberline {B.4}{\ignorespaces Vkitti dataset classes\relax }}{95}{table.caption.96}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{94}{table.caption.93}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{95}{table.caption.94}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Classes and ids of the Scannet dataset\relax }}{96}{table.caption.95}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces Vkitti dataset classes\relax }}{97}{table.caption.96}%
 \addvspace {10\p@ }

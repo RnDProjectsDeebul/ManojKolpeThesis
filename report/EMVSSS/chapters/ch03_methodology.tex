@@ -16,7 +16,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=17cm]{images/images_segm_scannet.png}
-		\caption{Sample of Scannet dataset continuous frame rgb and semantic label. Courtesy of \ref{91_ScanNet} }
+		\caption{Sample of Scannet dataset continuous frame rgb and semantic label. Courtesy of [91] }
 		\label{fig:sample_rgb_seg_scannet}
 	\end{figure}
         
@@ -84,7 +84,7 @@
 	
     \section{Experimental Design}
     
-    The experiment aims to incorporate temporal fusion in the latent space to understand the impact of past frame information fusion in future frame segmentation prediction. The Unet model \ref{70_ronneberger2015u} perfectly suits this experiment. The unet model consists of an encoder and a decoder network with latent space encoding in between. Three types of experiments were conducted with the unet model. In the first type, the plain vanilla unet model is taken in the second type of experiment unet model with the gaussian process; the third type is the unet model with Long Short Term Memory (LSTM). In the last two experiments, the latent space encoding is subjected to temporal fusion by the gaussian process and LSTM.   
+    The experiment aims to incorporate temporal fusion in the latent space to understand the impact of past frame information fusion in future frame segmentation prediction. The Unet model [7] perfectly suits this experiment. The unet model consists of an encoder and a decoder network with latent space encoding in between. Three types of experiments were conducted with the unet model. In the first type, the plain vanilla unet model is taken in the second type of experiment unet model with the gaussian process; the third type is the unet model with Long Short Term Memory (LSTM). In the last two experiments, the latent space encoding is subjected to temporal fusion by the gaussian process and LSTM.   
     
     \subsection{U-Net Vanilla model}
     
